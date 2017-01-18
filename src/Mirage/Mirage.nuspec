@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Mirage</id>
+    <version>$version$</version>
+    <title>Mirage</title>
+    <authors>James Craig</authors>
+    <owners>James Craig</owners>
+    <licenseUrl>https://github.com/JaCraig/Mirage/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/JaCraig/Mirage</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>Random POCO </tags>
+    <dependencies>
+      <dependency id="NETStandard.Library" version="1.6.1" />
+      <dependency id="Canister.IoC" version="1.0.33" />
+      <dependency id="BigBook" version="1.0.5" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard1.6\Mirage.dll" target="lib\netstandard1.6\Mirage.dll" />
+    <file src="bin\Release\netstandard1.6\Mirage.xml" target="lib\netstandard1.6\Mirage.xml" />
+  </files>
+</package>

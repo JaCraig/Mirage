@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9838A04E-C8B2-4E9A-A389-17F28C116D17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{40480AA0-9491-41E2-9F5D-4BBE590FC8EE}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mirage", "src\Mirage\Mirage.xproj", "{3D36A609-739F-4261-BDCB-4E0B01144EEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0F8C5170-86BB-4204-BF34-9B0E07BCB673}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mirage.Tests", "test\Mirage.Tests\Mirage.Tests.xproj", "{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D36A609-739F-4261-BDCB-4E0B01144EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D36A609-739F-4261-BDCB-4E0B01144EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D36A609-739F-4261-BDCB-4E0B01144EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D36A609-739F-4261-BDCB-4E0B01144EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D36A609-739F-4261-BDCB-4E0B01144EEE} = {9838A04E-C8B2-4E9A-A389-17F28C116D17}
+		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA} = {0F8C5170-86BB-4204-BF34-9B0E07BCB673}
+	EndGlobalSection
+EndGlobal

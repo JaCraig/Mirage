@@ -1,0 +1,26 @@
+﻿{
+  "title": "Mirage",
+  "version": "1.0.0",
+  "authors": [ "James Craig" ],
+  "description": "Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.",
+  "packOptions": {
+    "owners": [ "James Craig" ],
+    "summary": "Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.",
+    "projectUrl": "https://github.com/JaCraig/Mirage",
+    "licenseUrl": "https://github.com/JaCraig/Mirage/blob/master/LICENSE",
+    "tags": [ "Mirage", "Random", "POCO" ]
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.1",
+    "Canister.IoC": "1.0.33",
+    "BigBook": "1.0.5"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  },
+  "buildOptions": {
+    "xmlDoc": true
+  }
+}

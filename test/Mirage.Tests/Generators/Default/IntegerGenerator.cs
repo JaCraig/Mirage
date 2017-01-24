@@ -13,7 +13,7 @@ namespace Mirage.Tests.Generators
         [Fact]
         public void Next()
         {
-            IntGeneratorAttribute Generator = new IntGeneratorAttribute(0, int.MaxValue);
+            var Generator = new IntGeneratorAttribute(0, int.MaxValue);
             Assert.InRange(Generator.Next(new Random()), 0, int.MaxValue);
             Assert.InRange(Generator.Next(new Random(), 10, 300), 10, 300);
         }

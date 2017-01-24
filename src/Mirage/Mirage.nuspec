@@ -14,8 +14,8 @@
     <tags>Random POCO </tags>
     <dependencies>
       <dependency id="NETStandard.Library" version="1.6.1" />
-      <dependency id="Canister.IoC" version="1.0.33" />
-      <dependency id="BigBook" version="1.0.5" />
+      <dependency id="Canister.IoC" version="1.0.35" />
+      <dependency id="BigBook" version="1.0.7" />
     </dependencies>
   </metadata>
   <files>

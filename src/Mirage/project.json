@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "NETStandard.Library": "1.6.1",
-    "Canister.IoC": "1.0.33",
-    "BigBook": "1.0.5"
+    "Canister.IoC": "1.0.35",
+    "BigBook": "1.0.7"
   },
   "frameworks": {
     "netstandard1.6": {

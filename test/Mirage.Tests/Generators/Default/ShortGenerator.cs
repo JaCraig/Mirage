@@ -13,7 +13,7 @@ namespace Mirage.Tests.Generators
         [Fact]
         public void Next()
         {
-            ShortGeneratorAttribute Generator = new ShortGeneratorAttribute(0, short.MaxValue);
+            var Generator = new ShortGeneratorAttribute(0, short.MaxValue);
             Assert.InRange(Generator.Next(new Random()), 0, short.MaxValue);
             Assert.InRange(Generator.Next(new Random(), 10, 300), 10, 300);
         }

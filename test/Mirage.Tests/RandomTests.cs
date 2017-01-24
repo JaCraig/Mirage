@@ -29,8 +29,8 @@ namespace Mirage.Tests
         [Fact]
         public void ClassGenerator()
         {
-            Random Rand = new Random(1231415);
-            RandomTestClass Item = Rand.Next<RandomTestClass>();
+            var Rand = new Random(1231415);
+            var Item = Rand.Next<RandomTestClass>();
             Assert.Equal(-82, Item.A);
             Assert.Equal("Lorem ipsum dolor sit amet. ", Item.B);
             Assert.Equal(System.Math.Round(0.9043f, 4), System.Math.Round(Item.C, 4));
@@ -40,7 +40,7 @@ namespace Mirage.Tests
         [Fact]
         public void Next()
         {
-            Random Random = new Random();
+            var Random = new Random();
             Random.Next<bool>();
             Random.Next<byte>();
             Random.Next<char>();
@@ -62,7 +62,7 @@ namespace Mirage.Tests
         [Fact]
         public void Next2()
         {
-            Random Random = new Random();
+            var Random = new Random();
             Random.Next<bool>(false, true);
             Assert.InRange(Random.Next<byte>(1, 29), 1, 29);
             Assert.InRange(Random.Next<char>('a', 'z'), 'a', 'z');
@@ -83,21 +83,21 @@ namespace Mirage.Tests
         [Fact]
         public void NextIEnumerable()
         {
-            Random Random = new Random();
+            var Random = new Random();
             Assert.InRange(Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }), 1, 5);
         }
 
         [Fact]
         public void NextStringTest()
         {
-            Random Rand = new Random();
+            var Rand = new Random();
             Assert.NotNull(Rand.Next<string>());
         }
 
         [Fact]
         public void Shuffle()
         {
-            Random Rand = new Random(1231415);
+            var Rand = new Random(1231415);
             Assert.Equal(new int[] { 3, 1, 4, 5, 2 }, Rand.Shuffle(new int[] { 1, 2, 3, 4, 5 }));
         }
 

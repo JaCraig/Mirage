@@ -40,6 +40,13 @@ namespace Mirage.Generators
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="ULongGeneratorAttribute"/> class.
+        /// </summary>
+        public ULongGeneratorAttribute() : base(ulong.MinValue, ulong.MaxValue)
+        {
+        }
+
+        /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>

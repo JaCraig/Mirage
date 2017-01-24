@@ -13,7 +13,7 @@ namespace Mirage.Tests.Generators
         [Fact]
         public void Next()
         {
-            DateTimeGeneratorAttribute Generator = new DateTimeGeneratorAttribute();
+            var Generator = new DateTimeGeneratorAttribute();
             Assert.InRange(Generator.Next(new Random()), DateTime.MinValue, DateTime.MaxValue);
             Assert.InRange(Generator.Next(new Random(), new DateTime(1900, 1, 1), new DateTime(2000, 1, 1)), new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
         }

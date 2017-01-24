@@ -40,6 +40,13 @@ namespace Mirage.Generators
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="SByteGeneratorAttribute"/> class.
+        /// </summary>
+        public SByteGeneratorAttribute() : base(sbyte.MinValue, sbyte.MaxValue)
+        {
+        }
+
+        /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>

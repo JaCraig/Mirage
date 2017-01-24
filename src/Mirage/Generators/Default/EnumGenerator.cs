@@ -85,6 +85,9 @@ namespace Mirage.Generators
             EnumType = enumType;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EnumGeneratorAttribute"/> class.
+        /// </summary>
         public EnumGeneratorAttribute() : base(null, null)
         {
             EnumType = null;

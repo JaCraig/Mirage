@@ -13,7 +13,7 @@ namespace Mirage.Tests.Generators
         [Fact]
         public void Next()
         {
-            EnumGeneratorAttribute Generator = new EnumGeneratorAttribute(typeof(MyTest));
+            var Generator = new EnumGeneratorAttribute(typeof(MyTest));
             Assert.InRange((MyTest)Generator.NextObj(new Random()), MyTest.Item1, MyTest.Item3);
         }
 

@@ -17,29 +17,20 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
     /// <summary>
     /// DateTime generator
     /// </summary>
-    /// <seealso cref="GeneratorAttributeBase"/>
     /// <seealso cref="Interfaces.IGenerator{DateTime}"/>
-    public class DateTimeGeneratorAttribute : GeneratorAttributeBase, IGenerator<DateTime>
+    public class DateTimeGenerator : IGenerator<DateTime>
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public DateTimeGeneratorAttribute() : base(DateTime.MinValue, DateTime.MaxValue) { }
-
         /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
-        public override Type TypeGenerated => typeof(DateTime);
+        public Type TypeGenerated => typeof(DateTime);
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -48,7 +39,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public DateTime Next(Random rand)
         {
-            return Next(rand, (DateTime)Min, (DateTime)Max);
+            return Next(rand, DateTime.MinValue, DateTime.MaxValue);
         }
 
         /// <summary>
@@ -70,11 +61,58 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="rand">Random number generator</param>
         /// <returns>The next object</returns>
+        public object NextObj(Random rand)
+        {
+            if (DateTime.MinValue != default(DateTime) || DateTime.MaxValue != default(DateTime))
+                return Next(rand, DateTime.MinValue, DateTime.MaxValue);
+            return Next(rand);
+        }
+    }
+
+    /// <summary>
+    /// DateTime generator attribute
+    /// </summary>
+    /// <seealso cref="GeneratorAttributeBase"/>
+    public class DateTimeGeneratorAttribute : GeneratorAttributeBase
+    {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public DateTimeGeneratorAttribute()
+            : base(DateTime.MinValue.ToString(), DateTime.MaxValue.ToString())
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DateTimeGeneratorAttribute"/> class.
+        /// </summary>
+        /// <param name="min">The minimum.</param>
+        /// <param name="max">The maximum.</param>
+        public DateTimeGeneratorAttribute(string min, string max)
+            : base(min, max)
+        {
+        }
+
+        /// <summary>
+        /// Gets the type generated.
+        /// </summary>
+        /// <value>The type generated.</value>
+        public override Type TypeGenerated => typeof(DateTime);
+
+        /// <summary>
+        /// Generates next object
+        /// </summary>
+        /// <param name="rand">Random number generator</param>
+        /// <returns>The next object</returns>
         public override object NextObj(Random rand)
         {
-            if ((DateTime)Min != default(DateTime) || (DateTime)Max != default(DateTime))
-                return Next(rand, (DateTime)Min, (DateTime)Max);
-            return Next(rand);
+            DateTime TempMin;
+            DateTime TempMax;
+            DateTime.TryParse((string)Min, out TempMin);
+            DateTime.TryParse((string)Max, out TempMax);
+            if (TempMin != default(DateTime) || TempMax != default(DateTime))
+                return new DateTimeGenerator().Next(rand, TempMin, TempMax);
+            return new DateTimeGenerator().Next(rand);
         }
     }
 }

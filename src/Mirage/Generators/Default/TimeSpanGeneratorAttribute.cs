@@ -17,29 +17,20 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
     /// <summary>
     /// TimeSpan generator
     /// </summary>
-    /// <seealso cref="GeneratorAttributeBase"/>
     /// <seealso cref="Interfaces.IGenerator{TimeSpan}"/>
-    public class TimeSpanGeneratorAttribute : GeneratorAttributeBase, IGenerator<TimeSpan>
+    public class TimeSpanGenerator : IGenerator<TimeSpan>
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public TimeSpanGeneratorAttribute() : base(TimeSpan.MinValue, TimeSpan.MaxValue) { }
-
         /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
-        public override Type TypeGenerated => typeof(TimeSpan);
+        public Type TypeGenerated => typeof(TimeSpan);
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -48,7 +39,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public TimeSpan Next(Random rand)
         {
-            return Next(rand, (TimeSpan)Min, (TimeSpan)Max);
+            return Next(rand, TimeSpan.MinValue, TimeSpan.MaxValue);
         }
 
         /// <summary>
@@ -70,11 +61,58 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="rand">Random number generator</param>
         /// <returns>The next object</returns>
+        public object NextObj(Random rand)
+        {
+            if (TimeSpan.MinValue != default(TimeSpan) || TimeSpan.MaxValue != default(TimeSpan))
+                return Next(rand, TimeSpan.MinValue, TimeSpan.MaxValue);
+            return Next(rand);
+        }
+    }
+
+    /// <summary>
+    /// TimeSpan generator
+    /// </summary>
+    /// <seealso cref="GeneratorAttributeBase"/>
+    public class TimeSpanGeneratorAttribute : GeneratorAttributeBase
+    {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public TimeSpanGeneratorAttribute()
+            : base(TimeSpan.MinValue.ToString(), TimeSpan.MaxValue.ToString())
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TimeSpanGeneratorAttribute"/> class.
+        /// </summary>
+        /// <param name="min">The minimum.</param>
+        /// <param name="max">The maximum.</param>
+        public TimeSpanGeneratorAttribute(string min, string max)
+            : base(min, max)
+        {
+        }
+
+        /// <summary>
+        /// Gets the type generated.
+        /// </summary>
+        /// <value>The type generated.</value>
+        public override Type TypeGenerated => typeof(TimeSpan);
+
+        /// <summary>
+        /// Generates next object
+        /// </summary>
+        /// <param name="rand">Random number generator</param>
+        /// <returns>The next object</returns>
         public override object NextObj(Random rand)
         {
-            if ((TimeSpan)Min != default(TimeSpan) || (TimeSpan)Max != default(TimeSpan))
-                return Next(rand, (TimeSpan)Min, (TimeSpan)Max);
-            return Next(rand);
+            TimeSpan TempMin;
+            TimeSpan TempMax;
+            TimeSpan.TryParse((string)Min, out TempMin);
+            TimeSpan.TryParse((string)Max, out TempMax);
+            if (TempMin != default(TimeSpan) || TempMax != default(TimeSpan))
+                return new TimeSpanGenerator().Next(rand, TempMin, TempMax);
+            return new TimeSpanGenerator().Next(rand);
         }
     }
 }

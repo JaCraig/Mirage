@@ -1,8 +1,5 @@
 ﻿using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators.BaseClasses
 {
@@ -17,7 +14,7 @@ namespace Mirage.Generators.BaseClasses
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public StringGeneratorBase(string min, string max) : base(min, max)
+        protected StringGeneratorBase(string min, string max) : base(min, max)
         {
         }
 

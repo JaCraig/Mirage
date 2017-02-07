@@ -17,9 +17,6 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
@@ -35,7 +32,8 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public DecimalGeneratorAttribute(decimal min, decimal max) : base(min, max)
+        public DecimalGeneratorAttribute(decimal min, decimal max)
+            : base(min, min == 0 && max == 0 ? 1 : max)
         {
         }
 

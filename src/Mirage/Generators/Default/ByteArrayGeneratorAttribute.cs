@@ -17,30 +17,30 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
+using System.Linq;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.Default
 {
     /// <summary>
-    /// Float generator
+    /// Byte array generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Float}"/>
-    public class FloatGeneratorAttribute : GeneratorAttributeBase, IGenerator<float>
+    public class ByteArrayGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte[]>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="FloatGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="ByteArrayGeneratorAttribute"/> class.
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public FloatGeneratorAttribute(float min, float max)
-            : base(min, min == 0 && max == 0 ? 1 : max)
+        public ByteArrayGeneratorAttribute(int min, int max)
+            : base(min == 0 && max == 0 ? 1 : min, min == 0 && max == 0 ? 100 : max)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FloatGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="ByteArrayGeneratorAttribute"/> class.
         /// </summary>
-        public FloatGeneratorAttribute() : base(0, 1)
+        public ByteArrayGeneratorAttribute() : base(1, 100)
         {
         }
 
@@ -48,16 +48,16 @@ namespace Mirage.Generators
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
-        public override Type TypeGenerated => typeof(float);
+        public override Type TypeGenerated => typeof(byte[]);
 
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public float Next(Random rand)
+        public byte[] Next(Random rand)
         {
-            return Next(rand, (float)Min, (float)Max);
+            return rand.Next<byte>(rand.Next((int)Min, (int)Max)).ToArray();
         }
 
         /// <summary>
@@ -67,9 +67,9 @@ namespace Mirage.Generators
         /// <param name="min">Minimum value (inclusive)</param>
         /// <param name="max">Maximum value (inclusive)</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public float Next(Random rand, float min, float max)
+        public byte[] Next(Random rand, byte[] min, byte[] max)
         {
-            return min + ((max - min) * (float)rand.NextDouble());
+            return Next(rand);
         }
 
         /// <summary>

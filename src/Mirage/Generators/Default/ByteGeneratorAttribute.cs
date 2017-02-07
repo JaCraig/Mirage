@@ -17,9 +17,6 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
@@ -35,14 +32,16 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public ByteGeneratorAttribute(byte min, byte max) : base(min, max)
+        public ByteGeneratorAttribute(byte min, byte max)
+            : base(min, min == 0 && max == 0 ? byte.MaxValue : max)
         {
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ByteGeneratorAttribute"/> class.
         /// </summary>
-        public ByteGeneratorAttribute() : base(byte.MinValue, byte.MaxValue)
+        public ByteGeneratorAttribute()
+            : base(byte.MinValue, byte.MaxValue)
         {
         }
 

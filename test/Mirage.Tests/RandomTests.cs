@@ -1,9 +1,6 @@
-﻿using BigBook;
-using Mirage.Generators;
+﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -57,6 +54,7 @@ namespace Mirage.Tests
             Random.Next<DateTime>();
             Random.Next<TimeSpan>();
             Random.Next<string>();
+            Random.Next<byte[]>();
         }
 
         [Fact]
@@ -78,6 +76,7 @@ namespace Mirage.Tests
             Assert.InRange(Random.Next<ushort>(1, 29), (ushort)1, (ushort)29);
             Assert.InRange(Random.Next<DateTime>(new DateTime(1900, 1, 1), new DateTime(2000, 1, 1)), new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
             Assert.Equal(10, Random.Next<string>().Length);
+            Assert.InRange(Random.Next<byte[]>().Length, 1, 100);
         }
 
         [Fact]

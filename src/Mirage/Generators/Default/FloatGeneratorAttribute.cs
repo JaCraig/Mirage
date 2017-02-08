@@ -33,7 +33,7 @@ namespace Mirage.Generators
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
         public FloatGeneratorAttribute(float min, float max)
-            : base(min, min == 0 && max == 0 ? 1 : max)
+            : base(min, Math.Abs(min) < EPSILON && Math.Abs(max) < EPSILON ? 1 : max)
         {
         }
 
@@ -49,6 +49,8 @@ namespace Mirage.Generators
         /// </summary>
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(float);
+
+        private const float EPSILON = 0.0001f;
 
         /// <summary>
         /// Generates a random value of the specified type

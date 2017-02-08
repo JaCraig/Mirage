@@ -55,6 +55,7 @@ namespace Mirage.Tests
             Random.Next<TimeSpan>();
             Random.Next<string>();
             Random.Next<byte[]>();
+            Random.Next<Guid>();
         }
 
         [Fact]

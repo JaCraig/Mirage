@@ -56,6 +56,7 @@ namespace Mirage.Tests
             Random.Next<string>();
             Random.Next<byte[]>();
             Random.Next<Guid>();
+            Random.Next<bool?>();
         }
 
         [Fact]
@@ -78,6 +79,7 @@ namespace Mirage.Tests
             Assert.InRange(Random.Next<DateTime>(new DateTime(1900, 1, 1), new DateTime(2000, 1, 1)), new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
             Assert.Equal(10, Random.Next<string>().Length);
             Assert.InRange(Random.Next<byte[]>().Length, 1, 100);
+            Random.Next<bool?>(false, true);
         }
 
         [Fact]

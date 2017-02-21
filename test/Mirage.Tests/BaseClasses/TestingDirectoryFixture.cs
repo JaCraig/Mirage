@@ -1,5 +1,4 @@
-﻿using FileCurator;
-using FileCurator.Registration;
+﻿using FileCurator.Registration;
 using Microsoft.Extensions.DependencyInjection;
 using Mirage.Registration;
 using System;
@@ -20,16 +19,10 @@ namespace Mirage.Tests.BaseClasses
                         .RegisterMirage()
                         .RegisterFileCurator()
                         .Build();
-            new DirectoryInfo(@".\Testing").Create();
-            new DirectoryInfo(@".\App_Data").Create();
-            new DirectoryInfo(@".\Logs").Create();
         }
 
         public void Dispose()
         {
-            new DirectoryInfo(@".\Testing").Delete();
-            new DirectoryInfo(@".\App_Data").Delete();
-            new DirectoryInfo(@".\Logs").Delete();
         }
     }
 }

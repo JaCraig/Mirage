@@ -18,30 +18,28 @@ using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
 
-namespace Mirage.Generators.Nullable
+namespace Mirage.Generators.Default.Nullable
 {
     /// <summary>
-    /// Nullable Byte generator
+    /// UInt generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Byte}"/>
-    public class NullableByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte?>
+    public class NullableUIntGeneratorAttribute : GeneratorAttributeBase, IGenerator<uint?>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="NullableUIntGeneratorAttribute"/> class.
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public NullableByteGeneratorAttribute(byte? min, byte? max)
-            : base(min, min == 0 && max == 0 ? byte.MaxValue : max)
+        public NullableUIntGeneratorAttribute(uint min, uint max)
+            : base(min == 0 && max == 0 ? uint.MinValue : min, min == 0 && max == 0 ? uint.MaxValue : max)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="NullableUIntGeneratorAttribute"/> class.
         /// </summary>
-        public NullableByteGeneratorAttribute()
-            : base(byte.MinValue, byte.MaxValue)
+        public NullableUIntGeneratorAttribute() : base(uint.MinValue, uint.MaxValue)
         {
         }
 
@@ -49,18 +47,18 @@ namespace Mirage.Generators.Nullable
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
-        public override Type TypeGenerated => typeof(byte?);
+        public override Type TypeGenerated => typeof(uint?);
 
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public byte? Next(Random rand)
+        public uint? Next(Random rand)
         {
             if (!rand.Next<bool>())
                 return null;
-            return rand.Next<byte>();
+            return rand.Next<uint>();
         }
 
         /// <summary>
@@ -70,12 +68,12 @@ namespace Mirage.Generators.Nullable
         /// <param name="min">Minimum value (inclusive)</param>
         /// <param name="max">Maximum value (inclusive)</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public byte? Next(Random rand, byte? min, byte? max)
+        public uint? Next(Random rand, uint? min, uint? max)
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min.HasValue ? min : 0;
-            max = max.HasValue ? max : 255;
+            min = min.HasValue ? min : uint.MinValue;
+            max = max.HasValue ? max : uint.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 

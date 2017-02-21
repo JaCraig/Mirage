@@ -57,6 +57,21 @@ namespace Mirage.Tests
             Random.Next<byte[]>();
             Random.Next<Guid>();
             Random.Next<bool?>();
+            Random.Next<byte?>();
+            Random.Next<char?>();
+            Random.Next<DateTime?>();
+            Random.Next<decimal?>();
+            Random.Next<double?>();
+            Random.Next<float?>();
+            Random.Next<Guid?>();
+            Random.Next<int?>();
+            Random.Next<long?>();
+            Random.Next<sbyte?>();
+            Random.Next<short?>();
+            Random.Next<TimeSpan?>();
+            Random.Next<uint?>();
+            Random.Next<ulong?>();
+            Random.Next<ushort?>();
         }
 
         [Fact]
@@ -80,6 +95,21 @@ namespace Mirage.Tests
             Assert.Equal(10, Random.Next<string>().Length);
             Assert.InRange(Random.Next<byte[]>().Length, 1, 100);
             Random.Next<bool?>(false, true);
+            Random.Next<byte?>(0, 255);
+            Random.Next<char?>(char.MinValue, char.MaxValue);
+            Random.Next<DateTime?>(new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
+            Random.Next<decimal?>(-1, 1);
+            Random.Next<double?>(-1, 1);
+            Random.Next<float?>(-1, 1);
+            Random.Next<Guid?>(Guid.NewGuid(), Guid.NewGuid());
+            Random.Next<int?>(1, 29);
+            Random.Next<long?>(1, 29);
+            Random.Next<sbyte?>(1, 29);
+            Random.Next<short?>(1, 29);
+            Random.Next<TimeSpan?>(TimeSpan.MinValue, TimeSpan.MaxValue);
+            Random.Next<uint?>(1, 29);
+            Random.Next<ulong?>(1, 29);
+            Random.Next<ushort?>(1, 29);
         }
 
         [Fact]

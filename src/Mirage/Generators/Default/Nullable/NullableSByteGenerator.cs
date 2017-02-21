@@ -18,30 +18,29 @@ using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
 
-namespace Mirage.Generators.Nullable
+namespace Mirage.Generators.Default.Nullable
 {
     /// <summary>
-    /// Nullable Byte generator
+    /// long generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Byte}"/>
-    public class NullableByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte?>
+    /// <seealso cref="Interfaces.IGenerator{Int}"/>
+    public class NullableSByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<sbyte?>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="NullableSByteGeneratorAttribute"/> class.
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public NullableByteGeneratorAttribute(byte? min, byte? max)
-            : base(min, min == 0 && max == 0 ? byte.MaxValue : max)
+        public NullableSByteGeneratorAttribute(sbyte min, sbyte max)
+            : base(min == 0 && max == 0 ? sbyte.MinValue : min, min == 0 && max == 0 ? sbyte.MaxValue : max)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="NullableSByteGeneratorAttribute"/> class.
         /// </summary>
-        public NullableByteGeneratorAttribute()
-            : base(byte.MinValue, byte.MaxValue)
+        public NullableSByteGeneratorAttribute() : base(sbyte.MinValue, sbyte.MaxValue)
         {
         }
 
@@ -49,18 +48,18 @@ namespace Mirage.Generators.Nullable
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
-        public override Type TypeGenerated => typeof(byte?);
+        public override Type TypeGenerated => typeof(sbyte?);
 
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public byte? Next(Random rand)
+        public sbyte? Next(Random rand)
         {
             if (!rand.Next<bool>())
                 return null;
-            return rand.Next<byte>();
+            return rand.Next<sbyte>();
         }
 
         /// <summary>
@@ -70,12 +69,12 @@ namespace Mirage.Generators.Nullable
         /// <param name="min">Minimum value (inclusive)</param>
         /// <param name="max">Maximum value (inclusive)</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public byte? Next(Random rand, byte? min, byte? max)
+        public sbyte? Next(Random rand, sbyte? min, sbyte? max)
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min.HasValue ? min : 0;
-            max = max.HasValue ? max : 255;
+            min = min.HasValue ? min : sbyte.MinValue;
+            max = max.HasValue ? max : sbyte.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 

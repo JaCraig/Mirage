@@ -18,30 +18,29 @@ using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
 
-namespace Mirage.Generators.Nullable
+namespace Mirage.Generators.Default.Nullable
 {
     /// <summary>
-    /// Nullable Byte generator
+    /// Double generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Byte}"/>
-    public class NullableByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte?>
+    /// <seealso cref="Interfaces.IGenerator{Double}"/>
+    public class NullableDoubleGeneratorAttribute : GeneratorAttributeBase, IGenerator<double?>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="NullableDoubleGeneratorAttribute"/> class.
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public NullableByteGeneratorAttribute(byte? min, byte? max)
-            : base(min, min == 0 && max == 0 ? byte.MaxValue : max)
+        public NullableDoubleGeneratorAttribute(double min, double max)
+            : base(min, Math.Abs(min) < EPSILON && Math.Abs(max) < EPSILON ? 1 : max)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
+        /// Initializes a new instance of the <see cref="NullableDoubleGeneratorAttribute"/> class.
         /// </summary>
-        public NullableByteGeneratorAttribute()
-            : base(byte.MinValue, byte.MaxValue)
+        public NullableDoubleGeneratorAttribute() : base(0, 1)
         {
         }
 
@@ -49,18 +48,20 @@ namespace Mirage.Generators.Nullable
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
-        public override Type TypeGenerated => typeof(byte?);
+        public override Type TypeGenerated => typeof(double?);
+
+        private const double EPSILON = 0.0001;
 
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public byte? Next(Random rand)
+        public double? Next(Random rand)
         {
             if (!rand.Next<bool>())
                 return null;
-            return rand.Next<byte>();
+            return rand.Next<double>();
         }
 
         /// <summary>
@@ -70,12 +71,12 @@ namespace Mirage.Generators.Nullable
         /// <param name="min">Minimum value (inclusive)</param>
         /// <param name="max">Maximum value (inclusive)</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public byte? Next(Random rand, byte? min, byte? max)
+        public double? Next(Random rand, double? min, double? max)
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min.HasValue ? min : 0;
-            max = max.HasValue ? max : 255;
+            min = min.HasValue ? min : double.MinValue;
+            max = max.HasValue ? max : double.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 

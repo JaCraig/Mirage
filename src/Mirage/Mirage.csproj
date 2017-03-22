@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <BuildNumber Condition=" '$(APPVEYOR_BUILD_NUMBER)' != '' ">$(APPVEYOR_BUILD_NUMBER)</BuildNumber>
+    <!-- for AppVeyor -->
+    <BuildNumber Condition=" '$(BUILD_NUMBER)' != '' ">$(BUILD_NUMBER)</BuildNumber>
+    <!-- for Team City -->
+    <BuildNumber Condition=" '$(BuildNumber)' == '' ">0</BuildNumber>
+    <!-- if not set -->
+    <Description>Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.</Description>
+    <AssemblyTitle>Mirage</AssemblyTitle>
+    <Authors>James Craig</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>Mirage</AssemblyName>
+    <PackageId>Mirage</PackageId>
+    <PackageTags>Mirage;Random;POCO</PackageTags>
+    <PackageProjectUrl>https://github.com/JaCraig/Mirage</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/JaCraig/Mirage/blob/master/LICENSE</PackageLicenseUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.$(BuildNumber)</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Canister.IoC" Version="1.0.41" />
+    <PackageReference Include="BigBook" Version="1.0.9" />
+  </ItemGroup>
+
+</Project>

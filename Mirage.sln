@@ -1,20 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9838A04E-C8B2-4E9A-A389-17F28C116D17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{40480AA0-9491-41E2-9F5D-4BBE590FC8EE}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mirage", "src\Mirage\Mirage.xproj", "{3D36A609-739F-4261-BDCB-4E0B01144EEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0F8C5170-86BB-4204-BF34-9B0E07BCB673}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mirage.Tests", "test\Mirage.Tests\Mirage.Tests.xproj", "{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage", "src\Mirage\Mirage.csproj", "{3D36A609-739F-4261-BDCB-4E0B01144EEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage.Tests", "test\Mirage.Tests\Mirage.Tests.csproj", "{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

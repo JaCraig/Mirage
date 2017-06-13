@@ -1,6 +1,7 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -120,10 +121,75 @@ namespace Mirage.Tests
         }
 
         [Fact]
+        public void NextListNotUnique()
+        {
+            var Random = new Random(1234);
+            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, 5);
+            Assert.Equal(5, Result.Count());
+            Assert.Equal(2, Result.Distinct().Count());
+            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.Equal(2, Result.ElementAt(0));
+            Assert.Equal(5, Result.ElementAt(1));
+            Assert.Equal(2, Result.ElementAt(2));
+            Assert.Equal(5, Result.ElementAt(3));
+            Assert.Equal(2, Result.ElementAt(4));
+        }
+
+        [Fact]
+        public void NextListUnique()
+        {
+            var Random = new Random(1234);
+            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, 3, true);
+            Assert.Equal(3, Result.Count());
+            Assert.Equal(3, Result.Distinct().Count());
+            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.Equal(2, Result.ElementAt(0));
+            Assert.Equal(5, Result.ElementAt(1));
+            Assert.Equal(3, Result.ElementAt(2));
+        }
+
+        [Fact]
+        public void NextNormal()
+        {
+            var Random = new Random(1234);
+            var Result = Random.NextNormal(0.123, 2.41);
+            Assert.Equal(2.7153771346516837, Result.X);
+            Assert.Equal(-1.8644900545154903, Result.Y);
+        }
+
+        [Fact]
         public void NextStringTest()
         {
             var Rand = new Random();
             Assert.NotNull(Rand.Next<string>());
+        }
+
+        [Fact]
+        public void NextWeightedListNotUnique()
+        {
+            var Random = new Random(1234);
+            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, new decimal[] { .35m, .25m, .15m, .15m, .1m }, 5);
+            Assert.Equal(5, Result.Count());
+            Assert.Equal(4, Result.Distinct().Count());
+            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.Equal(2, Result.ElementAt(0));
+            Assert.Equal(4, Result.ElementAt(1));
+            Assert.Equal(1, Result.ElementAt(2));
+            Assert.Equal(5, Result.ElementAt(3));
+            Assert.Equal(1, Result.ElementAt(4));
+        }
+
+        [Fact]
+        public void NextWeightedListUnique()
+        {
+            var Random = new Random(1234);
+            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, new decimal[] { .35m, .25m, .15m, .15m, .1m }, 3, true);
+            Assert.Equal(3, Result.Count());
+            Assert.Equal(3, Result.Distinct().Count());
+            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.Equal(2, Result.ElementAt(0));
+            Assert.Equal(4, Result.ElementAt(1));
+            Assert.Equal(1, Result.ElementAt(2));
         }
 
         [Fact]

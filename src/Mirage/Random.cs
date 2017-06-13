@@ -18,7 +18,6 @@ using BigBook;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage
 {
@@ -46,12 +45,6 @@ namespace Mirage
             GeneratorBuilder = Canister.Builder.Bootstrapper.Resolve<Manager.Builder>();
         }
 
-        /// <summary>
-        /// Gets or sets the generator builder.
-        /// </summary>
-        /// <value>The generator builder.</value>
-        private Manager.Builder GeneratorBuilder { get; set; }
-
         [ThreadStatic]
         private static System.Random Local;
 
@@ -59,6 +52,12 @@ namespace Mirage
         /// The global seed
         /// </summary>
         private readonly System.Random GlobalSeed = new System.Random();
+
+        /// <summary>
+        /// Gets or sets the generator builder.
+        /// </summary>
+        /// <value>The generator builder.</value>
+        private Manager.Builder GeneratorBuilder { get; set; }
 
         /// <summary>
         /// Randomly generates a value of the specified type
@@ -156,13 +155,100 @@ namespace Mirage
         {
             int x = 0;
             var Position = Next(0, list.Count());
-            foreach (T Item in list)
+            return list.ElementAt(Position);
+        }
+
+        /// <summary>
+        /// Picks a list of items from an existing list.
+        /// </summary>
+        /// <typeparam name="T">Type of object in the list</typeparam>
+        /// <param name="list">The list to pick from.</param>
+        /// <param name="count">The number of items to return.</param>
+        /// <param name="unique">if set to <c>true</c> each item is [unique].</param>
+        /// <returns>The resulting list.</returns>
+        public IEnumerable<T> Next<T>(IEnumerable<T> list, int count, bool unique = false)
+        {
+            if (count >= list.Count() && unique)
+                return Shuffle(list);
+            List<T> ReturnValue = new List<T>();
+            int[] PreviousPositions = new int[count];
+            for (int x = 0; x < PreviousPositions.Length; ++x)
             {
-                if (x == Position)
-                    return Item;
-                ++x;
+                PreviousPositions[x] = -1;
             }
-            return default(T);
+            for (int x = 0; x < count; ++x)
+            {
+                while (true)
+                {
+                    var Position = Next(0, list.Count());
+                    if (!unique || !PreviousPositions.Contains(Position))
+                    {
+                        PreviousPositions[x] = Position;
+                        break;
+                    }
+                }
+                ReturnValue.Add(list.ElementAt(PreviousPositions[x]));
+            }
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Returns a list of items from an original weighted list.
+        /// </summary>
+        /// <typeparam name="T">Type of object in the list</typeparam>
+        /// <param name="list">The list to pick from.</param>
+        /// <param name="weights">The weights used for the list (higher numbers mean higher weight).</param>
+        /// <param name="count">The number of items to return.</param>
+        /// <param name="unique">if set to <c>true</c> each item is [unique].</param>
+        /// <returns>The resulting list.</returns>
+        public IEnumerable<T> Next<T>(IEnumerable<T> list, IEnumerable<decimal> weights, int count, bool unique = false)
+        {
+            if (count >= list.Count() && unique)
+                return Shuffle(list);
+            List<T> ReturnValue = new List<T>();
+            int[] PreviousPositions = new int[count];
+            for (int x = 0; x < PreviousPositions.Length; ++x)
+            {
+                PreviousPositions[x] = -1;
+            }
+            var TotalWeight = weights.Sum();
+            for (int x = 0; x < count; ++x)
+            {
+                while (true)
+                {
+                    var TempWeight = Next(0, TotalWeight);
+                    var Position = 0;
+                    for (int y = 0; y < weights.Count(); ++y)
+                    {
+                        TempWeight -= weights.ElementAt(y);
+                        if (TempWeight <= 0)
+                        {
+                            Position = y;
+                            break;
+                        }
+                    }
+                    if (!unique || !PreviousPositions.Contains(Position))
+                    {
+                        PreviousPositions[x] = Position;
+                        break;
+                    }
+                }
+                ReturnValue.Add(list.ElementAt(PreviousPositions[x]));
+            }
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Returns two normally distributed random numbers. Uses Box-Muller transformation.
+        /// </summary>
+        /// <param name="mean">The mean.</param>
+        /// <param name="standardDeviation">The standard deviation.</param>
+        /// <returns>The resulting values.</returns>
+        public (double X, double Y) NextNormal(double mean, double standardDeviation)
+        {
+            var Radius = Math.Sqrt(-2 * Math.Log(Next<double>())) * standardDeviation;
+            var Angle = 2 * Math.PI * Next<double>();
+            return (mean + Radius * Math.Cos(Angle), mean + Radius * Math.Sin(Angle));
         }
 
         /// <summary>

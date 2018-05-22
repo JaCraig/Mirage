@@ -57,7 +57,7 @@ namespace Mirage
         /// Gets or sets the generator builder.
         /// </summary>
         /// <value>The generator builder.</value>
-        private Manager.Builder GeneratorBuilder { get; set; }
+        private Manager.Builder GeneratorBuilder { get; }
 
         /// <summary>
         /// Randomly generates a value of the specified type
@@ -153,7 +153,6 @@ namespace Mirage
         /// <returns>Item that is returned</returns>
         public T Next<T>(IEnumerable<T> list)
         {
-            int x = 0;
             var Position = Next(0, list.Count());
             return list.ElementAt(Position);
         }
@@ -248,7 +247,7 @@ namespace Mirage
         {
             var Radius = Math.Sqrt(-2 * Math.Log(Next<double>())) * standardDeviation;
             var Angle = 2 * Math.PI * Next<double>();
-            return (mean + Radius * Math.Cos(Angle), mean + Radius * Math.Sin(Angle));
+            return (mean + (Radius * Math.Cos(Angle)), mean + (Radius * Math.Sin(Angle)));
         }
 
         /// <summary>
@@ -259,7 +258,7 @@ namespace Mirage
         /// <returns>The shuffled list</returns>
         public IEnumerable<T> Shuffle<T>(IEnumerable<T> list)
         {
-            if (list == null || list.Count() == 0)
+            if (list?.Any() != true)
                 return list;
             return list.OrderBy(x => Next());
         }

@@ -73,8 +73,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min.HasValue ? min : sbyte.MinValue;
-            max = max.HasValue ? max : sbyte.MaxValue;
+            min = min ?? sbyte.MinValue;
+            max = max ?? sbyte.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 

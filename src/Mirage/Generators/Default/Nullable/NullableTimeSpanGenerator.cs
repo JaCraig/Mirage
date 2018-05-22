@@ -54,8 +54,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min.HasValue ? min : TimeSpan.MinValue;
-            max = max.HasValue ? max : TimeSpan.MaxValue;
+            min = min ?? TimeSpan.MinValue;
+            max = max ?? TimeSpan.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 

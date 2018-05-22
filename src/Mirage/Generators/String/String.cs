@@ -70,7 +70,7 @@ namespace Mirage.Generators
             int Counter = 0;
             while (TempBuilder.Length < length)
             {
-                var TempValue = new string(Convert.ToChar(Convert.ToInt32(System.Math.Floor(94 * rand.NextDouble() + 32))), 1);
+                var TempValue = new string(Convert.ToChar(Convert.ToInt32(System.Math.Floor((94 * rand.NextDouble()) + 32))), 1);
                 if (Comparer.IsMatch(TempValue))
                 {
                     if (!AlphaNumbericComparer.IsMatch(TempValue) && numberOfNonAlphaNumericsAllowed > Counter)

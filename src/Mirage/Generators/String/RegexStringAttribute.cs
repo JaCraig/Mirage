@@ -16,11 +16,8 @@ limitations under the License.
 
 using Mirage.Generators.BaseClasses;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
@@ -75,7 +72,7 @@ namespace Mirage.Generators
             int Counter = 0;
             while (TempBuilder.Length < Length)
             {
-                var TempValue = new string(Convert.ToChar(Convert.ToInt32(System.Math.Floor(94 * rand.NextDouble() + 32))), 1);
+                var TempValue = new string(Convert.ToChar(Convert.ToInt32(System.Math.Floor((94 * rand.NextDouble()) + 32))), 1);
                 if (Comparer.IsMatch(TempValue))
                 {
                     if (!AlphaNumbericComparer.IsMatch(TempValue) && NumberOfNonAlphaNumericsAllowed > Counter)

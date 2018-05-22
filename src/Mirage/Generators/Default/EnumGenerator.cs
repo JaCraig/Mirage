@@ -17,16 +17,15 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
     /// <summary>
     /// Randomly generates Enum
     /// </summary>
+    /// <typeparam name="T">Enum type</typeparam>
+    /// <seealso cref="IGenerator{T}"/>
     public class EnumGenerator<T> : IGenerator<T>
     {
         /// <summary>

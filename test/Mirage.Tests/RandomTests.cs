@@ -152,9 +152,9 @@ namespace Mirage.Tests
         public void NextNormal()
         {
             var Random = new Random(1234);
-            var Result = Random.NextNormal(0.123, 2.41);
-            Assert.Equal(2.7153771346516837, Result.X);
-            Assert.Equal(-1.8644900545154903, Result.Y);
+            var (X, Y) = Random.NextNormal(0.123, 2.41);
+            Assert.Equal(2.7153771346516837, X);
+            Assert.Equal(-1.8644900545154903, Y);
         }
 
         [Fact]
@@ -202,10 +202,7 @@ namespace Mirage.Tests
         [Fact]
         public void ThreadSafeNext()
         {
-            Parallel.For(0, 100, x =>
-            {
-                Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20);
-            });
+            Parallel.For(0, 100, x => Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20));
         }
     }
 }

@@ -14,11 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook;
 using Mirage.Generators.BaseClasses;
-using Mirage.Interfaces;
-using System;
-using System.Text;
 
 namespace Mirage.Generators
 {
@@ -31,6 +27,10 @@ namespace Mirage.Generators
         /// <summary>
         /// Constructor
         /// </summary>
+        /// <param name="prefix">if set to <c>true</c> [prefix].</param>
+        /// <param name="middleName">if set to <c>true</c> [middle name].</param>
+        /// <param name="lastName">if set to <c>true</c> [last name].</param>
+        /// <param name="suffix">if set to <c>true</c> [suffix].</param>
         public FemaleNameAttribute(bool prefix = false, bool middleName = false, bool lastName = true, bool suffix = false)
             : base("", "")
         {

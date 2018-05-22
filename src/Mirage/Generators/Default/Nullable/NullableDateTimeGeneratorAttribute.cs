@@ -54,8 +54,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min.HasValue ? min : DateTime.MinValue;
-            max = max.HasValue ? max : DateTime.MaxValue;
+            min = min ?? DateTime.MinValue;
+            max = max ?? DateTime.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 

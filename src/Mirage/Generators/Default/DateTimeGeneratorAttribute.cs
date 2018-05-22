@@ -106,10 +106,8 @@ namespace Mirage.Generators
         /// <returns>The next object</returns>
         public override object NextObj(Random rand)
         {
-            DateTime TempMin;
-            DateTime TempMax;
-            DateTime.TryParse((string)Min, out TempMin);
-            DateTime.TryParse((string)Max, out TempMax);
+            DateTime.TryParse((string)Min, out DateTime TempMin);
+            DateTime.TryParse((string)Max, out DateTime TempMax);
             if (TempMin != default(DateTime) || TempMax != default(DateTime))
                 return new DateTimeGenerator().Next(rand, TempMin, TempMax);
             return new DateTimeGenerator().Next(rand);

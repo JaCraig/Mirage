@@ -14,11 +14,13 @@ namespace Mirage.Tests.BaseClasses
         public TestingDirectoryFixture()
         {
             if (Canister.Builder.Bootstrapper == null)
+            {
                 Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                        .AddAssembly(typeof(TestingDirectoryFixture).GetTypeInfo().Assembly)
-                        .RegisterMirage()
-                        .RegisterFileCurator()
-                        .Build();
+                       .AddAssembly(typeof(TestingDirectoryFixture).GetTypeInfo().Assembly)
+                       .RegisterMirage()
+                       .RegisterFileCurator()
+                       .Build();
+            }
         }
 
         public void Dispose()

@@ -106,10 +106,8 @@ namespace Mirage.Generators
         /// <returns>The next object</returns>
         public override object NextObj(Random rand)
         {
-            TimeSpan TempMin;
-            TimeSpan TempMax;
-            TimeSpan.TryParse((string)Min, out TempMin);
-            TimeSpan.TryParse((string)Max, out TempMax);
+            TimeSpan.TryParse((string)Min, out TimeSpan TempMin);
+            TimeSpan.TryParse((string)Max, out TimeSpan TempMax);
             if (TempMin != default(TimeSpan) || TempMax != default(TimeSpan))
                 return new TimeSpanGenerator().Next(rand, TempMin, TempMax);
             return new TimeSpanGenerator().Next(rand);

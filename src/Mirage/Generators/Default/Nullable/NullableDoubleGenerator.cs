@@ -40,17 +40,18 @@ namespace Mirage.Generators.Default.Nullable
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableDoubleGeneratorAttribute"/> class.
         /// </summary>
-        public NullableDoubleGeneratorAttribute() : base(0, 1)
+        public NullableDoubleGeneratorAttribute()
+            : this(0, 1)
         {
         }
+
+        private const double EPSILON = 0.0001;
 
         /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(double?);
-
-        private const double EPSILON = 0.0001;
 
         /// <summary>
         /// Generates a random value of the specified type

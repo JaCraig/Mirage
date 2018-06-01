@@ -40,7 +40,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="IntGeneratorAttribute"/> class.
         /// </summary>
-        public IntGeneratorAttribute() : base(int.MinValue, int.MaxValue)
+        public IntGeneratorAttribute()
+            : this(int.MinValue, int.MaxValue)
         {
         }
 

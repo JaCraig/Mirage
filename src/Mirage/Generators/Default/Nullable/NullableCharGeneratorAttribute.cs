@@ -39,7 +39,8 @@ namespace Mirage.Generators.Default.Nullable
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableCharGeneratorAttribute"/> class.
         /// </summary>
-        public NullableCharGeneratorAttribute() : base(char.MinValue, char.MaxValue)
+        public NullableCharGeneratorAttribute()
+            : this(char.MinValue, char.MaxValue)
         {
         }
 

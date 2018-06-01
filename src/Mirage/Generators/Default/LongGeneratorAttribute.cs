@@ -40,7 +40,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="LongGeneratorAttribute"/> class.
         /// </summary>
-        public LongGeneratorAttribute() : base(long.MinValue, long.MaxValue)
+        public LongGeneratorAttribute()
+            : this(long.MinValue, long.MaxValue)
         {
         }
 

@@ -40,7 +40,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="UShortGeneratorAttribute"/> class.
         /// </summary>
-        public UShortGeneratorAttribute() : base(ushort.MinValue, ushort.MaxValue)
+        public UShortGeneratorAttribute()
+            : this(ushort.MinValue, ushort.MaxValue)
         {
         }
 

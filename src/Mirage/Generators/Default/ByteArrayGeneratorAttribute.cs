@@ -40,7 +40,8 @@ namespace Mirage.Generators.Default
         /// <summary>
         /// Initializes a new instance of the <see cref="ByteArrayGeneratorAttribute"/> class.
         /// </summary>
-        public ByteArrayGeneratorAttribute() : base(1, 100)
+        public ByteArrayGeneratorAttribute()
+            : this(1, 100)
         {
         }
 

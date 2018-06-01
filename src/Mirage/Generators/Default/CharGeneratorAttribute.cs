@@ -40,7 +40,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="CharGeneratorAttribute"/> class.
         /// </summary>
-        public CharGeneratorAttribute() : base(char.MinValue, char.MaxValue)
+        public CharGeneratorAttribute()
+            : this(char.MinValue, char.MaxValue)
         {
         }
 

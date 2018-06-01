@@ -40,7 +40,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="DecimalGeneratorAttribute"/> class.
         /// </summary>
-        public DecimalGeneratorAttribute() : base(0, 1)
+        public DecimalGeneratorAttribute()
+            : this(0, 1)
         {
         }
 

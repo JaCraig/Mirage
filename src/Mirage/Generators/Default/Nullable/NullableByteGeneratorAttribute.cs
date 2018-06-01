@@ -41,7 +41,7 @@ namespace Mirage.Generators.Nullable
         /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
         /// </summary>
         public NullableByteGeneratorAttribute()
-            : base(byte.MinValue, byte.MaxValue)
+            : this(byte.MinValue, byte.MaxValue)
         {
         }
 

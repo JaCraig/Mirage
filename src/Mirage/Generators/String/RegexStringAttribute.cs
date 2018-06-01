@@ -27,6 +27,14 @@ namespace Mirage.Generators
     public class RegexStringAttribute : StringGeneratorBase
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="RegexStringAttribute"/> class.
+        /// </summary>
+        public RegexStringAttribute()
+            : this(0)
+        {
+        }
+
+        /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="length">Length of the string to generate</param>

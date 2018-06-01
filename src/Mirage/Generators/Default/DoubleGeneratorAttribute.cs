@@ -40,17 +40,18 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="DoubleGeneratorAttribute"/> class.
         /// </summary>
-        public DoubleGeneratorAttribute() : base(0, 1)
+        public DoubleGeneratorAttribute()
+            : this(0d, 1d)
         {
         }
+
+        private const double EPSILON = 0.0001;
 
         /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(double);
-
-        private const double EPSILON = 0.0001;
 
         /// <summary>
         /// Generates a random value of the specified type

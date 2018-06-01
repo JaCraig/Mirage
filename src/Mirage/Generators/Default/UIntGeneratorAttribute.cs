@@ -40,7 +40,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="UIntGeneratorAttribute"/> class.
         /// </summary>
-        public UIntGeneratorAttribute() : base(uint.MinValue, uint.MaxValue)
+        public UIntGeneratorAttribute()
+            : this(uint.MinValue, uint.MaxValue)
         {
         }
 

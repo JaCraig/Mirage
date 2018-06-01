@@ -40,17 +40,18 @@ namespace Mirage.Generators
         /// <summary>
         /// Initializes a new instance of the <see cref="FloatGeneratorAttribute"/> class.
         /// </summary>
-        public FloatGeneratorAttribute() : base(0, 1)
+        public FloatGeneratorAttribute()
+            : this(0, 1)
         {
         }
+
+        private const float EPSILON = 0.0001f;
 
         /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(float);
-
-        private const float EPSILON = 0.0001f;
 
         /// <summary>
         /// Generates a random value of the specified type

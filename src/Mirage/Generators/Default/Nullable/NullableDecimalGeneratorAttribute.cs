@@ -39,7 +39,8 @@ namespace Mirage.Generators.Default.Nullable
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableDecimalGeneratorAttribute"/> class.
         /// </summary>
-        public NullableDecimalGeneratorAttribute() : base(0, 1)
+        public NullableDecimalGeneratorAttribute()
+            : this(0, 1)
         {
         }
 

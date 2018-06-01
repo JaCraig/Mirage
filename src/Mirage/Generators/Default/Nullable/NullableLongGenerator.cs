@@ -40,7 +40,8 @@ namespace Mirage.Generators.Default.Nullable
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableLongGeneratorAttribute"/> class.
         /// </summary>
-        public NullableLongGeneratorAttribute() : base(long.MinValue, long.MaxValue)
+        public NullableLongGeneratorAttribute()
+            : this(long.MinValue, long.MaxValue)
         {
         }
 

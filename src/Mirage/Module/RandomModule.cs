@@ -18,10 +18,6 @@ using Canister.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Mirage.Generators;
 using Mirage.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Module
 {

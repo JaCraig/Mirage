@@ -41,7 +41,7 @@ namespace Mirage.Generators
         /// Initializes a new instance of the <see cref="ByteGeneratorAttribute"/> class.
         /// </summary>
         public ByteGeneratorAttribute()
-            : base(byte.MinValue, byte.MaxValue)
+            : this(byte.MinValue, byte.MaxValue)
         {
         }
 

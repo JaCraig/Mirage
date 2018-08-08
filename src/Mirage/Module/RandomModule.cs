@@ -44,6 +44,7 @@ namespace Mirage.Module
             bootstrapper.Register(typeof(EnumGenerator<>));
             bootstrapper.Register(typeof(ClassGenerator<>));
             bootstrapper.Register<Manager.Builder>(ServiceLifetime.Singleton);
+            bootstrapper.Register<Random>();
         }
     }
 }

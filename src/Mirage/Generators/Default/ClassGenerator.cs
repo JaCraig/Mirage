@@ -18,10 +18,7 @@ using BigBook;
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
@@ -124,7 +121,7 @@ namespace Mirage.Generators
                 return null;
             var FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
             var NextFunction = FinalClassType.GetTypeInfo().GetMethod("Next", new Type[] { typeof(Random) });
-            var Generator = Canister.Builder.Bootstrapper.Resolve(FinalClassType);
+            var Generator = Canister.Builder.Bootstrapper.Resolve(FinalClassType, null);
             return NextFunction.Invoke(Generator, new object[] { rand });
         }
     }

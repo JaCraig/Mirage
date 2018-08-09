@@ -18,6 +18,8 @@ using BigBook;
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace Mirage.Generators
@@ -41,15 +43,7 @@ namespace Mirage.Generators
         /// <returns>The randomly generated class</returns>
         public T Next(Random rand)
         {
-            var ReturnItem = Activator.CreateInstance<T>();
-            System.Type ObjectType = typeof(T);
-            foreach (PropertyInfo Property in ObjectType.GetProperties())
-            {
-                var Attribute = Property.Attribute<GeneratorAttributeBase>();
-                if (Attribute != null)
-                    ReturnItem.Property(Property, Attribute.NextObj(rand));
-            }
-            return ReturnItem;
+            return (T)NextObj(rand, new List<object>());
         }
 
         /// <summary>
@@ -68,10 +62,24 @@ namespace Mirage.Generators
         /// Gets a random version of the class
         /// </summary>
         /// <param name="rand">Random generator used</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The randonly generated class</returns>
-        public object NextObj(Random rand)
+        public object NextObj(Random rand, List<object> previouslySeen)
         {
-            return Activator.CreateInstance<T>();
+            var PreviousItem = previouslySeen.Find(x => x.GetType() == typeof(T));
+            if (PreviousItem != null)
+                return PreviousItem;
+            var ReturnItem = Activator.CreateInstance<T>();
+            previouslySeen = previouslySeen.ToList();
+            previouslySeen.Add(ReturnItem);
+            Type ObjectType = typeof(T);
+            foreach (PropertyInfo Property in ObjectType.GetProperties())
+            {
+                var Attribute = Property.Attribute<GeneratorAttributeBase>();
+                if (Attribute != null)
+                    ReturnItem.Property(Property, Attribute.NextObj(rand, previouslySeen));
+            }
+            return ReturnItem;
         }
     }
 
@@ -114,15 +122,16 @@ namespace Mirage.Generators
         /// Generates next object
         /// </summary>
         /// <param name="rand">The rand.</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand)
+        public override object NextObj(Random rand, List<object> previouslySeen)
         {
             if (ClassType == null)
                 return null;
             var FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
-            var NextFunction = FinalClassType.GetTypeInfo().GetMethod("Next", new Type[] { typeof(Random) });
+            var NextFunction = FinalClassType.GetTypeInfo().GetMethod("NextObj", new Type[] { typeof(Random), typeof(List<object>) });
             var Generator = Canister.Builder.Bootstrapper.Resolve(FinalClassType, null);
-            return NextFunction.Invoke(Generator, new object[] { rand });
+            return NextFunction.Invoke(Generator, new object[] { rand, previouslySeen });
         }
     }
 }

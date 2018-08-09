@@ -16,8 +16,6 @@ limitations under the License.
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Interfaces
 {
@@ -60,7 +58,8 @@ namespace Mirage.Interfaces
         /// Generates a random value and returns it as an object
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        object NextObj(Random rand);
+        object NextObj(Random rand, List<object> previouslySeen);
     }
 }

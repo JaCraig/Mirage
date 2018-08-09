@@ -17,6 +17,7 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace Mirage.Generators
@@ -62,8 +63,9 @@ namespace Mirage.Generators
         /// Randomly generates an object
         /// </summary>
         /// <param name="rand">Random number generator</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        public object NextObj(Random rand)
+        public object NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }
@@ -108,8 +110,9 @@ namespace Mirage.Generators
         /// Generates next object
         /// </summary>
         /// <param name="rand">The rand.</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand)
+        public override object NextObj(Random rand, List<object> previouslySeen)
         {
             if (EnumType == null)
                 return null;

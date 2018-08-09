@@ -60,8 +60,9 @@ namespace Mirage.Generators.Default
         /// Generates a random value and returns it as an object
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        public object NextObj(Random rand)
+        public object NextObj(Random rand, List<object> previouslySeen)
         {
             return rand.Next(typeof(List<>).MakeGenericType(TypeGenerated.GetGenericArguments()[0]));
         }
@@ -109,13 +110,14 @@ namespace Mirage.Generators.Default
         /// Generates next object
         /// </summary>
         /// <param name="rand">The rand.</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand)
+        public override object NextObj(Random rand, List<object> previouslySeen)
         {
             if (ClassType == null)
                 return null;
             var Generator = (IGenerator)Canister.Builder.Bootstrapper.Resolve(typeof(IEnumerableGenerator<>).MakeGenericType(ClassType), null);
-            return Generator.NextObj(rand);
+            return Generator.NextObj(rand, previouslySeen);
         }
     }
 }

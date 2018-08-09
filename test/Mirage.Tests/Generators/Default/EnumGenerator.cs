@@ -1,9 +1,6 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Mirage.Tests.Generators
@@ -14,7 +11,7 @@ namespace Mirage.Tests.Generators
         public void Next()
         {
             var Generator = new EnumGeneratorAttribute(typeof(MyTest));
-            Assert.InRange((MyTest)Generator.NextObj(new Random()), MyTest.Item1, MyTest.Item3);
+            Assert.InRange((MyTest)Generator.NextObj(new Random(), new List<object>()), MyTest.Item1, MyTest.Item3);
         }
 
         public enum MyTest

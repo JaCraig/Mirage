@@ -26,6 +26,16 @@ namespace Mirage.Tests
     public class RandomTests : TestingDirectoryFixture
     {
         [Fact]
+        public void CircularReferenceClassGenerator()
+        {
+            var Rand = new Random(1231415);
+            var Item = Rand.Next<SelfReferenceClass1>();
+            Assert.NotNull(Item.Other);
+            Assert.Same(Item, Item.Other.Other);
+            Assert.NotSame(Item.Other, Item.Other2);
+        }
+
+        [Fact]
         public void ClassGenerator()
         {
             var Rand = new Random(1231415);
@@ -263,5 +273,20 @@ namespace Mirage.Tests
         {
             Parallel.For(0, 100, x => Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20));
         }
+    }
+
+    public class SelfReferenceClass1
+    {
+        [ClassGenerator(typeof(SelfReferenceClass2))]
+        public SelfReferenceClass2 Other { get; set; }
+
+        [ClassGenerator(typeof(SelfReferenceClass2))]
+        public SelfReferenceClass2 Other2 { get; set; }
+    }
+
+    public class SelfReferenceClass2
+    {
+        [ClassGenerator(typeof(SelfReferenceClass1))]
+        public SelfReferenceClass1 Other { get; set; }
     }
 }

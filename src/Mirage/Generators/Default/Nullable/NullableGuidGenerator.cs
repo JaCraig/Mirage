@@ -17,6 +17,7 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Mirage.Generators.Default.Nullable
 {
@@ -73,8 +74,9 @@ namespace Mirage.Generators.Default.Nullable
         /// Generates next object
         /// </summary>
         /// <param name="rand">The rand.</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand)
+        public override object NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

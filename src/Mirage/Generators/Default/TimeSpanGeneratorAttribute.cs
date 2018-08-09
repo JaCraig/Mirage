@@ -17,6 +17,7 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Mirage.Generators
 {
@@ -60,8 +61,9 @@ namespace Mirage.Generators
         /// Generates next object
         /// </summary>
         /// <param name="rand">Random number generator</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public object NextObj(Random rand)
+        public object NextObj(Random rand, List<object> previouslySeen)
         {
             if (TimeSpan.MinValue != default(TimeSpan) || TimeSpan.MaxValue != default(TimeSpan))
                 return Next(rand, TimeSpan.MinValue, TimeSpan.MaxValue);
@@ -103,8 +105,9 @@ namespace Mirage.Generators
         /// Generates next object
         /// </summary>
         /// <param name="rand">Random number generator</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand)
+        public override object NextObj(Random rand, List<object> previouslySeen)
         {
             TimeSpan.TryParse((string)Min, out TimeSpan TempMin);
             TimeSpan.TryParse((string)Max, out TimeSpan TempMax);

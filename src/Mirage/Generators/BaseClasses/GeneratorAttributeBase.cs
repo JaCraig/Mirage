@@ -17,8 +17,6 @@ limitations under the License.
 using Mirage.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators.BaseClasses
 {
@@ -61,7 +59,8 @@ namespace Mirage.Generators.BaseClasses
         /// Generates next object
         /// </summary>
         /// <param name="rand">The rand.</param>
+        /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public abstract object NextObj(Random rand);
+        public abstract object NextObj(Random rand, List<object> previouslySeen);
     }
 }

@@ -96,7 +96,7 @@ namespace Mirage
             var Generator = GeneratorBuilder.GetGenerator(objectType);
             if (Generator == null)
                 throw new ArgumentOutOfRangeException("The type specified, " + objectType.Name + ", does not have a default generator.");
-            return Generator.NextObj(this);
+            return Generator.NextObj(this, new List<object>());
         }
 
         /// <summary>

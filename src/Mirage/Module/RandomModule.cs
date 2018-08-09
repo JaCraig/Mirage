@@ -17,6 +17,7 @@ limitations under the License.
 using Canister.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Mirage.Generators;
+using Mirage.Generators.Default;
 using Mirage.Interfaces;
 
 namespace Mirage.Module
@@ -43,6 +44,7 @@ namespace Mirage.Module
             bootstrapper.RegisterAll<IGenerator>();
             bootstrapper.Register(typeof(EnumGenerator<>));
             bootstrapper.Register(typeof(ClassGenerator<>));
+            bootstrapper.Register(typeof(IEnumerableGenerator<>));
             bootstrapper.Register<Manager.Builder>(ServiceLifetime.Singleton);
             bootstrapper.Register<Random>();
         }

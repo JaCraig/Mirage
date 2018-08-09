@@ -69,10 +69,18 @@ namespace Mirage
         /// </exception>
         public T Next<T>()
         {
-            var Generator = GeneratorBuilder.GetGenerator<T>();
-            if (Generator == null)
-                throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.");
-            return Generator.Next(this);
+            return (T)Next(typeof(T));
+        }
+
+        /// <summary>
+        /// Randomly generates an IEnumerable of the specified type.
+        /// </summary>
+        /// <param name="objectType">Type of the object.</param>
+        /// <param name="amount">The amount.</param>
+        /// <returns>The randomly generated value</returns>
+        public IEnumerable<object> Next(Type objectType, int amount)
+        {
+            return amount.Times(x => Next(objectType));
         }
 
         /// <summary>

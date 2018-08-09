@@ -14,9 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using BigBook;
 using Mirage.Generators;
+using Mirage.Generators.Default;
 using Mirage.Interfaces;
 using System;
+using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,15 +67,7 @@ namespace Mirage.Manager
         /// <returns>The generator specified</returns>
         public IGenerator<T> GetGenerator<T>()
         {
-            var TypeGenerated = typeof(T);
-            if (Generators.TryGetValue(TypeGenerated, out IGenerator Generator))
-                return Generator as IGenerator<T>;
-            var TypeGeneratedInfo = TypeGenerated.GetTypeInfo();
-            if (TypeGeneratedInfo.IsEnum)
-                return new EnumGenerator<T>();
-            if (TypeGeneratedInfo.IsClass)
-                return new ClassGenerator<T>();
-            return null;
+            return GetGenerator(typeof(T)) as IGenerator<T>;
         }
 
         /// <summary>
@@ -87,6 +82,14 @@ namespace Mirage.Manager
             var TypeGeneratedInfo = classType.GetTypeInfo();
             if (TypeGeneratedInfo.IsEnum)
                 return new EnumGeneratorAttribute(classType);
+            if (TypeGeneratedInfo.IsArray)
+                return new ArrayGeneratorAttribute(classType.GetElementType(), 1, 100);
+            if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IDictionary)))
+                return new DictionaryGeneratorAttribute(classType.GetGenericArguments()[0], classType.GetGenericArguments()[1], 1, 100);
+            if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IList)))
+                return new ListGeneratorAttribute(classType.GetGenericArguments()[0], 1, 100);
+            if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IEnumerable)))
+                return new IEnumerableGeneratorAttribute(classType, 1, 100);
             if (TypeGeneratedInfo.IsClass)
                 return new ClassGeneratorAttribute(classType);
             return null;

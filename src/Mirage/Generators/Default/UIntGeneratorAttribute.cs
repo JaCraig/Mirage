@@ -70,7 +70,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public uint Next(Random rand, uint min, uint max)
         {
-            return min + (uint)((max - min) * rand.NextDouble());
+            return (uint)((ulong)min + (ulong)(((ulong)max - (ulong)min) * rand.NextDouble()));
         }
 
         /// <summary>

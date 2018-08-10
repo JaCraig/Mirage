@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Valkyrie;
 using Xunit;
 
 namespace Mirage.Tests
@@ -21,6 +22,10 @@ namespace Mirage.Tests
 
         [IntGenerator(1, 100)]
         public int D { get; set; }
+
+        [StringGenerator(100)]
+        [Contains(']')]
+        public string TestString { get; set; }
     }
 
     public class RandomTests : TestingDirectoryFixture
@@ -42,7 +47,8 @@ namespace Mirage.Tests
             var Item = Rand.Next<RandomTestClass>();
             Assert.Equal(-82, Item.A);
             Assert.Equal("Lorem ipsum dolor sit amet. ", Item.B);
-            Assert.Equal(System.Math.Round(0.9043f, 4), System.Math.Round(Item.C, 4));
+            Assert.Equal("]w@&BJUzH`W$;oz'Rw7Qaf+l53!$Kg-QX5vr1*JKfPkn_`rSHJrQYZktkRn/IQO^S&I%v'sGLih0x;,S>LZ!sZv{G!&]9;\"5!-:X", Item.TestString);
+            Assert.Equal(Math.Round(0.9043f, 4), Math.Round(Item.C, 4));
             Assert.InRange(Item.D, 1, 100);
         }
 

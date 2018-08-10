@@ -15,13 +15,9 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
-using Mirage.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
@@ -34,7 +30,42 @@ namespace Mirage.Generators
         /// <summary>
         /// Constructor
         /// </summary>
-        public StringGeneratorAttribute() : base("", "") { }
+        public StringGeneratorAttribute()
+            : this(10)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StringGeneratorAttribute"/> class.
+        /// </summary>
+        /// <param name="length">The length.</param>
+        /// <param name="allowedCharacters">The allowed characters.</param>
+        /// <param name="numberOfNonAlphaNumericsAllowed">The number of non alpha numerics allowed.</param>
+        public StringGeneratorAttribute(int length, string allowedCharacters = ".", int numberOfNonAlphaNumericsAllowed = int.MaxValue)
+            : base("", "")
+        {
+            Length = length;
+            AllowedCharacters = allowedCharacters;
+            NumberOfNonAlphaNumericsAllowed = numberOfNonAlphaNumericsAllowed;
+        }
+
+        /// <summary>
+        /// Gets the allowed characters.
+        /// </summary>
+        /// <value>The allowed characters.</value>
+        public string AllowedCharacters { get; }
+
+        /// <summary>
+        /// Gets the length.
+        /// </summary>
+        /// <value>The length.</value>
+        public int Length { get; }
+
+        /// <summary>
+        /// Gets the number of non alpha numerics allowed.
+        /// </summary>
+        /// <value>The number of non alpha numerics allowed.</value>
+        public int NumberOfNonAlphaNumericsAllowed { get; }
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -43,7 +74,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            return NextString(rand, 10);
+            return NextString(rand, Length, AllowedCharacters, NumberOfNonAlphaNumericsAllowed);
         }
 
         /// <summary>

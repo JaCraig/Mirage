@@ -19,6 +19,7 @@ using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 
@@ -75,9 +76,22 @@ namespace Mirage.Generators
             Type ObjectType = typeof(T);
             foreach (PropertyInfo Property in ObjectType.GetProperties())
             {
+                bool Generated = false;
+                var ValidationAttributes = Property.Attributes<ValidationAttribute>();
                 var Attribute = Property.Attribute<GeneratorAttributeBase>();
                 if (Attribute != null)
-                    ReturnItem.Property(Property, Attribute.NextObj(rand, previouslySeen));
+                {
+                    do
+                    {
+                        var TempValue = Attribute.NextObj(rand, previouslySeen);
+                        if (ValidationAttributes.All(x => x.IsValid(TempValue)))
+                        {
+                            ReturnItem.Property(Property, TempValue);
+                            Generated = true;
+                        }
+                    }
+                    while (!Generated);
+                }
             }
             return ReturnItem;
         }

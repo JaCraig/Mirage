@@ -4,6 +4,7 @@ using Mirage.Registration;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Valkyrie.Registration;
 using Xunit;
 
 namespace Mirage.Tests.BaseClasses
@@ -19,6 +20,7 @@ namespace Mirage.Tests.BaseClasses
                        .AddAssembly(typeof(TestingDirectoryFixture).GetTypeInfo().Assembly)
                        .RegisterMirage()
                        .RegisterFileCurator()
+                       .RegisterValkyrie()
                        .Build();
             }
         }

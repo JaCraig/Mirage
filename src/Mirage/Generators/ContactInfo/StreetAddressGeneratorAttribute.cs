@@ -14,11 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook;
 using Mirage.Generators.BaseClasses;
-using Mirage.Interfaces;
-using System;
-using System.Text;
 
 namespace Mirage.Generators
 {
@@ -38,11 +34,11 @@ namespace Mirage.Generators
 
         private readonly string[] AddressFormats = { "#####", "####", "###" };
 
-        private readonly string[] SecondLineAddressFormat = { "Apt. #", "Apt. ##", "Apt. ###", "Apt. @", "Apt. @#", "Suite ###" };
+        private readonly string[] SecondLineAddressFormat = { "Apt. #", "Apt. ##", "Apt. ###", "Apt. @", "Apt. @#", "Suite #", "Suite ##", "Suite ###", "Suite @", "Suite @#" };
 
-        private readonly string[] StreetSuffix = { "Avenue", "Bypass", "Center", "Circle", "Corner", "Court", "Cove", "Creek", "Crossing",
+        private readonly string[] StreetSuffix = { "Alley", "Avenue", "Bypass", "Center", "Circle", "Corner", "Court", "Cove", "Creek", "Crossing",
                                             "Drive", "Estates", "Expressway", "Freeway", "Highway", "Junction", "Lane", "Loop",
-                                            "Park", "Parkway", "Pass", "Plaza", "Road", "Route", "Street", "Turnpike" };
+                                            "Park", "Parkway", "Pass", "Plaza", "Road", "Route", "Street", "Turnpike","Way" };
 
         /// <summary>
         /// Generates a random value of the specified type

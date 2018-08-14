@@ -14,11 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook;
 using Mirage.Generators.BaseClasses;
-using Mirage.Interfaces;
-using System;
-using System.Text;
 
 namespace Mirage.Generators
 {
@@ -36,7 +32,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] NameSuffixes = { "Jr.", "Sr.", "II", "III", "IV", "M.D.", "Ph.D." };
+        private readonly string[] NameSuffixes = { "Jr.", "Sr.", "II", "III", "IV", "M.D.", "Ph.D.", "DDS" };
 
         /// <summary>
         /// Generates a random value of the specified type

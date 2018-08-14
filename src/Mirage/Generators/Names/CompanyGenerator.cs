@@ -14,11 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook;
 using Mirage.Generators.BaseClasses;
-using Mirage.Interfaces;
-using System;
-using System.Text;
 
 namespace Mirage.Generators
 {
@@ -51,6 +47,42 @@ namespace Mirage.Generators
                                             "Sebben & Sebben","Planet Express","Applied Cryogenics","Initech","Rekall, Inc.",
                                             "Zorg Industries","Blue Sun Corporation","Venture Industries" };
 
+        private readonly string[] CompanySuffix =
+        {
+            "Associates",
+            "Corporation",
+            "Corp",
+            "Industries",
+            "Holdings",
+            "Enterprises",
+            "Company",
+            "Consortium",
+            "International",
+            "Creative",
+            "Design",
+            "Digital",
+            "Media",
+            "Studio",
+            "Communications",
+            "Productions",
+            "Bank",
+            "PC",
+            "Limited",
+            "Incorporated",
+            "Ltd",
+            "Trust",
+            "Co",
+            "GmbH",
+            "LC",
+            "LP",
+            "LLLP",
+            "LLP",
+            "Inc",
+            "and Sons",
+            "LLC",
+            "Group"
+        };
+
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
@@ -58,7 +90,19 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            return rand.Next(CompanyNames);
+            if (rand.Next<bool>())
+            {
+                return rand.Next(CompanyNames);
+            }
+            if (rand.Next<bool>())
+            {
+                return new LastNameAttribute().Next(rand) + " " + rand.Next(CompanySuffix);
+            }
+            if (rand.Next<bool>())
+            {
+                return new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand);
+            }
+            return new LastNameAttribute().Next(rand) + ", " + new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand);
         }
     }
 }

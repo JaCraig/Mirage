@@ -1,10 +1,6 @@
-﻿using Mirage.Tests.BaseClasses;
-using BigBook;
+﻿using BigBook;
 using Mirage.Generators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Mirage.Tests.BaseClasses;
 using Xunit;
 
 namespace Mirage.Tests.Generators
@@ -16,8 +12,8 @@ namespace Mirage.Tests.Generators
         {
             var Generator = new BoolGeneratorAttribute();
             var Rand = new Random();
-            Assert.Contains(true, 100.Times(x => Generator.Next(Rand)));
-            Assert.Contains(false, 100.Times(x => Generator.Next(Rand)));
+            Assert.Contains(true, 100.Times(_ => Generator.Next(Rand)));
+            Assert.Contains(false, 100.Times(_ => Generator.Next(Rand)));
         }
     }
 }

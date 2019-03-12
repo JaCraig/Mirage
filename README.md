@@ -85,6 +85,7 @@ This will create an object of the type specified and randomly assign values to t
 17. Lorem Ipsum
 18. Pattern based
 19. Regex based
+20. ["Problem" strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 
 
 ## Adding Your Own Generator
@@ -108,8 +109,10 @@ Install-Package Mirage
 
 In order to build the library you will require the following:
 
-1. Visual Studio 2015 with Update 3
-2. .Net Core 1.0 SDK
+1. Visual Studio 2017
 
 Other than that, just clone the project and you should be able to load the solution and build without too much effort.
 
+## Other Info
+
+The problem strings generator is based off of the Max Woolf's ["Big List of Naughty Strings"](https://github.com/minimaxir/big-list-of-naughty-strings) which is MIT licensed.

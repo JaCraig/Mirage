@@ -16,8 +16,6 @@ limitations under the License.
 
 using BigBook;
 using Mirage.Generators.BaseClasses;
-using Mirage.Interfaces;
-using System;
 using System.Text;
 
 namespace Mirage.Generators
@@ -32,9 +30,9 @@ namespace Mirage.Generators
         /// Constructor
         /// </summary>
         /// <param name="numberOfParagraphs">Number of paragraphs</param>
-        /// <param name="maxSentenceLength">Maximum sentence length</param>
-        /// <param name="minSentenceLength">Minimum sentence length</param>
         /// <param name="numberOfSentences">Number of sentences per paragraph</param>
+        /// <param name="minSentenceLength">Minimum sentence length</param>
+        /// <param name="maxSentenceLength">Maximum sentence length</param>
         public LoremIpsumAttribute(int numberOfParagraphs = 1, int numberOfSentences = 1,
             int minSentenceLength = 4, int maxSentenceLength = 10)
             : base("", "")
@@ -44,26 +42,6 @@ namespace Mirage.Generators
             MinSentenceLength = minSentenceLength;
             MaxSentenceLength = maxSentenceLength;
         }
-
-        /// <summary>
-        /// Maximum sentence length
-        /// </summary>
-        public int MaxSentenceLength { get; protected set; }
-
-        /// <summary>
-        /// Minimum sentence length
-        /// </summary>
-        public int MinSentenceLength { get; protected set; }
-
-        /// <summary>
-        /// Number of paragraphs
-        /// </summary>
-        public int NumberOfParagraphs { get; protected set; }
-
-        /// <summary>
-        /// Number of sentences
-        /// </summary>
-        public int NumberOfSentences { get; protected set; }
 
         private readonly string[] Words = { "consetetur", "sadipscing", "elitr", "sed", "diam", "nonumy", "eirmod",
         "tempor", "invidunt", "ut", "labore", "et", "dolore", "magna", "aliquyam", "erat", "sed", "diam", "voluptua",
@@ -112,6 +90,26 @@ namespace Mirage.Generators
         "rebum", "stet", "clita", "kasd", "gubergren", "no", "sea", "takimata", "sanctus", "est", "lorem", "ipsum" };
 
         /// <summary>
+        /// Maximum sentence length
+        /// </summary>
+        public int MaxSentenceLength { get; protected set; }
+
+        /// <summary>
+        /// Minimum sentence length
+        /// </summary>
+        public int MinSentenceLength { get; protected set; }
+
+        /// <summary>
+        /// Number of paragraphs
+        /// </summary>
+        public int NumberOfParagraphs { get; protected set; }
+
+        /// <summary>
+        /// Number of sentences
+        /// </summary>
+        public int NumberOfSentences { get; protected set; }
+
+        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
@@ -134,8 +132,8 @@ namespace Mirage.Generators
         /// <summary>
         /// Creates a Lorem Ipsum sentence.
         /// </summary>
-        /// <param name="numberOfWords">Number of words for the sentence</param>
         /// <param name="rand">Random number generator using</param>
+        /// <param name="numberOfWords">Number of words for the sentence</param>
         /// <returns>A string containing Lorem Ipsum text</returns>
         protected string NextSentence(Random rand, int numberOfWords)
         {

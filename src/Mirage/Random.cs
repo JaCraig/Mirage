@@ -80,7 +80,7 @@ namespace Mirage
         /// <returns>The randomly generated value</returns>
         public IEnumerable<object> Next(Type objectType, int amount)
         {
-            return amount.Times(x => Next(objectType));
+            return amount.Times(_ => Next(objectType));
         }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace Mirage
             var Generator = GeneratorBuilder.GetGenerator<T>();
             if (Generator == null)
                 throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.");
-            return amount.Times(x => Generator.Next(this));
+            return amount.Times(_ => Generator.Next(this));
         }
 
         /// <summary>
@@ -150,7 +150,7 @@ namespace Mirage
             var Generator = GeneratorBuilder.GetGenerator<T>();
             if (Generator == null)
                 throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.");
-            return amount.Times(x => Generator.Next(this, min, max));
+            return amount.Times(_ => Generator.Next(this, min, max));
         }
 
         /// <summary>
@@ -268,7 +268,7 @@ namespace Mirage
         {
             if (list?.Any() != true)
                 return list;
-            return list.OrderBy(x => Next());
+            return list.OrderBy(_ => Next());
         }
 
         /// <summary>

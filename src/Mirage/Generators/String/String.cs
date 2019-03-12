@@ -81,12 +81,12 @@ namespace Mirage.Generators
         /// Returns a randomly generated string of a specified length, containing only a set of
         /// characters, and at max a specified number of non alpha numeric characters.
         /// </summary>
+        /// <param name="rand">Random number generator</param>
         /// <param name="length">Length of the string</param>
         /// <param name="allowedCharacters">Characters allowed in the string</param>
         /// <param name="numberOfNonAlphaNumericsAllowed">
         /// Number of non alpha numeric characters allowed.
         /// </param>
-        /// <param name="rand">Random number generator</param>
         /// <returns>
         /// A randomly generated string of a specified length, containing only a set of characters,
         /// and at max a specified number of non alpha numeric characters.

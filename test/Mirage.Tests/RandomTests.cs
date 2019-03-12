@@ -1,4 +1,5 @@
 ﻿using Mirage.Generators;
+using Mirage.Generators.String;
 using Mirage.Tests.BaseClasses;
 using System;
 using System.Collections.Generic;
@@ -268,6 +269,14 @@ namespace Mirage.Tests
         }
 
         [Fact]
+        public void ProblemStrings()
+        {
+            var Rand = new Random(1231415);
+            var Result = new ProblemStringsAttribute().Next(Rand);
+            Assert.Equal("0,,0", Result);
+        }
+
+        [Fact]
         public void Shuffle()
         {
             var Rand = new Random(1231415);
@@ -277,7 +286,7 @@ namespace Mirage.Tests
         [Fact]
         public void ThreadSafeNext()
         {
-            Parallel.For(0, 100, x => Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20));
+            Parallel.For(0, 100, _ => Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20));
         }
     }
 

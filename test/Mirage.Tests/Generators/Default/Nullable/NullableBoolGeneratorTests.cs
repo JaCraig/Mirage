@@ -12,10 +12,10 @@ namespace Mirage.Tests.Generators.Nullable
         {
             var Generator = new NullableBoolGeneratorAttribute();
             var Rand = new Random();
-            Assert.Contains(true, 100.Times(x => Generator.Next(Rand).HasValue));
-            Assert.Contains(false, 100.Times(x => Generator.Next(Rand).HasValue));
-            Assert.Contains(true, 100.Times(x => Generator.Next(Rand)));
-            Assert.Contains(false, 100.Times(x => Generator.Next(Rand)));
+            Assert.Contains(true, 100.Times(_ => Generator.Next(Rand).HasValue));
+            Assert.Contains(false, 100.Times(_ => Generator.Next(Rand).HasValue));
+            Assert.Contains(true, 100.Times(_ => Generator.Next(Rand)));
+            Assert.Contains(false, 100.Times(_ => Generator.Next(Rand)));
         }
     }
 }

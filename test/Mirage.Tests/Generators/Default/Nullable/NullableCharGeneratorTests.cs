@@ -12,8 +12,8 @@ namespace Mirage.Tests.Generators.Default.Nullable
         {
             var Generator = new NullableCharGeneratorAttribute();
             var Rand = new Random();
-            Assert.Contains(true, 100.Times(x => Generator.Next(Rand).HasValue));
-            Assert.Contains(false, 100.Times(x => Generator.Next(Rand).HasValue));
+            Assert.Contains(true, 100.Times(_ => Generator.Next(Rand).HasValue));
+            Assert.Contains(false, 100.Times(_ => Generator.Next(Rand).HasValue));
             for (int x = 0; x < 100; ++x)
             {
                 var Value = Generator.Next(Rand);

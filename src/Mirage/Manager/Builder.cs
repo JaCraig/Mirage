@@ -43,15 +43,13 @@ namespace Mirage.Manager
             {
                 Generators.Add(Generator.TypeGenerated, Generator);
             }
-            foreach (IGenerator Generator in generators.Where(x => x.GetType().Namespace.IndexOf("MIRAGE", StringComparison.InvariantCultureIgnoreCase) >= 0))
+            foreach (IGenerator Generator in generators.Where(x => x.Default))
             {
-                if (!Generators.ContainsKey(Generator.TypeGenerated) && Generator.TypeGenerated != typeof(string))
+                if (!Generators.ContainsKey(Generator.TypeGenerated))
                 {
                     Generators.Add(Generator.TypeGenerated, Generator);
                 }
             }
-            if (!Generators.ContainsKey(typeof(string)))
-                Generators.Add(typeof(string), new StringGeneratorAttribute());
         }
 
         /// <summary>

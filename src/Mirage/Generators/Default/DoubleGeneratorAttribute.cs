@@ -49,6 +49,12 @@ namespace Mirage.Generators
         private const double EPSILON = 0.0001;
 
         /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => true;
+
+        /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>

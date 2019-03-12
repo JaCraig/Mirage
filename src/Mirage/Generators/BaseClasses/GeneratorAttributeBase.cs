@@ -40,6 +40,12 @@ namespace Mirage.Generators.BaseClasses
         }
 
         /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public abstract bool Default { get; }
+
+        /// <summary>
         /// Maximum allowed
         /// </summary>
         public object Max { get; protected set; }

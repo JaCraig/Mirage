@@ -49,6 +49,12 @@ namespace Mirage.Interfaces
     public interface IGenerator
     {
         /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        bool Default { get; }
+
+        /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>

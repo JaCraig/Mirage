@@ -16,6 +16,7 @@ limitations under the License.
 
 using BigBook;
 using Mirage.Generators.BaseClasses;
+using Mirage.Interfaces;
 using System.Text;
 
 namespace Mirage.Generators
@@ -88,6 +89,12 @@ namespace Mirage.Generators
         "nonumy", "eirmod", "tempor", "invidunt", "ut", "labore", "et", "dolore", "magna", "aliquyam", "erat", "sed",
         "diam", "voluptua", "at", "vero", "eos", "et", "accusam", "et", "justo", "duo", "dolores", "et", "ea",
         "rebum", "stet", "clita", "kasd", "gubergren", "no", "sea", "takimata", "sanctus", "est", "lorem", "ipsum" };
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
 
         /// <summary>
         /// Maximum sentence length

@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Interfaces;
 
 namespace Mirage.Generators
 {
@@ -33,6 +34,12 @@ namespace Mirage.Generators
         }
 
         private readonly string[] NameSuffixes = { "Jr.", "Sr.", "II", "III", "IV", "M.D.", "Ph.D.", "DDS" };
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
 
         /// <summary>
         /// Generates a random value of the specified type

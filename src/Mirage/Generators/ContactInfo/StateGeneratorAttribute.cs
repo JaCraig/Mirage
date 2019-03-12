@@ -14,11 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using BigBook;
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
-using System;
-using System.Text;
 
 namespace Mirage.Generators
 {
@@ -45,6 +42,12 @@ namespace Mirage.Generators
                                                   "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
                                                   "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
                                                   "Wisconsin", "Wyoming", "District of Columbia" };
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
 
         /// <summary>
         /// Generates a random value of the specified type

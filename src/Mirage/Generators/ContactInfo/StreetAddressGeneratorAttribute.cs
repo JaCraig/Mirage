@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Interfaces;
 
 namespace Mirage.Generators
 {
@@ -39,6 +40,12 @@ namespace Mirage.Generators
         private readonly string[] StreetSuffix = { "Alley", "Avenue", "Bypass", "Center", "Circle", "Corner", "Court", "Cove", "Creek", "Crossing",
                                             "Drive", "Estates", "Expressway", "Freeway", "Highway", "Junction", "Lane", "Loop",
                                             "Park", "Parkway", "Pass", "Plaza", "Road", "Route", "Street", "Turnpike","Way" };
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
 
         /// <summary>
         /// Generates a random value of the specified type

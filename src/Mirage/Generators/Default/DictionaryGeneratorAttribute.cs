@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -49,6 +50,12 @@ namespace Mirage.Generators.Default
             : this(null, null, 1, 100)
         {
         }
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => true;
 
         /// <summary>
         /// Gets the type of the key.

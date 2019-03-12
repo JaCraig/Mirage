@@ -16,11 +16,7 @@ limitations under the License.
 
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Mirage.Generators
 {
@@ -39,6 +35,12 @@ namespace Mirage.Generators
         {
             Pattern = pattern;
         }
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
 
         /// <summary>
         /// Pattern to use

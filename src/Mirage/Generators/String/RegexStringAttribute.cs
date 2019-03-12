@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Interfaces;
 using System;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -54,6 +55,12 @@ namespace Mirage.Generators
         /// Characters allowed
         /// </summary>
         public string AllowedCharacters { get; protected set; }
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
 
         /// <summary>
         /// Length to generate

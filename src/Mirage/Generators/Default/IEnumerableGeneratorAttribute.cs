@@ -29,6 +29,12 @@ namespace Mirage.Generators.Default
     public class IEnumerableGenerator<T> : IGenerator<T>
     {
         /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public bool Default => true;
+
+        /// <summary>
         /// Gets the type generated.
         /// </summary>
         /// <value>The type generated.</value>
@@ -99,6 +105,12 @@ namespace Mirage.Generators.Default
         /// </summary>
         /// <value>The type of the class.</value>
         public Type ClassType { get; set; }
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => true;
 
         /// <summary>
         /// Gets the type generated.

@@ -7,7 +7,7 @@ namespace Mirage.Generators.Names
     /// Title generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class TitleAttribute : StringGeneratorBase
+    public sealed class TitleAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

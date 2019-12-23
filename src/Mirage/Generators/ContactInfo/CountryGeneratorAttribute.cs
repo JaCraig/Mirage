@@ -7,7 +7,7 @@ namespace Mirage.Generators.ContactInfo
     /// Country generator attribute
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class CountryAttribute : StringGeneratorBase
+    public sealed class CountryAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

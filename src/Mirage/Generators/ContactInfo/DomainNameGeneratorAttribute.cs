@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// Domain Name Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class DomainNameAttribute : StringGeneratorBase
+    public sealed class DomainNameAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

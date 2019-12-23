@@ -45,9 +45,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public DateTime? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next(DateTime.MinValue, DateTime.MaxValue);
+            return !rand.Next<bool>() ? null : (DateTime?)rand.Next(DateTime.MinValue, DateTime.MaxValue);
         }
 
         /// <summary>
@@ -61,8 +59,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? DateTime.MinValue;
-            max = max ?? DateTime.MaxValue;
+            min ??= DateTime.MinValue;
+            max ??= DateTime.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -72,19 +70,17 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">Random number generator</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public object NextObj(Random rand, List<object> previouslySeen)
+        public object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next(DateTime.MinValue, DateTime.MaxValue);
+            return !rand.Next<bool>() ? null : (object)rand.Next(DateTime.MinValue, DateTime.MaxValue);
         }
     }
 
     /// <summary>
     /// NullableDateTime generator
     /// </summary>
-    /// <seealso cref="Mirage.Generators.BaseClasses.GeneratorAttributeBase"/>
-    public class NullableDateTimeGeneratorAttribute : GeneratorAttributeBase
+    /// <seealso cref="GeneratorAttributeBase"/>
+    public sealed class NullableDateTimeGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Constructor
@@ -122,11 +118,9 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">Random number generator</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next((DateTime)Min, (DateTime)Max);
+            return !rand.Next<bool>() || Min is null || Max is null ? null : (object)rand.Next((DateTime)Min, (DateTime)Max);
         }
     }
 }

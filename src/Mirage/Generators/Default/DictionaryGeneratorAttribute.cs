@@ -27,7 +27,7 @@ namespace Mirage.Generators.Default
     /// Dictionary generator attribute
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class DictionaryGeneratorAttribute : GeneratorAttributeBase
+    public sealed class DictionaryGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DictionaryGeneratorAttribute"/> class.
@@ -36,7 +36,7 @@ namespace Mirage.Generators.Default
         /// <param name="valueType">Type of the value.</param>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public DictionaryGeneratorAttribute(Type keyType, Type valueType, int min, int max)
+        public DictionaryGeneratorAttribute(Type? keyType, Type? valueType, int min, int max)
             : base(min == 0 && max == 0 ? 1 : min, min == 0 && max == 0 ? 100 : max)
         {
             KeyType = keyType;
@@ -61,7 +61,7 @@ namespace Mirage.Generators.Default
         /// Gets the type of the key.
         /// </summary>
         /// <value>The type of the key.</value>
-        public Type KeyType { get; }
+        public Type? KeyType { get; }
 
         /// <summary>
         /// Gets the type generated.
@@ -73,7 +73,7 @@ namespace Mirage.Generators.Default
         /// Gets the type of the value.
         /// </summary>
         /// <value>The type of the value.</value>
-        public Type ValueType { get; }
+        public Type? ValueType { get; }
 
         /// <summary>
         /// Generates next object
@@ -81,9 +81,9 @@ namespace Mirage.Generators.Default
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (KeyType == null || ValueType == null)
+            if (KeyType is null || ValueType is null || Min is null || Max is null)
                 return null;
             var Count = rand.Next((int)Min, (int)Max);
             var KeyResults = rand.Next(KeyType, Count).ToArray();

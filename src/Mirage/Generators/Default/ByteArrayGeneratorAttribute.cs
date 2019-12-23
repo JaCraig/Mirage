@@ -26,7 +26,7 @@ namespace Mirage.Generators.Default
     /// Byte array generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class ByteArrayGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte[]>
+    public sealed class ByteArrayGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte[]>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ByteArrayGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators.Default
         /// <returns>A randomly generated object of the specified type</returns>
         public byte[] Next(Random rand)
         {
-            return rand.Next<byte>(rand.Next((int)Min, (int)Max)).ToArray();
+            return Min is null || Max is null ? Array.Empty<byte>() : rand.Next<byte>(rand.Next((int)Min, (int)Max)).ToArray();
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators.Default
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

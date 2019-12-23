@@ -39,7 +39,7 @@ namespace Mirage.Module
         /// <param name="bootstrapper">The bootstrapper.</param>
         public void Load(IBootstrapper bootstrapper)
         {
-            if (bootstrapper == null)
+            if (bootstrapper is null)
                 return;
             bootstrapper.RegisterAll<IGenerator>();
             bootstrapper.Register(typeof(EnumGenerator<>));

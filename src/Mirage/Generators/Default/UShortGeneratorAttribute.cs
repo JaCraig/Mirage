@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// UShort generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{UShort}"/>
-    public class UShortGeneratorAttribute : GeneratorAttributeBase, IGenerator<ushort>
+    /// <seealso cref="IGenerator{UShort}"/>
+    public sealed class UShortGeneratorAttribute : GeneratorAttributeBase, IGenerator<ushort>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UShortGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public ushort Next(Random rand)
         {
-            return Next(rand, (ushort)Min, (ushort)Max);
+            return Min is null || Max is null ? (ushort)0 : Next(rand, (ushort)Min, (ushort)Max);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

@@ -4,7 +4,7 @@
     <Description>Tests for Mirage</Description>
     <AssemblyTitle>Mirage.Tests</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <DebugType>portable</DebugType>
     <AssemblyName>Mirage.Tests</AssemblyName>
     <PackageId>Mirage.Tests</PackageId>
@@ -23,14 +23,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
-    <PackageReference Include="Valkyrie" Version="2.0.5" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="Valkyrie" Version="3.0.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="FileCurator" Version="2.0.14" />
+    <PackageReference Include="FileCurator" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>

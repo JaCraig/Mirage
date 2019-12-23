@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Boolean generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Boolean}"/>
-    public class BoolGeneratorAttribute : GeneratorAttributeBase, IGenerator<bool>
+    /// <seealso cref="IGenerator{Boolean}"/>
+    public sealed class BoolGeneratorAttribute : GeneratorAttributeBase, IGenerator<bool>
     {
         /// <summary>
         /// Constructor
@@ -73,7 +73,7 @@ namespace Mirage.Generators
         /// <param name="rand">Random number generator</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

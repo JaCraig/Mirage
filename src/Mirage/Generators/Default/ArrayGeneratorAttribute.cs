@@ -27,7 +27,7 @@ namespace Mirage.Generators.Default
     /// Generic array generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class ArrayGeneratorAttribute : GeneratorAttributeBase
+    public sealed class ArrayGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ArrayGeneratorAttribute"/> class.
@@ -35,7 +35,7 @@ namespace Mirage.Generators.Default
         /// <param name="classType">Type of the class.</param>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public ArrayGeneratorAttribute(Type classType, int min, int max)
+        public ArrayGeneratorAttribute(Type? classType, int min, int max)
             : base(min == 0 && max == 0 ? 1 : min, min == 0 && max == 0 ? 100 : max)
         {
             ClassType = classType;
@@ -53,7 +53,7 @@ namespace Mirage.Generators.Default
         /// Gets or sets the type of the class.
         /// </summary>
         /// <value>The type of the class.</value>
-        public Type ClassType { get; set; }
+        public Type? ClassType { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
@@ -73,9 +73,9 @@ namespace Mirage.Generators.Default
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (ClassType == null)
+            if (ClassType is null || Min is null || Max is null)
                 return null;
             var Count = rand.Next((int)Min, (int)Max);
             var Results = rand.Next(ClassType, Count).ToArray();

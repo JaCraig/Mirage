@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// State Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class StateAttribute : StringGeneratorBase
+    public sealed class StateAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

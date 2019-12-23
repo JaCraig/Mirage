@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// ZipCode Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class ZipCodeAttribute : PatternAttribute
+    public sealed class ZipCodeAttribute : PatternAttribute
     {
         /// <summary>
         /// Constructor

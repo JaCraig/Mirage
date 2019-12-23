@@ -33,7 +33,7 @@ namespace Mirage.Generators.BaseClasses
         /// </summary>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        protected GeneratorAttributeBase(object min, object max)
+        protected GeneratorAttributeBase(object? min, object? max)
         {
             Min = min;
             Max = max;
@@ -48,12 +48,12 @@ namespace Mirage.Generators.BaseClasses
         /// <summary>
         /// Maximum allowed
         /// </summary>
-        public object Max { get; protected set; }
+        public object? Max { get; protected set; }
 
         /// <summary>
         /// Minimum allowed
         /// </summary>
-        public object Min { get; protected set; }
+        public object? Min { get; protected set; }
 
         /// <summary>
         /// Gets the type generated.
@@ -67,6 +67,6 @@ namespace Mirage.Generators.BaseClasses
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public abstract object NextObj(Random rand, List<object> previouslySeen);
+        public abstract object? NextObj(Random rand, List<object> previouslySeen);
     }
 }

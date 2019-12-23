@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// City Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class CityAttribute : StringGeneratorBase
+    public sealed class CityAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

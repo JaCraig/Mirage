@@ -50,7 +50,7 @@ namespace Mirage.Generators
         /// <returns>The randomly generated class</returns>
         public T Next(Random rand)
         {
-            return (T)NextObj(rand, new List<object>());
+            return (T)NextObj(rand, new List<object>())!;
         }
 
         /// <summary>
@@ -71,16 +71,18 @@ namespace Mirage.Generators
         /// <param name="rand">Random generator used</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The randonly generated class</returns>
-        public object NextObj(Random rand, List<object> previouslySeen)
+        public object? NextObj(Random rand, List<object> previouslySeen)
         {
             var PreviousItem = previouslySeen.Find(x => x.GetType() == typeof(T));
             if (PreviousItem != null)
                 return PreviousItem;
             var ReturnItem = Activator.CreateInstance<T>();
+            if (ReturnItem is null)
+                return default;
             previouslySeen = previouslySeen.ToList();
             previouslySeen.Add(ReturnItem);
-            Type ObjectType = typeof(T);
-            foreach (PropertyInfo Property in ObjectType.GetProperties())
+            var ObjectType = typeof(T);
+            foreach (var Property in ObjectType.GetProperties())
             {
                 bool Generated = false;
                 var ValidationAttributes = Property.Attributes<ValidationAttribute>();
@@ -92,7 +94,7 @@ namespace Mirage.Generators
                         var TempValue = Attribute.NextObj(rand, previouslySeen);
                         if (ValidationAttributes.All(x => x.IsValid(TempValue)))
                         {
-                            ReturnItem.Property(Property, TempValue);
+                            ReturnItem.Property(Property, TempValue!);
                             Generated = true;
                         }
                     }
@@ -106,8 +108,8 @@ namespace Mirage.Generators
     /// <summary>
     /// Class generator attribute
     /// </summary>
-    /// <seealso cref="Mirage.Generators.BaseClasses.GeneratorAttributeBase"/>
-    public class ClassGeneratorAttribute : GeneratorAttributeBase
+    /// <seealso cref="GeneratorAttributeBase"/>
+    public sealed class ClassGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ClassGeneratorAttribute"/> class.
@@ -130,7 +132,7 @@ namespace Mirage.Generators
         /// Gets or sets the type of the class.
         /// </summary>
         /// <value>The type of the class.</value>
-        public Type ClassType { get; set; }
+        public Type? ClassType { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="T:Mirage.Interfaces.IGenerator"/> is a
@@ -151,13 +153,13 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (ClassType == null)
+            if (ClassType is null)
                 return null;
             var FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
             var NextFunction = FinalClassType.GetTypeInfo().GetMethod("NextObj", new Type[] { typeof(Random), typeof(List<object>) });
-            var Generator = Canister.Builder.Bootstrapper.Resolve(FinalClassType, null);
+            var Generator = Canister.Builder.Bootstrapper?.Resolve(FinalClassType, null!);
             return NextFunction.Invoke(Generator, new object[] { rand, previouslySeen });
         }
     }

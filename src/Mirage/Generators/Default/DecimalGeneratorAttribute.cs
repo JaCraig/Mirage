@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Decimal generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Decimal}"/>
-    public class DecimalGeneratorAttribute : GeneratorAttributeBase, IGenerator<decimal>
+    /// <seealso cref="IGenerator{Decimal}"/>
+    public sealed class DecimalGeneratorAttribute : GeneratorAttributeBase, IGenerator<decimal>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DecimalGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public decimal Next(Random rand)
         {
-            return Next(rand, (decimal)Min, (decimal)Max);
+            return Min is null || Max is null ? (default) : Next(rand, (decimal)Min, (decimal)Max);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// Address Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class AddressAttribute : StringGeneratorBase
+    public sealed class AddressAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

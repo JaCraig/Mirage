@@ -23,7 +23,7 @@ namespace Mirage.Generators.String
     /// Problem string attribute.
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class ProblemStringsAttribute : StringGeneratorBase
+    public sealed class ProblemStringsAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ProblemStringsAttribute"/> class.

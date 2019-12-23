@@ -7,7 +7,7 @@ namespace Mirage.Generators.ContactInfo
     /// TimeZone generator attribute
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class TimeZoneAttribute : StringGeneratorBase
+    public sealed class TimeZoneAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

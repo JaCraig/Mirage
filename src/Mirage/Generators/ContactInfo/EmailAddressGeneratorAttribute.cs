@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// Email Address Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class EmailAddressAttribute : StringGeneratorBase
+    public sealed class EmailAddressAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor
@@ -69,9 +69,9 @@ namespace Mirage.Generators
                 return new NameAttribute(false, true, true, false).Next(rand).Replace(" ", ".") + "@" + DomainName;
             if (AddressStyle == 3)
                 return rand.Next('a', 'z') + "." + new LastNameAttribute().Next(rand) + "@" + DomainName;
-            if (AddressStyle == 4)
-                return new NameAttribute(false, false, false, false).Next(rand).Replace(" ", ".") + "@" + DomainName;
-            return rand.Next('a', 'z') + "." + rand.Next('a', 'z') + "." + new LastNameAttribute().Next(rand) + "@" + DomainName;
+            return AddressStyle == 4
+                ? new NameAttribute(false, false, false, false).Next(rand).Replace(" ", ".") + "@" + DomainName
+                : rand.Next('a', 'z') + "." + rand.Next('a', 'z') + "." + new LastNameAttribute().Next(rand) + "@" + DomainName;
         }
     }
 }

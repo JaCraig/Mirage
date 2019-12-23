@@ -26,7 +26,7 @@ namespace Mirage.Generators.Default.Nullable
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
     /// <seealso cref="IGenerator{Guid}"/>
-    public class NullableGuidGeneratorAttribute : GeneratorAttributeBase, IGenerator<Guid?>
+    public sealed class NullableGuidGeneratorAttribute : GeneratorAttributeBase, IGenerator<Guid?>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableGuidGeneratorAttribute"/> class.
@@ -55,9 +55,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public Guid? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next<Guid>();
+            return !rand.Next<bool>() ? null : (Guid?)rand.Next<Guid>();
         }
 
         /// <summary>
@@ -71,8 +69,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? Guid.Empty;
-            max = max ?? Guid.Empty;
+            min ??= Guid.Empty;
+            max ??= Guid.Empty;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -82,7 +80,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

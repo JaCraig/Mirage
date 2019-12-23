@@ -39,11 +39,11 @@ namespace Mirage.Manager
         public Builder(IEnumerable<IGenerator> generators)
         {
             Generators = new ConcurrentDictionary<Type, IGenerator>();
-            foreach (IGenerator Generator in generators.Where(x => !(x.GetType().Namespace.IndexOf("MIRAGE", StringComparison.InvariantCultureIgnoreCase) >= 0)))
+            foreach (var Generator in generators.Where(x => !(x.GetType().Namespace.IndexOf("MIRAGE", StringComparison.InvariantCultureIgnoreCase) >= 0)))
             {
                 Generators.Add(Generator.TypeGenerated, Generator);
             }
-            foreach (IGenerator Generator in generators.Where(x => x.Default))
+            foreach (var Generator in generators.Where(x => x.Default))
             {
                 if (!Generators.ContainsKey(Generator.TypeGenerated))
                 {
@@ -63,7 +63,7 @@ namespace Mirage.Manager
         /// </summary>
         /// <typeparam name="T">The type to generate</typeparam>
         /// <returns>The generator specified</returns>
-        public IGenerator<T> GetGenerator<T>()
+        public IGenerator<T>? GetGenerator<T>()
         {
             return GetGenerator(typeof(T)) as IGenerator<T>;
         }
@@ -73,9 +73,9 @@ namespace Mirage.Manager
         /// </summary>
         /// <param name="classType">Type of the class.</param>
         /// <returns>The generator specified</returns>
-        public IGenerator GetGenerator(Type classType)
+        public IGenerator? GetGenerator(Type classType)
         {
-            if (Generators.TryGetValue(classType, out IGenerator Generator))
+            if (Generators.TryGetValue(classType, out var Generator))
                 return Generator;
             var TypeGeneratedInfo = classType.GetTypeInfo();
             if (TypeGeneratedInfo.IsEnum)
@@ -88,9 +88,7 @@ namespace Mirage.Manager
                 return new ListGeneratorAttribute(classType.GetGenericArguments()[0], 1, 100);
             if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IEnumerable)))
                 return new IEnumerableGeneratorAttribute(classType, 1, 100);
-            if (TypeGeneratedInfo.IsClass)
-                return new ClassGeneratorAttribute(classType);
-            return null;
+            return TypeGeneratedInfo.IsClass ? new ClassGeneratorAttribute(classType) : null;
         }
     }
 }

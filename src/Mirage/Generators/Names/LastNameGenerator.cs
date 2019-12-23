@@ -24,7 +24,7 @@ namespace Mirage.Generators
     /// LastName Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class LastNameAttribute : StringGeneratorBase
+    public sealed class LastNameAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

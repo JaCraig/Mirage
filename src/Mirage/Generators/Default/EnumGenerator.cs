@@ -48,7 +48,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public T Next(Random rand)
         {
-            return Next(rand, default(T), default(T));
+            return Next(rand, default!, default!);
         }
 
         /// <summary>
@@ -71,7 +71,7 @@ namespace Mirage.Generators
         /// <param name="rand">Random number generator</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        public object NextObj(Random rand, List<object> previouslySeen)
+        public object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }
@@ -81,7 +81,7 @@ namespace Mirage.Generators
     /// Class generator attribute
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class EnumGeneratorAttribute : GeneratorAttributeBase
+    public sealed class EnumGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ClassGeneratorAttribute"/> class.
@@ -110,7 +110,7 @@ namespace Mirage.Generators
         /// Gets or sets the type of the class.
         /// </summary>
         /// <value>The type of the class.</value>
-        public Type EnumType { get; set; }
+        public Type? EnumType { get; set; }
 
         /// <summary>
         /// Gets the type generated.
@@ -124,14 +124,14 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (EnumType == null)
+            if (EnumType is null)
                 return null;
             var FinalClassType = typeof(EnumGenerator<>).MakeGenericType(EnumType);
             var NextFunction = FinalClassType.GetTypeInfo().GetMethod("Next", new Type[] { typeof(Random) });
-            var Generator = Canister.Builder.Bootstrapper.GetService(FinalClassType);
-            return NextFunction.Invoke(Generator, new object[] { rand });
+            var Generator = Canister.Builder.Bootstrapper?.GetService(FinalClassType);
+            return Generator is null ? null : NextFunction.Invoke(Generator, new object[] { rand });
         }
     }
 }

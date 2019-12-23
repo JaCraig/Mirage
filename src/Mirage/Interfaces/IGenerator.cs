@@ -66,6 +66,6 @@ namespace Mirage.Interfaces
         /// <param name="rand">Random number generator that it can use</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        object NextObj(Random rand, List<object> previouslySeen);
+        object? NextObj(Random rand, List<object> previouslySeen);
     }
 }

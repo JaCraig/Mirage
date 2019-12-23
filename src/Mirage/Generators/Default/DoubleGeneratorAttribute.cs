@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Double generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Double}"/>
-    public class DoubleGeneratorAttribute : GeneratorAttributeBase, IGenerator<double>
+    /// <seealso cref="IGenerator{Double}"/>
+    public sealed class DoubleGeneratorAttribute : GeneratorAttributeBase, IGenerator<double>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="DoubleGeneratorAttribute"/> class.
@@ -67,7 +67,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public double Next(Random rand)
         {
-            return Next(rand, (double)Min, (double)Max);
+            return Min is null || Max is null ? (default) : Next(rand, (double)Min, (double)Max);
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

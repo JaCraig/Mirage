@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// Company Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class CompanyAttribute : StringGeneratorBase
+    public sealed class CompanyAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor
@@ -105,11 +105,9 @@ namespace Mirage.Generators
             {
                 return new LastNameAttribute().Next(rand) + " " + rand.Next(CompanySuffix);
             }
-            if (rand.Next<bool>())
-            {
-                return new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand);
-            }
-            return new LastNameAttribute().Next(rand) + ", " + new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand);
+            return rand.Next<bool>()
+                ? new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand)
+                : new LastNameAttribute().Next(rand) + ", " + new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand);
         }
     }
 }

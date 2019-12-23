@@ -25,8 +25,8 @@ namespace Mirage.Generators.Default.Nullable
     /// ULong generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{ULong}"/>
-    public class NullableULongGeneratorAttribute : GeneratorAttributeBase, IGenerator<ulong?>
+    /// <seealso cref="IGenerator{ULong}"/>
+    public sealed class NullableULongGeneratorAttribute : GeneratorAttributeBase, IGenerator<ulong?>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableULongGeneratorAttribute"/> class.
@@ -65,9 +65,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public ulong? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next<ulong>();
+            return !rand.Next<bool>() ? null : (ulong?)rand.Next<ulong>();
         }
 
         /// <summary>
@@ -81,8 +79,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? ulong.MinValue;
-            max = max ?? ulong.MaxValue;
+            min ??= ulong.MinValue;
+            max ??= ulong.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -92,7 +90,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

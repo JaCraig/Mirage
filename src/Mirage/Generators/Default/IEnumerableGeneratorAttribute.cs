@@ -25,7 +25,7 @@ namespace Mirage.Generators.Default
     /// IEnumerable generator
     /// </summary>
     /// <typeparam name="T">IEnumerable type</typeparam>
-    /// <seealso cref="Interfaces.IGenerator{T}"/>
+    /// <seealso cref="IGenerator{T}"/>
     public class IEnumerableGenerator<T> : IGenerator<T>
     {
         /// <summary>
@@ -47,7 +47,7 @@ namespace Mirage.Generators.Default
         /// <returns>A randomly generated object of the specified type</returns>
         public T Next(Random rand)
         {
-            return (T)rand.Next(typeof(List<>).MakeGenericType(TypeGenerated.GetGenericArguments()[0]));
+            return (T)rand.Next(typeof(List<>).MakeGenericType(TypeGenerated.GetGenericArguments()[0]))!;
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Mirage.Generators.Default
         /// <param name="rand">Random number generator that it can use</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        public object NextObj(Random rand, List<object> previouslySeen)
+        public object? NextObj(Random rand, List<object> previouslySeen)
         {
             return rand.Next(typeof(List<>).MakeGenericType(TypeGenerated.GetGenericArguments()[0]));
         }
@@ -78,7 +78,7 @@ namespace Mirage.Generators.Default
     /// IEnumerable generator attribute
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class IEnumerableGeneratorAttribute : GeneratorAttributeBase
+    public sealed class IEnumerableGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="IEnumerableGeneratorAttribute"/> class.
@@ -86,7 +86,7 @@ namespace Mirage.Generators.Default
         /// <param name="classType">Type of the class.</param>
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
-        public IEnumerableGeneratorAttribute(Type classType, int min, int max)
+        public IEnumerableGeneratorAttribute(Type? classType, int min, int max)
             : base(min == 0 && max == 0 ? 1 : min, min == 0 && max == 0 ? 100 : max)
         {
             ClassType = classType;
@@ -104,7 +104,7 @@ namespace Mirage.Generators.Default
         /// Gets or sets the type of the class.
         /// </summary>
         /// <value>The type of the class.</value>
-        public Type ClassType { get; set; }
+        public Type? ClassType { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
@@ -124,12 +124,12 @@ namespace Mirage.Generators.Default
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            if (ClassType == null)
+            if (ClassType is null)
                 return null;
-            var Generator = (IGenerator)Canister.Builder.Bootstrapper.Resolve(typeof(IEnumerableGenerator<>).MakeGenericType(ClassType), null);
-            return Generator.NextObj(rand, previouslySeen);
+            var Generator = Canister.Builder.Bootstrapper?.Resolve(typeof(IEnumerableGenerator<>).MakeGenericType(ClassType), null!) as IGenerator;
+            return Generator?.NextObj(rand, previouslySeen);
         }
     }
 }

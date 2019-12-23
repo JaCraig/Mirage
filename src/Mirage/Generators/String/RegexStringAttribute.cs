@@ -25,7 +25,7 @@ namespace Mirage.Generators
     /// <summary>
     /// Randomly generates strings based on a Regex
     /// </summary>
-    public class RegexStringAttribute : StringGeneratorBase
+    public sealed class RegexStringAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="RegexStringAttribute"/> class.
@@ -54,7 +54,7 @@ namespace Mirage.Generators
         /// <summary>
         /// Characters allowed
         /// </summary>
-        public string AllowedCharacters { get; protected set; }
+        public string AllowedCharacters { get; }
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
@@ -65,12 +65,12 @@ namespace Mirage.Generators
         /// <summary>
         /// Length to generate
         /// </summary>
-        public int Length { get; protected set; }
+        public int Length { get; }
 
         /// <summary>
         /// Number of non alpha numeric characters allowed
         /// </summary>
-        public int NumberOfNonAlphaNumericsAllowed { get; protected set; }
+        public int NumberOfNonAlphaNumericsAllowed { get; }
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -87,7 +87,7 @@ namespace Mirage.Generators
             int Counter = 0;
             while (TempBuilder.Length < Length)
             {
-                var TempValue = new string(Convert.ToChar(Convert.ToInt32(System.Math.Floor((94 * rand.NextDouble()) + 32))), 1);
+                var TempValue = new string(Convert.ToChar(Convert.ToInt32(Math.Floor((94 * rand.NextDouble()) + 32))), 1);
                 if (Comparer.IsMatch(TempValue))
                 {
                     if (!AlphaNumbericComparer.IsMatch(TempValue) && NumberOfNonAlphaNumericsAllowed > Counter)

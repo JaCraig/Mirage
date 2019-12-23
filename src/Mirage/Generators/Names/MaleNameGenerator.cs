@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// MaleName Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class MaleNameAttribute : StringGeneratorBase
+    public sealed class MaleNameAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

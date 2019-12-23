@@ -24,7 +24,7 @@ namespace Mirage.Generators
     /// <summary>
     /// TimeSpan generator
     /// </summary>
-    /// <seealso cref="Interfaces.IGenerator{TimeSpan}"/>
+    /// <seealso cref="IGenerator{TimeSpan}"/>
     public class TimeSpanGenerator : IGenerator<TimeSpan>
     {
         /// <summary>
@@ -71,9 +71,7 @@ namespace Mirage.Generators
         /// <returns>The next object</returns>
         public object NextObj(Random rand, List<object> previouslySeen)
         {
-            if (TimeSpan.MinValue != default(TimeSpan) || TimeSpan.MaxValue != default(TimeSpan))
-                return Next(rand, TimeSpan.MinValue, TimeSpan.MaxValue);
-            return Next(rand);
+            return TimeSpan.MinValue != default || TimeSpan.MaxValue != default ? Next(rand, TimeSpan.MinValue, TimeSpan.MaxValue) : (object)Next(rand);
         }
     }
 
@@ -81,7 +79,7 @@ namespace Mirage.Generators
     /// TimeSpan generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class TimeSpanGeneratorAttribute : GeneratorAttributeBase
+    public sealed class TimeSpanGeneratorAttribute : GeneratorAttributeBase
     {
         /// <summary>
         /// Constructor
@@ -119,13 +117,15 @@ namespace Mirage.Generators
         /// <param name="rand">Random number generator</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            TimeSpan.TryParse((string)Min, out TimeSpan TempMin);
-            TimeSpan.TryParse((string)Max, out TimeSpan TempMax);
-            if (TempMin != default(TimeSpan) || TempMax != default(TimeSpan))
-                return new TimeSpanGenerator().Next(rand, TempMin, TempMax);
-            return new TimeSpanGenerator().Next(rand);
+            if (Min is null || Max is null)
+                return default;
+            TimeSpan.TryParse((string)Min, out var TempMin);
+            TimeSpan.TryParse((string)Max, out var TempMax);
+            return TempMin != default || TempMax != default
+                ? new TimeSpanGenerator().Next(rand, TempMin, TempMax)
+                : (object)new TimeSpanGenerator().Next(rand);
         }
     }
 }

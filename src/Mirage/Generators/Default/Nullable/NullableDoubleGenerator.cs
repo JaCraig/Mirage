@@ -25,8 +25,8 @@ namespace Mirage.Generators.Default.Nullable
     /// Double generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Double}"/>
-    public class NullableDoubleGeneratorAttribute : GeneratorAttributeBase, IGenerator<double?>
+    /// <seealso cref="IGenerator{Double}"/>
+    public sealed class NullableDoubleGeneratorAttribute : GeneratorAttributeBase, IGenerator<double?>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableDoubleGeneratorAttribute"/> class.
@@ -67,9 +67,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public double? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next<double>();
+            return !rand.Next<bool>() ? null : (double?)rand.Next<double>();
         }
 
         /// <summary>
@@ -83,8 +81,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? double.MinValue;
-            max = max ?? double.MaxValue;
+            min ??= double.MinValue;
+            max ??= double.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -94,7 +92,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

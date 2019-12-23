@@ -26,7 +26,7 @@ namespace Mirage.Generators
     /// Randomly generates strings
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class StringGeneratorAttribute : StringGeneratorBase
+    public sealed class StringGeneratorAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor
@@ -98,7 +98,7 @@ namespace Mirage.Generators
         /// A randomly generated string of a specified length, containing only a set of characters,
         /// and at max a specified number of non alpha numeric characters.
         /// </returns>
-        protected string NextString(Random rand, int length, string allowedCharacters = ".", int numberOfNonAlphaNumericsAllowed = int.MaxValue)
+        private string NextString(Random rand, int length, string allowedCharacters = ".", int numberOfNonAlphaNumericsAllowed = int.MaxValue)
         {
             if (length < 1)
                 return "";
@@ -108,7 +108,7 @@ namespace Mirage.Generators
             int Counter = 0;
             while (TempBuilder.Length < length)
             {
-                var TempValue = new string(Convert.ToChar(Convert.ToInt32(System.Math.Floor((94 * rand.NextDouble()) + 32))), 1);
+                var TempValue = new string(Convert.ToChar(Convert.ToInt32(Math.Floor((94 * rand.NextDouble()) + 32))), 1);
                 if (Comparer.IsMatch(TempValue))
                 {
                     if (!AlphaNumbericComparer.IsMatch(TempValue) && numberOfNonAlphaNumericsAllowed > Counter)

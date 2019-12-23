@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// UInt generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{UInt}"/>
-    public class UIntGeneratorAttribute : GeneratorAttributeBase, IGenerator<uint>
+    /// <seealso cref="IGenerator{UInt}"/>
+    public sealed class UIntGeneratorAttribute : GeneratorAttributeBase, IGenerator<uint>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UIntGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public uint Next(Random rand)
         {
-            return Next(rand, (uint)Min, (uint)Max);
+            return Min is null || Max is null ? (default) : Next(rand, (uint)Min, (uint)Max);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

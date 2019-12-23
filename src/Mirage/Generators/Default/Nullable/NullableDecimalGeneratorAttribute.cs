@@ -25,7 +25,7 @@ namespace Mirage.Generators.Default.Nullable
     /// NullableDecimal generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class NullableDecimalGeneratorAttribute : GeneratorAttributeBase, IGenerator<decimal?>
+    public sealed class NullableDecimalGeneratorAttribute : GeneratorAttributeBase, IGenerator<decimal?>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableDecimalGeneratorAttribute"/> class.
@@ -64,9 +64,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public decimal? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next<decimal>();
+            return !rand.Next<bool>() ? null : (decimal?)rand.Next<decimal>();
         }
 
         /// <summary>
@@ -80,8 +78,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? decimal.MinValue;
-            max = max ?? decimal.MaxValue;
+            min ??= decimal.MinValue;
+            max ??= decimal.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -91,7 +89,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

@@ -25,7 +25,7 @@ namespace Mirage.Generators.Default.Nullable
     /// UInt generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    public class NullableUIntGeneratorAttribute : GeneratorAttributeBase, IGenerator<uint?>
+    public sealed class NullableUIntGeneratorAttribute : GeneratorAttributeBase, IGenerator<uint?>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableUIntGeneratorAttribute"/> class.
@@ -64,9 +64,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public uint? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next<uint>();
+            return !rand.Next<bool>() ? null : (uint?)rand.Next<uint>();
         }
 
         /// <summary>
@@ -80,8 +78,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? uint.MinValue;
-            max = max ?? uint.MaxValue;
+            min ??= uint.MinValue;
+            max ??= uint.MaxValue;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -91,7 +89,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

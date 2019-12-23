@@ -10,7 +10,7 @@ namespace Mirage.Generators.Default
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
     /// <seealso cref="IGenerator{Guid}"/>
-    public class GuidGeneratorAttribute : GeneratorAttributeBase, IGenerator<Guid>
+    public sealed class GuidGeneratorAttribute : GeneratorAttributeBase, IGenerator<Guid>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="GuidGeneratorAttribute"/> class.
@@ -60,7 +60,7 @@ namespace Mirage.Generators.Default
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

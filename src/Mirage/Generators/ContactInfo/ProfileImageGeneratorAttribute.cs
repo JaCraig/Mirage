@@ -7,7 +7,7 @@ namespace Mirage.Generators.ContactInfo
     /// Generates profile images.
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class ProfileImageAttribute : StringGeneratorBase
+    public sealed class ProfileImageAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor

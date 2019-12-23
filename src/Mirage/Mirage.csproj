@@ -10,7 +10,7 @@
     <Description>Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.</Description>
     <AssemblyTitle>Mirage</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Mirage</AssemblyName>
     <PackageId>Mirage</PackageId>
@@ -21,13 +21,14 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>2.0.$(BuildNumber)</Version>
+    <Version>3.0.$(BuildNumber)</Version>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Canister.IoC" Version="2.1.3" />
-    <PackageReference Include="BigBook" Version="2.1.7" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="Canister.IoC" Version="3.0.0" />
+    <PackageReference Include="BigBook" Version="3.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 

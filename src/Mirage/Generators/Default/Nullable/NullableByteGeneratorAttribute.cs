@@ -25,8 +25,8 @@ namespace Mirage.Generators.Nullable
     /// Nullable Byte generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Byte}"/>
-    public class NullableByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte?>
+    /// <seealso cref="IGenerator{Byte}"/>
+    public sealed class NullableByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte?>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="NullableByteGeneratorAttribute"/> class.
@@ -65,9 +65,7 @@ namespace Mirage.Generators.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public byte? Next(Random rand)
         {
-            if (!rand.Next<bool>())
-                return null;
-            return rand.Next<byte>();
+            return !rand.Next<bool>() ? null : (byte?)rand.Next<byte>();
         }
 
         /// <summary>
@@ -81,8 +79,8 @@ namespace Mirage.Generators.Nullable
         {
             if (!rand.Next<bool>())
                 return null;
-            min = min ?? 0;
-            max = max ?? 255;
+            min ??= 0;
+            max ??= 255;
             return rand.Next(min.Value, max.Value);
         }
 
@@ -92,7 +90,7 @@ namespace Mirage.Generators.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

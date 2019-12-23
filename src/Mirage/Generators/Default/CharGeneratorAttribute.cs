@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Char generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Char}"/>
-    public class CharGeneratorAttribute : GeneratorAttributeBase, IGenerator<char>
+    /// <seealso cref="IGenerator{Char}"/>
+    public sealed class CharGeneratorAttribute : GeneratorAttributeBase, IGenerator<char>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CharGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public char Next(Random rand)
         {
-            return Next(rand, (char)Min, (char)Max);
+            return Min is null || Max is null ? (default) : Next(rand, (char)Min, (char)Max);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

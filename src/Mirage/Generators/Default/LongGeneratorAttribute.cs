@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Long generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Long}"/>
-    public class LongGeneratorAttribute : GeneratorAttributeBase, IGenerator<long>
+    /// <seealso cref="IGenerator{Long}"/>
+    public sealed class LongGeneratorAttribute : GeneratorAttributeBase, IGenerator<long>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="LongGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public long Next(Random rand)
         {
-            return Next(rand, (long)Min, (long)Max);
+            return Min is null || Max is null ? (default) : Next(rand, (long)Min, (long)Max);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

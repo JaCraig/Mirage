@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Byte generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Byte}"/>
-    public class ByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte>
+    /// <seealso cref="IGenerator{Byte}"/>
+    public sealed class ByteGeneratorAttribute : GeneratorAttributeBase, IGenerator<byte>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ByteGeneratorAttribute"/> class.
@@ -65,7 +65,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public byte Next(Random rand)
         {
-            return Next(rand, (byte)Min, (byte)Max);
+            return Min is null || Max is null ? (byte)0 : Next(rand, (byte)Min, (byte)Max);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

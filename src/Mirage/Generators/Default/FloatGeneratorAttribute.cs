@@ -25,8 +25,8 @@ namespace Mirage.Generators
     /// Float generator
     /// </summary>
     /// <seealso cref="GeneratorAttributeBase"/>
-    /// <seealso cref="Interfaces.IGenerator{Float}"/>
-    public class FloatGeneratorAttribute : GeneratorAttributeBase, IGenerator<float>
+    /// <seealso cref="IGenerator{Float}"/>
+    public sealed class FloatGeneratorAttribute : GeneratorAttributeBase, IGenerator<float>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="FloatGeneratorAttribute"/> class.
@@ -67,7 +67,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public float Next(Random rand)
         {
-            return Next(rand, (float)Min, (float)Max);
+            return Min is null || Max is null ? (default) : Next(rand, (float)Min, (float)Max);
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object NextObj(Random rand, List<object> previouslySeen)
+        public override object? NextObj(Random rand, List<object> previouslySeen)
         {
             return Next(rand);
         }

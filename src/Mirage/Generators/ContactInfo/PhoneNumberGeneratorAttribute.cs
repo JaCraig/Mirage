@@ -23,7 +23,7 @@ namespace Mirage.Generators
     /// PhoneNumber Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class PhoneNumberAttribute : PatternAttribute
+    public sealed class PhoneNumberAttribute : PatternAttribute
     {
         /// <summary>
         /// Constructor

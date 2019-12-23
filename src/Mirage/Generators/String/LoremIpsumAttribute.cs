@@ -25,7 +25,7 @@ namespace Mirage.Generators
     /// Lorem Ipsum Generator
     /// </summary>
     /// <seealso cref="StringGeneratorBase"/>
-    public class LoremIpsumAttribute : StringGeneratorBase
+    public sealed class LoremIpsumAttribute : StringGeneratorBase
     {
         /// <summary>
         /// Constructor
@@ -99,22 +99,22 @@ namespace Mirage.Generators
         /// <summary>
         /// Maximum sentence length
         /// </summary>
-        public int MaxSentenceLength { get; protected set; }
+        public int MaxSentenceLength { get; }
 
         /// <summary>
         /// Minimum sentence length
         /// </summary>
-        public int MinSentenceLength { get; protected set; }
+        public int MinSentenceLength { get; }
 
         /// <summary>
         /// Number of paragraphs
         /// </summary>
-        public int NumberOfParagraphs { get; protected set; }
+        public int NumberOfParagraphs { get; }
 
         /// <summary>
         /// Number of sentences
         /// </summary>
-        public int NumberOfSentences { get; protected set; }
+        public int NumberOfSentences { get; }
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -142,7 +142,7 @@ namespace Mirage.Generators
         /// <param name="rand">Random number generator using</param>
         /// <param name="numberOfWords">Number of words for the sentence</param>
         /// <returns>A string containing Lorem Ipsum text</returns>
-        protected string NextSentence(Random rand, int numberOfWords)
+        private string NextSentence(Random rand, int numberOfWords)
         {
             var Builder = new StringBuilder();
             Builder.Append(Words[rand.Next(Words.Length)].ToString(StringCase.FirstCharacterUpperCase));

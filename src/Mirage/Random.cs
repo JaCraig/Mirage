@@ -129,10 +129,7 @@ namespace Mirage
         /// </exception>
         public IEnumerable<T> Next<T>(int amount)
         {
-            var Generator = GeneratorBuilder.GetGenerator<T>();
-            if (Generator is null)
-                throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.");
-            return amount.Times(_ => Generator.Next(this));
+            return Next(typeof(T), amount).Select(x => (T)x!);
         }
 
         /// <summary>

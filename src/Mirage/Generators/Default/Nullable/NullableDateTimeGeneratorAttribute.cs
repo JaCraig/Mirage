@@ -120,7 +120,11 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>The next object</returns>
         public override object? NextObj(Random rand, List<object> previouslySeen)
         {
-            return !rand.Next<bool>() || Min is null || Max is null ? null : (object)rand.Next((DateTime)Min, (DateTime)Max);
+            if (Min is null || Max is null)
+                return null;
+            DateTime.TryParse((string)Min, out var TempMin);
+            DateTime.TryParse((string)Max, out var TempMax);
+            return !rand.Next<bool>() ? null : (object)rand.Next(TempMin, TempMax);
         }
     }
 }

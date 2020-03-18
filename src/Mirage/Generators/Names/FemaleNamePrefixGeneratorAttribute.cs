@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] FemaleNamePrefixes = { "Mrs.", "Ms.", "Miss", "Dr.", "Prof.", "Rev." };
+        private static readonly string[] FemaleNamePrefixes = { "Mrs.", "Ms.", "Miss", "Dr.", "Prof.", "Rev." };
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.

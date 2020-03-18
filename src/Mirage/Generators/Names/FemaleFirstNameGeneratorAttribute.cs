@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] FemaleFirstNames = { "Sophia", "Isabella", "Emma", "Olivia", "Ava", "Emily",
+        private static readonly string[] FemaleFirstNames = { "Sophia", "Isabella", "Emma", "Olivia", "Ava", "Emily",
                                                 "Abigail", "Madison", "Mia", "Chloe", "Elizabeth",
                                                 "Ella", "Addison", "Natalie", "Lily", "Grace", "Samantha"
                                                 , "Avery", "Sofia", "Aubrey", "Brooklyn", "Lillian",

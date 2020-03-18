@@ -33,12 +33,12 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] CityEndings = { "deen", "town", "ville", "berg", "view", "bury", "ton", "land", "mouth", "haven",
+        private static readonly string[] CityEndings = { "deen", "town", "ville", "berg", "view", "bury", "ton", "land", "mouth", "haven",
                                            "shire", "don", "creek", "worth", "son", "mont", "wood", "dale","cliff","bridge" };
 
-        private readonly string[] CityPrefix = { "North", "South", "East", "West", "New", "Lake", "Old", "Port", "Fort", "Mount" };
+        private static readonly string[] CityPrefix = { "North", "South", "East", "West", "New", "Lake", "Old", "Port", "Fort", "Mount" };
 
-        private readonly string[] CitySuffix = { "Cove", "Manor", "City", "Park", "Springs", "Canyon", "Fork", "Center", "Mill",
+        private static readonly string[] CitySuffix = { "Cove", "Manor", "City", "Park", "Springs", "Canyon", "Fork", "Center", "Mill",
                                           "Beach","Glen", "Valley","Heights", "Harbor","Grove","Haven","Island", "Pass",
                                           "Hills", "Creek", "Crest", "Dale", "Falls","Flats","Gardens","Landing","Meadows",
                                           "Pines" };

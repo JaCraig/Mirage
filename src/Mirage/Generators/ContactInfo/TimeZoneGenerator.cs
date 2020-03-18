@@ -20,7 +20,7 @@ namespace Mirage.Generators.ContactInfo
         /// <summary>
         /// The TimeZone list
         /// </summary>
-        private readonly string[] TimeZoneList = {"Pacific/Midway",
+        private static readonly string[] TimeZoneList = {"Pacific/Midway",
       "Pacific/Pago_Pago",
       "Pacific/Honolulu",
       "America/Juneau",

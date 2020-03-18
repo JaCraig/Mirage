@@ -16,11 +16,7 @@ limitations under the License.
 
 using BigBook.Registration;
 using Canister.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Mirage.Registration
 {
@@ -34,9 +30,9 @@ namespace Mirage.Registration
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
         /// <returns>The bootstrapper</returns>
-        public static IBootstrapper RegisterMirage(this IBootstrapper bootstrapper)
+        public static IBootstrapper? RegisterMirage(this IBootstrapper? bootstrapper)
         {
-            return bootstrapper.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
+            return bootstrapper?.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
                                .RegisterBigBookOfDataTypes();
         }
     }

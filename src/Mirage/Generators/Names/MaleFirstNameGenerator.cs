@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] MaleFirstNames = { "Jacob", "Mason", "William", "Jayden", "Noah", "Michael", "Ethan",
+        private static readonly string[] MaleFirstNames = { "Jacob", "Mason", "William", "Jayden", "Noah", "Michael", "Ethan",
                                               "Alexander", "Aiden", "Daniel", "Anthony", "Matthew", "Elijah", "Joshua",
                                               "Liam", "Andrew", "James", "David", "Benjamin", "Logan", "Christopher", "Joseph",
                                               "Jackson", "Gabriel", "Ryan", "Samuel", "John", "Nathan", "Lucas", "Christian",

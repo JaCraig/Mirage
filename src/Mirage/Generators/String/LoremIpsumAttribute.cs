@@ -44,7 +44,7 @@ namespace Mirage.Generators
             MaxSentenceLength = maxSentenceLength;
         }
 
-        private readonly string[] Words = { "consetetur", "sadipscing", "elitr", "sed", "diam", "nonumy", "eirmod",
+        private static readonly string[] Words = { "consetetur", "sadipscing", "elitr", "sed", "diam", "nonumy", "eirmod",
         "tempor", "invidunt", "ut", "labore", "et", "dolore", "magna", "aliquyam", "erat", "sed", "diam", "voluptua",
         "at", "vero", "eos", "et", "accusam", "et", "justo", "duo", "dolores", "et", "ea", "rebum", "stet", "clita",
         "kasd", "gubergren", "no", "sea", "takimata", "sanctus", "est", "lorem", "ipsum", "dolor", "sit", "amet",

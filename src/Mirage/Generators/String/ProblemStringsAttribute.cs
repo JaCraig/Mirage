@@ -35,7 +35,7 @@ namespace Mirage.Generators.String
         /// <summary>
         /// The words
         /// </summary>
-        private readonly string[] Words =
+        private static readonly string[] Words =
         {
             "",
   "undefined",

@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] StatesAndDistricts = { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
+        private static readonly string[] StatesAndDistricts = { "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
                                                   "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",
                                                   "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
                                                   "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",

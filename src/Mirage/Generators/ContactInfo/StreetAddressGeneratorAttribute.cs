@@ -33,11 +33,11 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] AddressFormats = { "#####", "####", "###" };
+        private static readonly string[] AddressFormats = { "#####", "####", "###" };
 
-        private readonly string[] SecondLineAddressFormat = { "Apt. #", "Apt. ##", "Apt. ###", "Apt. @", "Apt. @#", "Suite #", "Suite ##", "Suite ###", "Suite @", "Suite @#" };
+        private static readonly string[] SecondLineAddressFormat = { "Apt. #", "Apt. ##", "Apt. ###", "Apt. @", "Apt. @#", "Suite #", "Suite ##", "Suite ###", "Suite @", "Suite @#" };
 
-        private readonly string[] StreetSuffix = { "Alley", "Avenue", "Bypass", "Center", "Circle", "Corner", "Court", "Cove", "Creek", "Crossing",
+        private static readonly string[] StreetSuffix = { "Alley", "Avenue", "Bypass", "Center", "Circle", "Corner", "Court", "Cove", "Creek", "Crossing",
                                             "Drive", "Estates", "Expressway", "Freeway", "Highway", "Junction", "Lane", "Loop",
                                             "Park", "Parkway", "Pass", "Plaza", "Road", "Route", "Street", "Turnpike","Way" };
 

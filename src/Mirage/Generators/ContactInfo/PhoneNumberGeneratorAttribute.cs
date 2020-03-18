@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] Formats = { "x###","x####","x#####",
+        private static readonly string[] Formats = { "x###","x####","x#####",
                                     "###-###-####","(###)###-####","1-###-###-####",
                                     "###.###.####","(###)###.####","1.###.###.####",
                                     "###-###-#### x###","(###)###-#### x###","1-###-###-#### x###",

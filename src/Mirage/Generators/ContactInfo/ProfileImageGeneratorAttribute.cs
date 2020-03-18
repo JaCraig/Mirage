@@ -17,7 +17,7 @@ namespace Mirage.Generators.ContactInfo
         {
         }
 
-        private readonly string[] Images = {
+        private static readonly string[] Images = {
         "https://s3.amazonaws.com/uifaces/faces/twitter/jarjan/128.jpg",
       "https://s3.amazonaws.com/uifaces/faces/twitter/mahdif/128.jpg",
       "https://s3.amazonaws.com/uifaces/faces/twitter/sprayaga/128.jpg",

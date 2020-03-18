@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] CompanyNames = { "Ankh-Sto Associates", "Conglom-O","Cyberdyne Systems Corporation","Globex Corporation","LexCorp",
+        private static readonly string[] CompanyNames = { "Ankh-Sto Associates", "Conglom-O","Cyberdyne Systems Corporation","Globex Corporation","LexCorp",
                                             "Stark Industries","Sto Plains Holdings","Tri-Optimum Corporation","Umbrella Corporation",
                                             "Wayne Enterprises","Acme Corp","Weyland-Yutani","ZiffCorp","Grand Trunk Semaphore Company",
                                             "Monsters, Inc.","SewerCom","Strickland Propane","The Dysk Theatre","The Muppet Theatre",
@@ -48,7 +48,7 @@ namespace Mirage.Generators
                                             "Sebben & Sebben","Planet Express","Applied Cryogenics","Initech","Rekall, Inc.",
                                             "Zorg Industries","Blue Sun Corporation","Venture Industries" };
 
-        private readonly string[] CompanySuffix =
+        private static readonly string[] CompanySuffix =
                 {
             "Associates",
             "Corporation",

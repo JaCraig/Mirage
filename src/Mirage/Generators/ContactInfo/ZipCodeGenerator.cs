@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] ZipCodeFormats = { "#####", "#####-####" };
+        private static readonly string[] ZipCodeFormats = { "#####", "#####-####" };
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.

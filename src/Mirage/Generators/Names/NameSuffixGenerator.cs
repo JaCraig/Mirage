@@ -33,7 +33,7 @@ namespace Mirage.Generators
         {
         }
 
-        private readonly string[] NameSuffixes = { "Jr.", "Sr.", "II", "III", "IV", "M.D.", "Ph.D.", "DDS" };
+        private static readonly string[] NameSuffixes = { "Jr.", "Sr.", "II", "III", "IV", "M.D.", "Ph.D.", "DDS" };
 
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.

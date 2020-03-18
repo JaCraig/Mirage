@@ -20,7 +20,7 @@ namespace Mirage.Generators.ContactInfo
         /// <summary>
         /// The country list
         /// </summary>
-        private readonly string[] CountryList = { "AD",
+        private static readonly string[] CountryList = { "AD",
       "AE",
       "AF",
       "AG",

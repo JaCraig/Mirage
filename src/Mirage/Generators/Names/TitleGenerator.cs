@@ -17,7 +17,7 @@ namespace Mirage.Generators.Names
         {
         }
 
-        private readonly string[] Job = { "Supervisor",
+        private static readonly string[] Job = { "Supervisor",
         "Associate",
         "Executive",
         "Liaison",
@@ -43,7 +43,7 @@ namespace Mirage.Generators.Names
         "Representative",
         "Strategist"};
 
-        private readonly string[] Prefix = { "Lead",
+        private static readonly string[] Prefix = { "Lead",
         "Senior",
         "Direct",
         "Corporate",
@@ -67,7 +67,7 @@ namespace Mirage.Generators.Names
         "Principal",
         "Junior"};
 
-        private readonly string[] TypeName = {"Solutions",
+        private static readonly string[] TypeName = {"Solutions",
         "Program",
         "Brand",
         "Security",

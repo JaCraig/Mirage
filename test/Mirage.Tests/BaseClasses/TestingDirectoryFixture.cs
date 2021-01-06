@@ -1,10 +1,6 @@
-﻿using FileCurator.Registration;
-using Microsoft.Extensions.DependencyInjection;
-using Mirage.Registration;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
 using System.Reflection;
-using Valkyrie.Registration;
 using Xunit;
 
 namespace Mirage.Tests.BaseClasses
@@ -16,12 +12,11 @@ namespace Mirage.Tests.BaseClasses
         {
             if (Canister.Builder.Bootstrapper == null)
             {
-                Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
+                new ServiceCollection().AddCanisterModules(configure => configure
                        .AddAssembly(typeof(TestingDirectoryFixture).GetTypeInfo().Assembly)
                        .RegisterMirage()
                        .RegisterFileCurator()
-                       .RegisterValkyrie()
-                       .Build();
+                       .RegisterValkyrie());
             }
         }
 

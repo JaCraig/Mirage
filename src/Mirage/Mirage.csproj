@@ -26,8 +26,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Canister.IoC" Version="4.0.0" />
-    <PackageReference Include="BigBook" Version="3.0.56" />
+    <PackageReference Include="Canister.IoC" Version="4.0.2" />
+    <PackageReference Include="BigBook" Version="4.0.5" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>

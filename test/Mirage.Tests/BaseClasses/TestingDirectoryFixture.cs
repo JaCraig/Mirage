@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Reflection;
 using Xunit;
 
 namespace Mirage.Tests.BaseClasses
@@ -12,11 +11,7 @@ namespace Mirage.Tests.BaseClasses
         {
             if (Canister.Builder.Bootstrapper == null)
             {
-                new ServiceCollection().AddCanisterModules(configure => configure
-                       .AddAssembly(typeof(TestingDirectoryFixture).GetTypeInfo().Assembly)
-                       .RegisterMirage()
-                       .RegisterFileCurator()
-                       .RegisterValkyrie());
+                new ServiceCollection().AddCanisterModules();
             }
         }
 

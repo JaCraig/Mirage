@@ -4,8 +4,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators.Default
 {
-    public class ByteArrayGeneratorTests : TestingDirectoryFixture
+    public class ByteArrayGeneratorTests : TestBaseClass<ByteArrayGeneratorAttribute>
     {
+        public ByteArrayGeneratorTests()
+        {
+            TestObject = new ByteArrayGeneratorAttribute(1, 100);
+        }
+
         [Fact]
         public void Next()
         {

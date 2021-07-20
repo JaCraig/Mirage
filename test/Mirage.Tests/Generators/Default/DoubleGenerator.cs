@@ -1,15 +1,16 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class DoubleGenerator : TestingDirectoryFixture
+    public class DoubleGenerator : TestBaseClass<DoubleGeneratorAttribute>
     {
+        public DoubleGenerator()
+        {
+            TestObject = new DoubleGeneratorAttribute(0, 1);
+        }
+
         [Fact]
         public void Next()
         {

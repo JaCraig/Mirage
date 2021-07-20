@@ -64,7 +64,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public decimal? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (decimal?)rand.Next<decimal>();
+            return !(rand?.Next<bool>() ?? false) ? null : (decimal?)rand.Next<decimal>();
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public decimal? Next(Random rand, decimal? min, decimal? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= decimal.MinValue;
             max ??= decimal.MaxValue;

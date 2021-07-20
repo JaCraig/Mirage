@@ -1,15 +1,16 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class IntegerGenerator : TestingDirectoryFixture
+    public class IntegerGenerator : TestBaseClass<IntGeneratorAttribute>
     {
+        public IntegerGenerator()
+        {
+            TestObject = new IntGeneratorAttribute(0, int.MaxValue);
+        }
+
         [Fact]
         public void Next()
         {

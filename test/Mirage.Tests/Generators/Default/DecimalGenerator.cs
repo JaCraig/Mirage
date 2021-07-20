@@ -1,15 +1,16 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class DecimalGenerator : TestingDirectoryFixture
+    public class DecimalGenerator : TestBaseClass<DecimalGeneratorAttribute>
     {
+        public DecimalGenerator()
+        {
+            TestObject = new DecimalGeneratorAttribute(0, 1);
+        }
+
         [Fact]
         public void Next()
         {

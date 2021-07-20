@@ -5,8 +5,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class EnumGenerator : TestingDirectoryFixture
+    public class EnumGenerator : TestBaseClass<EnumGeneratorAttribute>
     {
+        public EnumGenerator()
+        {
+            TestObject = new EnumGeneratorAttribute(typeof(MyTest));
+        }
+
         [Fact]
         public void Next()
         {

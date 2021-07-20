@@ -5,8 +5,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class BoolGenerator : TestingDirectoryFixture
+    public class BoolGenerator : TestBaseClass<BoolGeneratorAttribute>
     {
+        public BoolGenerator()
+        {
+            TestObject = new BoolGeneratorAttribute();
+        }
+
         [Fact]
         public void Next()
         {

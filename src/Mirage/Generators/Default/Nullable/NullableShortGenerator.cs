@@ -65,7 +65,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public short? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (short?)rand.Next<short>();
+            return !(rand?.Next<bool>() ?? false) ? null : (short?)rand.Next<short>();
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public short? Next(Random rand, short? min, short? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= short.MinValue;
             max ??= short.MaxValue;

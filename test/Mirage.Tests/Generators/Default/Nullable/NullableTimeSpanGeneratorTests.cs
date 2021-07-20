@@ -6,8 +6,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators.Default.Nullable
 {
-    public class NullableTimeSpanGeneratorTests : TestingDirectoryFixture
+    public class NullableTimeSpanGeneratorTests : TestBaseClass<NullableTimeSpanGenerator>
     {
+        public NullableTimeSpanGeneratorTests()
+        {
+            TestObject = new NullableTimeSpanGenerator();
+        }
+
         [Fact]
         public void Next()
         {

@@ -77,7 +77,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public decimal Next(Random rand, decimal min, decimal max)
         {
-            return min + ((max - min) * (decimal)rand.NextDouble());
+            return min + ((max - min) * (decimal)(rand?.NextDouble() ?? 0));
         }
 
         /// <summary>

@@ -45,7 +45,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public DateTime? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (DateTime?)rand.Next(DateTime.MinValue, DateTime.MaxValue);
+            return !(rand?.Next<bool>() ?? false) ? null : (DateTime?)rand.Next(DateTime.MinValue, DateTime.MaxValue);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public DateTime? Next(Random rand, DateTime? min, DateTime? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= DateTime.MinValue;
             max ??= DateTime.MaxValue;
@@ -72,7 +72,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>The next object</returns>
         public object? NextObj(Random rand, List<object> previouslySeen)
         {
-            return !rand.Next<bool>() ? null : (object)rand.Next(DateTime.MinValue, DateTime.MaxValue);
+            return !(rand?.Next<bool>() ?? false) ? null : (object)rand.Next(DateTime.MinValue, DateTime.MaxValue);
         }
     }
 
@@ -124,7 +124,7 @@ namespace Mirage.Generators.Default.Nullable
                 return null;
             DateTime.TryParse((string)Min, out var TempMin);
             DateTime.TryParse((string)Max, out var TempMax);
-            return !rand.Next<bool>() ? null : (object)rand.Next(TempMin, TempMax);
+            return !(rand?.Next<bool>() ?? false) ? null : (object)rand.Next(TempMin, TempMax);
         }
     }
 }

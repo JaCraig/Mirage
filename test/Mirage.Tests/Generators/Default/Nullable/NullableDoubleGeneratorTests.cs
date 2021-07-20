@@ -6,8 +6,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators.Default.Nullable
 {
-    public class NullableDoubleGeneratorTests : TestingDirectoryFixture
+    public class NullableDoubleGeneratorTests : TestBaseClass<NullableDoubleGeneratorAttribute>
     {
+        public NullableDoubleGeneratorTests()
+        {
+            TestObject = new NullableDoubleGeneratorAttribute();
+        }
+
         [Fact]
         public void Next()
         {

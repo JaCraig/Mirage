@@ -5,8 +5,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators.Default.Nullable
 {
-    public class NullableShortGeneratorTests : TestingDirectoryFixture
+    public class NullableShortGeneratorTests : TestBaseClass<NullableShortGeneratorAttribute>
     {
+        public NullableShortGeneratorTests()
+        {
+            TestObject = new NullableShortGeneratorAttribute();
+        }
+
         [Fact]
         public void Next()
         {

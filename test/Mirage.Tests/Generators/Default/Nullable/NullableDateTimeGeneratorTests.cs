@@ -6,8 +6,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators.Default.Nullable
 {
-    public class NullableDateTimeGeneratorTests : TestingDirectoryFixture
+    public class NullableDateTimeGeneratorTests : TestBaseClass<NullableDateTimeGenerator>
     {
+        public NullableDateTimeGeneratorTests()
+        {
+            TestObject = new NullableDateTimeGenerator();
+        }
+
         [Fact]
         public void Next()
         {

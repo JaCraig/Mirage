@@ -52,7 +52,7 @@ namespace Mirage.Generators.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public bool? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (bool?)rand.Next<bool>();
+            return !(rand?.Next<bool>() ?? false) ? null : (bool?)rand.Next<bool>();
         }
 
         /// <summary>

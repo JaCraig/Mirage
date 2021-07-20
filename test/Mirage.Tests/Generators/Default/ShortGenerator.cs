@@ -1,15 +1,16 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class ShortGenerator : TestingDirectoryFixture
+    public class ShortGenerator : TestBaseClass<ShortGeneratorAttribute>
     {
+        public ShortGenerator()
+        {
+            TestObject = new ShortGeneratorAttribute(0, short.MaxValue);
+        }
+
         [Fact]
         public void Next()
         {

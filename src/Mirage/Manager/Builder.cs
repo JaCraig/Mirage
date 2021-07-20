@@ -39,7 +39,8 @@ namespace Mirage.Manager
         public Builder(IEnumerable<IGenerator> generators)
         {
             Generators = new ConcurrentDictionary<Type, IGenerator>();
-            foreach (var Generator in generators.Where(x => !(x.GetType().Namespace.IndexOf("MIRAGE", StringComparison.InvariantCultureIgnoreCase) >= 0)))
+            var MirageAssembly = typeof(Builder).Assembly;
+            foreach (var Generator in generators.Where(x => x.GetType().Assembly != MirageAssembly))
             {
                 Generators.Add(Generator.TypeGenerated, Generator);
             }
@@ -75,6 +76,8 @@ namespace Mirage.Manager
         /// <returns>The generator specified</returns>
         public IGenerator? GetGenerator(Type classType)
         {
+            if (classType is null)
+                return null;
             if (Generators.TryGetValue(classType, out var Generator))
                 return Generator;
             var TypeGeneratedInfo = classType.GetTypeInfo();

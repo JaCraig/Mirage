@@ -1,15 +1,16 @@
 ﻿using Mirage.Generators;
 using Mirage.Tests.BaseClasses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class LongGenerator : TestingDirectoryFixture
+    public class LongGenerator : TestBaseClass<LongGeneratorAttribute>
     {
+        public LongGenerator()
+        {
+            TestObject = new LongGeneratorAttribute(0, long.MaxValue);
+        }
+
         [Fact]
         public void Next()
         {

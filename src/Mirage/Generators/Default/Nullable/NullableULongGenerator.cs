@@ -65,7 +65,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public ulong? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (ulong?)rand.Next<ulong>();
+            return !(rand?.Next<bool>() ?? false) ? null : (ulong?)rand.Next<ulong>();
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public ulong? Next(Random rand, ulong? min, ulong? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= ulong.MinValue;
             max ??= ulong.MaxValue;

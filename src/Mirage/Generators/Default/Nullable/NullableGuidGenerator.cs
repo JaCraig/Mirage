@@ -55,7 +55,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public Guid? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (Guid?)rand.Next<Guid>();
+            return !(rand?.Next<bool>() ?? false) ? null : (Guid?)rand.Next<Guid>();
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public Guid? Next(Random rand, Guid? min, Guid? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= Guid.Empty;
             max ??= Guid.Empty;

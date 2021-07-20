@@ -5,8 +5,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class DateTimeGeneratorTests : TestingDirectoryFixture
+    public class DateTimeGeneratorTests : TestBaseClass<DateTimeGenerator>
     {
+        public DateTimeGeneratorTests()
+        {
+            TestObject = new DateTimeGenerator();
+        }
+
         [Fact]
         public void Next()
         {

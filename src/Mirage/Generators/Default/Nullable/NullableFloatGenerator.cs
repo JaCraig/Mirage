@@ -46,8 +46,6 @@ namespace Mirage.Generators.Default.Nullable
         {
         }
 
-        private const float EPSILON = 0.0001f;
-
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
         /// </summary>
@@ -60,6 +58,8 @@ namespace Mirage.Generators.Default.Nullable
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(float?);
 
+        private const float EPSILON = 0.0001f;
+
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
@@ -67,7 +67,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public float? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (float?)rand.Next<float>();
+            return !(rand?.Next<bool>() ?? false) ? null : (float?)rand.Next<float>();
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public float? Next(Random rand, float? min, float? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= float.MinValue;
             max ??= float.MaxValue;

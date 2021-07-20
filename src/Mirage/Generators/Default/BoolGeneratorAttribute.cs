@@ -52,7 +52,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public bool Next(Random rand)
         {
-            return rand.Next(0, 2) == 1;
+            return rand?.Next(0, 2) == 1;
         }
 
         /// <summary>

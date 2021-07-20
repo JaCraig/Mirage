@@ -45,7 +45,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public TimeSpan? Next(Random rand)
         {
-            return !rand.Next<bool>() ? null : (TimeSpan?)rand.Next(TimeSpan.MinValue, TimeSpan.MaxValue);
+            return !(rand?.Next<bool>() ?? false) ? null : (TimeSpan?)rand.Next(TimeSpan.MinValue, TimeSpan.MaxValue);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>A randomly generated object of the specified type</returns>
         public TimeSpan? Next(Random rand, TimeSpan? min, TimeSpan? max)
         {
-            if (!rand.Next<bool>())
+            if (!(rand?.Next<bool>() ?? false))
                 return null;
             min ??= TimeSpan.MinValue;
             max ??= TimeSpan.MaxValue;
@@ -72,7 +72,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <returns>The next object</returns>
         public object? NextObj(Random rand, List<object> previouslySeen)
         {
-            return !rand.Next<bool>() ? null : (object)rand.Next(TimeSpan.MinValue, TimeSpan.MaxValue);
+            return !(rand?.Next<bool>() ?? false) ? null : (object)rand.Next(TimeSpan.MinValue, TimeSpan.MaxValue);
         }
     }
 
@@ -124,7 +124,7 @@ namespace Mirage.Generators.Default.Nullable
                 return null;
             TimeSpan.TryParse((string)Min, out var TempMin);
             TimeSpan.TryParse((string)Max, out var TempMax);
-            return !rand.Next<bool>() ? null : (object)rand.Next(TempMin, TempMax);
+            return !(rand?.Next<bool>() ?? false) ? null : (object)rand.Next(TempMin, TempMax);
         }
     }
 }

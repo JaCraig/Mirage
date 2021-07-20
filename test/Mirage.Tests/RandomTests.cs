@@ -29,8 +29,13 @@ namespace Mirage.Tests
         public string TestString { get; set; }
     }
 
-    public class RandomTests : TestingDirectoryFixture
+    public class RandomTests : TestBaseClass<Random>
     {
+        public RandomTests()
+        {
+            TestObject = new Random(1231415);
+        }
+
         [Fact]
         public void CircularReferenceClassGenerator()
         {

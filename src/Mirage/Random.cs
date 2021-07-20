@@ -46,6 +46,12 @@ namespace Mirage
             GeneratorBuilder = Canister.Builder.Bootstrapper?.Resolve<Manager.Builder>() ?? new Manager.Builder(Array.Empty<IGenerator>());
         }
 
+        /// <summary>
+        /// Gets or sets the generator builder.
+        /// </summary>
+        /// <value>The generator builder.</value>
+        private Manager.Builder GeneratorBuilder { get; }
+
         [ThreadStatic]
         private static System.Random? Local;
 
@@ -53,12 +59,6 @@ namespace Mirage
         /// The global seed
         /// </summary>
         private readonly System.Random GlobalSeed = new System.Random();
-
-        /// <summary>
-        /// Gets or sets the generator builder.
-        /// </summary>
-        /// <value>The generator builder.</value>
-        private Manager.Builder GeneratorBuilder { get; }
 
         /// <summary>
         /// Randomly generates a value of the specified type
@@ -94,6 +94,8 @@ namespace Mirage
         /// </exception>
         public object? Next(Type objectType)
         {
+            if (objectType is null)
+                return null;
             var Generator = GeneratorBuilder.GetGenerator(objectType);
             if (Generator is null)
                 throw new ArgumentOutOfRangeException("The type specified, " + objectType.Name + ", does not have a default generator.");
@@ -159,6 +161,8 @@ namespace Mirage
         /// <returns>Item that is returned</returns>
         public T Next<T>(IEnumerable<T> list)
         {
+            if (list is null)
+                return default!;
             var Position = Next(0, list.Count());
             return list.ElementAt(Position);
         }
@@ -173,6 +177,7 @@ namespace Mirage
         /// <returns>The resulting list.</returns>
         public IEnumerable<T>? Next<T>(IEnumerable<T>? list, int count, bool unique = false)
         {
+            list ??= Array.Empty<T>();
             if (count >= list.Count() && unique)
                 return Shuffle(list);
             var ReturnValue = new List<T>();
@@ -208,6 +213,8 @@ namespace Mirage
         /// <returns>The resulting list.</returns>
         public IEnumerable<T>? Next<T>(IEnumerable<T>? list, IEnumerable<decimal> weights, int count, bool unique = false)
         {
+            list ??= Array.Empty<T>();
+            weights ??= Array.Empty<decimal>();
             if (count >= list.Count() && unique)
                 return Shuffle(list);
             var ReturnValue = new List<T>();

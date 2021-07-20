@@ -5,8 +5,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators
 {
-    public class TimeSpanGeneratorTests : TestingDirectoryFixture
+    public class TimeSpanGeneratorTests : TestBaseClass<TimeSpanGenerator>
     {
+        public TimeSpanGeneratorTests()
+        {
+            TestObject = new TimeSpanGenerator();
+        }
+
         [Fact]
         public void Next()
         {

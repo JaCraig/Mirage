@@ -65,7 +65,7 @@ namespace Mirage.Generators.Default
         /// <returns>A randomly generated object of the specified type</returns>
         public byte[] Next(Random rand)
         {
-            return Min is null || Max is null ? Array.Empty<byte>() : rand.Next<byte>(rand.Next((int)Min, (int)Max)).ToArray();
+            return Min is null || Max is null || rand is null ? Array.Empty<byte>() : rand.Next<byte>(rand.Next((int)Min, (int)Max)).ToArray();
         }
 
         /// <summary>

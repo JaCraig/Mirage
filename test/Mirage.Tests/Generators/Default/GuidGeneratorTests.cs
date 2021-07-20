@@ -5,8 +5,13 @@ using Xunit;
 
 namespace Mirage.Tests.Generators.Default
 {
-    public class GuidGeneratorTests : TestingDirectoryFixture
+    public class GuidGeneratorTests : TestBaseClass<GuidGeneratorAttribute>
     {
+        public GuidGeneratorTests()
+        {
+            TestObject = new GuidGeneratorAttribute();
+        }
+
         [Fact]
         public void Next()
         {

@@ -52,6 +52,9 @@ namespace Mirage
         /// <value>The generator builder.</value>
         private Manager.Builder GeneratorBuilder { get; }
 
+        /// <summary>
+        /// The local seed
+        /// </summary>
         [ThreadStatic]
         private static System.Random? Local;
 

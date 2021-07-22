@@ -37,16 +37,14 @@ namespace Mirage.Module
         /// Loads the module using the bootstrapper
         /// </summary>
         /// <param name="bootstrapper">The bootstrapper.</param>
-        public void Load(IBootstrapper bootstrapper)
+        public void Load(IBootstrapper? bootstrapper)
         {
-            if (bootstrapper is null)
-                return;
-            bootstrapper.RegisterAll<IGenerator>();
-            bootstrapper.Register(typeof(EnumGenerator<>));
-            bootstrapper.Register(typeof(ClassGenerator<>));
-            bootstrapper.Register(typeof(IEnumerableGenerator<>));
-            bootstrapper.Register<Manager.Builder>(ServiceLifetime.Singleton);
-            bootstrapper.Register<Random>();
+            bootstrapper?.RegisterAll<IGenerator>()
+                .Register(typeof(EnumGenerator<>))
+                .Register(typeof(ClassGenerator<>))
+                .Register(typeof(IEnumerableGenerator<>))
+                .Register<Manager.Builder>(ServiceLifetime.Singleton)
+                .Register<Random>();
         }
     }
 }

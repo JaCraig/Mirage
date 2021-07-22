@@ -87,7 +87,7 @@ namespace Mirage.Generators
                 bool Generated = false;
                 var ValidationAttributes = Property.Attributes<ValidationAttribute>();
                 var Attribute = Property.Attribute<GeneratorAttributeBase>();
-                if (Attribute != null)
+                if (!(Attribute is null))
                 {
                     do
                     {
@@ -148,6 +148,12 @@ namespace Mirage.Generators
         public override Type TypeGenerated => typeof(object);
 
         /// <summary>
+        /// Gets the method input types.
+        /// </summary>
+        /// <value>The method input types.</value>
+        private Type[] MethodInputTypes { get; } = new Type[] { typeof(Random), typeof(List<object>) };
+
+        /// <summary>
         /// Generates next object
         /// </summary>
         /// <param name="rand">The rand.</param>
@@ -158,7 +164,7 @@ namespace Mirage.Generators
             if (ClassType is null)
                 return null;
             var FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
-            var NextFunction = FinalClassType.GetTypeInfo().GetMethod("NextObj", new Type[] { typeof(Random), typeof(List<object>) });
+            var NextFunction = FinalClassType.GetTypeInfo().GetMethod(nameof(NextObj), MethodInputTypes);
             var Generator = Canister.Builder.Bootstrapper?.Resolve(FinalClassType, null!);
             return NextFunction.Invoke(Generator, new object[] { rand, previouslySeen });
         }

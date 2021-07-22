@@ -59,7 +59,11 @@ namespace Mirage.Generators
         public DateTime Next(Random rand, DateTime min, DateTime max)
         {
             if (min > max)
-                throw new ArgumentException("The minimum value must be less than the maximum value");
+            {
+                var holder = min;
+                min = max;
+                max = holder;
+            }
             return min + new TimeSpan((long)(new TimeSpan(max.Ticks - min.Ticks).Ticks * (rand?.NextDouble() ?? 0)));
         }
 

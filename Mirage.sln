@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9838A04E-C8B2-4E9A-A389-17F28C116D17}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage", "src\Mirage\Mirage.csproj", "{3D36A609-739F-4261-BDCB-4E0B01144EEE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage.Tests", "test\Mirage.Tests\Mirage.Tests.csproj", "{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp", "ExampleApp\ExampleApp.csproj", "{A11956D0-1BDE-4FF3-B723-8B60394C8781}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11956D0-1BDE-4FF3-B723-8B60394C8781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11956D0-1BDE-4FF3-B723-8B60394C8781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11956D0-1BDE-4FF3-B723-8B60394C8781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11956D0-1BDE-4FF3-B723-8B60394C8781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3D36A609-739F-4261-BDCB-4E0B01144EEE} = {9838A04E-C8B2-4E9A-A389-17F28C116D17}
 		{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA} = {0F8C5170-86BB-4204-BF34-9B0E07BCB673}
+		{A11956D0-1BDE-4FF3-B723-8B60394C8781} = {0F8C5170-86BB-4204-BF34-9B0E07BCB673}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56114755-940D-4D95-80A0-ADF34129B61C}

@@ -8,11 +8,12 @@ Mirage is an open source library for .Net designed to create random data for POC
 
 Mirage relies on [Canister](https://github.com/JaCraig/Canister) in order to hook itself up. In order for this to work, you must do the following at startup:
 
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                    .RegisterMirage()
-                    .Build();
+    var MyServices = new ServiceCollection();
+    ...
+    MyServices.AddCanisterModules();  // Should be last call in order to find any services that you might have added manually.
+                                      // Any services added after this may not be found by the system.
 					
-The RegisterMirage function is an extension method that registers it with the IoC container. When this is done, Mirage is ready to use.
+When this is done, Mirage is ready to use.
 
 ## Basic Usage
 

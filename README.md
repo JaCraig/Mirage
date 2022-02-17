@@ -91,14 +91,7 @@ This will create an object of the type specified and randomly assign values to t
 
 ## Adding Your Own Generator
 
-You may wish to create your own random generator or replace one that is already in the system. In order to do this simply create a class that implements the IGenerator class. Simply specify in the class what type it generates and the system will either add it to the list of generators or replace the existing one with your own. In order to have this new class be picked up, you must add the assembly that it is in to Canister:
-
-    Canister.Builder.CreateContainer(new List<ServiceDescriptor>())
-                    .RegisterMirage()
-					.AddAssembly(typeof(MyTypeGenerator).GetTypeInfo().Assembly)
-                    .Build();
-
-The system will then pick it up automatically and call it as requested. Similarly if you wish for it to be picked up when generating a class, make sure your class inherits from GeneratorAttributeBase. If it does, the random class generation will pick it up.
+You may wish to create your own random generator or replace one that is already in the system. In order to do this simply create a class that implements the IGenerator class. Simply specify in the class what type it generates and the system will either add it to the list of generators or replace the existing one with your own. As long as you either don't specify which modules to load or include your target assembly when calling AddCanisterModules, the system will then pick it up automatically and call it as requested. Similarly if you wish for it to be picked up when generating a class, make sure your class inherits from GeneratorAttributeBase. If it does, the random class generation will pick it up.
 
 ## Installation
 

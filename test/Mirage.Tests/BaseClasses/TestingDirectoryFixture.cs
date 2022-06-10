@@ -74,7 +74,7 @@ namespace Mirage.Tests.BaseClasses
         /// <summary>
         /// The lock object
         /// </summary>
-        private static readonly object LockObject = new();
+        private static readonly object LockObject = new object();
 
         /// <summary>
         /// Attempts to break the object.

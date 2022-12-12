@@ -16,6 +16,7 @@ limitations under the License.
 
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
+using Mirage.Manager;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -130,7 +131,7 @@ namespace Mirage.Generators
                 return null;
             var FinalClassType = typeof(EnumGenerator<>).MakeGenericType(EnumType);
             var NextFunction = FinalClassType.GetTypeInfo().GetMethod("Next", new Type[] { typeof(Random) });
-            var Generator = Canister.Builder.Bootstrapper?.GetService(FinalClassType);
+            var Generator = Services.ServiceProvider?.GetService(FinalClassType);
             return Generator is null ? null : NextFunction.Invoke(Generator, new object[] { rand });
         }
     }

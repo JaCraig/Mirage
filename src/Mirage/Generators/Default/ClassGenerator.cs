@@ -17,6 +17,7 @@ limitations under the License.
 using BigBook;
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
+using Mirage.Manager;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -165,7 +166,7 @@ namespace Mirage.Generators
                 return null;
             var FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
             var NextFunction = FinalClassType.GetTypeInfo().GetMethod(nameof(NextObj), MethodInputTypes);
-            var Generator = Canister.Builder.Bootstrapper?.Resolve(FinalClassType, null!);
+            var Generator = Services.ServiceProvider?.GetService(FinalClassType);
             return NextFunction.Invoke(Generator, new object[] { rand, previouslySeen });
         }
     }

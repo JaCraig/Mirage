@@ -15,7 +15,9 @@ limitations under the License.
 */
 
 using BigBook;
+using Microsoft.Extensions.DependencyInjection;
 using Mirage.Interfaces;
+using Mirage.Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +35,7 @@ namespace Mirage
         /// </summary>
         public Random()
         {
-            GeneratorBuilder = Canister.Builder.Bootstrapper?.Resolve<Manager.Builder>() ?? new Manager.Builder(Array.Empty<IGenerator>());
+            GeneratorBuilder = Services.ServiceProvider?.GetService<Manager.Builder>() ?? new Manager.Builder(Array.Empty<IGenerator>());
         }
 
         /// <summary>
@@ -43,7 +45,7 @@ namespace Mirage
         public Random(int Seed)
             : base(Seed)
         {
-            GeneratorBuilder = Canister.Builder.Bootstrapper?.Resolve<Manager.Builder>() ?? new Manager.Builder(Array.Empty<IGenerator>());
+            GeneratorBuilder = Services.ServiceProvider?.GetService<Manager.Builder>() ?? new Manager.Builder(Array.Empty<IGenerator>());
         }
 
         /// <summary>

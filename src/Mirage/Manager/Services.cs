@@ -22,16 +22,21 @@ namespace Mirage.Manager
                 {
                     if (_ServiceProvider is not null)
                         return _ServiceProvider;
-                    _ServiceProvider = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+                    _ServiceProvider = (ServiceCollection ?? new ServiceCollection().AddCanisterModules())?.BuildServiceProvider();
                 }
                 return _ServiceProvider;
             }
         }
 
         /// <summary>
+        /// The services
+        /// </summary>
+        internal static IServiceCollection? ServiceCollection;
+
+        /// <summary>
         /// The service provider lock
         /// </summary>
-        private static readonly object ServiceProviderLock = new object();
+        private static readonly object ServiceProviderLock = new();
 
         /// <summary>
         /// The service provider

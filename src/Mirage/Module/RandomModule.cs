@@ -19,6 +19,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Mirage.Generators;
 using Mirage.Generators.Default;
 using Mirage.Interfaces;
+using Mirage.Manager;
 
 namespace Mirage.Module
 {
@@ -39,6 +40,7 @@ namespace Mirage.Module
         /// <param name="bootstrapper">The bootstrapper.</param>
         public void Load(IServiceCollection? bootstrapper)
         {
+            Services.ServiceCollection = bootstrapper;
             bootstrapper?.AddAllTransient<IGenerator>()
                 ?.AddTransient(typeof(EnumGenerator<>))
                 .AddTransient(typeof(ClassGenerator<>))

@@ -38,10 +38,9 @@ namespace Mirage.Tests.BaseClasses
         [Fact]
         public Task BreakObject()
         {
-            return Task.CompletedTask;
             return Mech.BreakAsync(TestObject, new Options
             {
-                MaxDuration = 1000,
+                MaxDuration = 100,
                 DiscoverInheritedMethods = false,
                 ExceptionHandlers = new ExceptionHandler().IgnoreException<ArgumentOutOfRangeException>((_, __) => true)
                 .IgnoreException<OutOfMemoryException>((_, __) => true)
@@ -60,10 +59,10 @@ namespace Mirage.Tests.BaseClasses
         /// </summary>
         protected TestBaseClass()
         {
-            //lock (LockObject)
-            //{
-            //    _ = Mech.Default;
-            //}
+            lock (LockObject)
+            {
+                _ = Mech.Default;
+            }
         }
 
         /// <summary>
@@ -75,17 +74,13 @@ namespace Mirage.Tests.BaseClasses
         /// <summary>
         /// The lock object
         /// </summary>
-        private static readonly object LockObject = new object();
+        private static readonly object LockObject = new();
 
         /// <summary>
         /// Attempts to break the object.
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakType()
-        {
-            return Task.CompletedTask;
-            return Mech.BreakAsync(ObjectType, new Options { MaxDuration = 1000 });
-        }
+        public Task BreakType() => Mech.BreakAsync(ObjectType, new Options { MaxDuration = 100 });
     }
 }

@@ -23,15 +23,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mecha.xUnit" Version="1.0.41" />
+    <PackageReference Include="Mecha.xUnit" Version="2.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.0" />
-    <PackageReference Include="Valkyrie" Version="4.0.0" />
+    <PackageReference Include="Valkyrie" Version="4.0.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="xunit" Version="2.4.2" />
-    <PackageReference Include="FileCurator" Version="4.0.0" />
+    <PackageReference Include="FileCurator" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,58 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
+
+<a name="4.0.2"></a>
+## [4.0.2](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.2) (2023-7-14)
+
+### Bug Fixes
+
+* Adding automation to the project ([49b7476](https://www.github.com/JaCraig/Mirage/commit/49b74766021ac1f59d7c84db86b890a92622d1ac))
+
+### Other
+
+* - Fixes for TimeSpan/DateTime generators when max is less than min. ([8df880e](https://www.github.com/JaCraig/Mirage/commit/8df880efb7e9d02cc23ba01dacc8e61b60baa853))
+* - Package updates ([737ff57](https://www.github.com/JaCraig/Mirage/commit/737ff570c98925804bd98de8004cc29951a3fcc4))
+* - Package updates and fix for service management. ([592143a](https://www.github.com/JaCraig/Mirage/commit/592143aa6ca09a74cfee5ebd028e2717e17c9904))
+* - Package updates. ([0256029](https://www.github.com/JaCraig/Mirage/commit/0256029339f9ea2b7c7324f028a525127fe36e3e))
+* - Package updates. ([3a7aa7a](https://www.github.com/JaCraig/Mirage/commit/3a7aa7a92e77203a3f12f47fb76d812a381d81ae))
+* - Package updates. ([462bf43](https://www.github.com/JaCraig/Mirage/commit/462bf4318a9673346cfcad4b7d3cf9447474d272))
+* - Package updates. ([e25a47e](https://www.github.com/JaCraig/Mirage/commit/e25a47e10b50f3d0641259808146b937ff58f490))
+* - Updated documentation slightly. ([255a331](https://www.github.com/JaCraig/Mirage/commit/255a33120e1f05eae46f904896cbb63a2124e050))
+* - Updates to tests. ([39f9cd8](https://www.github.com/JaCraig/Mirage/commit/39f9cd8515dc420208f00791d627de39d86e4bef))
+* Added a problem string generator based on the big list of naughty strings. ([5d49db4](https://www.github.com/JaCraig/Mirage/commit/5d49db4bc89f2b35dad46455ad2d392d8402f1b4))
+* Added Guid generator. ([d9f32fc](https://www.github.com/JaCraig/Mirage/commit/d9f32fcd7ae7293d9e6311453a107722c9abc192))
+* Added more options for list randomization including weighted lists and generating unique lists. ([93390c9](https://www.github.com/JaCraig/Mirage/commit/93390c9c0dc47a2d2f4753d9f2b87360bcc1faf6))
+* Added the basic type generators. ([6875e1b](https://www.github.com/JaCraig/Mirage/commit/6875e1be5321252630d48db2028828f27a46c724))
+* Added validation to class generation. Any ValidationAttributes are checked before returning. ([2f47039](https://www.github.com/JaCraig/Mirage/commit/2f47039db1f6d4facd6b0a3655dfd31ca54604e6))
+* Also updating one of the methods so that it uses the proper generators. ([1f083c1](https://www.github.com/JaCraig/Mirage/commit/1f083c18e6b44b9cbebea5b4b69c394ebc87faa8))
+* Finished adding null generators. ([73599c5](https://www.github.com/JaCraig/Mirage/commit/73599c5d40309e19728358dc70f5aa7a5034f54e))
+* Fixed a couple of the attributes so that they can be used in various IoC containers. ([862563c](https://www.github.com/JaCraig/Mirage/commit/862563c9cd33234dc95b02ff9d3e83c34c17fcf6))
+* Fixed default ranges for a number of generators. ([26beff7](https://www.github.com/JaCraig/Mirage/commit/26beff7a717fb0f483d1c7cc68563ab3be54c44f))
+* Fixing circular reference class generation. ([5239081](https://www.github.com/JaCraig/Mirage/commit/5239081c53e84f0d178fae8821f3352a5b1884da))
+* Fixing issue with class generation. ([06730ba](https://www.github.com/JaCraig/Mirage/commit/06730ba2b8daa47451281825441218e2aa1f400d))
+* Fixing issues with overflow on generating int, short, etc. when the range is T.Min to T.Max. ([b0ab49d](https://www.github.com/JaCraig/Mirage/commit/b0ab49dd4a9660a16c954350748165de8a7d624d))
+* Fixing Nullable date time generation. ([10f79f5](https://www.github.com/JaCraig/Mirage/commit/10f79f5950d2ad169bd64abea0a968b5cfd9396a))
+* Fixing slight issue with nullable TimeSpans. ([6da8c3c](https://www.github.com/JaCraig/Mirage/commit/6da8c3c09d410b11954051e26f88201de9ee0a2a))
+* Initial commit ([1aa83f1](https://www.github.com/JaCraig/Mirage/commit/1aa83f1289aaa8fed00c60becca1eb38232140cf))
+* Made improvements to street address, company, and name generators. ([e538c6d](https://www.github.com/JaCraig/Mirage/commit/e538c6d2d4f8fc866a80b6a17239bca5f8afed1d))
+* Merge branch 'master' of https://github.com/JaCraig/Mirage ([d9a6517](https://www.github.com/JaCraig/Mirage/commit/d9a65176633c943b458189bc44ae61a05199afb2))
+* Package updates and changes for null reference checks. ([38f0a1f](https://www.github.com/JaCraig/Mirage/commit/38f0a1fbcc1edf65e9487d609b3f1aa41b0d0f6b))
+* Package updates. ([5dbf9a5](https://www.github.com/JaCraig/Mirage/commit/5dbf9a5239c07b98ee02649917ac05cf048815e3))
+* Package updates. ([8c0faf6](https://www.github.com/JaCraig/Mirage/commit/8c0faf608151ab27c4b0157b00c4a3e877409b33))
+* Package updates. ([5747da6](https://www.github.com/JaCraig/Mirage/commit/5747da60721221b190b74dcb181a53fc5867a0ad))
+* Package updates. ([ff563a6](https://www.github.com/JaCraig/Mirage/commit/ff563a6af95fc3408c3df7205f341afe5b51b08a))
+* Package updates. ([8bf3b53](https://www.github.com/JaCraig/Mirage/commit/8bf3b533caca736819bd710c895ba26ab0fec044))
+* Package updates. ([5fc999d](https://www.github.com/JaCraig/Mirage/commit/5fc999db497ba76610ca1604d0200e1135fa12e8))
+* Package updates. ([a96842c](https://www.github.com/JaCraig/Mirage/commit/a96842caa10a3707afa458d2fcc0759884c3aaff))
+* Registering Random by default. ([fc40871](https://www.github.com/JaCraig/Mirage/commit/fc40871d2c1f26954e7ec111995cebe8c40fcb46))
+* Some updates to IGenerator to help with setup. ([5e5f6cc](https://www.github.com/JaCraig/Mirage/commit/5e5f6ccdc76818a6d7aaa3f712f958bd680c0bdd))
+* Started adding nullable types. Byte is intentionally fubar at the moment so stuff doesn't get pushed up. ([d302ccd](https://www.github.com/JaCraig/Mirage/commit/d302ccd6874ac6f84e92e839835c99051defa1ad))
+* Update README.md ([6b08756](https://www.github.com/JaCraig/Mirage/commit/6b08756f820a46a8f734709ba57c6103294cbd93))
+* Updated packages. ([ee6ddd1](https://www.github.com/JaCraig/Mirage/commit/ee6ddd1a2eafd5702e54823970b311fd964cf023))
+* Updated ReadMe so that it actually talks about the library. ([312d866](https://www.github.com/JaCraig/Mirage/commit/312d86602554e4b7273744ade619d715ed72a3ea))
+* Updated to VS 2017 ([e475140](https://www.github.com/JaCraig/Mirage/commit/e475140a331901fa26ba25a772400110c89f5c1b))
+* Updating DateTime and TimeSpan generator attributes. ([fe7b372](https://www.github.com/JaCraig/Mirage/commit/fe7b372b7aa8c838cc199e1500167f598da6dd7d))
+* Updating packages. ([b756d75](https://www.github.com/JaCraig/Mirage/commit/b756d75a94abfd5d4e4e90dd477ab7873a0c2789))
+* Updating to .net standard 2.0. ([2a99578](https://www.github.com/JaCraig/Mirage/commit/2a9957882054e81383e9fe56d1ca85e9fddbbc65))
+

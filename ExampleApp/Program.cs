@@ -77,13 +77,16 @@ namespace ExampleApp
         /// <param name="args">The arguments.</param>
         private static void Main(string[] args)
         {
-            var MyServices = new ServiceCollection();               // Note that in an ASP.Net app, you'd just use the service collection it feeds you.
-            MyServices.AddCanisterModules();                        // Wire up Mirage and other libraries using Canister.
+            // Wire up Mirage and other libraries using Canister.
+            var MyServices = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
 
-            Mirage.Random RandomGenerator = new Mirage.Random();    // Create Mirage object
-            for (var x = 0; x < 1000; ++x)
+            // Create a new instance of the random generator and generate 1000 random users.
+            Mirage.Random RandomGenerator = new Mirage.Random();
+            for (var x = 0; x < 10; ++x)
             {
-                var NewUser = RandomGenerator.Next<User>();         // Generate random User object
+                // Generate a new user
+                var NewUser = RandomGenerator.Next<User>();
+                // Write the user to the console
                 Console.WriteLine(NewUser);
             }
         }

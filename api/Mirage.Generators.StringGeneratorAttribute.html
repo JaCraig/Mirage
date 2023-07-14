@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StringGeneratorAttribute
+ | Mirage API Reference </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StringGeneratorAttribute
+ | Mirage API Reference ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/discord.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  <meta property="docfx:newtab" content="true">
+    </head>
+    <body>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../images/icon.png" alt="Mirage" class="logomark">
+              <span class="brand-title">Mirage</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../images/icon.png" alt="Mirage" class="logomark">
+                          <span class="brand-title">Mirage</span>
+                        </a>                      </div>
+
+                      <div class="sidesearch">
+                        <form id="search" role="search" class="search">
+                            <i class="bi bi-search search-icon"></i>
+                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
+                        </form>
+                      </div>
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  <strong><a href='https://github.com/JaCraig/Mirage'>Open in Github</a></strong>
+  
+                </div>            </nav>
+
+            <main class="main-panel">
+
+                <div id="search-results" style="display: none;">
+                  <h1 class="search-list">Search Results for <span></span></h1>
+                  <div class="sr-items">
+                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
+                  </div>
+                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+                </div>
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                         <div id="contribution">
+                               <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                         </div>
+
+                    <article class="content wrap" id="_content" data-uid="Mirage.Generators.StringGeneratorAttribute">
+
+
+
+  <h1 id="Mirage_Generators_StringGeneratorAttribute" data-uid="Mirage.Generators.StringGeneratorAttribute" class="text-break">Class StringGeneratorAttribute
+</h1>
+  <div class="markdown level0 summary"><p>Randomly generates strings</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+    <div class="level2"><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
+    <div class="level3"><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+    <div class="level4"><span class="xref">StringGeneratorAttribute</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mirage.Interfaces.IGenerator-1.html">IGenerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
+    <div><a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_TypeGenerated">StringGeneratorBase.TypeGenerated</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_Mirage_Random_System_String_System_String_">StringGeneratorBase.Next(Random, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__">StringGeneratorBase.NextObj(Random, List&lt;object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_Max">GeneratorAttributeBase.Max</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_Min">GeneratorAttributeBase.Min</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.equals">Attribute.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-assembly-system-type)">Attribute.GetCustomAttribute(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-assembly-system-type-system-boolean)">Attribute.GetCustomAttribute(Assembly, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-memberinfo-system-type)">Attribute.GetCustomAttribute(MemberInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-memberinfo-system-type-system-boolean)">Attribute.GetCustomAttribute(MemberInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-module-system-type)">Attribute.GetCustomAttribute(Module, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-module-system-type-system-boolean)">Attribute.GetCustomAttribute(Module, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-parameterinfo-system-type)">Attribute.GetCustomAttribute(ParameterInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattribute#system-attribute-getcustomattribute(system-reflection-parameterinfo-system-type-system-boolean)">Attribute.GetCustomAttribute(ParameterInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly)">Attribute.GetCustomAttributes(Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly-system-boolean)">Attribute.GetCustomAttributes(Assembly, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly-system-type)">Attribute.GetCustomAttributes(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-assembly-system-type-system-boolean)">Attribute.GetCustomAttributes(Assembly, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo)">Attribute.GetCustomAttributes(MemberInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-boolean)">Attribute.GetCustomAttributes(MemberInfo, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-type)">Attribute.GetCustomAttributes(MemberInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-memberinfo-system-type-system-boolean)">Attribute.GetCustomAttributes(MemberInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module)">Attribute.GetCustomAttributes(Module)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module-system-boolean)">Attribute.GetCustomAttributes(Module, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module-system-type)">Attribute.GetCustomAttributes(Module, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-module-system-type-system-boolean)">Attribute.GetCustomAttributes(Module, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo)">Attribute.GetCustomAttributes(ParameterInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo-system-boolean)">Attribute.GetCustomAttributes(ParameterInfo, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo-system-type)">Attribute.GetCustomAttributes(ParameterInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.getcustomattributes#system-attribute-getcustomattributes(system-reflection-parameterinfo-system-type-system-boolean)">Attribute.GetCustomAttributes(ParameterInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.gethashcode">Attribute.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefaultattribute">Attribute.IsDefaultAttribute()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-assembly-system-type)">Attribute.IsDefined(Assembly, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-assembly-system-type-system-boolean)">Attribute.IsDefined(Assembly, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-memberinfo-system-type)">Attribute.IsDefined(MemberInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-memberinfo-system-type-system-boolean)">Attribute.IsDefined(MemberInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-module-system-type)">Attribute.IsDefined(Module, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-module-system-type-system-boolean)">Attribute.IsDefined(Module, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-parameterinfo-system-type)">Attribute.IsDefined(ParameterInfo, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.isdefined#system-attribute-isdefined(system-reflection-parameterinfo-system-type-system-boolean)">Attribute.IsDefined(ParameterInfo, Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.match">Attribute.Match(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute.typeid">Attribute.TypeId</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a>.<a class="xref" href="Mirage.Generators.html">Generators</a></h6>
+  <h6><strong>Assembly</strong>: Mirage.dll</h6>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class StringGeneratorAttribute : StringGeneratorBase, IGenerator&lt;string&gt;, IGenerator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute__ctor.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L34">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute__ctor_" data-uid="Mirage.Generators.StringGeneratorAttribute.#ctor*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute__ctor" data-uid="Mirage.Generators.StringGeneratorAttribute.#ctor">StringGeneratorAttribute()</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringGeneratorAttribute()</code></pre>
+  </div>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute__ctor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute__ctor_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.%23ctor(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L45">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute__ctor_" data-uid="Mirage.Generators.StringGeneratorAttribute.#ctor*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute__ctor_System_Int32_System_String_System_Int32_" data-uid="Mirage.Generators.StringGeneratorAttribute.#ctor(System.Int32,System.String,System.Int32)">StringGeneratorAttribute(int, string, int)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mirage.Generators.StringGeneratorAttribute.html">StringGeneratorAttribute</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringGeneratorAttribute(int length, string allowedCharacters = &quot;.&quot;, int numberOfNonAlphaNumericsAllowed = 2147483647)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">allowedCharacters</span></td>
+        <td><p>The allowed characters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">numberOfNonAlphaNumericsAllowed</span></td>
+        <td><p>The number of non alpha numerics allowed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute__ctor_System_Int32_System_String_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute_AllowedCharacters.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.AllowedCharacters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L57">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute_AllowedCharacters_" data-uid="Mirage.Generators.StringGeneratorAttribute.AllowedCharacters*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute_AllowedCharacters" data-uid="Mirage.Generators.StringGeneratorAttribute.AllowedCharacters">AllowedCharacters</h4>
+  <div class="markdown level1 summary"><p>Gets the allowed characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AllowedCharacters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The allowed characters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute_AllowedCharacters_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute_Default.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.Default%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L63">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute_Default_" data-uid="Mirage.Generators.StringGeneratorAttribute.Default*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute_Default" data-uid="Mirage.Generators.StringGeneratorAttribute.Default">Default</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a> is a default one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Default { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if default; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_Default">GeneratorAttributeBase.Default</a></div>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute_Default_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute_Length.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.Length%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L69">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute_Length_" data-uid="Mirage.Generators.StringGeneratorAttribute.Length*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute_Length" data-uid="Mirage.Generators.StringGeneratorAttribute.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The length.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute_Length_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L75">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed_" data-uid="Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed" data-uid="Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed">NumberOfNonAlphaNumericsAllowed</h4>
+  <div class="markdown level1 summary"><p>Gets the number of non alpha numerics allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfNonAlphaNumericsAllowed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of non alpha numerics allowed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_StringGeneratorAttribute_Next_Mirage_Random_.md&amp;value=---%0Auid%3A%20Mirage.Generators.StringGeneratorAttribute.Next(Mirage.Random)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L82">View Source</a>
+  </span>
+  <a id="Mirage_Generators_StringGeneratorAttribute_Next_" data-uid="Mirage.Generators.StringGeneratorAttribute.Next*"></a>
+  <h4 id="Mirage_Generators_StringGeneratorAttribute_Next_Mirage_Random_" data-uid="Mirage.Generators.StringGeneratorAttribute.Next(Mirage.Random)">Next(Random)</h4>
+  <div class="markdown level1 summary"><p>Generates a random value of the specified type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Next(Random rand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mirage.Random.html">Random</a></td>
+        <td><span class="parametername">rand</span></td>
+        <td><p>Random number generator that it can use</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A randomly generated object of the specified type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_Mirage_Random_">StringGeneratorBase.Next(Random)</a></div>
+  <h5 id="Mirage_Generators_StringGeneratorAttribute_Next_Mirage_Random__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mirage.Interfaces.IGenerator-1.html">IGenerator&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+  </div>
+
+</article>
+                </div>
+
+                <div class="copyright-footer">
+                    <span>&#169; James Craig. All rights reserved.</span>
+                </div>
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

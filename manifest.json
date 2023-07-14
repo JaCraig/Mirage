@@ -1,0 +1,1061 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/Mirage/Mirage/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.Registration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.Registration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.AddressAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.AddressAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.BaseClasses.GeneratorAttributeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.BaseClasses.GeneratorAttributeBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.BaseClasses.StringGeneratorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.BaseClasses.StringGeneratorBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.BoolGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.BoolGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ByteGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ByteGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.CharGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.CharGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.CityAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.CityAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ClassGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ClassGenerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ClassGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ClassGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.CompanyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.CompanyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.CountryAbbreviation3CharAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.CountryAbbreviation3CharAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.CountryAbbreviationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.CountryAbbreviationAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.CountryAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.CountryAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.ProfileImageAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.ProfileImageAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.TimeZoneAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.TimeZoneAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.DateTimeGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.DateTimeGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.DateTimeGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.DateTimeGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.DecimalGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.DecimalGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ArrayGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ArrayGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.DictionaryGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.DictionaryGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.GuidGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.GuidGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.IEnumerableGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.IEnumerableGenerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.IEnumerableGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.IEnumerableGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ListGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ListGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableDateTimeGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDateTimeGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableTimeSpanGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableTimeSpanGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.Nullable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.Nullable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.DomainNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.DomainNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.DoubleGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.DoubleGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.EmailAddressAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.EmailAddressAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.EnumGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.EnumGenerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.EnumGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.EnumGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.FemaleFirstNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.FemaleFirstNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.FemaleNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.FemaleNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.FemaleNamePrefixAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.FemaleNamePrefixAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.FloatGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.FloatGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.IntGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.IntGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.LastNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.LastNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.LongGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.LongGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.LoremIpsumAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.LoremIpsumAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.MaleFirstNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.MaleFirstNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.MaleNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.MaleNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.MaleNamePrefixAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.MaleNamePrefixAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.NameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.NameSuffixAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.NameSuffixAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.TitleAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.TitleAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Nullable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Nullable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.PatternAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.PatternAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.PhoneNumberAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.PhoneNumberAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.RegexStringAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.RegexStringAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.SByteGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.SByteGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ShortGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ShortGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.StateAbbreviationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.StateAbbreviationAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.StateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.StateAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.StreetAddressAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.StreetAddressAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.String.ProblemStringsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.String.ProblemStringsAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.String.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.String.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.StringGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.StringGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.TimeSpanGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.TimeSpanGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.TimeSpanGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.TimeSpanGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.UIntGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.UIntGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ULongGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ULongGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.UShortGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.UShortGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ZipCodeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ZipCodeAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Interfaces.IGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Interfaces.IGenerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Interfaces.IGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Interfaces.IGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Manager.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Manager.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Manager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Module.RandomModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Module.RandomModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Module.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Module.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Random.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Random.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

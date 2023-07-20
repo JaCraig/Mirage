@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.</Description>
@@ -15,7 +15,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>4.0.2</Version>
+    <Version>4.0.3</Version>
     <Nullable>enable</Nullable>
     <Title>Mirage</Title>
     <Copyright>Copyright © James Craig 2017</Copyright>

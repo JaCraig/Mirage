@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.3"></a>
+## [4.0.3](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.3) (2023-7-20)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([5f055a8](https://www.github.com/JaCraig/Mirage/commit/5f055a8985324d29a72d0344e27849686ec2218f))
+
+### Other
+
+* Merge pull request #2 from JaCraig/dependabot/github_actions/dependencies-0717129e0a ([246da04](https://www.github.com/JaCraig/Mirage/commit/246da040b5758d8ab7b9b1092923e54a84d37d28))
+* Merge pull request #3 from JaCraig/dependabot/nuget/dependencies-dd930e6650 ([f973265](https://www.github.com/JaCraig/Mirage/commit/f9732651372d93d3f175ce3e7bf777651a4be6ea))
+* adding editorconfig ([1925eea](https://www.github.com/JaCraig/Mirage/commit/1925eeab6e12518cffe7c1abb6b24969c137bf73))
+* bump the dependencies group with 2 updates ([df73c1c](https://www.github.com/JaCraig/Mirage/commit/df73c1ca979b137bab8a88a7267da17368292785))
+* dependabot update ([0c2bf23](https://www.github.com/JaCraig/Mirage/commit/0c2bf23d92b634ace038181a5fc3261c1449c16d))
+
 <a name="4.0.2"></a>
 ## [4.0.2](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.2) (2023-7-14)
 

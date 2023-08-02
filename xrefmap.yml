@@ -216,6 +216,12 @@ references:
   fullName.vb: Mirage.Generators.BaseClasses.StringGeneratorBase.New
   nameWithType: StringGeneratorBase.StringGeneratorBase
   nameWithType.vb: StringGeneratorBase.New
+- uid: Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random)
+  fullName: Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random)
+  nameWithType: StringGeneratorBase.Next(Random)
 - uid: Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random,System.String,System.String)
   name: Next(Random, string, string)
   href: api/Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_Mirage_Random_System_String_System_String_
@@ -225,12 +231,6 @@ references:
   fullName.vb: Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random, String, String)
   nameWithType: StringGeneratorBase.Next(Random, string, string)
   nameWithType.vb: StringGeneratorBase.Next(Random, String, String)
-- uid: Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random)
-  fullName: Mirage.Generators.BaseClasses.StringGeneratorBase.Next(Mirage.Random)
-  nameWithType: StringGeneratorBase.Next(Random)
 - uid: Mirage.Generators.BaseClasses.StringGeneratorBase.Next*
   name: Next
   href: api/Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_
@@ -305,6 +305,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.BoolGeneratorAttribute.Default
   nameWithType: BoolGeneratorAttribute.Default
+- uid: Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.BoolGeneratorAttribute.html#Mirage_Generators_BoolGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: BoolGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random,System.Boolean,System.Boolean)
   name: Next(Random, bool, bool)
   href: api/Mirage.Generators.BoolGeneratorAttribute.html#Mirage_Generators_BoolGeneratorAttribute_Next_Mirage_Random_System_Boolean_System_Boolean_
@@ -314,12 +320,6 @@ references:
   fullName.vb: Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random, Boolean, Boolean)
   nameWithType: BoolGeneratorAttribute.Next(Random, bool, bool)
   nameWithType.vb: BoolGeneratorAttribute.Next(Random, Boolean, Boolean)
-- uid: Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.BoolGeneratorAttribute.html#Mirage_Generators_BoolGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.BoolGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: BoolGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.BoolGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.BoolGeneratorAttribute.html#Mirage_Generators_BoolGeneratorAttribute_Next_
@@ -403,6 +403,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.ByteGeneratorAttribute.Default
   nameWithType: ByteGeneratorAttribute.Default
+- uid: Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.ByteGeneratorAttribute.html#Mirage_Generators_ByteGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: ByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random,System.Byte,System.Byte)
   name: Next(Random, byte, byte)
   href: api/Mirage.Generators.ByteGeneratorAttribute.html#Mirage_Generators_ByteGeneratorAttribute_Next_Mirage_Random_System_Byte_System_Byte_
@@ -412,12 +418,6 @@ references:
   fullName.vb: Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random, Byte, Byte)
   nameWithType: ByteGeneratorAttribute.Next(Random, byte, byte)
   nameWithType.vb: ByteGeneratorAttribute.Next(Random, Byte, Byte)
-- uid: Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.ByteGeneratorAttribute.html#Mirage_Generators_ByteGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.ByteGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: ByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.ByteGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.ByteGeneratorAttribute.html#Mirage_Generators_ByteGeneratorAttribute_Next_
@@ -501,6 +501,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.CharGeneratorAttribute.Default
   nameWithType: CharGeneratorAttribute.Default
+- uid: Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.CharGeneratorAttribute.html#Mirage_Generators_CharGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: CharGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random,System.Char,System.Char)
   name: Next(Random, char, char)
   href: api/Mirage.Generators.CharGeneratorAttribute.html#Mirage_Generators_CharGeneratorAttribute_Next_Mirage_Random_System_Char_System_Char_
@@ -510,12 +516,6 @@ references:
   fullName.vb: Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random, Char, Char)
   nameWithType: CharGeneratorAttribute.Next(Random, char, char)
   nameWithType.vb: CharGeneratorAttribute.Next(Random, Char, Char)
-- uid: Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.CharGeneratorAttribute.html#Mirage_Generators_CharGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.CharGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: CharGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.CharGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.CharGeneratorAttribute.html#Mirage_Generators_CharGeneratorAttribute_Next_
@@ -603,92 +603,6 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.CityAttribute.Next
   nameWithType: CityAttribute.Next
-- uid: Mirage.Generators.ClassGenerator`1
-  name: ClassGenerator<T>
-  href: api/Mirage.Generators.ClassGenerator-1.html
-  commentId: T:Mirage.Generators.ClassGenerator`1
-  name.vb: ClassGenerator(Of T)
-  fullName: Mirage.Generators.ClassGenerator<T>
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T)
-  nameWithType: ClassGenerator<T>
-  nameWithType.vb: ClassGenerator(Of T)
-- uid: Mirage.Generators.ClassGenerator`1.Default
-  name: Default
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Default
-  commentId: P:Mirage.Generators.ClassGenerator`1.Default
-  fullName: Mirage.Generators.ClassGenerator<T>.Default
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Default
-  nameWithType: ClassGenerator<T>.Default
-  nameWithType.vb: ClassGenerator(Of T).Default
-- uid: Mirage.Generators.ClassGenerator`1.Default*
-  name: Default
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Default_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.Default
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.Default
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Default
-  nameWithType: ClassGenerator<T>.Default
-  nameWithType.vb: ClassGenerator(Of T).Default
-- uid: Mirage.Generators.ClassGenerator`1.Next(Mirage.Random,`0,`0)
-  name: Next(Random, T, T)
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_Mirage_Random__0__0_
-  commentId: M:Mirage.Generators.ClassGenerator`1.Next(Mirage.Random,`0,`0)
-  fullName: Mirage.Generators.ClassGenerator<T>.Next(Mirage.Random, T, T)
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next(Mirage.Random, T, T)
-  nameWithType: ClassGenerator<T>.Next(Random, T, T)
-  nameWithType.vb: ClassGenerator(Of T).Next(Random, T, T)
-- uid: Mirage.Generators.ClassGenerator`1.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.ClassGenerator`1.Next(Mirage.Random)
-  fullName: Mirage.Generators.ClassGenerator<T>.Next(Mirage.Random)
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next(Mirage.Random)
-  nameWithType: ClassGenerator<T>.Next(Random)
-  nameWithType.vb: ClassGenerator(Of T).Next(Random)
-- uid: Mirage.Generators.ClassGenerator`1.Next*
-  name: Next
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.Next
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.Next
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next
-  nameWithType: ClassGenerator<T>.Next
-  nameWithType.vb: ClassGenerator(Of T).Next
-- uid: Mirage.Generators.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name: NextObj(Random, List<object>)
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
-  commentId: M:Mirage.Generators.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name.vb: NextObj(Random, List(Of Object))
-  fullName: Mirage.Generators.ClassGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
-  nameWithType: ClassGenerator<T>.NextObj(Random, List<object>)
-  nameWithType.vb: ClassGenerator(Of T).NextObj(Random, List(Of Object))
-- uid: Mirage.Generators.ClassGenerator`1.NextObj*
-  name: NextObj
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_NextObj_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.NextObj
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.NextObj
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).NextObj
-  nameWithType: ClassGenerator<T>.NextObj
-  nameWithType.vb: ClassGenerator(Of T).NextObj
-- uid: Mirage.Generators.ClassGenerator`1.TypeGenerated
-  name: TypeGenerated
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_TypeGenerated
-  commentId: P:Mirage.Generators.ClassGenerator`1.TypeGenerated
-  fullName: Mirage.Generators.ClassGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).TypeGenerated
-  nameWithType: ClassGenerator<T>.TypeGenerated
-  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
-- uid: Mirage.Generators.ClassGenerator`1.TypeGenerated*
-  name: TypeGenerated
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_TypeGenerated_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.TypeGenerated
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).TypeGenerated
-  nameWithType: ClassGenerator<T>.TypeGenerated
-  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.ClassGeneratorAttribute
   name: ClassGeneratorAttribute
   href: api/Mirage.Generators.ClassGeneratorAttribute.html
@@ -778,6 +692,92 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.ClassGeneratorAttribute.TypeGenerated
   nameWithType: ClassGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.ClassGenerator`1
+  name: ClassGenerator<T>
+  href: api/Mirage.Generators.ClassGenerator-1.html
+  commentId: T:Mirage.Generators.ClassGenerator`1
+  name.vb: ClassGenerator(Of T)
+  fullName: Mirage.Generators.ClassGenerator<T>
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T)
+  nameWithType: ClassGenerator<T>
+  nameWithType.vb: ClassGenerator(Of T)
+- uid: Mirage.Generators.ClassGenerator`1.Default
+  name: Default
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Default
+  commentId: P:Mirage.Generators.ClassGenerator`1.Default
+  fullName: Mirage.Generators.ClassGenerator<T>.Default
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Default
+  nameWithType: ClassGenerator<T>.Default
+  nameWithType.vb: ClassGenerator(Of T).Default
+- uid: Mirage.Generators.ClassGenerator`1.Default*
+  name: Default
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Default_
+  commentId: Overload:Mirage.Generators.ClassGenerator`1.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.ClassGenerator<T>.Default
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Default
+  nameWithType: ClassGenerator<T>.Default
+  nameWithType.vb: ClassGenerator(Of T).Default
+- uid: Mirage.Generators.ClassGenerator`1.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.ClassGenerator`1.Next(Mirage.Random)
+  fullName: Mirage.Generators.ClassGenerator<T>.Next(Mirage.Random)
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next(Mirage.Random)
+  nameWithType: ClassGenerator<T>.Next(Random)
+  nameWithType.vb: ClassGenerator(Of T).Next(Random)
+- uid: Mirage.Generators.ClassGenerator`1.Next(Mirage.Random,`0,`0)
+  name: Next(Random, T, T)
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_Mirage_Random__0__0_
+  commentId: M:Mirage.Generators.ClassGenerator`1.Next(Mirage.Random,`0,`0)
+  fullName: Mirage.Generators.ClassGenerator<T>.Next(Mirage.Random, T, T)
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next(Mirage.Random, T, T)
+  nameWithType: ClassGenerator<T>.Next(Random, T, T)
+  nameWithType.vb: ClassGenerator(Of T).Next(Random, T, T)
+- uid: Mirage.Generators.ClassGenerator`1.Next*
+  name: Next
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_
+  commentId: Overload:Mirage.Generators.ClassGenerator`1.Next
+  isSpec: "True"
+  fullName: Mirage.Generators.ClassGenerator<T>.Next
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next
+  nameWithType: ClassGenerator<T>.Next
+  nameWithType.vb: ClassGenerator(Of T).Next
+- uid: Mirage.Generators.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.ClassGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: ClassGenerator<T>.NextObj(Random, List<object>)
+  nameWithType.vb: ClassGenerator(Of T).NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.ClassGenerator`1.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_NextObj_
+  commentId: Overload:Mirage.Generators.ClassGenerator`1.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.ClassGenerator<T>.NextObj
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).NextObj
+  nameWithType: ClassGenerator<T>.NextObj
+  nameWithType.vb: ClassGenerator(Of T).NextObj
+- uid: Mirage.Generators.ClassGenerator`1.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_TypeGenerated
+  commentId: P:Mirage.Generators.ClassGenerator`1.TypeGenerated
+  fullName: Mirage.Generators.ClassGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).TypeGenerated
+  nameWithType: ClassGenerator<T>.TypeGenerated
+  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
+- uid: Mirage.Generators.ClassGenerator`1.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_TypeGenerated_
+  commentId: Overload:Mirage.Generators.ClassGenerator`1.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.ClassGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.ClassGenerator(Of T).TypeGenerated
+  nameWithType: ClassGenerator<T>.TypeGenerated
+  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.CompanyAttribute
   name: CompanyAttribute
   href: api/Mirage.Generators.CompanyAttribute.html
@@ -1109,6 +1109,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.DateTimeGenerator.Default
   nameWithType: DateTimeGenerator.Default
+- uid: Mirage.Generators.DateTimeGenerator.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.DateTimeGenerator.html#Mirage_Generators_DateTimeGenerator_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.DateTimeGenerator.Next(Mirage.Random)
+  fullName: Mirage.Generators.DateTimeGenerator.Next(Mirage.Random)
+  nameWithType: DateTimeGenerator.Next(Random)
 - uid: Mirage.Generators.DateTimeGenerator.Next(Mirage.Random,System.DateTime,System.DateTime)
   name: Next(Random, DateTime, DateTime)
   href: api/Mirage.Generators.DateTimeGenerator.html#Mirage_Generators_DateTimeGenerator_Next_Mirage_Random_System_DateTime_System_DateTime_
@@ -1118,12 +1124,6 @@ references:
   fullName.vb: Mirage.Generators.DateTimeGenerator.Next(Mirage.Random, Date, Date)
   nameWithType: DateTimeGenerator.Next(Random, DateTime, DateTime)
   nameWithType.vb: DateTimeGenerator.Next(Random, Date, Date)
-- uid: Mirage.Generators.DateTimeGenerator.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.DateTimeGenerator.html#Mirage_Generators_DateTimeGenerator_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.DateTimeGenerator.Next(Mirage.Random)
-  fullName: Mirage.Generators.DateTimeGenerator.Next(Mirage.Random)
-  nameWithType: DateTimeGenerator.Next(Random)
 - uid: Mirage.Generators.DateTimeGenerator.Next*
   name: Next
   href: api/Mirage.Generators.DateTimeGenerator.html#Mirage_Generators_DateTimeGenerator_Next_
@@ -1283,6 +1283,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.DecimalGeneratorAttribute.Default
   nameWithType: DecimalGeneratorAttribute.Default
+- uid: Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.DecimalGeneratorAttribute.html#Mirage_Generators_DecimalGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: DecimalGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random,System.Decimal,System.Decimal)
   name: Next(Random, decimal, decimal)
   href: api/Mirage.Generators.DecimalGeneratorAttribute.html#Mirage_Generators_DecimalGeneratorAttribute_Next_Mirage_Random_System_Decimal_System_Decimal_
@@ -1292,12 +1298,6 @@ references:
   fullName.vb: Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random, Decimal, Decimal)
   nameWithType: DecimalGeneratorAttribute.Next(Random, decimal, decimal)
   nameWithType.vb: DecimalGeneratorAttribute.Next(Random, Decimal, Decimal)
-- uid: Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.DecimalGeneratorAttribute.html#Mirage_Generators_DecimalGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.DecimalGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: DecimalGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.DecimalGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.DecimalGeneratorAttribute.html#Mirage_Generators_DecimalGeneratorAttribute_Next_
@@ -1476,6 +1476,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Default
   nameWithType: ByteArrayGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html#Mirage_Generators_Default_ByteArrayGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: ByteArrayGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random,System.Byte[],System.Byte[])
   name: Next(Random, byte[], byte[])
   href: api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html#Mirage_Generators_Default_ByteArrayGeneratorAttribute_Next_Mirage_Random_System_Byte___System_Byte___
@@ -1485,12 +1491,6 @@ references:
   fullName.vb: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random, Byte(), Byte())
   nameWithType: ByteArrayGeneratorAttribute.Next(Random, byte[], byte[])
   nameWithType.vb: ByteArrayGeneratorAttribute.Next(Random, Byte(), Byte())
-- uid: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html#Mirage_Generators_Default_ByteArrayGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: ByteArrayGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.ByteArrayGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html#Mirage_Generators_Default_ByteArrayGeneratorAttribute_Next_
@@ -1667,18 +1667,18 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.GuidGeneratorAttribute.Default
   nameWithType: GuidGeneratorAttribute.Default
-- uid: Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random,System.Guid,System.Guid)
-  name: Next(Random, Guid, Guid)
-  href: api/Mirage.Generators.Default.GuidGeneratorAttribute.html#Mirage_Generators_Default_GuidGeneratorAttribute_Next_Mirage_Random_System_Guid_System_Guid_
-  commentId: M:Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random,System.Guid,System.Guid)
-  fullName: Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random, System.Guid, System.Guid)
-  nameWithType: GuidGeneratorAttribute.Next(Random, Guid, Guid)
 - uid: Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random)
   name: Next(Random)
   href: api/Mirage.Generators.Default.GuidGeneratorAttribute.html#Mirage_Generators_Default_GuidGeneratorAttribute_Next_Mirage_Random_
   commentId: M:Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random)
   fullName: Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random)
   nameWithType: GuidGeneratorAttribute.Next(Random)
+- uid: Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random,System.Guid,System.Guid)
+  name: Next(Random, Guid, Guid)
+  href: api/Mirage.Generators.Default.GuidGeneratorAttribute.html#Mirage_Generators_Default_GuidGeneratorAttribute_Next_Mirage_Random_System_Guid_System_Guid_
+  commentId: M:Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random,System.Guid,System.Guid)
+  fullName: Mirage.Generators.Default.GuidGeneratorAttribute.Next(Mirage.Random, System.Guid, System.Guid)
+  nameWithType: GuidGeneratorAttribute.Next(Random, Guid, Guid)
 - uid: Mirage.Generators.Default.GuidGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.GuidGeneratorAttribute.html#Mirage_Generators_Default_GuidGeneratorAttribute_Next_
@@ -1715,92 +1715,6 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.GuidGeneratorAttribute.TypeGenerated
   nameWithType: GuidGeneratorAttribute.TypeGenerated
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1
-  name: IEnumerableGenerator<T>
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html
-  commentId: T:Mirage.Generators.Default.IEnumerableGenerator`1
-  name.vb: IEnumerableGenerator(Of T)
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T)
-  nameWithType: IEnumerableGenerator<T>
-  nameWithType.vb: IEnumerableGenerator(Of T)
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Default
-  name: Default
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Default
-  commentId: P:Mirage.Generators.Default.IEnumerableGenerator`1.Default
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Default
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Default
-  nameWithType: IEnumerableGenerator<T>.Default
-  nameWithType.vb: IEnumerableGenerator(Of T).Default
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Default*
-  name: Default
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Default_
-  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.Default
-  isSpec: "True"
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Default
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Default
-  nameWithType: IEnumerableGenerator<T>.Default
-  nameWithType.vb: IEnumerableGenerator(Of T).Default
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random,`0,`0)
-  name: Next(Random, T, T)
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Next_Mirage_Random__0__0_
-  commentId: M:Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random,`0,`0)
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Next(Mirage.Random, T, T)
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Next(Mirage.Random, T, T)
-  nameWithType: IEnumerableGenerator<T>.Next(Random, T, T)
-  nameWithType.vb: IEnumerableGenerator(Of T).Next(Random, T, T)
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Next(Mirage.Random)
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Next(Mirage.Random)
-  nameWithType: IEnumerableGenerator<T>.Next(Random)
-  nameWithType.vb: IEnumerableGenerator(Of T).Next(Random)
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Next*
-  name: Next
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Next_
-  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.Next
-  isSpec: "True"
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Next
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Next
-  nameWithType: IEnumerableGenerator<T>.Next
-  nameWithType.vb: IEnumerableGenerator(Of T).Next
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name: NextObj(Random, List<object>)
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
-  commentId: M:Mirage.Generators.Default.IEnumerableGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name.vb: NextObj(Random, List(Of Object))
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
-  nameWithType: IEnumerableGenerator<T>.NextObj(Random, List<object>)
-  nameWithType.vb: IEnumerableGenerator(Of T).NextObj(Random, List(Of Object))
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.NextObj*
-  name: NextObj
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_NextObj_
-  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.NextObj
-  isSpec: "True"
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.NextObj
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).NextObj
-  nameWithType: IEnumerableGenerator<T>.NextObj
-  nameWithType.vb: IEnumerableGenerator(Of T).NextObj
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated
-  name: TypeGenerated
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_TypeGenerated
-  commentId: P:Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).TypeGenerated
-  nameWithType: IEnumerableGenerator<T>.TypeGenerated
-  nameWithType.vb: IEnumerableGenerator(Of T).TypeGenerated
-- uid: Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated*
-  name: TypeGenerated
-  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_TypeGenerated_
-  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated
-  isSpec: "True"
-  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).TypeGenerated
-  nameWithType: IEnumerableGenerator<T>.TypeGenerated
-  nameWithType.vb: IEnumerableGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.Default.IEnumerableGeneratorAttribute
   name: IEnumerableGeneratorAttribute
   href: api/Mirage.Generators.Default.IEnumerableGeneratorAttribute.html
@@ -1890,6 +1804,92 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.IEnumerableGeneratorAttribute.TypeGenerated
   nameWithType: IEnumerableGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1
+  name: IEnumerableGenerator<T>
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html
+  commentId: T:Mirage.Generators.Default.IEnumerableGenerator`1
+  name.vb: IEnumerableGenerator(Of T)
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T)
+  nameWithType: IEnumerableGenerator<T>
+  nameWithType.vb: IEnumerableGenerator(Of T)
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Default
+  name: Default
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Default
+  commentId: P:Mirage.Generators.Default.IEnumerableGenerator`1.Default
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Default
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Default
+  nameWithType: IEnumerableGenerator<T>.Default
+  nameWithType.vb: IEnumerableGenerator(Of T).Default
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Default*
+  name: Default
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Default_
+  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Default
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Default
+  nameWithType: IEnumerableGenerator<T>.Default
+  nameWithType.vb: IEnumerableGenerator(Of T).Default
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Next(Mirage.Random)
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Next(Mirage.Random)
+  nameWithType: IEnumerableGenerator<T>.Next(Random)
+  nameWithType.vb: IEnumerableGenerator(Of T).Next(Random)
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random,`0,`0)
+  name: Next(Random, T, T)
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Next_Mirage_Random__0__0_
+  commentId: M:Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random,`0,`0)
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Next(Mirage.Random, T, T)
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Next(Mirage.Random, T, T)
+  nameWithType: IEnumerableGenerator<T>.Next(Random, T, T)
+  nameWithType.vb: IEnumerableGenerator(Of T).Next(Random, T, T)
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.Next*
+  name: Next
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_Next_
+  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.Next
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.Next
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).Next
+  nameWithType: IEnumerableGenerator<T>.Next
+  nameWithType.vb: IEnumerableGenerator(Of T).Next
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.Default.IEnumerableGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: IEnumerableGenerator<T>.NextObj(Random, List<object>)
+  nameWithType.vb: IEnumerableGenerator(Of T).NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_NextObj_
+  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.NextObj
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).NextObj
+  nameWithType: IEnumerableGenerator<T>.NextObj
+  nameWithType.vb: IEnumerableGenerator(Of T).NextObj
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_TypeGenerated
+  commentId: P:Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).TypeGenerated
+  nameWithType: IEnumerableGenerator<T>.TypeGenerated
+  nameWithType.vb: IEnumerableGenerator(Of T).TypeGenerated
+- uid: Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.IEnumerableGenerator-1.html#Mirage_Generators_Default_IEnumerableGenerator_1_TypeGenerated_
+  commentId: Overload:Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.IEnumerableGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.Default.IEnumerableGenerator(Of T).TypeGenerated
+  nameWithType: IEnumerableGenerator<T>.TypeGenerated
+  nameWithType.vb: IEnumerableGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.Default.ListGeneratorAttribute
   name: ListGeneratorAttribute
   href: api/Mirage.Generators.Default.ListGeneratorAttribute.html
@@ -2032,6 +2032,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Default
   nameWithType: NullableCharGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableCharGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableCharGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Char},System.Nullable{System.Char})
   name: Next(Random, char?, char?)
   href: api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableCharGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Char__System_Nullable_System_Char__
@@ -2041,12 +2047,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random, Char?, Char?)
   nameWithType: NullableCharGeneratorAttribute.Next(Random, char?, char?)
   nameWithType.vb: NullableCharGeneratorAttribute.Next(Random, Char?, Char?)
-- uid: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableCharGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableCharGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableCharGeneratorAttribute_Next_
@@ -2102,6 +2102,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Default
   nameWithType: NullableDateTimeGenerator.Default
+- uid: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.html#Mirage_Generators_Default_Nullable_NullableDateTimeGenerator_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random)
+  nameWithType: NullableDateTimeGenerator.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random,System.Nullable{System.DateTime},System.Nullable{System.DateTime})
   name: Next(Random, DateTime?, DateTime?)
   href: api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.html#Mirage_Generators_Default_Nullable_NullableDateTimeGenerator_Next_Mirage_Random_System_Nullable_System_DateTime__System_Nullable_System_DateTime__
@@ -2111,12 +2117,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random, Date?, Date?)
   nameWithType: NullableDateTimeGenerator.Next(Random, DateTime?, DateTime?)
   nameWithType.vb: NullableDateTimeGenerator.Next(Random, Date?, Date?)
-- uid: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.html#Mirage_Generators_Default_Nullable_NullableDateTimeGenerator_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next(Mirage.Random)
-  nameWithType: NullableDateTimeGenerator.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.html#Mirage_Generators_Default_Nullable_NullableDateTimeGenerator_Next_
@@ -2276,6 +2276,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Default
   nameWithType: NullableDecimalGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDecimalGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableDecimalGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Decimal},System.Nullable{System.Decimal})
   name: Next(Random, decimal?, decimal?)
   href: api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDecimalGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Decimal__System_Nullable_System_Decimal__
@@ -2285,12 +2291,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random, Decimal?, Decimal?)
   nameWithType: NullableDecimalGeneratorAttribute.Next(Random, decimal?, decimal?)
   nameWithType.vb: NullableDecimalGeneratorAttribute.Next(Random, Decimal?, Decimal?)
-- uid: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDecimalGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableDecimalGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDecimalGeneratorAttribute_Next_
@@ -2374,6 +2374,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Default
   nameWithType: NullableDoubleGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDoubleGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableDoubleGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Double},System.Nullable{System.Double})
   name: Next(Random, double?, double?)
   href: api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDoubleGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Double__System_Nullable_System_Double__
@@ -2383,12 +2389,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random, Double?, Double?)
   nameWithType: NullableDoubleGeneratorAttribute.Next(Random, double?, double?)
   nameWithType.vb: NullableDoubleGeneratorAttribute.Next(Random, Double?, Double?)
-- uid: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDoubleGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableDoubleGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableDoubleGeneratorAttribute_Next_
@@ -2472,6 +2472,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Default
   nameWithType: NullableFloatGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableFloatGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableFloatGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Single},System.Nullable{System.Single})
   name: Next(Random, float?, float?)
   href: api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableFloatGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Single__System_Nullable_System_Single__
@@ -2481,12 +2487,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random, Single?, Single?)
   nameWithType: NullableFloatGeneratorAttribute.Next(Random, float?, float?)
   nameWithType.vb: NullableFloatGeneratorAttribute.Next(Random, Single?, Single?)
-- uid: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableFloatGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableFloatGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableFloatGeneratorAttribute_Next_
@@ -2561,18 +2561,18 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Default
   nameWithType: NullableGuidGeneratorAttribute.Default
-- uid: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Guid},System.Nullable{System.Guid})
-  name: Next(Random, Guid?, Guid?)
-  href: api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableGuidGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Guid__System_Nullable_System_Guid__
-  commentId: M:Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Guid},System.Nullable{System.Guid})
-  fullName: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random, System.Guid?, System.Guid?)
-  nameWithType: NullableGuidGeneratorAttribute.Next(Random, Guid?, Guid?)
 - uid: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random)
   name: Next(Random)
   href: api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableGuidGeneratorAttribute_Next_Mirage_Random_
   commentId: M:Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random)
   fullName: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random)
   nameWithType: NullableGuidGeneratorAttribute.Next(Random)
+- uid: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Guid},System.Nullable{System.Guid})
+  name: Next(Random, Guid?, Guid?)
+  href: api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableGuidGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Guid__System_Nullable_System_Guid__
+  commentId: M:Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Guid},System.Nullable{System.Guid})
+  fullName: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next(Mirage.Random, System.Guid?, System.Guid?)
+  nameWithType: NullableGuidGeneratorAttribute.Next(Random, Guid?, Guid?)
 - uid: Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableGuidGeneratorAttribute_Next_
@@ -2656,6 +2656,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Default
   nameWithType: NullableIntGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableIntGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableIntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Int32},System.Nullable{System.Int32})
   name: Next(Random, int?, int?)
   href: api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableIntGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Int32__System_Nullable_System_Int32__
@@ -2665,12 +2671,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random, Integer?, Integer?)
   nameWithType: NullableIntGeneratorAttribute.Next(Random, int?, int?)
   nameWithType.vb: NullableIntGeneratorAttribute.Next(Random, Integer?, Integer?)
-- uid: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableIntGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableIntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableIntGeneratorAttribute_Next_
@@ -2754,6 +2754,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Default
   nameWithType: NullableLongGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableLongGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableLongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Int64},System.Nullable{System.Int64})
   name: Next(Random, long?, long?)
   href: api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableLongGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Int64__System_Nullable_System_Int64__
@@ -2763,12 +2769,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random, Long?, Long?)
   nameWithType: NullableLongGeneratorAttribute.Next(Random, long?, long?)
   nameWithType.vb: NullableLongGeneratorAttribute.Next(Random, Long?, Long?)
-- uid: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableLongGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableLongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableLongGeneratorAttribute_Next_
@@ -2852,6 +2852,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Default
   nameWithType: NullableSByteGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableSByteGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableSByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.SByte},System.Nullable{System.SByte})
   name: Next(Random, sbyte?, sbyte?)
   href: api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableSByteGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_SByte__System_Nullable_System_SByte__
@@ -2861,12 +2867,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random, SByte?, SByte?)
   nameWithType: NullableSByteGeneratorAttribute.Next(Random, sbyte?, sbyte?)
   nameWithType.vb: NullableSByteGeneratorAttribute.Next(Random, SByte?, SByte?)
-- uid: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableSByteGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableSByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableSByteGeneratorAttribute_Next_
@@ -2950,6 +2950,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Default
   nameWithType: NullableShortGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableShortGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Int16},System.Nullable{System.Int16})
   name: Next(Random, short?, short?)
   href: api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableShortGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Int16__System_Nullable_System_Int16__
@@ -2959,12 +2965,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random, Short?, Short?)
   nameWithType: NullableShortGeneratorAttribute.Next(Random, short?, short?)
   nameWithType.vb: NullableShortGeneratorAttribute.Next(Random, Short?, Short?)
-- uid: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableShortGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableShortGeneratorAttribute_Next_
@@ -3020,18 +3020,18 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Default
   nameWithType: NullableTimeSpanGenerator.Default
-- uid: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
-  name: Next(Random, TimeSpan?, TimeSpan?)
-  href: api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.html#Mirage_Generators_Default_Nullable_NullableTimeSpanGenerator_Next_Mirage_Random_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__
-  commentId: M:Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
-  fullName: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random, System.TimeSpan?, System.TimeSpan?)
-  nameWithType: NullableTimeSpanGenerator.Next(Random, TimeSpan?, TimeSpan?)
 - uid: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random)
   name: Next(Random)
   href: api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.html#Mirage_Generators_Default_Nullable_NullableTimeSpanGenerator_Next_Mirage_Random_
   commentId: M:Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random)
   fullName: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random)
   nameWithType: NullableTimeSpanGenerator.Next(Random)
+- uid: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  name: Next(Random, TimeSpan?, TimeSpan?)
+  href: api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.html#Mirage_Generators_Default_Nullable_NullableTimeSpanGenerator_Next_Mirage_Random_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__
+  commentId: M:Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan})
+  fullName: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next(Mirage.Random, System.TimeSpan?, System.TimeSpan?)
+  nameWithType: NullableTimeSpanGenerator.Next(Random, TimeSpan?, TimeSpan?)
 - uid: Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.html#Mirage_Generators_Default_Nullable_NullableTimeSpanGenerator_Next_
@@ -3191,6 +3191,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Default
   nameWithType: NullableUIntGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUIntGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableUIntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.UInt32},System.Nullable{System.UInt32})
   name: Next(Random, uint?, uint?)
   href: api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUIntGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_UInt32__System_Nullable_System_UInt32__
@@ -3200,12 +3206,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random, UInteger?, UInteger?)
   nameWithType: NullableUIntGeneratorAttribute.Next(Random, uint?, uint?)
   nameWithType.vb: NullableUIntGeneratorAttribute.Next(Random, UInteger?, UInteger?)
-- uid: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUIntGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableUIntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUIntGeneratorAttribute_Next_
@@ -3289,6 +3289,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Default
   nameWithType: NullableULongGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableULongGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableULongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.UInt64},System.Nullable{System.UInt64})
   name: Next(Random, ulong?, ulong?)
   href: api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableULongGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_UInt64__System_Nullable_System_UInt64__
@@ -3298,12 +3304,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random, ULong?, ULong?)
   nameWithType: NullableULongGeneratorAttribute.Next(Random, ulong?, ulong?)
   nameWithType.vb: NullableULongGeneratorAttribute.Next(Random, ULong?, ULong?)
-- uid: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableULongGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableULongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableULongGeneratorAttribute_Next_
@@ -3387,6 +3387,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Default
   nameWithType: NullableUShortGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUShortGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableUShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.UInt16},System.Nullable{System.UInt16})
   name: Next(Random, ushort?, ushort?)
   href: api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUShortGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_UInt16__System_Nullable_System_UInt16__
@@ -3396,12 +3402,6 @@ references:
   fullName.vb: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random, UShort?, UShort?)
   nameWithType: NullableUShortGeneratorAttribute.Next(Random, ushort?, ushort?)
   nameWithType.vb: NullableUShortGeneratorAttribute.Next(Random, UShort?, UShort?)
-- uid: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUShortGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableUShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.html#Mirage_Generators_Default_Nullable_NullableUShortGeneratorAttribute_Next_
@@ -3549,6 +3549,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.DoubleGeneratorAttribute.Default
   nameWithType: DoubleGeneratorAttribute.Default
+- uid: Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.DoubleGeneratorAttribute.html#Mirage_Generators_DoubleGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: DoubleGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random,System.Double,System.Double)
   name: Next(Random, double, double)
   href: api/Mirage.Generators.DoubleGeneratorAttribute.html#Mirage_Generators_DoubleGeneratorAttribute_Next_Mirage_Random_System_Double_System_Double_
@@ -3558,12 +3564,6 @@ references:
   fullName.vb: Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random, Double, Double)
   nameWithType: DoubleGeneratorAttribute.Next(Random, double, double)
   nameWithType.vb: DoubleGeneratorAttribute.Next(Random, Double, Double)
-- uid: Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.DoubleGeneratorAttribute.html#Mirage_Generators_DoubleGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.DoubleGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: DoubleGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.DoubleGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.DoubleGeneratorAttribute.html#Mirage_Generators_DoubleGeneratorAttribute_Next_
@@ -3664,92 +3664,6 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.EmailAddressAttribute.Next
   nameWithType: EmailAddressAttribute.Next
-- uid: Mirage.Generators.EnumGenerator`1
-  name: EnumGenerator<T>
-  href: api/Mirage.Generators.EnumGenerator-1.html
-  commentId: T:Mirage.Generators.EnumGenerator`1
-  name.vb: EnumGenerator(Of T)
-  fullName: Mirage.Generators.EnumGenerator<T>
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T)
-  nameWithType: EnumGenerator<T>
-  nameWithType.vb: EnumGenerator(Of T)
-- uid: Mirage.Generators.EnumGenerator`1.Default
-  name: Default
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Default
-  commentId: P:Mirage.Generators.EnumGenerator`1.Default
-  fullName: Mirage.Generators.EnumGenerator<T>.Default
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Default
-  nameWithType: EnumGenerator<T>.Default
-  nameWithType.vb: EnumGenerator(Of T).Default
-- uid: Mirage.Generators.EnumGenerator`1.Default*
-  name: Default
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Default_
-  commentId: Overload:Mirage.Generators.EnumGenerator`1.Default
-  isSpec: "True"
-  fullName: Mirage.Generators.EnumGenerator<T>.Default
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Default
-  nameWithType: EnumGenerator<T>.Default
-  nameWithType.vb: EnumGenerator(Of T).Default
-- uid: Mirage.Generators.EnumGenerator`1.Next(Mirage.Random,`0,`0)
-  name: Next(Random, T, T)
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Next_Mirage_Random__0__0_
-  commentId: M:Mirage.Generators.EnumGenerator`1.Next(Mirage.Random,`0,`0)
-  fullName: Mirage.Generators.EnumGenerator<T>.Next(Mirage.Random, T, T)
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Next(Mirage.Random, T, T)
-  nameWithType: EnumGenerator<T>.Next(Random, T, T)
-  nameWithType.vb: EnumGenerator(Of T).Next(Random, T, T)
-- uid: Mirage.Generators.EnumGenerator`1.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.EnumGenerator`1.Next(Mirage.Random)
-  fullName: Mirage.Generators.EnumGenerator<T>.Next(Mirage.Random)
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Next(Mirage.Random)
-  nameWithType: EnumGenerator<T>.Next(Random)
-  nameWithType.vb: EnumGenerator(Of T).Next(Random)
-- uid: Mirage.Generators.EnumGenerator`1.Next*
-  name: Next
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Next_
-  commentId: Overload:Mirage.Generators.EnumGenerator`1.Next
-  isSpec: "True"
-  fullName: Mirage.Generators.EnumGenerator<T>.Next
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Next
-  nameWithType: EnumGenerator<T>.Next
-  nameWithType.vb: EnumGenerator(Of T).Next
-- uid: Mirage.Generators.EnumGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name: NextObj(Random, List<object>)
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
-  commentId: M:Mirage.Generators.EnumGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name.vb: NextObj(Random, List(Of Object))
-  fullName: Mirage.Generators.EnumGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
-  nameWithType: EnumGenerator<T>.NextObj(Random, List<object>)
-  nameWithType.vb: EnumGenerator(Of T).NextObj(Random, List(Of Object))
-- uid: Mirage.Generators.EnumGenerator`1.NextObj*
-  name: NextObj
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_NextObj_
-  commentId: Overload:Mirage.Generators.EnumGenerator`1.NextObj
-  isSpec: "True"
-  fullName: Mirage.Generators.EnumGenerator<T>.NextObj
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).NextObj
-  nameWithType: EnumGenerator<T>.NextObj
-  nameWithType.vb: EnumGenerator(Of T).NextObj
-- uid: Mirage.Generators.EnumGenerator`1.TypeGenerated
-  name: TypeGenerated
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_TypeGenerated
-  commentId: P:Mirage.Generators.EnumGenerator`1.TypeGenerated
-  fullName: Mirage.Generators.EnumGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).TypeGenerated
-  nameWithType: EnumGenerator<T>.TypeGenerated
-  nameWithType.vb: EnumGenerator(Of T).TypeGenerated
-- uid: Mirage.Generators.EnumGenerator`1.TypeGenerated*
-  name: TypeGenerated
-  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_TypeGenerated_
-  commentId: Overload:Mirage.Generators.EnumGenerator`1.TypeGenerated
-  isSpec: "True"
-  fullName: Mirage.Generators.EnumGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.EnumGenerator(Of T).TypeGenerated
-  nameWithType: EnumGenerator<T>.TypeGenerated
-  nameWithType.vb: EnumGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.EnumGeneratorAttribute
   name: EnumGeneratorAttribute
   href: api/Mirage.Generators.EnumGeneratorAttribute.html
@@ -3839,6 +3753,92 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.EnumGeneratorAttribute.TypeGenerated
   nameWithType: EnumGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.EnumGenerator`1
+  name: EnumGenerator<T>
+  href: api/Mirage.Generators.EnumGenerator-1.html
+  commentId: T:Mirage.Generators.EnumGenerator`1
+  name.vb: EnumGenerator(Of T)
+  fullName: Mirage.Generators.EnumGenerator<T>
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T)
+  nameWithType: EnumGenerator<T>
+  nameWithType.vb: EnumGenerator(Of T)
+- uid: Mirage.Generators.EnumGenerator`1.Default
+  name: Default
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Default
+  commentId: P:Mirage.Generators.EnumGenerator`1.Default
+  fullName: Mirage.Generators.EnumGenerator<T>.Default
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Default
+  nameWithType: EnumGenerator<T>.Default
+  nameWithType.vb: EnumGenerator(Of T).Default
+- uid: Mirage.Generators.EnumGenerator`1.Default*
+  name: Default
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Default_
+  commentId: Overload:Mirage.Generators.EnumGenerator`1.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.EnumGenerator<T>.Default
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Default
+  nameWithType: EnumGenerator<T>.Default
+  nameWithType.vb: EnumGenerator(Of T).Default
+- uid: Mirage.Generators.EnumGenerator`1.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.EnumGenerator`1.Next(Mirage.Random)
+  fullName: Mirage.Generators.EnumGenerator<T>.Next(Mirage.Random)
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Next(Mirage.Random)
+  nameWithType: EnumGenerator<T>.Next(Random)
+  nameWithType.vb: EnumGenerator(Of T).Next(Random)
+- uid: Mirage.Generators.EnumGenerator`1.Next(Mirage.Random,`0,`0)
+  name: Next(Random, T, T)
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Next_Mirage_Random__0__0_
+  commentId: M:Mirage.Generators.EnumGenerator`1.Next(Mirage.Random,`0,`0)
+  fullName: Mirage.Generators.EnumGenerator<T>.Next(Mirage.Random, T, T)
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Next(Mirage.Random, T, T)
+  nameWithType: EnumGenerator<T>.Next(Random, T, T)
+  nameWithType.vb: EnumGenerator(Of T).Next(Random, T, T)
+- uid: Mirage.Generators.EnumGenerator`1.Next*
+  name: Next
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_Next_
+  commentId: Overload:Mirage.Generators.EnumGenerator`1.Next
+  isSpec: "True"
+  fullName: Mirage.Generators.EnumGenerator<T>.Next
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).Next
+  nameWithType: EnumGenerator<T>.Next
+  nameWithType.vb: EnumGenerator(Of T).Next
+- uid: Mirage.Generators.EnumGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.EnumGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.EnumGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: EnumGenerator<T>.NextObj(Random, List<object>)
+  nameWithType.vb: EnumGenerator(Of T).NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.EnumGenerator`1.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_NextObj_
+  commentId: Overload:Mirage.Generators.EnumGenerator`1.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.EnumGenerator<T>.NextObj
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).NextObj
+  nameWithType: EnumGenerator<T>.NextObj
+  nameWithType.vb: EnumGenerator(Of T).NextObj
+- uid: Mirage.Generators.EnumGenerator`1.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_TypeGenerated
+  commentId: P:Mirage.Generators.EnumGenerator`1.TypeGenerated
+  fullName: Mirage.Generators.EnumGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).TypeGenerated
+  nameWithType: EnumGenerator<T>.TypeGenerated
+  nameWithType.vb: EnumGenerator(Of T).TypeGenerated
+- uid: Mirage.Generators.EnumGenerator`1.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.EnumGenerator-1.html#Mirage_Generators_EnumGenerator_1_TypeGenerated_
+  commentId: Overload:Mirage.Generators.EnumGenerator`1.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.EnumGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.EnumGenerator(Of T).TypeGenerated
+  nameWithType: EnumGenerator<T>.TypeGenerated
+  nameWithType.vb: EnumGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.FemaleFirstNameAttribute
   name: FemaleFirstNameAttribute
   href: api/Mirage.Generators.FemaleFirstNameAttribute.html
@@ -4091,6 +4091,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.FloatGeneratorAttribute.Default
   nameWithType: FloatGeneratorAttribute.Default
+- uid: Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.FloatGeneratorAttribute.html#Mirage_Generators_FloatGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: FloatGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random,System.Single,System.Single)
   name: Next(Random, float, float)
   href: api/Mirage.Generators.FloatGeneratorAttribute.html#Mirage_Generators_FloatGeneratorAttribute_Next_Mirage_Random_System_Single_System_Single_
@@ -4100,12 +4106,6 @@ references:
   fullName.vb: Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random, Single, Single)
   nameWithType: FloatGeneratorAttribute.Next(Random, float, float)
   nameWithType.vb: FloatGeneratorAttribute.Next(Random, Single, Single)
-- uid: Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.FloatGeneratorAttribute.html#Mirage_Generators_FloatGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.FloatGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: FloatGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.FloatGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.FloatGeneratorAttribute.html#Mirage_Generators_FloatGeneratorAttribute_Next_
@@ -4189,6 +4189,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.IntGeneratorAttribute.Default
   nameWithType: IntGeneratorAttribute.Default
+- uid: Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.IntGeneratorAttribute.html#Mirage_Generators_IntGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: IntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random,System.Int32,System.Int32)
   name: Next(Random, int, int)
   href: api/Mirage.Generators.IntGeneratorAttribute.html#Mirage_Generators_IntGeneratorAttribute_Next_Mirage_Random_System_Int32_System_Int32_
@@ -4198,12 +4204,6 @@ references:
   fullName.vb: Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random, Integer, Integer)
   nameWithType: IntGeneratorAttribute.Next(Random, int, int)
   nameWithType.vb: IntGeneratorAttribute.Next(Random, Integer, Integer)
-- uid: Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.IntGeneratorAttribute.html#Mirage_Generators_IntGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.IntGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: IntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.IntGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.IntGeneratorAttribute.html#Mirage_Generators_IntGeneratorAttribute_Next_
@@ -4338,6 +4338,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.LongGeneratorAttribute.Default
   nameWithType: LongGeneratorAttribute.Default
+- uid: Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.LongGeneratorAttribute.html#Mirage_Generators_LongGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: LongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random,System.Int64,System.Int64)
   name: Next(Random, long, long)
   href: api/Mirage.Generators.LongGeneratorAttribute.html#Mirage_Generators_LongGeneratorAttribute_Next_Mirage_Random_System_Int64_System_Int64_
@@ -4347,12 +4353,6 @@ references:
   fullName.vb: Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random, Long, Long)
   nameWithType: LongGeneratorAttribute.Next(Random, long, long)
   nameWithType.vb: LongGeneratorAttribute.Next(Random, Long, Long)
-- uid: Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.LongGeneratorAttribute.html#Mirage_Generators_LongGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.LongGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: LongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.LongGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.LongGeneratorAttribute.html#Mirage_Generators_LongGeneratorAttribute_Next_
@@ -4800,6 +4800,57 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.NameAttribute.Suffix
   nameWithType: NameAttribute.Suffix
+- uid: Mirage.Generators.NameSuffixAttribute
+  name: NameSuffixAttribute
+  href: api/Mirage.Generators.NameSuffixAttribute.html
+  commentId: T:Mirage.Generators.NameSuffixAttribute
+  fullName: Mirage.Generators.NameSuffixAttribute
+  nameWithType: NameSuffixAttribute
+- uid: Mirage.Generators.NameSuffixAttribute.#ctor
+  name: NameSuffixAttribute()
+  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute__ctor
+  commentId: M:Mirage.Generators.NameSuffixAttribute.#ctor
+  name.vb: New()
+  fullName: Mirage.Generators.NameSuffixAttribute.NameSuffixAttribute()
+  fullName.vb: Mirage.Generators.NameSuffixAttribute.New()
+  nameWithType: NameSuffixAttribute.NameSuffixAttribute()
+  nameWithType.vb: NameSuffixAttribute.New()
+- uid: Mirage.Generators.NameSuffixAttribute.#ctor*
+  name: NameSuffixAttribute
+  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute__ctor_
+  commentId: Overload:Mirage.Generators.NameSuffixAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Mirage.Generators.NameSuffixAttribute.NameSuffixAttribute
+  fullName.vb: Mirage.Generators.NameSuffixAttribute.New
+  nameWithType: NameSuffixAttribute.NameSuffixAttribute
+  nameWithType.vb: NameSuffixAttribute.New
+- uid: Mirage.Generators.NameSuffixAttribute.Default
+  name: Default
+  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Default
+  commentId: P:Mirage.Generators.NameSuffixAttribute.Default
+  fullName: Mirage.Generators.NameSuffixAttribute.Default
+  nameWithType: NameSuffixAttribute.Default
+- uid: Mirage.Generators.NameSuffixAttribute.Default*
+  name: Default
+  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Default_
+  commentId: Overload:Mirage.Generators.NameSuffixAttribute.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.NameSuffixAttribute.Default
+  nameWithType: NameSuffixAttribute.Default
+- uid: Mirage.Generators.NameSuffixAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.NameSuffixAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.NameSuffixAttribute.Next(Mirage.Random)
+  nameWithType: NameSuffixAttribute.Next(Random)
+- uid: Mirage.Generators.NameSuffixAttribute.Next*
+  name: Next
+  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Next_
+  commentId: Overload:Mirage.Generators.NameSuffixAttribute.Next
+  isSpec: "True"
+  fullName: Mirage.Generators.NameSuffixAttribute.Next
+  nameWithType: NameSuffixAttribute.Next
 - uid: Mirage.Generators.Names
   name: Mirage.Generators.Names
   href: api/Mirage.Generators.Names.html
@@ -4857,57 +4908,6 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Names.TitleAttribute.Next
   nameWithType: TitleAttribute.Next
-- uid: Mirage.Generators.NameSuffixAttribute
-  name: NameSuffixAttribute
-  href: api/Mirage.Generators.NameSuffixAttribute.html
-  commentId: T:Mirage.Generators.NameSuffixAttribute
-  fullName: Mirage.Generators.NameSuffixAttribute
-  nameWithType: NameSuffixAttribute
-- uid: Mirage.Generators.NameSuffixAttribute.#ctor
-  name: NameSuffixAttribute()
-  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute__ctor
-  commentId: M:Mirage.Generators.NameSuffixAttribute.#ctor
-  name.vb: New()
-  fullName: Mirage.Generators.NameSuffixAttribute.NameSuffixAttribute()
-  fullName.vb: Mirage.Generators.NameSuffixAttribute.New()
-  nameWithType: NameSuffixAttribute.NameSuffixAttribute()
-  nameWithType.vb: NameSuffixAttribute.New()
-- uid: Mirage.Generators.NameSuffixAttribute.#ctor*
-  name: NameSuffixAttribute
-  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute__ctor_
-  commentId: Overload:Mirage.Generators.NameSuffixAttribute.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Mirage.Generators.NameSuffixAttribute.NameSuffixAttribute
-  fullName.vb: Mirage.Generators.NameSuffixAttribute.New
-  nameWithType: NameSuffixAttribute.NameSuffixAttribute
-  nameWithType.vb: NameSuffixAttribute.New
-- uid: Mirage.Generators.NameSuffixAttribute.Default
-  name: Default
-  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Default
-  commentId: P:Mirage.Generators.NameSuffixAttribute.Default
-  fullName: Mirage.Generators.NameSuffixAttribute.Default
-  nameWithType: NameSuffixAttribute.Default
-- uid: Mirage.Generators.NameSuffixAttribute.Default*
-  name: Default
-  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Default_
-  commentId: Overload:Mirage.Generators.NameSuffixAttribute.Default
-  isSpec: "True"
-  fullName: Mirage.Generators.NameSuffixAttribute.Default
-  nameWithType: NameSuffixAttribute.Default
-- uid: Mirage.Generators.NameSuffixAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.NameSuffixAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.NameSuffixAttribute.Next(Mirage.Random)
-  nameWithType: NameSuffixAttribute.Next(Random)
-- uid: Mirage.Generators.NameSuffixAttribute.Next*
-  name: Next
-  href: api/Mirage.Generators.NameSuffixAttribute.html#Mirage_Generators_NameSuffixAttribute_Next_
-  commentId: Overload:Mirage.Generators.NameSuffixAttribute.Next
-  isSpec: "True"
-  fullName: Mirage.Generators.NameSuffixAttribute.Next
-  nameWithType: NameSuffixAttribute.Next
 - uid: Mirage.Generators.Nullable
   name: Mirage.Generators.Nullable
   href: api/Mirage.Generators.Nullable.html
@@ -4952,6 +4952,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Default
   nameWithType: NullableBoolGeneratorAttribute.Default
+- uid: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.html#Mirage_Generators_Nullable_NullableBoolGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableBoolGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Boolean},System.Nullable{System.Boolean})
   name: Next(Random, bool?, bool?)
   href: api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.html#Mirage_Generators_Nullable_NullableBoolGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Boolean__System_Nullable_System_Boolean__
@@ -4961,12 +4967,6 @@ references:
   fullName.vb: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random, Boolean?, Boolean?)
   nameWithType: NullableBoolGeneratorAttribute.Next(Random, bool?, bool?)
   nameWithType.vb: NullableBoolGeneratorAttribute.Next(Random, Boolean?, Boolean?)
-- uid: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.html#Mirage_Generators_Nullable_NullableBoolGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableBoolGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.html#Mirage_Generators_Nullable_NullableBoolGeneratorAttribute_Next_
@@ -5050,6 +5050,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Default
   nameWithType: NullableByteGeneratorAttribute.Default
+- uid: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.html#Mirage_Generators_Nullable_NullableByteGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: NullableByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random,System.Nullable{System.Byte},System.Nullable{System.Byte})
   name: Next(Random, byte?, byte?)
   href: api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.html#Mirage_Generators_Nullable_NullableByteGeneratorAttribute_Next_Mirage_Random_System_Nullable_System_Byte__System_Nullable_System_Byte__
@@ -5059,12 +5065,6 @@ references:
   fullName.vb: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random, Byte?, Byte?)
   nameWithType: NullableByteGeneratorAttribute.Next(Random, byte?, byte?)
   nameWithType.vb: NullableByteGeneratorAttribute.Next(Random, Byte?, Byte?)
-- uid: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.html#Mirage_Generators_Nullable_NullableByteGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: NullableByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.Nullable.NullableByteGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.html#Mirage_Generators_Nullable_NullableByteGeneratorAttribute_Next_
@@ -5362,6 +5362,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.SByteGeneratorAttribute.Default
   nameWithType: SByteGeneratorAttribute.Default
+- uid: Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.SByteGeneratorAttribute.html#Mirage_Generators_SByteGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: SByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random,System.SByte,System.SByte)
   name: Next(Random, sbyte, sbyte)
   href: api/Mirage.Generators.SByteGeneratorAttribute.html#Mirage_Generators_SByteGeneratorAttribute_Next_Mirage_Random_System_SByte_System_SByte_
@@ -5371,12 +5377,6 @@ references:
   fullName.vb: Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random, SByte, SByte)
   nameWithType: SByteGeneratorAttribute.Next(Random, sbyte, sbyte)
   nameWithType.vb: SByteGeneratorAttribute.Next(Random, SByte, SByte)
-- uid: Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.SByteGeneratorAttribute.html#Mirage_Generators_SByteGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.SByteGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: SByteGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.SByteGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.SByteGeneratorAttribute.html#Mirage_Generators_SByteGeneratorAttribute_Next_
@@ -5460,6 +5460,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.ShortGeneratorAttribute.Default
   nameWithType: ShortGeneratorAttribute.Default
+- uid: Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.ShortGeneratorAttribute.html#Mirage_Generators_ShortGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: ShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random,System.Int16,System.Int16)
   name: Next(Random, short, short)
   href: api/Mirage.Generators.ShortGeneratorAttribute.html#Mirage_Generators_ShortGeneratorAttribute_Next_Mirage_Random_System_Int16_System_Int16_
@@ -5469,12 +5475,6 @@ references:
   fullName.vb: Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random, Short, Short)
   nameWithType: ShortGeneratorAttribute.Next(Random, short, short)
   nameWithType.vb: ShortGeneratorAttribute.Next(Random, Short, Short)
-- uid: Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.ShortGeneratorAttribute.html#Mirage_Generators_ShortGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.ShortGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: ShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.ShortGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.ShortGeneratorAttribute.html#Mirage_Generators_ShortGeneratorAttribute_Next_
@@ -5839,18 +5839,18 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.TimeSpanGenerator.Default
   nameWithType: TimeSpanGenerator.Default
-- uid: Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random,System.TimeSpan,System.TimeSpan)
-  name: Next(Random, TimeSpan, TimeSpan)
-  href: api/Mirage.Generators.TimeSpanGenerator.html#Mirage_Generators_TimeSpanGenerator_Next_Mirage_Random_System_TimeSpan_System_TimeSpan_
-  commentId: M:Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random,System.TimeSpan,System.TimeSpan)
-  fullName: Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random, System.TimeSpan, System.TimeSpan)
-  nameWithType: TimeSpanGenerator.Next(Random, TimeSpan, TimeSpan)
 - uid: Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random)
   name: Next(Random)
   href: api/Mirage.Generators.TimeSpanGenerator.html#Mirage_Generators_TimeSpanGenerator_Next_Mirage_Random_
   commentId: M:Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random)
   fullName: Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random)
   nameWithType: TimeSpanGenerator.Next(Random)
+- uid: Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random,System.TimeSpan,System.TimeSpan)
+  name: Next(Random, TimeSpan, TimeSpan)
+  href: api/Mirage.Generators.TimeSpanGenerator.html#Mirage_Generators_TimeSpanGenerator_Next_Mirage_Random_System_TimeSpan_System_TimeSpan_
+  commentId: M:Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random,System.TimeSpan,System.TimeSpan)
+  fullName: Mirage.Generators.TimeSpanGenerator.Next(Mirage.Random, System.TimeSpan, System.TimeSpan)
+  nameWithType: TimeSpanGenerator.Next(Random, TimeSpan, TimeSpan)
 - uid: Mirage.Generators.TimeSpanGenerator.Next*
   name: Next
   href: api/Mirage.Generators.TimeSpanGenerator.html#Mirage_Generators_TimeSpanGenerator_Next_
@@ -6010,6 +6010,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.UIntGeneratorAttribute.Default
   nameWithType: UIntGeneratorAttribute.Default
+- uid: Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.UIntGeneratorAttribute.html#Mirage_Generators_UIntGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: UIntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random,System.UInt32,System.UInt32)
   name: Next(Random, uint, uint)
   href: api/Mirage.Generators.UIntGeneratorAttribute.html#Mirage_Generators_UIntGeneratorAttribute_Next_Mirage_Random_System_UInt32_System_UInt32_
@@ -6019,12 +6025,6 @@ references:
   fullName.vb: Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random, UInteger, UInteger)
   nameWithType: UIntGeneratorAttribute.Next(Random, uint, uint)
   nameWithType.vb: UIntGeneratorAttribute.Next(Random, UInteger, UInteger)
-- uid: Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.UIntGeneratorAttribute.html#Mirage_Generators_UIntGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.UIntGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: UIntGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.UIntGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.UIntGeneratorAttribute.html#Mirage_Generators_UIntGeneratorAttribute_Next_
@@ -6108,6 +6108,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.ULongGeneratorAttribute.Default
   nameWithType: ULongGeneratorAttribute.Default
+- uid: Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.ULongGeneratorAttribute.html#Mirage_Generators_ULongGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: ULongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random,System.UInt64,System.UInt64)
   name: Next(Random, ulong, ulong)
   href: api/Mirage.Generators.ULongGeneratorAttribute.html#Mirage_Generators_ULongGeneratorAttribute_Next_Mirage_Random_System_UInt64_System_UInt64_
@@ -6117,12 +6123,6 @@ references:
   fullName.vb: Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random, ULong, ULong)
   nameWithType: ULongGeneratorAttribute.Next(Random, ulong, ulong)
   nameWithType.vb: ULongGeneratorAttribute.Next(Random, ULong, ULong)
-- uid: Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.ULongGeneratorAttribute.html#Mirage_Generators_ULongGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.ULongGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: ULongGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.ULongGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.ULongGeneratorAttribute.html#Mirage_Generators_ULongGeneratorAttribute_Next_
@@ -6206,6 +6206,12 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.UShortGeneratorAttribute.Default
   nameWithType: UShortGeneratorAttribute.Default
+- uid: Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.UShortGeneratorAttribute.html#Mirage_Generators_UShortGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random)
+  nameWithType: UShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random,System.UInt16,System.UInt16)
   name: Next(Random, ushort, ushort)
   href: api/Mirage.Generators.UShortGeneratorAttribute.html#Mirage_Generators_UShortGeneratorAttribute_Next_Mirage_Random_System_UInt16_System_UInt16_
@@ -6215,12 +6221,6 @@ references:
   fullName.vb: Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random, UShort, UShort)
   nameWithType: UShortGeneratorAttribute.Next(Random, ushort, ushort)
   nameWithType.vb: UShortGeneratorAttribute.Next(Random, UShort, UShort)
-- uid: Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.UShortGeneratorAttribute.html#Mirage_Generators_UShortGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.UShortGeneratorAttribute.Next(Mirage.Random)
-  nameWithType: UShortGeneratorAttribute.Next(Random)
 - uid: Mirage.Generators.UShortGeneratorAttribute.Next*
   name: Next
   href: api/Mirage.Generators.UShortGeneratorAttribute.html#Mirage_Generators_UShortGeneratorAttribute_Next_
@@ -6371,14 +6371,6 @@ references:
   fullName.vb: Mirage.Interfaces.IGenerator(Of T)
   nameWithType: IGenerator<T>
   nameWithType.vb: IGenerator(Of T)
-- uid: Mirage.Interfaces.IGenerator`1.Next(Mirage.Random,`0,`0)
-  name: Next(Random, T, T)
-  href: api/Mirage.Interfaces.IGenerator-1.html#Mirage_Interfaces_IGenerator_1_Next_Mirage_Random__0__0_
-  commentId: M:Mirage.Interfaces.IGenerator`1.Next(Mirage.Random,`0,`0)
-  fullName: Mirage.Interfaces.IGenerator<T>.Next(Mirage.Random, T, T)
-  fullName.vb: Mirage.Interfaces.IGenerator(Of T).Next(Mirage.Random, T, T)
-  nameWithType: IGenerator<T>.Next(Random, T, T)
-  nameWithType.vb: IGenerator(Of T).Next(Random, T, T)
 - uid: Mirage.Interfaces.IGenerator`1.Next(Mirage.Random)
   name: Next(Random)
   href: api/Mirage.Interfaces.IGenerator-1.html#Mirage_Interfaces_IGenerator_1_Next_Mirage_Random_
@@ -6387,6 +6379,14 @@ references:
   fullName.vb: Mirage.Interfaces.IGenerator(Of T).Next(Mirage.Random)
   nameWithType: IGenerator<T>.Next(Random)
   nameWithType.vb: IGenerator(Of T).Next(Random)
+- uid: Mirage.Interfaces.IGenerator`1.Next(Mirage.Random,`0,`0)
+  name: Next(Random, T, T)
+  href: api/Mirage.Interfaces.IGenerator-1.html#Mirage_Interfaces_IGenerator_1_Next_Mirage_Random__0__0_
+  commentId: M:Mirage.Interfaces.IGenerator`1.Next(Mirage.Random,`0,`0)
+  fullName: Mirage.Interfaces.IGenerator<T>.Next(Mirage.Random, T, T)
+  fullName.vb: Mirage.Interfaces.IGenerator(Of T).Next(Mirage.Random, T, T)
+  nameWithType: IGenerator<T>.Next(Random, T, T)
+  nameWithType.vb: IGenerator(Of T).Next(Random, T, T)
 - uid: Mirage.Interfaces.IGenerator`1.Next*
   name: Next
   href: api/Mirage.Interfaces.IGenerator-1.html#Mirage_Interfaces_IGenerator_1_Next_
@@ -6537,6 +6537,12 @@ references:
   fullName.vb: Mirage.Random.New
   nameWithType: Random.Random
   nameWithType.vb: Random.New
+- uid: Mirage.Random.Next(System.Type)
+  name: Next(Type)
+  href: api/Mirage.Random.html#Mirage_Random_Next_System_Type_
+  commentId: M:Mirage.Random.Next(System.Type)
+  fullName: Mirage.Random.Next(System.Type)
+  nameWithType: Random.Next(Type)
 - uid: Mirage.Random.Next(System.Type,System.Int32)
   name: Next(Type, int)
   href: api/Mirage.Random.html#Mirage_Random_Next_System_Type_System_Int32_
@@ -6546,12 +6552,6 @@ references:
   fullName.vb: Mirage.Random.Next(System.Type, Integer)
   nameWithType: Random.Next(Type, int)
   nameWithType.vb: Random.Next(Type, Integer)
-- uid: Mirage.Random.Next(System.Type)
-  name: Next(Type)
-  href: api/Mirage.Random.html#Mirage_Random_Next_System_Type_
-  commentId: M:Mirage.Random.Next(System.Type)
-  fullName: Mirage.Random.Next(System.Type)
-  nameWithType: Random.Next(Type)
 - uid: Mirage.Random.Next*
   name: Next
   href: api/Mirage.Random.html#Mirage_Random_Next_
@@ -6559,6 +6559,22 @@ references:
   isSpec: "True"
   fullName: Mirage.Random.Next
   nameWithType: Random.Next
+- uid: Mirage.Random.NextNormal(System.Double,System.Double)
+  name: NextNormal(double, double)
+  href: api/Mirage.Random.html#Mirage_Random_NextNormal_System_Double_System_Double_
+  commentId: M:Mirage.Random.NextNormal(System.Double,System.Double)
+  name.vb: NextNormal(Double, Double)
+  fullName: Mirage.Random.NextNormal(double, double)
+  fullName.vb: Mirage.Random.NextNormal(Double, Double)
+  nameWithType: Random.NextNormal(double, double)
+  nameWithType.vb: Random.NextNormal(Double, Double)
+- uid: Mirage.Random.NextNormal*
+  name: NextNormal
+  href: api/Mirage.Random.html#Mirage_Random_NextNormal_
+  commentId: Overload:Mirage.Random.NextNormal
+  isSpec: "True"
+  fullName: Mirage.Random.NextNormal
+  nameWithType: Random.NextNormal
 - uid: Mirage.Random.Next``1
   name: Next<T>()
   href: api/Mirage.Random.html#Mirage_Random_Next__1
@@ -6568,15 +6584,15 @@ references:
   fullName.vb: Mirage.Random.Next(Of T)()
   nameWithType: Random.Next<T>()
   nameWithType.vb: Random.Next(Of T)()
-- uid: Mirage.Random.Next``1(``0,``0)
-  name: Next<T>(T, T)
-  href: api/Mirage.Random.html#Mirage_Random_Next__1___0___0_
-  commentId: M:Mirage.Random.Next``1(``0,``0)
-  name.vb: Next(Of T)(T, T)
-  fullName: Mirage.Random.Next<T>(T, T)
-  fullName.vb: Mirage.Random.Next(Of T)(T, T)
-  nameWithType: Random.Next<T>(T, T)
-  nameWithType.vb: Random.Next(Of T)(T, T)
+- uid: Mirage.Random.Next``1(System.Collections.Generic.IEnumerable{``0})
+  name: Next<T>(IEnumerable<T>)
+  href: api/Mirage.Random.html#Mirage_Random_Next__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Mirage.Random.Next``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: Next(Of T)(IEnumerable(Of T))
+  fullName: Mirage.Random.Next<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Mirage.Random.Next(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: Random.Next<T>(IEnumerable<T>)
+  nameWithType.vb: Random.Next(Of T)(IEnumerable(Of T))
 - uid: Mirage.Random.Next``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{System.Decimal},System.Int32,System.Boolean)
   name: Next<T>(IEnumerable<T>?, IEnumerable<decimal>, int, bool)
   href: api/Mirage.Random.html#Mirage_Random_Next__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable_System_Decimal__System_Int32_System_Boolean_
@@ -6595,24 +6611,6 @@ references:
   fullName.vb: Mirage.Random.Next(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer, Boolean)
   nameWithType: Random.Next<T>(IEnumerable<T>?, int, bool)
   nameWithType.vb: Random.Next(Of T)(IEnumerable(Of T), Integer, Boolean)
-- uid: Mirage.Random.Next``1(System.Collections.Generic.IEnumerable{``0})
-  name: Next<T>(IEnumerable<T>)
-  href: api/Mirage.Random.html#Mirage_Random_Next__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:Mirage.Random.Next``1(System.Collections.Generic.IEnumerable{``0})
-  name.vb: Next(Of T)(IEnumerable(Of T))
-  fullName: Mirage.Random.Next<T>(System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Mirage.Random.Next(Of T)(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: Random.Next<T>(IEnumerable<T>)
-  nameWithType.vb: Random.Next(Of T)(IEnumerable(Of T))
-- uid: Mirage.Random.Next``1(System.Int32,``0,``0)
-  name: Next<T>(int, T, T)
-  href: api/Mirage.Random.html#Mirage_Random_Next__1_System_Int32___0___0_
-  commentId: M:Mirage.Random.Next``1(System.Int32,``0,``0)
-  name.vb: Next(Of T)(Integer, T, T)
-  fullName: Mirage.Random.Next<T>(int, T, T)
-  fullName.vb: Mirage.Random.Next(Of T)(Integer, T, T)
-  nameWithType: Random.Next<T>(int, T, T)
-  nameWithType.vb: Random.Next(Of T)(Integer, T, T)
 - uid: Mirage.Random.Next``1(System.Int32)
   name: Next<T>(int)
   href: api/Mirage.Random.html#Mirage_Random_Next__1_System_Int32_
@@ -6622,22 +6620,24 @@ references:
   fullName.vb: Mirage.Random.Next(Of T)(Integer)
   nameWithType: Random.Next<T>(int)
   nameWithType.vb: Random.Next(Of T)(Integer)
-- uid: Mirage.Random.NextNormal(System.Double,System.Double)
-  name: NextNormal(double, double)
-  href: api/Mirage.Random.html#Mirage_Random_NextNormal_System_Double_System_Double_
-  commentId: M:Mirage.Random.NextNormal(System.Double,System.Double)
-  name.vb: NextNormal(Double, Double)
-  fullName: Mirage.Random.NextNormal(double, double)
-  fullName.vb: Mirage.Random.NextNormal(Double, Double)
-  nameWithType: Random.NextNormal(double, double)
-  nameWithType.vb: Random.NextNormal(Double, Double)
-- uid: Mirage.Random.NextNormal*
-  name: NextNormal
-  href: api/Mirage.Random.html#Mirage_Random_NextNormal_
-  commentId: Overload:Mirage.Random.NextNormal
-  isSpec: "True"
-  fullName: Mirage.Random.NextNormal
-  nameWithType: Random.NextNormal
+- uid: Mirage.Random.Next``1(System.Int32,``0,``0)
+  name: Next<T>(int, T, T)
+  href: api/Mirage.Random.html#Mirage_Random_Next__1_System_Int32___0___0_
+  commentId: M:Mirage.Random.Next``1(System.Int32,``0,``0)
+  name.vb: Next(Of T)(Integer, T, T)
+  fullName: Mirage.Random.Next<T>(int, T, T)
+  fullName.vb: Mirage.Random.Next(Of T)(Integer, T, T)
+  nameWithType: Random.Next<T>(int, T, T)
+  nameWithType.vb: Random.Next(Of T)(Integer, T, T)
+- uid: Mirage.Random.Next``1(``0,``0)
+  name: Next<T>(T, T)
+  href: api/Mirage.Random.html#Mirage_Random_Next__1___0___0_
+  commentId: M:Mirage.Random.Next``1(``0,``0)
+  name.vb: Next(Of T)(T, T)
+  fullName: Mirage.Random.Next<T>(T, T)
+  fullName.vb: Mirage.Random.Next(Of T)(T, T)
+  nameWithType: Random.Next<T>(T, T)
+  nameWithType.vb: Random.Next(Of T)(T, T)
 - uid: Mirage.Random.Shuffle*
   name: Shuffle
   href: api/Mirage.Random.html#Mirage_Random_Shuffle_

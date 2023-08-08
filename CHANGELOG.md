@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.10"></a>
+## [4.0.10](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.10) (2023-8-8)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([0f12879](https://www.github.com/JaCraig/Mirage/commit/0f128795d526f7546a3e8365d8194fb61718b875))
+
+### Other
+
+* Merge pull request #10 from JaCraig/dependabot/nuget/dependencies-6f3358f8e4 ([ea1f8df](https://www.github.com/JaCraig/Mirage/commit/ea1f8df396d29d564c619ccdbe3df8952df3638d))
+
 <a name="4.0.9"></a>
 ## [4.0.9](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.9) (2023-8-8)
 

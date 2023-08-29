@@ -1,6 +1,6 @@
 # Mirage
 
-[![Build status](https://ci.appveyor.com/api/projects/status/auo9ubhxab10lqv6?svg=true)](https://ci.appveyor.com/project/JaCraig/mirage)
+[![.NET Publish](https://github.com/JaCraig/Mirage/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/Mirage/actions/workflows/dotnet-publish.yml)
 
 Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.
 

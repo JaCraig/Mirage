@@ -33,12 +33,6 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] StateAndDistrictAbbreviations = { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI",
-                                                             "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI",
-                                                             "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC",
-                                                             "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT",
-                                                             "VT", "VA", "WA", "WV", "WI", "WY", "DC" };
-
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
         /// </summary>
@@ -46,13 +40,19 @@ namespace Mirage.Generators
         public override bool Default => false;
 
         /// <summary>
+        /// The state and district abbreviations
+        /// </summary>
+        private static readonly string[] _StateAndDistrictAbbreviations = { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI",
+                                                             "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI",
+                                                             "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC",
+                                                             "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT",
+                                                             "VT", "VA", "WA", "WV", "WI", "WY", "DC" };
+
+        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand)
-        {
-            return rand.Next(StateAndDistrictAbbreviations);
-        }
+        public override string Next(Random rand) => rand.Next(_StateAndDistrictAbbreviations);
     }
 }

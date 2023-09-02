@@ -44,10 +44,7 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public DateTime Next(Random rand)
-        {
-            return Next(rand, DateTime.MinValue, DateTime.MaxValue);
-        }
+        public DateTime Next(Random rand) => Next(rand, DateTime.MinValue, DateTime.MaxValue);
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -60,9 +57,7 @@ namespace Mirage.Generators
         {
             if (min > max)
             {
-                var holder = min;
-                min = max;
-                max = holder;
+                (max, min) = (min, max);
             }
             return min + new TimeSpan((long)(new TimeSpan(max.Ticks - min.Ticks).Ticks * (rand?.NextDouble() ?? 0)));
         }
@@ -73,10 +68,7 @@ namespace Mirage.Generators
         /// <param name="rand">Random number generator</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public object NextObj(Random rand, List<object> previouslySeen)
-        {
-            return DateTime.MinValue != default || DateTime.MaxValue != default ? Next(rand, DateTime.MinValue, DateTime.MaxValue) : (object)Next(rand);
-        }
+        public object NextObj(Random rand, List<object> previouslySeen) => DateTime.MinValue != default || DateTime.MaxValue != default ? Next(rand, DateTime.MinValue, DateTime.MaxValue) : (object)Next(rand);
     }
 
     /// <summary>
@@ -125,8 +117,8 @@ namespace Mirage.Generators
         {
             if (Min is null || Max is null)
                 return default;
-            DateTime.TryParse((string)Min, out var TempMin);
-            DateTime.TryParse((string)Max, out var TempMax);
+            _ = DateTime.TryParse((string)Min, out DateTime TempMin);
+            _ = DateTime.TryParse((string)Max, out DateTime TempMax);
             return TempMin != default || TempMax != default
                 ? new DateTimeGenerator().Next(rand, TempMin, TempMax)
                 : (object)new DateTimeGenerator().Next(rand);

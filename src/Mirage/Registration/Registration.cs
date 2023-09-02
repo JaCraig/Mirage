@@ -22,7 +22,7 @@ namespace Microsoft.Extensions.DependencyInjection
     /// <summary>
     /// Registration extension methods
     /// </summary>
-    public static class Registration
+    public static class MirageRegistration
     {
         /// <summary>
         /// Registers the library with the bootstrapper.
@@ -31,7 +31,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>The bootstrapper</returns>
         public static ICanisterConfiguration? RegisterMirage(this ICanisterConfiguration? bootstrapper)
         {
-            return bootstrapper?.AddAssembly(typeof(Registration).GetTypeInfo().Assembly)
+            return bootstrapper?.AddAssembly(typeof(MirageRegistration).GetTypeInfo().Assembly)
                                .RegisterBigBookOfDataTypes();
         }
     }

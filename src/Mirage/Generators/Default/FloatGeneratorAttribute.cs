@@ -34,7 +34,7 @@ namespace Mirage.Generators
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
         public FloatGeneratorAttribute(float min, float max)
-            : base(min, Math.Abs(min) < EPSILON && Math.Abs(max) < EPSILON ? 1 : max)
+            : base(min, Math.Abs(min) < _EPSILON && Math.Abs(max) < _EPSILON ? 1 : max)
         {
         }
 
@@ -58,17 +58,17 @@ namespace Mirage.Generators
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(float);
 
-        private const float EPSILON = 0.0001f;
+        /// <summary>
+        /// The epsilon
+        /// </summary>
+        private const float _EPSILON = 0.0001f;
 
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public float Next(Random rand)
-        {
-            return Min is null || Max is null ? (default) : Next(rand, (float)Min, (float)Max);
-        }
+        public float Next(Random rand) => Min is null || Max is null ? default : Next(rand, (float)Min, (float)Max);
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -77,10 +77,7 @@ namespace Mirage.Generators
         /// <param name="min">Minimum value (inclusive)</param>
         /// <param name="max">Maximum value (inclusive)</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public float Next(Random rand, float min, float max)
-        {
-            return min + ((max - min) * (float)(rand?.NextDouble() ?? 0));
-        }
+        public float Next(Random rand, float min, float max) => min + ((max - min) * (float)(rand?.NextDouble() ?? 0));
 
         /// <summary>
         /// Generates next object
@@ -88,9 +85,6 @@ namespace Mirage.Generators
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object? NextObj(Random rand, List<object> previouslySeen)
-        {
-            return Next(rand);
-        }
+        public override object? NextObj(Random rand, List<object> previouslySeen) => Next(rand);
     }
 }

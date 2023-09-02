@@ -33,8 +33,6 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] FemaleNamePrefixes = { "Mrs.", "Ms.", "Miss", "Dr.", "Prof.", "Rev." };
-
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
         /// </summary>
@@ -42,13 +40,15 @@ namespace Mirage.Generators
         public override bool Default => false;
 
         /// <summary>
+        /// The female name prefixes
+        /// </summary>
+        private static readonly string[] _FemaleNamePrefixes = { "Mrs.", "Ms.", "Miss", "Dr.", "Prof.", "Rev." };
+
+        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand)
-        {
-            return rand.Next(FemaleNamePrefixes);
-        }
+        public override string Next(Random rand) => rand.Next(_FemaleNamePrefixes);
     }
 }

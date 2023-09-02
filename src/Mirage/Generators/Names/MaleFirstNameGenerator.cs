@@ -33,7 +33,16 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] MaleFirstNames = { "Jacob", "Mason", "William", "Jayden", "Noah", "Michael", "Ethan",
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
+
+        /// <summary>
+        /// The male first names
+        /// </summary>
+        private static readonly string[] _MaleFirstNames = { "Jacob", "Mason", "William", "Jayden", "Noah", "Michael", "Ethan",
                                               "Alexander", "Aiden", "Daniel", "Anthony", "Matthew", "Elijah", "Joshua",
                                               "Liam", "Andrew", "James", "David", "Benjamin", "Logan", "Christopher", "Joseph",
                                               "Jackson", "Gabriel", "Ryan", "Samuel", "John", "Nathan", "Lucas", "Christian",
@@ -137,19 +146,10 @@ namespace Mirage.Generators
             "Yisroel","Howard","Jaxx" };
 
         /// <summary>
-        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
-        /// </summary>
-        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
-        public override bool Default => false;
-
-        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand)
-        {
-            return rand.Next(MaleFirstNames);
-        }
+        public override string Next(Random rand) => rand.Next(_MaleFirstNames);
     }
 }

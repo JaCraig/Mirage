@@ -17,7 +17,16 @@ namespace Mirage.Generators.Names
         {
         }
 
-        private static readonly string[] Job = { "Supervisor",
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
+
+        /// <summary>
+        /// The job
+        /// </summary>
+        private static readonly string[] _Job = { "Supervisor",
         "Associate",
         "Executive",
         "Liaison",
@@ -43,7 +52,7 @@ namespace Mirage.Generators.Names
         "Representative",
         "Strategist"};
 
-        private static readonly string[] Prefix = { "Lead",
+        private static readonly string[] _Prefix = { "Lead",
         "Senior",
         "Direct",
         "Corporate",
@@ -67,7 +76,10 @@ namespace Mirage.Generators.Names
         "Principal",
         "Junior"};
 
-        private static readonly string[] TypeName = {"Solutions",
+        /// <summary>
+        /// The type name
+        /// </summary>
+        private static readonly string[] _TypeName = {"Solutions",
         "Program",
         "Brand",
         "Security",
@@ -106,19 +118,10 @@ namespace Mirage.Generators.Names
         "Metrics"};
 
         /// <summary>
-        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
-        /// </summary>
-        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
-        public override bool Default => false;
-
-        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand)
-        {
-            return rand.Next(Prefix) + " " + rand.Next(TypeName) + " " + rand.Next(Job);
-        }
+        public override string Next(Random rand) => rand.Next(_Prefix) + " " + rand.Next(_TypeName) + " " + rand.Next(_Job);
     }
 }

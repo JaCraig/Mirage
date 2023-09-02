@@ -41,12 +41,12 @@ namespace Mirage.Module
         public void Load(IServiceCollection? bootstrapper)
         {
             Services.ServiceCollection = bootstrapper;
-            bootstrapper?.AddAllTransient<IGenerator>()
+            _ = (bootstrapper?.AddAllTransient<IGenerator>()
                 ?.AddTransient(typeof(EnumGenerator<>))
                 .AddTransient(typeof(ClassGenerator<>))
                 .AddTransient(typeof(IEnumerableGenerator<>))
                 .AddSingleton<Manager.Builder>()
-                .AddTransient<Random>();
+                .AddTransient<Random>());
         }
     }
 }

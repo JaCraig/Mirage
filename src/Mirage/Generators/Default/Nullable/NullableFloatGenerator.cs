@@ -34,7 +34,7 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="min">The minimum.</param>
         /// <param name="max">The maximum.</param>
         public NullableFloatGeneratorAttribute(float min, float max)
-            : base(min, Math.Abs(min) < EPSILON && Math.Abs(max) < EPSILON ? 1 : max)
+            : base(min, Math.Abs(min) < _EPSILON && Math.Abs(max) < _EPSILON ? 1 : max)
         {
         }
 
@@ -58,17 +58,17 @@ namespace Mirage.Generators.Default.Nullable
         /// <value>The type generated.</value>
         public override Type TypeGenerated => typeof(float?);
 
-        private const float EPSILON = 0.0001f;
+        /// <summary>
+        /// The epsilon
+        /// </summary>
+        private const float _EPSILON = 0.0001f;
 
         /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public float? Next(Random rand)
-        {
-            return !(rand?.Next<bool>() ?? false) ? null : (float?)rand.Next<float>();
-        }
+        public float? Next(Random rand) => !(rand?.Next<bool>() ?? false) ? null : rand.Next<float>();
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -92,9 +92,6 @@ namespace Mirage.Generators.Default.Nullable
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object? NextObj(Random rand, List<object> previouslySeen)
-        {
-            return Next(rand);
-        }
+        public override object? NextObj(Random rand, List<object> previouslySeen) => Next(rand);
     }
 }

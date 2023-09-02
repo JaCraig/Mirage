@@ -35,12 +35,6 @@ namespace Mirage.Generators
             CommonEndings = commonEndings;
         }
 
-        private static readonly string[] Endings = { ".ag", ".am", ".as", ".at", ".az", ".be", ".bi", ".bs", ".cc", ".cf", ".cg", ".ch", ".co.at", ".co.ck", ".co.gg", ".co.il", ".co.je", ".co.ma", ".co.mu", ".co.mz", ".co.nz", ".co.pn", ".co.ro", ".co.tt", ".co.uk", ".co.vi", ".co.za", ".com", ".com.ag", ".com.ar", ".com.az", ".com.bs", ".com.dm", ".com.do", ".com.ec", ".com.fj", ".com.gd", ".com.gi", ".com.gt", ".com.gy", ".com.jm", ".com.kh", ".com.kn", ".com.lc", ".com.lk", ".com.lv", ".com.ly", ".com.mx", ".com.nf", ".com.ni", ".com.pa", ".com.pe", ".com.ph", ".com.pl", ".com.pr", ".com.pt", ".com.ro", ".com.ru", ".com.sb", ".com.sc", ".com.tj", ".com.tp", ".com.ua", ".com.ve", ".cx", ".cz", ".dk", ".fm", ".gd", ".gen.tr", ".gg", ".gl", ".gs", ".gy", ".hm", ".io", ".je", ".jp", ".kg", ".kn", ".kz", ".li", ".lk", ".lt", ".lv", ".ly", ".ma", ".md", ".ms", ".mu", ".mw", ".net", ".net.tp", ".nu", ".off.ai", ".org", ".org.tp", ".org.uk", ".ph", ".pl", ".ro", ".ru", ".rw", ".sc", ".sh", ".sn", ".st", ".tc", ".tf", ".tj", ".to", ".tp", ".tt", ".uz", ".vg", ".vu", ".ws" };
-
-        private static readonly string[] FreeAccounts = { "gmail", "yahoo", "hotmail" };
-
-        private static readonly string[] MostCommonEndings = { ".com", ".net", ".org" };
-
         /// <summary>
         /// Should common domain name endings be used?
         /// </summary>
@@ -53,23 +47,38 @@ namespace Mirage.Generators
         public override bool Default => false;
 
         /// <summary>
+        /// The endings
+        /// </summary>
+        private static readonly string[] _Endings = { ".ag", ".am", ".as", ".at", ".az", ".be", ".bi", ".bs", ".cc", ".cf", ".cg", ".ch", ".co.at", ".co.ck", ".co.gg", ".co.il", ".co.je", ".co.ma", ".co.mu", ".co.mz", ".co.nz", ".co.pn", ".co.ro", ".co.tt", ".co.uk", ".co.vi", ".co.za", ".com", ".com.ag", ".com.ar", ".com.az", ".com.bs", ".com.dm", ".com.do", ".com.ec", ".com.fj", ".com.gd", ".com.gi", ".com.gt", ".com.gy", ".com.jm", ".com.kh", ".com.kn", ".com.lc", ".com.lk", ".com.lv", ".com.ly", ".com.mx", ".com.nf", ".com.ni", ".com.pa", ".com.pe", ".com.ph", ".com.pl", ".com.pr", ".com.pt", ".com.ro", ".com.ru", ".com.sb", ".com.sc", ".com.tj", ".com.tp", ".com.ua", ".com.ve", ".cx", ".cz", ".dk", ".fm", ".gd", ".gen.tr", ".gg", ".gl", ".gs", ".gy", ".hm", ".io", ".je", ".jp", ".kg", ".kn", ".kz", ".li", ".lk", ".lt", ".lv", ".ly", ".ma", ".md", ".ms", ".mu", ".mw", ".net", ".net.tp", ".nu", ".off.ai", ".org", ".org.tp", ".org.uk", ".ph", ".pl", ".ro", ".ru", ".rw", ".sc", ".sh", ".sn", ".st", ".tc", ".tf", ".tj", ".to", ".tp", ".tt", ".uz", ".vg", ".vu", ".ws" };
+
+        /// <summary>
+        /// The free accounts
+        /// </summary>
+        private static readonly string[] _FreeAccounts = { "gmail", "yahoo", "hotmail" };
+
+        /// <summary>
+        /// The most common endings
+        /// </summary>
+        private static readonly string[] _MostCommonEndings = { ".com", ".net", ".org" };
+
+        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            string DomainName = (rand.Next<bool>()) ?
-                rand.Next(FreeAccounts) + (CommonEndings ? rand.Next(MostCommonEndings) : rand.Next(Endings)) :
+            var DomainName = rand.Next<bool>() ?
+                rand.Next(_FreeAccounts) + (CommonEndings ? rand.Next(_MostCommonEndings) : rand.Next(_Endings)) :
                 new DomainNameAttribute(CommonEndings).Next(rand);
             var AddressStyle = rand.Next(1, 6);
-            if (AddressStyle == 1)
-                return new NameAttribute().Next(rand).Replace(" ", ".") + "@" + DomainName;
-            if (AddressStyle == 2)
-                return new NameAttribute(false, true, true, false).Next(rand).Replace(" ", ".") + "@" + DomainName;
-            if (AddressStyle == 3)
-                return rand.Next('a', 'z') + "." + new LastNameAttribute().Next(rand) + "@" + DomainName;
-            return AddressStyle == 4
+            return AddressStyle == 1
+                ? new NameAttribute().Next(rand).Replace(" ", ".") + "@" + DomainName
+                : AddressStyle == 2
+                ? new NameAttribute(false, true, true, false).Next(rand).Replace(" ", ".") + "@" + DomainName
+                : AddressStyle == 3
+                ? rand.Next('a', 'z') + "." + new LastNameAttribute().Next(rand) + "@" + DomainName
+                : AddressStyle == 4
                 ? new NameAttribute(false, false, false, false).Next(rand).Replace(" ", ".") + "@" + DomainName
                 : rand.Next('a', 'z') + "." + rand.Next('a', 'z') + "." + new LastNameAttribute().Next(rand) + "@" + DomainName;
         }

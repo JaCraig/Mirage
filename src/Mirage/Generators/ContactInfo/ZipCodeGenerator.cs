@@ -33,13 +33,16 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] ZipCodeFormats = { "#####", "#####-####" };
-
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
         /// </summary>
         /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
         public override bool Default => false;
+
+        /// <summary>
+        /// The zip code formats
+        /// </summary>
+        private static readonly string[] _ZipCodeFormats = { "#####", "#####-####" };
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -48,7 +51,7 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            Pattern = rand.Next(ZipCodeFormats);
+            Pattern = rand.Next(_ZipCodeFormats);
             return base.Next(rand);
         }
     }

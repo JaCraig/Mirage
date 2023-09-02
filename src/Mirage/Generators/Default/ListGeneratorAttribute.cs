@@ -82,7 +82,7 @@ namespace Mirage.Generators.Default
             var ReturnObject = (IList)Activator.CreateInstance(typeof(List<>).MakeGenericType(ClassType));
             for (int x = 0; x < Count; ++x)
             {
-                ReturnObject.Add(Results[x]);
+                _ = ReturnObject.Add(Results[x]);
             }
             return ReturnObject;
         }

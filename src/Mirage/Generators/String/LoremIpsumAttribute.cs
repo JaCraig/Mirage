@@ -44,7 +44,33 @@ namespace Mirage.Generators
             MaxSentenceLength = maxSentenceLength;
         }
 
-        private static readonly string[] Words = { "consetetur", "sadipscing", "elitr", "sed", "diam", "nonumy", "eirmod",
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
+
+        /// <summary>
+        /// Maximum sentence length
+        /// </summary>
+        public int MaxSentenceLength { get; }
+
+        /// <summary>
+        /// Minimum sentence length
+        /// </summary>
+        public int MinSentenceLength { get; }
+
+        /// <summary>
+        /// Number of paragraphs
+        /// </summary>
+        public int NumberOfParagraphs { get; }
+
+        /// <summary>
+        /// Number of sentences
+        /// </summary>
+        public int NumberOfSentences { get; }
+
+        private static readonly string[] _Words = { "consetetur", "sadipscing", "elitr", "sed", "diam", "nonumy", "eirmod",
         "tempor", "invidunt", "ut", "labore", "et", "dolore", "magna", "aliquyam", "erat", "sed", "diam", "voluptua",
         "at", "vero", "eos", "et", "accusam", "et", "justo", "duo", "dolores", "et", "ea", "rebum", "stet", "clita",
         "kasd", "gubergren", "no", "sea", "takimata", "sanctus", "est", "lorem", "ipsum", "dolor", "sit", "amet",
@@ -91,32 +117,6 @@ namespace Mirage.Generators
         "rebum", "stet", "clita", "kasd", "gubergren", "no", "sea", "takimata", "sanctus", "est", "lorem", "ipsum" };
 
         /// <summary>
-        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
-        /// </summary>
-        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
-        public override bool Default => false;
-
-        /// <summary>
-        /// Maximum sentence length
-        /// </summary>
-        public int MaxSentenceLength { get; }
-
-        /// <summary>
-        /// Minimum sentence length
-        /// </summary>
-        public int MinSentenceLength { get; }
-
-        /// <summary>
-        /// Number of paragraphs
-        /// </summary>
-        public int NumberOfParagraphs { get; }
-
-        /// <summary>
-        /// Number of sentences
-        /// </summary>
-        public int NumberOfSentences { get; }
-
-        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
@@ -124,14 +124,14 @@ namespace Mirage.Generators
         public override string Next(Random rand)
         {
             var Builder = new StringBuilder();
-            Builder.Append("Lorem ipsum dolor sit amet. ");
-            for (int y = 1; y < NumberOfSentences; ++y)
-                Builder.Append(NextSentence(rand, rand.Next(MinSentenceLength, MaxSentenceLength))).Append(" ");
-            for (int x = 1; x < NumberOfParagraphs; ++x)
+            _ = Builder.Append("Lorem ipsum dolor sit amet. ");
+            for (var y = 1; y < NumberOfSentences; ++y)
+                _ = Builder.Append(NextSentence(rand, rand.Next(MinSentenceLength, MaxSentenceLength))).Append(' ');
+            for (var x = 1; x < NumberOfParagraphs; ++x)
             {
-                for (int y = 0; y < NumberOfSentences; ++y)
-                    Builder.Append(NextSentence(rand, rand.Next(MinSentenceLength, MaxSentenceLength))).Append(" ");
-                Builder.AppendLine().AppendLine();
+                for (var y = 0; y < NumberOfSentences; ++y)
+                    _ = Builder.Append(NextSentence(rand, rand.Next(MinSentenceLength, MaxSentenceLength))).Append(' ');
+                _ = Builder.AppendLine().AppendLine();
             }
             return Builder.ToString();
         }
@@ -142,13 +142,13 @@ namespace Mirage.Generators
         /// <param name="rand">Random number generator using</param>
         /// <param name="numberOfWords">Number of words for the sentence</param>
         /// <returns>A string containing Lorem Ipsum text</returns>
-        private string NextSentence(Random rand, int numberOfWords)
+        private static string NextSentence(Random rand, int numberOfWords)
         {
             var Builder = new StringBuilder();
-            Builder.Append(Words[rand.Next(Words.Length)].ToString(StringCase.FirstCharacterUpperCase));
-            for (int x = 1; x < numberOfWords; ++x)
-                Builder.Append(" ").Append(Words[rand.Next(Words.Length)]);
-            Builder.Append(".");
+            _ = Builder.Append(_Words[rand.Next(_Words.Length)].ToString(StringCase.FirstCharacterUpperCase));
+            for (var x = 1; x < numberOfWords; ++x)
+                _ = Builder.Append(' ').Append(_Words[rand.Next(_Words.Length)]);
+            _ = Builder.Append('.');
             return Builder.ToString();
         }
     }

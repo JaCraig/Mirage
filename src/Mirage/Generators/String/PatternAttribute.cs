@@ -61,15 +61,15 @@ namespace Mirage.Generators
             {
                 if (Pattern[x] == '#')
                 {
-                    TempBuilder.Append(rand.Next(0, 9));
+                    _ = TempBuilder.Append(rand.Next(0, 9));
                 }
                 else if (Pattern[x] == '@')
                 {
-                    TempBuilder.Append(new RegexStringAttribute(1, "[a-zA-Z]", 0).Next(rand));
+                    _ = TempBuilder.Append(new RegexStringAttribute(1, "[a-zA-Z]", 0).Next(rand));
                 }
                 else
                 {
-                    TempBuilder.Append(Pattern[x]);
+                    _ = TempBuilder.Append(Pattern[x]);
                 }
             }
             return TempBuilder.ToString();

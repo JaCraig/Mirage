@@ -33,7 +33,16 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] CompanyNames = { "Ankh-Sto Associates", "Conglom-O","Cyberdyne Systems Corporation","Globex Corporation","LexCorp",
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
+
+        /// <summary>
+        /// The company names
+        /// </summary>
+        private static readonly string[] _CompanyNames = { "Ankh-Sto Associates", "Conglom-O","Cyberdyne Systems Corporation","Globex Corporation","LexCorp",
                                             "Stark Industries","Sto Plains Holdings","Tri-Optimum Corporation","Umbrella Corporation",
                                             "Wayne Enterprises","Acme Corp","Weyland-Yutani","ZiffCorp","Grand Trunk Semaphore Company",
                                             "Monsters, Inc.","SewerCom","Strickland Propane","The Dysk Theatre","The Muppet Theatre",
@@ -48,7 +57,10 @@ namespace Mirage.Generators
                                             "Sebben & Sebben","Planet Express","Applied Cryogenics","Initech","Rekall, Inc.",
                                             "Zorg Industries","Blue Sun Corporation","Venture Industries" };
 
-        private static readonly string[] CompanySuffix =
+        /// <summary>
+        /// The company suffix
+        /// </summary>
+        private static readonly string[] _CompanySuffix =
                 {
             "Associates",
             "Corporation",
@@ -85,27 +97,17 @@ namespace Mirage.Generators
         };
 
         /// <summary>
-        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
-        /// </summary>
-        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
-        public override bool Default => false;
-
-        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            if (rand.Next<bool>())
-            {
-                return rand.Next(CompanyNames);
-            }
-            if (rand.Next<bool>())
-            {
-                return new LastNameAttribute().Next(rand) + " " + rand.Next(CompanySuffix);
-            }
             return rand.Next<bool>()
+                ? rand.Next(_CompanyNames)
+                : rand.Next<bool>()
+                ? new LastNameAttribute().Next(rand) + " " + rand.Next(_CompanySuffix)
+                : rand.Next<bool>()
                 ? new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand)
                 : new LastNameAttribute().Next(rand) + ", " + new LastNameAttribute().Next(rand) + " and " + new LastNameAttribute().Next(rand);
         }

@@ -41,9 +41,9 @@ namespace Mirage
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="Seed">Seed value</param>
-        public Random(int Seed)
-            : base(Seed)
+        /// <param name="seed">Seed value</param>
+        public Random(int seed)
+            : base(seed)
         {
             GeneratorBuilder = Services.ServiceProvider?.GetService<Manager.Builder>() ?? new Manager.Builder(Array.Empty<IGenerator>());
         }
@@ -58,12 +58,12 @@ namespace Mirage
         /// The local seed
         /// </summary>
         [ThreadStatic]
-        private static System.Random? Local;
+        private static System.Random? _Local;
 
         /// <summary>
         /// The global seed
         /// </summary>
-        private readonly System.Random GlobalSeed = new System.Random();
+        private readonly System.Random _GlobalSeed = new();
 
         /// <summary>
         /// Randomly generates a value of the specified type
@@ -73,10 +73,7 @@ namespace Mirage
         /// <exception cref="ArgumentOutOfRangeException">
         /// The type specified, " + typeof(T).Name + ", does not have a default generator.
         /// </exception>
-        public T Next<T>()
-        {
-            return (T)Next(typeof(T))!;
-        }
+        public T Next<T>() => (T)Next(typeof(T))!;
 
         /// <summary>
         /// Randomly generates an IEnumerable of the specified type.
@@ -84,10 +81,7 @@ namespace Mirage
         /// <param name="objectType">Type of the object.</param>
         /// <param name="amount">The amount.</param>
         /// <returns>The randomly generated value</returns>
-        public IEnumerable<object?> Next(Type objectType, int amount)
-        {
-            return amount.Times(_ => Next(objectType));
-        }
+        public IEnumerable<object?> Next(Type objectType, int amount) => amount.Times(_ => Next(objectType));
 
         /// <summary>
         /// Randomly generates a value of the specified type
@@ -101,10 +95,10 @@ namespace Mirage
         {
             if (objectType is null)
                 return null;
-            var Generator = GeneratorBuilder.GetGenerator(objectType);
-            if (Generator is null)
-                throw new ArgumentOutOfRangeException("The type specified, " + objectType.Name + ", does not have a default generator.");
-            return Generator.NextObj(this, new List<object>());
+            IGenerator? Generator = GeneratorBuilder.GetGenerator(objectType);
+            return Generator is null
+                ? throw new ArgumentOutOfRangeException("The type specified, " + objectType.Name + ", does not have a default generator.")
+                : Generator.NextObj(this, new List<object>());
         }
 
         /// <summary>
@@ -119,10 +113,10 @@ namespace Mirage
         /// </exception>
         public T Next<T>(T min, T max)
         {
-            var Generator = GeneratorBuilder.GetGenerator<T>();
-            if (Generator is null)
-                throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.");
-            return Generator.Next(this, min, max);
+            IGenerator<T>? Generator = GeneratorBuilder.GetGenerator<T>();
+            return Generator is null
+                ? throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.")
+                : Generator.Next(this, min, max);
         }
 
         /// <summary>
@@ -134,10 +128,7 @@ namespace Mirage
         /// <exception cref="ArgumentOutOfRangeException">
         /// The type specified, " + typeof(T).Name + ", does not have a default generator.
         /// </exception>
-        public IEnumerable<T> Next<T>(int amount)
-        {
-            return Next(typeof(T), amount).Select(x => (T)x!);
-        }
+        public IEnumerable<T> Next<T>(int amount) => Next(typeof(T), amount).Select(x => (T)x!);
 
         /// <summary>
         /// Randomly generates a list of values of the specified type
@@ -152,10 +143,10 @@ namespace Mirage
         /// </exception>
         public IEnumerable<T> Next<T>(int amount, T min, T max)
         {
-            var Generator = GeneratorBuilder.GetGenerator<T>();
-            if (Generator is null)
-                throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.");
-            return amount.Times(_ => Generator.Next(this, min, max));
+            IGenerator<T>? Generator = GeneratorBuilder.GetGenerator<T>();
+            return Generator is null
+                ? throw new ArgumentOutOfRangeException("The type specified, " + typeof(T).Name + ", does not have a default generator.")
+                : amount.Times(_ => Generator.Next(this, min, max));
         }
 
         /// <summary>
@@ -186,12 +177,12 @@ namespace Mirage
             if (count >= list.Count() && unique)
                 return Shuffle(list);
             var ReturnValue = new List<T>();
-            int[] PreviousPositions = new int[count];
-            for (int x = 0; x < PreviousPositions.Length; ++x)
+            var PreviousPositions = new int[count];
+            for (var x = 0; x < PreviousPositions.Length; ++x)
             {
                 PreviousPositions[x] = -1;
             }
-            for (int x = 0; x < count; ++x)
+            for (var x = 0; x < count; ++x)
             {
                 while (true)
                 {
@@ -223,19 +214,19 @@ namespace Mirage
             if (count >= list.Count() && unique)
                 return Shuffle(list);
             var ReturnValue = new List<T>();
-            int[] PreviousPositions = new int[count];
-            for (int x = 0; x < PreviousPositions.Length; ++x)
+            var PreviousPositions = new int[count];
+            for (var x = 0; x < PreviousPositions.Length; ++x)
             {
                 PreviousPositions[x] = -1;
             }
             var TotalWeight = weights.Sum();
-            for (int x = 0; x < count; ++x)
+            for (var x = 0; x < count; ++x)
             {
                 while (true)
                 {
                     var TempWeight = Next(0, TotalWeight);
                     var Position = 0;
-                    for (int y = 0; y < weights.Count(); ++y)
+                    for (var y = 0; y < weights.Count(); ++y)
                     {
                         TempWeight -= weights.ElementAt(y);
                         if (TempWeight <= 0)
@@ -274,10 +265,7 @@ namespace Mirage
         /// <typeparam name="T">Object type</typeparam>
         /// <param name="list">List of objects to shuffle</param>
         /// <returns>The shuffled list</returns>
-        public IEnumerable<T>? Shuffle<T>(IEnumerable<T>? list)
-        {
-            return list?.Any() != true ? list : list.OrderBy(_ => Next());
-        }
+        public IEnumerable<T>? Shuffle<T>(IEnumerable<T>? list) => list?.Any() != true ? list : list.OrderBy(_ => Next());
 
         /// <summary>
         /// A thread safe version of a random number generation
@@ -287,14 +275,14 @@ namespace Mirage
         /// <returns>A randomly generated value</returns>
         public int ThreadSafeNext(int min = int.MinValue, int max = int.MaxValue)
         {
-            if (Local is null)
+            if (_Local is null)
             {
                 int Seed;
-                lock (GlobalSeed)
-                    Seed = GlobalSeed.Next();
-                Local = new Random(Seed);
+                lock (_GlobalSeed)
+                    Seed = _GlobalSeed.Next();
+                _Local = new Random(Seed);
             }
-            return Local.Next(min, max);
+            return _Local.Next(min, max);
         }
     }
 }

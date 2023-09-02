@@ -49,10 +49,7 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="rand">Random generator to use</param>
         /// <returns>The randomly generated class</returns>
-        public T Next(Random rand)
-        {
-            return (T)NextObj(rand, new List<object>())!;
-        }
+        public T Next(Random rand) => (T)NextObj(rand, new List<object>())!;
 
         /// <summary>
         /// Generates a random version of the class
@@ -61,10 +58,7 @@ namespace Mirage.Generators
         /// <param name="min">Min value (not used)</param>
         /// <param name="max">Max value (not used)</param>
         /// <returns>The randomly generated class</returns>
-        public T Next(Random rand, T min, T max)
-        {
-            return Activator.CreateInstance<T>();
-        }
+        public T Next(Random rand, T min, T max) => Activator.CreateInstance<T>();
 
         /// <summary>
         /// Gets a random version of the class
@@ -77,25 +71,25 @@ namespace Mirage.Generators
             var PreviousItem = previouslySeen.Find(x => x.GetType() == typeof(T));
             if (PreviousItem != null)
                 return PreviousItem;
-            var ReturnItem = Activator.CreateInstance<T>();
+            T? ReturnItem = Activator.CreateInstance<T>();
             if (ReturnItem is null)
                 return default;
             previouslySeen = previouslySeen.ToList();
             previouslySeen.Add(ReturnItem);
-            var ObjectType = typeof(T);
-            foreach (var Property in ObjectType.GetProperties())
+            Type ObjectType = typeof(T);
+            foreach (PropertyInfo Property in ObjectType.GetProperties())
             {
-                bool Generated = false;
-                var ValidationAttributes = Property.Attributes<ValidationAttribute>();
-                var Attribute = Property.Attribute<GeneratorAttributeBase>();
-                if (!(Attribute is null))
+                var Generated = false;
+                ValidationAttribute[] ValidationAttributes = Property.Attributes<ValidationAttribute>();
+                GeneratorAttributeBase? Attribute = Property.Attribute<GeneratorAttributeBase>();
+                if (Attribute is not null)
                 {
                     do
                     {
                         var TempValue = Attribute.NextObj(rand, previouslySeen);
                         if (ValidationAttributes.All(x => x.IsValid(TempValue)))
                         {
-                            ReturnItem.Property(Property, TempValue!);
+                            _ = ReturnItem.Property(Property, TempValue!);
                             Generated = true;
                         }
                     }
@@ -164,10 +158,10 @@ namespace Mirage.Generators
         {
             if (ClassType is null)
                 return null;
-            var FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
-            var NextFunction = FinalClassType.GetTypeInfo().GetMethod(nameof(NextObj), MethodInputTypes);
+            Type FinalClassType = typeof(ClassGenerator<>).MakeGenericType(ClassType);
+            MethodInfo? NextFunction = FinalClassType.GetTypeInfo().GetMethod(nameof(NextObj), MethodInputTypes);
             var Generator = Services.ServiceProvider?.GetService(FinalClassType);
-            return NextFunction.Invoke(Generator, new object[] { rand, previouslySeen });
+            return NextFunction?.Invoke(Generator, new object[] { rand, previouslySeen });
         }
     }
 }

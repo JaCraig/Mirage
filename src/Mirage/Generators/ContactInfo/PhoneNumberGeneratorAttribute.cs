@@ -33,7 +33,16 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] Formats = { "x###","x####","x#####",
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
+        /// </summary>
+        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
+        public override bool Default => false;
+
+        /// <summary>
+        /// The formats
+        /// </summary>
+        private static readonly string[] _Formats = { "x###","x####","x#####",
                                     "###-###-####","(###)###-####","1-###-###-####",
                                     "###.###.####","(###)###.####","1.###.###.####",
                                     "###-###-#### x###","(###)###-#### x###","1-###-###-#### x###",
@@ -44,19 +53,13 @@ namespace Mirage.Generators
                                     "###.###.#### x#####","(###)###.#### x#####","1.###.###.#### x#####" };
 
         /// <summary>
-        /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
-        /// </summary>
-        /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
-        public override bool Default => false;
-
-        /// <summary>
         /// Generates a random value of the specified type
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            Pattern = rand.Next(Formats);
+            Pattern = rand.Next(_Formats);
             return base.Next(rand);
         }
     }

@@ -33,21 +33,30 @@ namespace Mirage.Generators
         {
         }
 
-        private static readonly string[] CityEndings = { "deen", "town", "ville", "berg", "view", "bury", "ton", "land", "mouth", "haven",
-                                           "shire", "don", "creek", "worth", "son", "mont", "wood", "dale","cliff","bridge" };
-
-        private static readonly string[] CityPrefix = { "North", "South", "East", "West", "New", "Lake", "Old", "Port", "Fort", "Mount" };
-
-        private static readonly string[] CitySuffix = { "Cove", "Manor", "City", "Park", "Springs", "Canyon", "Fork", "Center", "Mill",
-                                          "Beach","Glen", "Valley","Heights", "Harbor","Grove","Haven","Island", "Pass",
-                                          "Hills", "Creek", "Crest", "Dale", "Falls","Flats","Gardens","Landing","Meadows",
-                                          "Pines" };
-
         /// <summary>
         /// Gets a value indicating whether this <see cref="IGenerator"/> is a default one.
         /// </summary>
         /// <value><c>true</c> if default; otherwise, <c>false</c>.</value>
         public override bool Default => false;
+
+        /// <summary>
+        /// The city endings
+        /// </summary>
+        private static readonly string[] _CityEndings = { "deen", "town", "ville", "berg", "view", "bury", "ton", "land", "mouth", "haven",
+                                           "shire", "don", "creek", "worth", "son", "mont", "wood", "dale","cliff","bridge" };
+
+        /// <summary>
+        /// The city prefix
+        /// </summary>
+        private static readonly string[] _CityPrefix = { "North", "South", "East", "West", "New", "Lake", "Old", "Port", "Fort", "Mount" };
+
+        /// <summary>
+        /// The city suffix
+        /// </summary>
+        private static readonly string[] _CitySuffix = { "Cove", "Manor", "City", "Park", "Springs", "Canyon", "Fork", "Center", "Mill",
+                                          "Beach","Glen", "Valley","Heights", "Harbor","Grove","Haven","Island", "Pass",
+                                          "Hills", "Creek", "Crest", "Dale", "Falls","Flats","Gardens","Landing","Meadows",
+                                          "Pines" };
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -56,10 +65,10 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            return ((rand.Next<bool>()) ? rand.Next(CityPrefix) + " " : "")
+            return (rand.Next<bool>() ? rand.Next(_CityPrefix) + " " : "")
                 + new NameAttribute(false, false, false, false).Next(rand)
-                + rand.Next(CityEndings)
-                + ((rand.Next<bool>()) ? " " + rand.Next(CitySuffix) : "");
+                + rand.Next(_CityEndings)
+                + (rand.Next<bool>() ? " " + rand.Next(_CitySuffix) : "");
         }
     }
 }

@@ -113,12 +113,12 @@ namespace Mirage.Generators
                 {
                     if (!AlphaNumbericComparer.IsMatch(TempValue) && numberOfNonAlphaNumericsAllowed > Counter)
                     {
-                        TempBuilder.Append(TempValue);
+                        _ = TempBuilder.Append(TempValue);
                         ++Counter;
                     }
                     else if (AlphaNumbericComparer.IsMatch(TempValue))
                     {
-                        TempBuilder.Append(TempValue);
+                        _ = TempBuilder.Append(TempValue);
                     }
                 }
             }

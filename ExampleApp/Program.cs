@@ -23,11 +23,8 @@ namespace ExampleApp
         /// <summary>
         /// Converts to string.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents this instance.</returns>
-        public override string ToString()
-        {
-            return Name;
-        }
+        /// <returns>A <see cref="string"/> that represents this instance.</returns>
+        public override string ToString() => Name;
     }
 
     /// <summary>
@@ -59,11 +56,8 @@ namespace ExampleApp
         /// <summary>
         /// Converts to string.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents this instance.</returns>
-        public override string ToString()
-        {
-            return $"{UserName} : {Roles.ToString(x => x.ToString())}";
-        }
+        /// <returns>A <see cref="string"/> that represents this instance.</returns>
+        public override string ToString() => $"{UserName} : {Roles.ToString(x => x.ToString())}";
     }
 
     /// <summary>
@@ -78,14 +72,14 @@ namespace ExampleApp
         private static void Main(string[] args)
         {
             // Wire up Mirage and other libraries using Canister.
-            var MyServices = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+            _ = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
 
             // Create a new instance of the random generator and generate 1000 random users.
-            Mirage.Random RandomGenerator = new Mirage.Random();
+            var RandomGenerator = new Mirage.Random();
             for (var x = 0; x < 10; ++x)
             {
                 // Generate a new user
-                var NewUser = RandomGenerator.Next<User>();
+                User NewUser = RandomGenerator.Next<User>();
                 // Write the user to the console
                 Console.WriteLine(NewUser);
             }

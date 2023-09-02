@@ -122,8 +122,8 @@ namespace Mirage.Generators.Default.Nullable
         {
             if (Min is null || Max is null)
                 return null;
-            DateTime.TryParse((string)Min, out var TempMin);
-            DateTime.TryParse((string)Max, out var TempMax);
+            _ = DateTime.TryParse((string)Min, out var TempMin);
+            _ = DateTime.TryParse((string)Max, out var TempMax);
             return !(rand?.Next<bool>() ?? false) ? null : (object)rand.Next(TempMin, TempMax);
         }
     }

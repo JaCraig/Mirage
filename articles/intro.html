@@ -123,11 +123,8 @@ namespace ExampleApp
         /// &lt;summary&gt;
         /// Converts to string.
         /// &lt;/summary&gt;
-        /// &lt;returns&gt;A &lt;see cref=&quot;System.String&quot;/&gt; that represents this instance.&lt;/returns&gt;
-        public override string ToString()
-        {
-            return Name;
-        }
+        /// &lt;returns&gt;A &lt;see cref=&quot;string&quot;/&gt; that represents this instance.&lt;/returns&gt;
+        public override string ToString() =&gt; Name;
     }
 
     /// &lt;summary&gt;
@@ -159,11 +156,8 @@ namespace ExampleApp
         /// &lt;summary&gt;
         /// Converts to string.
         /// &lt;/summary&gt;
-        /// &lt;returns&gt;A &lt;see cref=&quot;System.String&quot;/&gt; that represents this instance.&lt;/returns&gt;
-        public override string ToString()
-        {
-            return $&quot;{UserName} : {Roles.ToString(x =&gt; x.ToString())}&quot;;
-        }
+        /// &lt;returns&gt;A &lt;see cref=&quot;string&quot;/&gt; that represents this instance.&lt;/returns&gt;
+        public override string ToString() =&gt; $&quot;{UserName} : {Roles.ToString(x =&gt; x.ToString())}&quot;;
     }
 
     /// &lt;summary&gt;
@@ -178,14 +172,14 @@ namespace ExampleApp
         private static void Main(string[] args)
         {
             // Wire up Mirage and other libraries using Canister.
-            var MyServices = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+            _ = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
 
             // Create a new instance of the random generator and generate 1000 random users.
-            Mirage.Random RandomGenerator = new Mirage.Random();
+            var RandomGenerator = new Mirage.Random();
             for (var x = 0; x &lt; 10; ++x)
             {
                 // Generate a new user
-                var NewUser = RandomGenerator.Next&lt;User&gt;();
+                User NewUser = RandomGenerator.Next&lt;User&gt;();
                 // Write the user to the console
                 Console.WriteLine(NewUser);
             }

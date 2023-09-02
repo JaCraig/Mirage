@@ -7,28 +7,28 @@ references:
   commentId: N:Microsoft.Extensions.DependencyInjection
   fullName: Microsoft.Extensions.DependencyInjection
   nameWithType: Microsoft.Extensions.DependencyInjection
-- uid: Microsoft.Extensions.DependencyInjection.Registration
-  name: Registration
-  href: api/Microsoft.Extensions.DependencyInjection.Registration.html
-  commentId: T:Microsoft.Extensions.DependencyInjection.Registration
-  fullName: Microsoft.Extensions.DependencyInjection.Registration
-  nameWithType: Registration
-- uid: Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.MirageRegistration
+  name: MirageRegistration
+  href: api/Microsoft.Extensions.DependencyInjection.MirageRegistration.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.MirageRegistration
+  fullName: Microsoft.Extensions.DependencyInjection.MirageRegistration
+  nameWithType: MirageRegistration
+- uid: Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration)
   name: RegisterMirage(ICanisterConfiguration?)
-  href: api/Microsoft.Extensions.DependencyInjection.Registration.html#Microsoft_Extensions_DependencyInjection_Registration_RegisterMirage_Canister_Interfaces_ICanisterConfiguration_
-  commentId: M:Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration)
+  href: api/Microsoft.Extensions.DependencyInjection.MirageRegistration.html#Microsoft_Extensions_DependencyInjection_MirageRegistration_RegisterMirage_Canister_Interfaces_ICanisterConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration)
   name.vb: RegisterMirage(ICanisterConfiguration)
-  fullName: Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration?)
-  fullName.vb: Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration)
-  nameWithType: Registration.RegisterMirage(ICanisterConfiguration?)
-  nameWithType.vb: Registration.RegisterMirage(ICanisterConfiguration)
-- uid: Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage*
+  fullName: Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration?)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage(Canister.Interfaces.ICanisterConfiguration)
+  nameWithType: MirageRegistration.RegisterMirage(ICanisterConfiguration?)
+  nameWithType.vb: MirageRegistration.RegisterMirage(ICanisterConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage*
   name: RegisterMirage
-  href: api/Microsoft.Extensions.DependencyInjection.Registration.html#Microsoft_Extensions_DependencyInjection_Registration_RegisterMirage_
-  commentId: Overload:Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage
+  href: api/Microsoft.Extensions.DependencyInjection.MirageRegistration.html#Microsoft_Extensions_DependencyInjection_MirageRegistration_RegisterMirage_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage
   isSpec: "True"
-  fullName: Microsoft.Extensions.DependencyInjection.Registration.RegisterMirage
-  nameWithType: Registration.RegisterMirage
+  fullName: Microsoft.Extensions.DependencyInjection.MirageRegistration.RegisterMirage
+  nameWithType: MirageRegistration.RegisterMirage
 - uid: Mirage
   name: Mirage
   href: api/Mirage.html

@@ -13,10 +13,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.Registration.yml",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.MirageRegistration.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.Registration.html"
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.MirageRegistration.html"
         }
       },
       "version": ""

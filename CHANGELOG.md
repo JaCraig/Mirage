@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.20"></a>
+## [4.0.20](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.20) (2023-9-2)
+
+### Bug Fixes
+
+* code cleanup ([6f72a98](https://www.github.com/JaCraig/Mirage/commit/6f72a98a80fba88e00638d599d6a5deca57ee727))
+
 <a name="4.0.19"></a>
 ## [4.0.19](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.19) (2023-9-1)
 

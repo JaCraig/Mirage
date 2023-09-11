@@ -25,7 +25,7 @@
   <ItemGroup>
     <PackageReference Include="Mecha.xUnit" Version="2.0.30" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
-    <PackageReference Include="Valkyrie" Version="4.0.19" />
+    <PackageReference Include="Valkyrie" Version="4.0.20" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>

@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.34"></a>
+## [4.0.34](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.34) (2023-10-11)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([197926d](https://www.github.com/JaCraig/Mirage/commit/197926d225c84ebef9008b4ddfa859e0fac15327))
+
+### Other
+
+* Merge pull request #61 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-3a16073cfc ([6b06f83](https://www.github.com/JaCraig/Mirage/commit/6b06f830a4c8ba3fabb3bc0cfb8f92219f253908))
+* Merge pull request #62 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-ca3e3b579c ([6961c10](https://www.github.com/JaCraig/Mirage/commit/6961c10853c2029f57047d7a93b6b64c99f8b0dc))
+* Merge pull request #63 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-02c2d82278 ([f6dfbbd](https://www.github.com/JaCraig/Mirage/commit/f6dfbbd187c4d099800dc2794785709befdbdf20))
+* Merge pull request #64 from JaCraig/dependabot/github_actions/dependencies-4c9eee5d7b ([e00334f](https://www.github.com/JaCraig/Mirage/commit/e00334f9757fcb6bc7f6b95db22246cc5bb7a7db))
+* Merge pull request #65 from JaCraig/dependabot/nuget/dependencies-cb350136e7 ([ec7d9c8](https://www.github.com/JaCraig/Mirage/commit/ec7d9c87e3f79ff72b9e2a7eaa2e339900fe436a))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([2432752](https://www.github.com/JaCraig/Mirage/commit/2432752b320af17db7c47a2699a3d8cf58b04120))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([ede804c](https://www.github.com/JaCraig/Mirage/commit/ede804c949e1e9278e98da65c77481a84aa35658))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([9f0ba38](https://www.github.com/JaCraig/Mirage/commit/9f0ba3803a2cc015f7348b0e0d0994ecd5420016))
+* bump the dependencies group with 1 update ([dede373](https://www.github.com/JaCraig/Mirage/commit/dede373b9424b6e4d1790ec68e4bde0607d80f3c))
+
 <a name="4.0.33"></a>
 ## [4.0.33](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.33) (2023-09-25)
 

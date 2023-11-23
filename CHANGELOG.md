@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.50"></a>
+## [4.0.50](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.50) (2023-11-23)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([e6b9215](https://www.github.com/JaCraig/Mirage/commit/e6b9215f31a5b0f536ee9dcd4a706a3c8d759ed3))
+
+### Other
+
+* Merge pull request #103 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-e099decf7a ([8855b61](https://www.github.com/JaCraig/Mirage/commit/8855b61754a02067602bf2163b548c6f8c8ceb5e))
+* Merge pull request #104 from JaCraig/dependabot/nuget/dependencies-92652bc3e0 ([c83c987](https://www.github.com/JaCraig/Mirage/commit/c83c987530ac3492792fd80616f79eccacc10dbe))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([fb870f9](https://www.github.com/JaCraig/Mirage/commit/fb870f9c26a1adea830dbbfe48c22d547351062f))
+
 <a name="4.0.49"></a>
 ## [4.0.49](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.49) (2023-11-21)
 

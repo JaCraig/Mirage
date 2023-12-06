@@ -1,124 +1,136 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <head>
+    <meta charset="utf-8">
       <title>Class IEnumerableGeneratorAttribute
  | Mirage API Reference </title>
-      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class IEnumerableGeneratorAttribute
  | Mirage API Reference ">
-      <meta name="generator" content="docfx ">
-  
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
-      <link rel="stylesheet" href="../styles/config.css">
-      <link rel="stylesheet" href="../styles/discord.css">
-      <link rel="stylesheet" href="../styles/singulink.css">
-      <link rel="stylesheet" href="../styles/main.css">
-      <meta property="docfx:navrel" content="../toc.json">
-      <meta property="docfx:tocrel" content="toc.json">
-  
-  <meta property="docfx:rel" content="../">
-  <meta property="docfx:newtab" content="true">
-    </head>
-    <body>
-        <div class="top-navbar">
-            <a class="burger-icon" onclick="toggleMenu()">
-                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
-            </a>
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
 
 
-            <a class="brand" href="../index.html">
-              <img src="../images/icon.png" alt="Mirage" class="logomark">
-              <span class="brand-title">Mirage</span>
-            </a>        </div>
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="Mirage">
+            Mirage
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <div class="body-content">
-            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
 
-            <nav id="sidebar" role="navigation">
-                <div class="sidebar">
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
-                    <div>
-                      <div class="mobile-hide">
+          <nav id="breadcrumb"></nav>
+        </div>
 
-                        <a class="brand" href="../index.html">
-                          <img src="../images/icon.png" alt="Mirage" class="logomark">
-                          <span class="brand-title">Mirage</span>
-                        </a>                      </div>
-
-                      <div class="sidesearch">
-                        <form id="search" role="search" class="search">
-                            <i class="bi bi-search search-icon"></i>
-                            <input type="text" id="search-query" placeholder="Search" autocomplete="off">
-                        </form>
-                      </div>
-
-                      <div id="navbar">
-                      </div>
-                    </div>                    <div class="sidebar-item-separator"></div>
-
-                        <div id="sidetoggle">
-                          <div id="sidetoc"></div>
-                        </div>
-                </div>
-                <div class="footer">
-  <strong><a href='https://github.com/JaCraig/Mirage'>Open in Github</a></strong>
-  
-                </div>            </nav>
-
-            <main class="main-panel">
-
-                <div id="search-results" style="display: none;">
-                  <h1 class="search-list">Search Results for <span></span></h1>
-                  <div class="sr-items">
-                    <p><i class="bi bi-hourglass-split index-loading"></i></p>
-                  </div>
-                  <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-                </div>
- 
-
-                <div role="main" class="hide-when-search">
-
-                        <div class="subnav navbar navbar-default">
-                          <div class="container hide-when-search" id="breadcrumb">
-                            <ul class="breadcrumb">
-                              <li></li>
-                            </ul>
-                          </div>
-                        </div>
-
-                         <div id="contribution">
-                               <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
-                         </div>
-
-                    <article class="content wrap" id="_content" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute">
+        <article data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute">
 
 
 
-  <h1 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute" class="text-break">Class IEnumerableGeneratorAttribute
-</h1>
-  <div class="markdown level0 summary"><p>IEnumerable generator attribute</p>
+  <h1 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute" class="text-break">
+    Class IEnumerableGeneratorAttribute
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Mirage.html">Mirage</a>.<a class="xref" href="Mirage.Generators.html">Generators</a>.<a class="xref" href="Mirage.Generators.Default.html">Default</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Mirage.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>IEnumerable generator attribute</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
-    <div class="level2"><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-    <div class="level3"><span class="xref">IEnumerableGeneratorAttribute</span></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class IEnumerableGeneratorAttribute : GeneratorAttributeBase, IGenerator</code></pre>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
+      <div><span class="xref">IEnumerableGeneratorAttribute</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_Max">GeneratorAttributeBase.Max</a>
     </div>
@@ -248,291 +260,259 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Mirage.html">Mirage</a>.<a class="xref" href="Mirage.Generators.html">Generators</a>.<a class="xref" href="Mirage.Generators.Default.html">Default</a></h6>
-  <h6><strong>Assembly</strong>: Mirage.dll</h6>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class IEnumerableGeneratorAttribute : GeneratorAttributeBase, IGenerator</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L99">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.#ctor*"></a>
-  <h4 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.#ctor">IEnumerableGeneratorAttribute()</h4>
+
+  <h3 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.#ctor">
+  IEnumerableGeneratorAttribute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mirage.Generators.Default.IEnumerableGeneratorAttribute.html">IEnumerableGeneratorAttribute</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IEnumerableGeneratorAttribute()</code></pre>
   </div>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_System_Type_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute.%23ctor(System.Type%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L90">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.#ctor*"></a>
-  <h4 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_System_Type_System_Int32_System_Int32_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.#ctor(System.Type,System.Int32,System.Int32)">IEnumerableGeneratorAttribute(Type?, int, int)</h4>
+
+  <h3 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_System_Type_System_Int32_System_Int32_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.#ctor(System.Type,System.Int32,System.Int32)">
+  IEnumerableGeneratorAttribute(Type?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mirage.Generators.Default.IEnumerableGeneratorAttribute.html">IEnumerableGeneratorAttribute</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IEnumerableGeneratorAttribute(Type? classType, int min, int max)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
-        <td><span class="parametername">classType</span></td>
-        <td><p>Type of the class.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">min</span></td>
-        <td><p>The minimum.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">max</span></td>
-        <td><p>The maximum.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute__ctor_System_Type_System_Int32_System_Int32__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-  </div>
-  <h3 id="properties">Properties
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute_ClassType.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute.ClassType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L108">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>classType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Type of the class.</p>
+</dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum.</p>
+</dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_ClassType_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.ClassType*"></a>
-  <h4 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_ClassType" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.ClassType">ClassType</h4>
+
+  <h3 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_ClassType" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.ClassType">
+  ClassType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets or sets the type of the class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Type? ClassType { get; set; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
-        <td><p>The type of the class.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_ClassType_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute_Default.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute.Default%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L114">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type of the class.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_Default_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.Default*"></a>
-  <h4 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_Default" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.Default">Default</h4>
+
+  <h3 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_Default" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.Default">
+  Default
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a> is a default one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override bool Default { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p><code>true</code> if default; otherwise, <code>false</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_Default">GeneratorAttributeBase.Default</a></div>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_Default_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute_TypeGenerated.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute.TypeGenerated%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L120">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if default; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_TypeGenerated_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.TypeGenerated*"></a>
-  <h4 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_TypeGenerated" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.TypeGenerated">TypeGenerated</h4>
+
+  <h3 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_TypeGenerated" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.TypeGenerated">
+  TypeGenerated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Gets the type generated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override Type TypeGenerated { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
-        <td><p>The type generated.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_TypeGenerated">GeneratorAttributeBase.TypeGenerated</a></div>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_TypeGenerated_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-  </div>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGeneratorAttribute.NextObj(Mirage.Random%2CSystem.Collections.Generic.List%7BSystem.Object%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L128">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The type generated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_NextObj_" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.NextObj*"></a>
-  <h4 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})">NextObj(Random, List&lt;object&gt;)</h4>
+
+  <h3 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__" data-uid="Mirage.Generators.Default.IEnumerableGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})">
+  NextObj(Random, List&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Generates next object</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override object? NextObj(Random rand, List&lt;object&gt; previouslySeen)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mirage.Random.html">Random</a></td>
-        <td><span class="parametername">rand</span></td>
-        <td><p>The rand.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
-        <td><span class="parametername">previouslySeen</span></td>
-        <td><p>The previously seen.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
-        <td><p>The next object</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__">GeneratorAttributeBase.NextObj(Random, List&lt;object&gt;)</a></div>
-  <h5 id="Mirage_Generators_Default_IEnumerableGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object___seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-  </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a>
-  </div>
-  <h3 id="seealso">See Also</h3>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rand</code> <a class="xref" href="Mirage.Random.html">Random</a></dt>
+    <dd><p>The rand.</p>
+</dd>
+    <dt><code>previouslySeen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The previously seen.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The next object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
   <div class="seealso">
       <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
   </div>
 
 </article>
-                </div>
 
-                <div class="copyright-footer">
-                    <span>&#169; James Craig. All rights reserved.</span>
-                </div>
-            </main>
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L82" class="edit-link">Edit this page</a>
         </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
-        <script type="text/javascript" src="../styles/url.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
-        <script type="text/javascript" src="../styles/docfx.js"></script>
-        <script type="text/javascript" src="../styles/main.js"></script>
-        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Mirage'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

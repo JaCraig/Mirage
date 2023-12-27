@@ -4,7 +4,7 @@
     <Description>Tests for Mirage</Description>
     <AssemblyTitle>Mirage.Tests</AssemblyTitle>
     <Authors>James Craig</Authors>
-	  <TargetFrameworks>net6.0</TargetFrameworks>
+	  <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>Mirage.Tests</AssemblyName>
     <PackageId>Mirage.Tests</PackageId>
@@ -12,7 +12,7 @@
     <PackageTags>Random</PackageTags>
     <PackageProjectUrl>https://github.com/JaCraig/Mirage/</PackageProjectUrl>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
-    <RuntimeIdentifiers>win7-x64;osx.10.10-x64;ubuntu.14.04-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mecha.xUnit" Version="2.0.73" />
+    <PackageReference Include="Mecha.xUnit" Version="2.0.74" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageReference Include="Valkyrie" Version="4.0.42" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.6">

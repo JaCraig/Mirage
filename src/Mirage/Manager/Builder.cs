@@ -39,12 +39,12 @@ namespace Mirage.Manager
         public Builder(IEnumerable<IGenerator> generators)
         {
             Generators = new ConcurrentDictionary<Type, IGenerator>();
-            var MirageAssembly = typeof(Builder).Assembly;
-            foreach (var Generator in generators.Where(x => x.GetType().Assembly != MirageAssembly))
+            Assembly MirageAssembly = typeof(Builder).Assembly;
+            foreach (IGenerator? Generator in generators.Where(x => x.GetType().Assembly != MirageAssembly))
             {
                 Generators.Add(Generator.TypeGenerated, Generator);
             }
-            foreach (var Generator in generators.Where(x => x.Default))
+            foreach (IGenerator? Generator in generators.Where(x => x.Default))
             {
                 if (!Generators.ContainsKey(Generator.TypeGenerated))
                 {
@@ -64,10 +64,7 @@ namespace Mirage.Manager
         /// </summary>
         /// <typeparam name="T">The type to generate</typeparam>
         /// <returns>The generator specified</returns>
-        public IGenerator<T>? GetGenerator<T>()
-        {
-            return GetGenerator(typeof(T)) as IGenerator<T>;
-        }
+        public IGenerator<T>? GetGenerator<T>() => GetGenerator(typeof(T)) as IGenerator<T>;
 
         /// <summary>
         /// Gets the generator specified
@@ -78,9 +75,9 @@ namespace Mirage.Manager
         {
             if (classType is null)
                 return null;
-            if (Generators.TryGetValue(classType, out var Generator))
+            if (Generators.TryGetValue(classType, out IGenerator? Generator))
                 return Generator;
-            var TypeGeneratedInfo = classType.GetTypeInfo();
+            TypeInfo TypeGeneratedInfo = classType.GetTypeInfo();
             if (TypeGeneratedInfo.IsEnum)
                 return new EnumGeneratorAttribute(classType);
             if (TypeGeneratedInfo.IsArray)
@@ -90,8 +87,15 @@ namespace Mirage.Manager
             if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IList)))
                 return new ListGeneratorAttribute(classType.GetGenericArguments()[0], 1, 100);
             if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IEnumerable)))
+            {
                 return new IEnumerableGeneratorAttribute(classType, 1, 100);
-            return TypeGeneratedInfo.IsClass ? new ClassGeneratorAttribute(classType) : null;
+            }
+            else
+            {
+                return TypeGeneratedInfo.IsClass || (TypeGeneratedInfo.IsValueType && !TypeGeneratedInfo.IsPrimitive)
+                    ? new ClassGeneratorAttribute(classType)
+                    : (IGenerator?)null;
+            }
         }
     }
 }

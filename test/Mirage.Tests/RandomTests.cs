@@ -4,6 +4,7 @@ using Mirage.Tests.BaseClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Valkyrie;
 using Xunit;
@@ -40,7 +41,7 @@ namespace Mirage.Tests
         public void CircularReferenceClassGenerator()
         {
             var Rand = new Random(1231415);
-            var Item = Rand.Next<SelfReferenceClass1>();
+            SelfReferenceClass1 Item = Rand.Next<SelfReferenceClass1>();
             Assert.NotNull(Item.Other);
             Assert.Same(Item, Item.Other.Other);
             Assert.NotSame(Item.Other, Item.Other2);
@@ -50,7 +51,7 @@ namespace Mirage.Tests
         public void ClassGenerator()
         {
             var Rand = new Random(1231415);
-            var Item = Rand.Next<RandomTestClass>();
+            RandomTestClass Item = Rand.Next<RandomTestClass>();
             Assert.Equal(-82, Item.A);
             Assert.Equal("Lorem ipsum dolor sit amet. ", Item.B);
             Assert.Equal("]w@&BJUzH`W$;oz'Rw7Qaf+l53!$Kg-QX5vr1*JKfPkn_`rSHJrQYZktkRn/IQO^S&I%v'sGLih0x;,S>LZ!sZv{G!&]9;\"5!-:X", Item.TestString);
@@ -62,47 +63,47 @@ namespace Mirage.Tests
         public void Next()
         {
             var Random = new Random();
-            Random.Next<bool>();
-            Random.Next<byte>();
-            Random.Next<char>();
-            Random.Next<decimal>();
-            Random.Next<double>();
-            Random.Next<float>();
-            Random.Next<int>();
-            Random.Next<long>();
-            Random.Next<sbyte>();
-            Random.Next<short>();
-            Random.Next<uint>();
-            Random.Next<ulong>();
-            Random.Next<ushort>();
-            Random.Next<DateTime>();
-            Random.Next<TimeSpan>();
-            Random.Next<string>();
-            Random.Next<byte[]>();
-            Random.Next<Guid>();
-            Random.Next<bool?>();
-            Random.Next<byte?>();
-            Random.Next<char?>();
-            Random.Next<DateTime?>();
-            Random.Next<decimal?>();
-            Random.Next<double?>();
-            Random.Next<float?>();
-            Random.Next<Guid?>();
-            Random.Next<int?>();
-            Random.Next<long?>();
-            Random.Next<sbyte?>();
-            Random.Next<short?>();
-            Random.Next<TimeSpan?>();
-            Random.Next<uint?>();
-            Random.Next<ulong?>();
-            Random.Next<ushort?>();
+            _ = Random.Next<bool>();
+            _ = Random.Next<byte>();
+            _ = Random.Next<char>();
+            _ = Random.Next<decimal>();
+            _ = Random.Next<double>();
+            _ = Random.Next<float>();
+            _ = Random.Next<int>();
+            _ = Random.Next<long>();
+            _ = Random.Next<sbyte>();
+            _ = Random.Next<short>();
+            _ = Random.Next<uint>();
+            _ = Random.Next<ulong>();
+            _ = Random.Next<ushort>();
+            _ = Random.Next<DateTime>();
+            _ = Random.Next<TimeSpan>();
+            _ = Random.Next<string>();
+            _ = Random.Next<byte[]>();
+            _ = Random.Next<Guid>();
+            _ = Random.Next<bool?>();
+            _ = Random.Next<byte?>();
+            _ = Random.Next<char?>();
+            _ = Random.Next<DateTime?>();
+            _ = Random.Next<decimal?>();
+            _ = Random.Next<double?>();
+            _ = Random.Next<float?>();
+            _ = Random.Next<Guid?>();
+            _ = Random.Next<int?>();
+            _ = Random.Next<long?>();
+            _ = Random.Next<sbyte?>();
+            _ = Random.Next<short?>();
+            _ = Random.Next<TimeSpan?>();
+            _ = Random.Next<uint?>();
+            _ = Random.Next<ulong?>();
+            _ = Random.Next<ushort?>();
         }
 
         [Fact]
         public void Next2()
         {
             var Random = new Random();
-            Random.Next<bool>(false, true);
+            _ = Random.Next<bool>(false, true);
             Assert.InRange(Random.Next<byte>(1, 29), 1, 29);
             Assert.InRange(Random.Next<char>('a', 'z'), 'a', 'z');
             Assert.InRange(Random.Next<decimal>(1.0m, 102.1m), 1, 102.1m);
@@ -118,22 +119,22 @@ namespace Mirage.Tests
             Assert.InRange(Random.Next<DateTime>(new DateTime(1900, 1, 1), new DateTime(2000, 1, 1)), new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
             Assert.Equal(10, Random.Next<string>().Length);
             Assert.InRange(Random.Next<byte[]>().Length, 1, 100);
-            Random.Next<bool?>(false, true);
-            Random.Next<byte?>(0, 255);
-            Random.Next<char?>(char.MinValue, char.MaxValue);
-            Random.Next<DateTime?>(new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
-            Random.Next<decimal?>(-1, 1);
-            Random.Next<double?>(-1, 1);
-            Random.Next<float?>(-1, 1);
-            Random.Next<Guid?>(Guid.NewGuid(), Guid.NewGuid());
-            Random.Next<int?>(1, 29);
-            Random.Next<long?>(1, 29);
-            Random.Next<sbyte?>(1, 29);
-            Random.Next<short?>(1, 29);
-            Random.Next<TimeSpan?>(TimeSpan.MinValue, TimeSpan.MaxValue);
-            Random.Next<uint?>(1, 29);
-            Random.Next<ulong?>(1, 29);
-            Random.Next<ushort?>(1, 29);
+            _ = Random.Next<bool?>(false, true);
+            _ = Random.Next<byte?>(0, 255);
+            _ = Random.Next<char?>(char.MinValue, char.MaxValue);
+            _ = Random.Next<DateTime?>(new DateTime(1900, 1, 1), new DateTime(2000, 1, 1));
+            _ = Random.Next<decimal?>(-1, 1);
+            _ = Random.Next<double?>(-1, 1);
+            _ = Random.Next<float?>(-1, 1);
+            _ = Random.Next<Guid?>(Guid.NewGuid(), Guid.NewGuid());
+            _ = Random.Next<int?>(1, 29);
+            _ = Random.Next<long?>(1, 29);
+            _ = Random.Next<sbyte?>(1, 29);
+            _ = Random.Next<short?>(1, 29);
+            _ = Random.Next<TimeSpan?>(TimeSpan.MinValue, TimeSpan.MaxValue);
+            _ = Random.Next<uint?>(1, 29);
+            _ = Random.Next<ulong?>(1, 29);
+            _ = Random.Next<ushort?>(1, 29);
         }
 
         [Fact]
@@ -153,7 +154,7 @@ namespace Mirage.Tests
         public void NextGenerateDictionary()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<Dictionary<string, int>>();
+            Dictionary<string, int> Result = Random.Next<Dictionary<string, int>>();
             Assert.Equal(40, Result.Keys.Count);
             Assert.Equal(new string[] { "t>x?ykP\\=G","qyKf`W''+i","WS+\\4s:Etf","NPwQ64@^Zo",
 "S-vPO0ja=h","sIs:kA2<+&","Q+fTv@\"wOL","6FJ:5IZY,$","(V'+q%[\\ds","!$ST=GEAX.","-p2oRL|X$A","dV0'{x$[`p",
@@ -172,7 +173,7 @@ namespace Mirage.Tests
         public void NextGenerateIEnumerable()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<IEnumerable<int>>();
+            IEnumerable<int> Result = Random.Next<IEnumerable<int>>();
             Assert.Equal(40, Result.Count());
             Assert.Equal(new int[] { 1700375256,-776517466,1918723096,-689617024,1927487866,1322815094,
 89038738,618295176,-805053188,-354859800,1584585456,1920991542,-152410590,1062719026,812406020,367059544,
@@ -185,7 +186,7 @@ namespace Mirage.Tests
         public void NextGenerateList()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<List<int>>();
+            List<int> Result = Random.Next<List<int>>();
             Assert.Equal(40, Result.Count);
             Assert.Equal(new int[] { 1700375256,-776517466,1918723096,-689617024,1927487866,1322815094,
 89038738,618295176,-805053188,-354859800,1584585456,1920991542,-152410590,1062719026,812406020,367059544,
@@ -205,10 +206,10 @@ namespace Mirage.Tests
         public void NextListNotUnique()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, 5);
+            IEnumerable<int> Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, 5);
             Assert.Equal(5, Result.Count());
             Assert.Equal(2, Result.Distinct().Count());
-            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.True(Result.All(x => x is <= 5 and >= 1));
             Assert.Equal(2, Result.ElementAt(0));
             Assert.Equal(5, Result.ElementAt(1));
             Assert.Equal(2, Result.ElementAt(2));
@@ -220,10 +221,10 @@ namespace Mirage.Tests
         public void NextListUnique()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, 3, true);
+            IEnumerable<int> Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, 3, true);
             Assert.Equal(3, Result.Count());
             Assert.Equal(3, Result.Distinct().Count());
-            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.True(Result.All(x => x is <= 5 and >= 1));
             Assert.Equal(2, Result.ElementAt(0));
             Assert.Equal(5, Result.ElementAt(1));
             Assert.Equal(3, Result.ElementAt(2));
@@ -233,7 +234,7 @@ namespace Mirage.Tests
         public void NextNormal()
         {
             var Random = new Random(1234);
-            var (X, Y) = Random.NextNormal(0.123, 2.41);
+            (var X, var Y) = Random.NextNormal(0.123, 2.41);
             Assert.Equal(2.7153771346516837, X);
             Assert.Equal(-1.8644900545154903, Y);
         }
@@ -249,10 +250,10 @@ namespace Mirage.Tests
         public void NextWeightedListNotUnique()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, new decimal[] { .35m, .25m, .15m, .15m, .1m }, 5);
+            IEnumerable<int> Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, new decimal[] { .35m, .25m, .15m, .15m, .1m }, 5);
             Assert.Equal(5, Result.Count());
             Assert.Equal(4, Result.Distinct().Count());
-            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.True(Result.All(x => x is <= 5 and >= 1));
             Assert.Equal(2, Result.ElementAt(0));
             Assert.Equal(4, Result.ElementAt(1));
             Assert.Equal(1, Result.ElementAt(2));
@@ -264,10 +265,10 @@ namespace Mirage.Tests
         public void NextWeightedListUnique()
         {
             var Random = new Random(1234);
-            var Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, new decimal[] { .35m, .25m, .15m, .15m, .1m }, 3, true);
+            IEnumerable<int> Result = Random.Next<int>(new int[] { 1, 2, 3, 4, 5 }, new decimal[] { .35m, .25m, .15m, .15m, .1m }, 3, true);
             Assert.Equal(3, Result.Count());
             Assert.Equal(3, Result.Distinct().Count());
-            Assert.True(Result.All(x => x <= 5 && x >= 1));
+            Assert.True(Result.All(x => x is <= 5 and >= 1));
             Assert.Equal(2, Result.ElementAt(0));
             Assert.Equal(4, Result.ElementAt(1));
             Assert.Equal(1, Result.ElementAt(2));
@@ -289,10 +290,16 @@ namespace Mirage.Tests
         }
 
         [Fact]
-        public void ThreadSafeNext()
+        public void StructGenerator()
         {
-            Parallel.For(0, 100, _ => Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20));
+            var Rand = new Random(1231415);
+            CancellationToken Item = Rand.Next<CancellationToken>();
+            Assert.False(Item.CanBeCanceled);
+            Assert.False(Item.IsCancellationRequested);
         }
+
+        [Fact]
+        public void ThreadSafeNext() => Parallel.For(0, 100, _ => Assert.InRange(new Random().ThreadSafeNext(-20, 20), -20, 20));
     }
 
     public class SelfReferenceClass1

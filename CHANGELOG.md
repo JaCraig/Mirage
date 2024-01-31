@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.61"></a>
+## [4.0.61](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.61) (2024-01-31)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([89b7172](https://www.github.com/JaCraig/Mirage/commit/89b71729451f2ee66a99970a648049051ae46ed0))
+
+### Other
+
+* Merge pull request #142 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-d5f21d57ee ([06ac3e2](https://www.github.com/JaCraig/Mirage/commit/06ac3e213f0f7fd8ea17e65cb2df239dc95251e8))
+* Merge pull request #143 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-a109fb7763 ([2d9c459](https://www.github.com/JaCraig/Mirage/commit/2d9c45988bb39cb8974068313db9a06c05724f1b))
+* Merge pull request #144 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-5cd141965c ([4a08bcb](https://www.github.com/JaCraig/Mirage/commit/4a08bcb79172644f898bf395982c34c26f8a15b7))
+* Merge pull request #145 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-90be57f0f4 ([25259c1](https://www.github.com/JaCraig/Mirage/commit/25259c19b80a98f989bb1e30b74f5601abeae18d))
+* Merge pull request #147 from JaCraig/dependabot/nuget/dependencies-072b77b455 ([80fb144](https://www.github.com/JaCraig/Mirage/commit/80fb14421c9f1bd694d06ff81645176fd93f0f55))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([c9851e6](https://www.github.com/JaCraig/Mirage/commit/c9851e6ca07456f0adf005a8f3dbb5244f09630e))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([85dd873](https://www.github.com/JaCraig/Mirage/commit/85dd873ab468745872b9ebdfb6ff64231cb59627))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([1162061](https://www.github.com/JaCraig/Mirage/commit/1162061a20ce09ede540e27447cd41baec46145e))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([3f844dc](https://www.github.com/JaCraig/Mirage/commit/3f844dc6accc5cad2116e09db9226e535286b64f))
+
 <a name="4.0.60"></a>
 ## [4.0.60](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.60) (2024-01-24)
 

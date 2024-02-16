@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Mecha.xUnit" Version="2.1.23" />
+    <PackageReference Include="Mecha.xUnit" Version="2.1.24" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
     <PackageReference Include="Valkyrie" Version="4.0.51" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.6">

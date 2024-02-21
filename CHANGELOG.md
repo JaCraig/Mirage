@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.71"></a>
+## [4.0.71](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.71) (2024-02-21)
+
+### Bug Fixes
+
+* bump the dependencies group with 2 updates ([72e370d](https://www.github.com/JaCraig/Mirage/commit/72e370d9e656280928cb325a85cfdbcf5432e5a1))
+
+### Other
+
+* Merge pull request #163 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-ffada8b829 ([6abab57](https://www.github.com/JaCraig/Mirage/commit/6abab5797219e32bc9b5ed8994ee06736a64b855))
+* Merge pull request #165 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-9b49dc636b ([da1b6d3](https://www.github.com/JaCraig/Mirage/commit/da1b6d37926d253e8b4f9a0c7d038a6e7afe51f0))
+* Merge pull request #166 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-8fb00d16e1 ([edb0fb1](https://www.github.com/JaCraig/Mirage/commit/edb0fb1685e67a3d587e895497d6272528af6688))
+* Merge pull request #167 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-69d41b035d ([3f0e12e](https://www.github.com/JaCraig/Mirage/commit/3f0e12e7ca3662df08973ab65780460e83e001f3))
+* Merge pull request #168 from JaCraig/dependabot/nuget/dependencies-c3e9600ab2 ([0f10828](https://www.github.com/JaCraig/Mirage/commit/0f10828e667d11bb6767bba2c43928e4bad0176d))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([68543b5](https://www.github.com/JaCraig/Mirage/commit/68543b5109d90c7b25754ab44ac8ae734583c659))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([8342e01](https://www.github.com/JaCraig/Mirage/commit/8342e013036efddc23593f3d96c3fb894fc109b6))
+* bump the dependencies group in /test/Mirage.Tests with 2 updates ([26c30fb](https://www.github.com/JaCraig/Mirage/commit/26c30fb47588415b5a69a535c72d2848fa68cb5b))
+* bump the dependencies group in /test/Mirage.Tests with 3 updates ([3fccdc1](https://www.github.com/JaCraig/Mirage/commit/3fccdc184d26b8b2dfb1ad84d9e5e1f886aed285))
+
 <a name="4.0.70"></a>
 ## [4.0.70](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.70) (2024-02-16)
 

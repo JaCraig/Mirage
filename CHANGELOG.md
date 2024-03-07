@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.83"></a>
+## [4.0.83](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.83) (2024-03-07)
+
+### Bug Fixes
+
+* Fixing issue with pulling a randomized subset of a list and the list is empty ([e649fd9](https://www.github.com/JaCraig/Mirage/commit/e649fd9b8ba85019544a0f90e2b4ee9f87388200))
+
 <a name="4.0.82"></a>
 ## [4.0.82](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.82) (2024-03-06)
 

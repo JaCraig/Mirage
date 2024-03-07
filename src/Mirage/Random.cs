@@ -49,12 +49,6 @@ namespace Mirage
         }
 
         /// <summary>
-        /// Gets or sets the generator builder.
-        /// </summary>
-        /// <value>The generator builder.</value>
-        private Manager.Builder GeneratorBuilder { get; }
-
-        /// <summary>
         /// The local seed
         /// </summary>
         [ThreadStatic]
@@ -64,6 +58,12 @@ namespace Mirage
         /// The global seed
         /// </summary>
         private readonly System.Random _GlobalSeed = new();
+
+        /// <summary>
+        /// Gets or sets the generator builder.
+        /// </summary>
+        /// <value>The generator builder.</value>
+        private Manager.Builder GeneratorBuilder { get; }
 
         /// <summary>
         /// Randomly generates a value of the specified type
@@ -174,6 +174,8 @@ namespace Mirage
         public IEnumerable<T>? Next<T>(IEnumerable<T>? list, int count, bool unique = false)
         {
             list ??= Array.Empty<T>();
+            if (!list.Any())
+                return list;
             if (count >= list.Count() && unique)
                 return Shuffle(list);
             var ReturnValue = new List<T>();
@@ -211,6 +213,7 @@ namespace Mirage
         {
             list ??= Array.Empty<T>();
             weights ??= Array.Empty<decimal>();
+            if (!list.Any() || list.Count() != weights.Count()) return list;
             if (count >= list.Count() && unique)
                 return Shuffle(list);
             var ReturnValue = new List<T>();

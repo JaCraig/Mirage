@@ -15,7 +15,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>4.0.88</Version>
+    <Version>4.0.89</Version>
     <Nullable>enable</Nullable>
     <Title>Mirage</Title>
     <Copyright>Copyright © James Craig 2017</Copyright>

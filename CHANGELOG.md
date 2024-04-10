@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.93"></a>
+## [4.0.93](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.93) (2024-04-10)
+
+### Bug Fixes
+
+* bump BigBook from 5.1.25 to 5.1.26 in the dependencies group ([9bf7c37](https://www.github.com/JaCraig/Mirage/commit/9bf7c3713e132f9ccca486b3845e9fc143a6e759))
+
+### Other
+
+* Merge pull request #208 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-bba4a47fc6 ([b653734](https://www.github.com/JaCraig/Mirage/commit/b6537342b314b7ab46e3285441f68db30a6a4e8d))
+* Merge pull request #209 from JaCraig/dependabot/github_actions/dependencies-45223d3826 ([02b4a42](https://www.github.com/JaCraig/Mirage/commit/02b4a4213a8dde902235cea727ab9fa69946b53b))
+* Merge pull request #210 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-3985ce191f ([ee999a9](https://www.github.com/JaCraig/Mirage/commit/ee999a9402fe70753905fbb356cc48d9b0b4f7bf))
+* Merge pull request #211 from JaCraig/dependabot/nuget/dependencies-022c1db52a ([831833b](https://www.github.com/JaCraig/Mirage/commit/831833b9f89f8522c243a7fc5dc716c52392c6b6))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([238887c](https://www.github.com/JaCraig/Mirage/commit/238887c719042bd2b0a16ff63081292c4d3c1ea7))
+* bump peaceiris/actions-gh-pages in the dependencies group ([402278f](https://www.github.com/JaCraig/Mirage/commit/402278f2ccb8d29d954d3a29213c8f22cff20615))
+* bump the dependencies group in /test/Mirage.Tests with 1 update ([40799f6](https://www.github.com/JaCraig/Mirage/commit/40799f670d5e4e0436930db2d7e9bafe04c19d75))
+
 <a name="4.0.92"></a>
 ## [4.0.92](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.92) (2024-04-01)
 

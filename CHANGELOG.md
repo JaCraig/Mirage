@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.95"></a>
+## [4.0.95](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.95) (2024-04-12)
+
+### Bug Fixes
+
+* bump Valkyrie from 4.0.68 to 4.0.69 in the dependencies group ([47a6eca](https://www.github.com/JaCraig/Mirage/commit/47a6ecaf5618bc9fafa9508bcbba021722d00db8))
+
+### Other
+
+* Merge pull request #213 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-806e790bd0 ([48bf74b](https://www.github.com/JaCraig/Mirage/commit/48bf74bd308e3cb0dc6f17211e1b85c22a4cac7a))
+* Merge pull request #214 from JaCraig/dependabot/nuget/dependencies-752086d636 ([321092c](https://www.github.com/JaCraig/Mirage/commit/321092c6898adafef110d9d7e1a23cfe58df3374))
+* bump the dependencies group in /test/Mirage.Tests with 3 updates ([829558a](https://www.github.com/JaCraig/Mirage/commit/829558a5f4f340fb8b3fffe25d1fdc80a843449f))
+
 <a name="4.0.94"></a>
 ## [4.0.94](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.94) (2024-04-11)
 

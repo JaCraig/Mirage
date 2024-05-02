@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.97"></a>
+## [4.0.97](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.97) (2024-05-02)
+
+### Bug Fixes
+
+* bump BigBook in /src/Mirage in the dependencies group ([e4f94fd](https://www.github.com/JaCraig/Mirage/commit/e4f94fd3f913286dfc46064e63a8254be056e7a6))
+* bump BigBook in /src/Mirage in the dependencies group ([b888145](https://www.github.com/JaCraig/Mirage/commit/b8881456ed5a48c3ffdeca9f2cd5a639a89fbfc6))
+* Fixing build ([63b6f64](https://www.github.com/JaCraig/Mirage/commit/63b6f64e8cc7415e80165944dc3961d575d72155))
+* Getting build back to working and setting up coveralls ([23b5cb8](https://www.github.com/JaCraig/Mirage/commit/23b5cb84a1631e6563049968c878b0348dfca445))
+
+### Other
+
+* Merge pull request #219 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-7c64645fbf ([7d1ef6c](https://www.github.com/JaCraig/Mirage/commit/7d1ef6c594f8be02ee79db6967874479180804ee))
+* Merge pull request #220 from JaCraig/dependabot/nuget/src/Mirage/dependencies-2752b0e9ec ([196e473](https://www.github.com/JaCraig/Mirage/commit/196e473476496f8897f711722801cfb83b0f6bb3))
+* Merge pull request #221 from JaCraig/dependabot/nuget/src/Mirage/dependencies-185ad49ace ([629c7b5](https://www.github.com/JaCraig/Mirage/commit/629c7b5dca03c4443eef64d4c2996a6907b955aa))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([973bdc6](https://www.github.com/JaCraig/Mirage/commit/973bdc6a8a54155aaa66eec080b864c71d90b854))
+* Update dependabot.yml ([1df3d6d](https://www.github.com/JaCraig/Mirage/commit/1df3d6dc3df77fabd33031a69c5bf1a9e5d556f4))
+
 <a name="4.0.96"></a>
 ## [4.0.96](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.96) (2024-04-29)
 

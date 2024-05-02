@@ -1,6 +1,6 @@
 # Mirage
 
-[![.NET Publish](https://github.com/JaCraig/Mirage/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/Mirage/actions/workflows/dotnet-publish.yml)
+[![.NET Publish](https://github.com/JaCraig/Mirage/actions/workflows/dotnet-publish.yml/badge.svg)](https://github.com/JaCraig/Mirage/actions/workflows/dotnet-publish.yml) [![Coverage Status](https://coveralls.io/repos/github/JaCraig/Mirage/badge.svg?branch=master)](https://coveralls.io/github/JaCraig/Mirage?branch=master)
 
 Mirage is an open source library for .Net designed to create random data for POCOs, unit tests, etc. Supports .Net Core as well as full .Net.
 

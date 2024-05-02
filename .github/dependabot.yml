@@ -17,6 +17,7 @@ updates:
           - "*"
     ignore:
       - dependency-name: "coverlet.collector"
+      - dependency-name: "coverlet.msbuild"
       - dependency-name: "Mecha.xUnit"
       - dependency-name: "Microsoft.NET.Test.Sdk"
       - dependency-name: "xunit"
@@ -37,6 +38,7 @@ updates:
           - "*"
     allow:
       - dependency-name: "coverlet.collector"
+      - dependency-name: "coverlet.msbuild"
       - dependency-name: "Mecha.xUnit"
       - dependency-name: "Microsoft.NET.Test.Sdk"
       - dependency-name: "xunit"

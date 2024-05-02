@@ -11,7 +11,6 @@ jobs:
   build:
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: 'FastActivator.sln'
 
     runs-on: ubuntu-latest
     strategy:
@@ -48,7 +47,7 @@ jobs:
       run: dotnet build --no-restore --configuration $BUILD_CONFIG
       
     - name: Test
-      run: dotnet test /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
     
     - name: Upload test results
       uses: actions/upload-artifact@v4
@@ -56,6 +55,13 @@ jobs:
         name: dotnet-results-${{ matrix.dotnet-version }}
         path: TestResults-${{ matrix.dotnet-version }}
       if: ${{ always() }}
+
+    - name: Publish coverage report to coveralls.io
+      uses: coverallsapp/github-action@v2.2.3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        files: ./test/Mirage.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
+        format: lcov
       
     - name: Upload NuGet package
       uses: actions/upload-artifact@v4

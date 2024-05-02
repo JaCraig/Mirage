@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.98"></a>
+## [4.0.98](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.98) (2024-05-02)
+
+### Bug Fixes
+
+* Adding more tests ([06fc2dd](https://www.github.com/JaCraig/Mirage/commit/06fc2dd459fab59d95b528c14ac8a86987f4ea78))
+
+### Other
+
+* Merge ([e929eb8](https://www.github.com/JaCraig/Mirage/commit/e929eb81f3cc83e0658f19c9a50b8c84d001b043))
+
 <a name="4.0.97"></a>
 ## [4.0.97](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.97) (2024-05-02)
 

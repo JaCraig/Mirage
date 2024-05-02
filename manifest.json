@@ -32,16 +32,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.AddressAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.AddressAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Mirage.Generators.BaseClasses.GeneratorAttributeBase.yml",
       "output": {
         ".html": {
@@ -102,16 +92,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.CityAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.CityAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Mirage.Generators.ClassGenerator-1.yml",
       "output": {
         ".html": {
@@ -132,10 +112,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.CompanyAttribute.yml",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.AddressAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mirage.Generators.CompanyAttribute.html"
+          "relative_path": "api/Mirage.Generators.ContactInfo.AddressAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.CityAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.CityAttribute.html"
         }
       },
       "version": ""
@@ -166,6 +156,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Mirage.Generators.ContactInfo.CountryAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.DomainNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.DomainNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.ContactInfo.EmailAddressAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.ContactInfo.EmailAddressAttribute.html"
         }
       },
       "version": ""
@@ -482,30 +492,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.DomainNameAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.DomainNameAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Mirage.Generators.DoubleGeneratorAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/Mirage.Generators.DoubleGeneratorAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.EmailAddressAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.EmailAddressAttribute.html"
         }
       },
       "version": ""
@@ -526,26 +516,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Mirage.Generators.EnumGeneratorAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.FemaleFirstNameAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.FemaleFirstNameAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.FemaleNameAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.FemaleNameAttribute.html"
         }
       },
       "version": ""
@@ -612,26 +582,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.MaleFirstNameAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.MaleFirstNameAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.MaleNameAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.MaleNameAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Mirage.Generators.MaleNamePrefixAttribute.yml",
       "output": {
         ".html": {
@@ -642,20 +592,70 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.NameAttribute.yml",
+      "source_relative_path": "api/Mirage.Generators.NameSuffixAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mirage.Generators.NameAttribute.html"
+          "relative_path": "api/Mirage.Generators.NameSuffixAttribute.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.NameSuffixAttribute.yml",
+      "source_relative_path": "api/Mirage.Generators.Names.CompanyAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mirage.Generators.NameSuffixAttribute.html"
+          "relative_path": "api/Mirage.Generators.Names.CompanyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.FemaleFirstNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.FemaleFirstNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.FemaleNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.FemaleNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.MaleFirstNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.MaleFirstNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.MaleNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.MaleNameAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Names.NameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Names.NameAttribute.html"
         }
       },
       "version": ""

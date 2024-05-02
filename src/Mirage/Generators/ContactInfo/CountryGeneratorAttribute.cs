@@ -276,6 +276,6 @@ namespace Mirage.Generators.ContactInfo
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand) => rand.Next(_CountryList);
+        public override string Next(Random rand) => rand?.Next(_CountryList) ?? "";
     }
 }

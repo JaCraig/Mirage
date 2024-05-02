@@ -17,7 +17,7 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.Names
 {
     /// <summary>
     /// Name Generator
@@ -76,9 +76,6 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand)
-        {
-            return rand.Next<bool>() ? new MaleNameAttribute(Prefix, MiddleName, LastName, Suffix).Next(rand) : new FemaleNameAttribute(Prefix, MiddleName, LastName, Suffix).Next(rand);
-        }
+        public override string Next(Random rand) => rand.Next<bool>() ? new MaleNameAttribute(Prefix, MiddleName, LastName, Suffix).Next(rand) : new FemaleNameAttribute(Prefix, MiddleName, LastName, Suffix).Next(rand);
     }
 }

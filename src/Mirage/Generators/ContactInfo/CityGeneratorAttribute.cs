@@ -15,9 +15,10 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Generators.Names;
 using Mirage.Interfaces;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.ContactInfo
 {
     /// <summary>
     /// City Generator

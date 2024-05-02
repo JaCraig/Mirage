@@ -122,6 +122,6 @@ namespace Mirage.Generators.Names
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand) => rand.Next(_Prefix) + " " + rand.Next(_TypeName) + " " + rand.Next(_Job);
+        public override string Next(Random rand) => rand is null ? "" : rand.Next(_Prefix) + " " + rand.Next(_TypeName) + " " + rand.Next(_Job);
     }
 }

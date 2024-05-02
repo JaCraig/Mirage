@@ -17,7 +17,7 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.Names
 {
     /// <summary>
     /// MaleName Generator

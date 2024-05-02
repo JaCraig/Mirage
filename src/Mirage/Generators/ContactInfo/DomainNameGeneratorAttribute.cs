@@ -15,9 +15,10 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Generators.Names;
 using Mirage.Interfaces;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.ContactInfo
 {
     /// <summary>
     /// Domain Name Generator
@@ -64,7 +65,7 @@ namespace Mirage.Generators
         public override string Next(Random rand)
         {
             var CompanyName = new CompanyAttribute().Next(rand);
-            return ((CompanyName.Length > 10) ? CleanName(CompanyName.Split(' ')[0]) : CleanName(CompanyName))
+            return (CompanyName.Length > 10 ? CleanName(CompanyName.Split(' ')[0]) : CleanName(CompanyName))
                 + (CommonEndings ? rand.Next(_MostCommonEndings) : rand.Next(_Endings));
         }
 

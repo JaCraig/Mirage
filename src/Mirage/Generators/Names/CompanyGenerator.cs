@@ -17,7 +17,7 @@ limitations under the License.
 using Mirage.Generators.BaseClasses;
 using Mirage.Interfaces;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.Names
 {
     /// <summary>
     /// Company Generator
@@ -103,7 +103,9 @@ namespace Mirage.Generators
         /// <returns>A randomly generated object of the specified type</returns>
         public override string Next(Random rand)
         {
-            return rand.Next<bool>()
+            return rand is null
+                ? ""
+                : rand.Next<bool>()
                 ? rand.Next(_CompanyNames)
                 : rand.Next<bool>()
                 ? new LastNameAttribute().Next(rand) + " " + rand.Next(_CompanySuffix)

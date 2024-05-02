@@ -1,6 +1,7 @@
 ﻿using BigBook;
 using Microsoft.Extensions.DependencyInjection;
 using Mirage.Generators;
+using Mirage.Generators.ContactInfo;
 using Mirage.Generators.Default;
 using Mirage.Generators.Names;
 using System;
@@ -63,7 +64,7 @@ namespace ExampleApp
     /// <summary>
     /// Main program class
     /// </summary>
-    internal class Program
+    internal static class Program
     {
         /// <summary>
         /// Defines the entry point of the application.

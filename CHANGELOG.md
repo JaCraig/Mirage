@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.100"></a>
+## [4.0.100](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.100) (2024-05-06)
+
+### Bug Fixes
+
+* bump BigBook in /src/Mirage in the dependencies group ([efcf969](https://www.github.com/JaCraig/Mirage/commit/efcf969f917d287718679473ab84a36cbea63340))
+
+### Other
+
+* Merge pull request #224 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-f0704ab2aa ([3e25e62](https://www.github.com/JaCraig/Mirage/commit/3e25e62b4698a27abd85aa8f95a02bff1f9b892e))
+* Merge pull request #225 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-50f11438a7 ([ad3613b](https://www.github.com/JaCraig/Mirage/commit/ad3613b486c71f2d9559bf50e3fa3bbba3f80a83))
+* Merge pull request #226 from JaCraig/dependabot/nuget/src/Mirage/dependencies-c2b540fdf2 ([0e4003d](https://www.github.com/JaCraig/Mirage/commit/0e4003d7bb0eaf11a35e33a8c037101b9d904bd4))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([790b831](https://www.github.com/JaCraig/Mirage/commit/790b831ad2dd301eca1605ef68bcd6a70799926d))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([f1e4e54](https://www.github.com/JaCraig/Mirage/commit/f1e4e54ec9c4665cd711e1625bfe3d9994971f39))
+
 <a name="4.0.99"></a>
 ## [4.0.99](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.99) (2024-05-02)
 

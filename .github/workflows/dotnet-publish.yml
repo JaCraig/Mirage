@@ -62,6 +62,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         files: ./test/Mirage.Tests/TestResults-${{ matrix.dotnet-version }}/coverage.net8.0.info
         format: lcov
+      continue-on-error: true
       
     - name: Upload NuGet package
       uses: actions/upload-artifact@v4

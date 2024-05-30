@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.104"></a>
+## [4.0.104](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.104) (2024-05-30)
+
+### Bug Fixes
+
+* bump BigBook in /src/Mirage in the dependencies group ([0f29055](https://www.github.com/JaCraig/Mirage/commit/0f29055ec0891fdb624d43ffdb2ad6e3085ae32e))
+* Fixing build ([bfe8bb8](https://www.github.com/JaCraig/Mirage/commit/bfe8bb807ce3402b2144c7c3beaf1c9e08714281))
+
+### Other
+
+* --- ([c1c281c](https://www.github.com/JaCraig/Mirage/commit/c1c281c691824e25ae9b9fefaaca0dfe6acff19d))
+* Merge pull request #236 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-b7224192ad ([41b4d27](https://www.github.com/JaCraig/Mirage/commit/41b4d272b2d92db3978ffd3147c1e64a23c7ad4a))
+* Merge pull request #237 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-17bfdebd43 ([dcb08db](https://www.github.com/JaCraig/Mirage/commit/dcb08dbc8893c0a055b0c45da4c17f2912eb44c0))
+* Merge pull request #238 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-d10d8338a5 ([3f27c0e](https://www.github.com/JaCraig/Mirage/commit/3f27c0ebbfd3197df6f7a4b326b0583d824631fd))
+* Merge pull request #239 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-e000669da3 ([0727811](https://www.github.com/JaCraig/Mirage/commit/0727811cf60366a40e219b316b824f7202db6c3c))
+* Merge pull request #240 from JaCraig/dependabot/nuget/src/Mirage/dependencies-233bfabb76 ([938ce2b](https://www.github.com/JaCraig/Mirage/commit/938ce2b49829a07ca25403f349b58d3e676b02e2))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([de90b1d](https://www.github.com/JaCraig/Mirage/commit/de90b1d12383d43666d69428f0152f4a86eeb512))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([18a865c](https://www.github.com/JaCraig/Mirage/commit/18a865c2f4dd120062c4b36036758afc14abd037))
+* bump Microsoft.NET.Test.Sdk ([3f145ee](https://www.github.com/JaCraig/Mirage/commit/3f145ee19c94561c6c14fe812f337e74a8782369))
+* Update dotnet-publish.yml ([7150a5a](https://www.github.com/JaCraig/Mirage/commit/7150a5aa8320a327f8bb41c4cbdca177adc9791d))
+
 <a name="4.0.103"></a>
 ## [4.0.103](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.103) (2024-05-16)
 

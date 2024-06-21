@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.0"></a>
+## [4.1.0](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.0) (2024-06-21)
+
+### Features
+
+* Adding ClassListGenerator and fixing IEnumerableGenerator ([a4ffc61](https://www.github.com/JaCraig/Mirage/commit/a4ffc61103b02063568729e2bba01b97182f8a30))
+
+### Other
+
+* Merge pull request #253 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-9ecedce413 ([989e9d6](https://www.github.com/JaCraig/Mirage/commit/989e9d67608ed5eabbcebdc378d222dd60a71e0c))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([e51f662](https://www.github.com/JaCraig/Mirage/commit/e51f662c4f93e068d5d15bb4bed4d6e27f058527))
+* Found a bug and adding test for when I have a moment ([713d521](https://www.github.com/JaCraig/Mirage/commit/713d521553065afe24f0e323b8de360440aeb8b5))
+* Merge pull request [#254](https://www.github.com/JaCraig/Mirage/issues/254) from JaCraig/IEnumerable-bug ([0a3b005](https://www.github.com/JaCraig/Mirage/commit/0a3b005ad5bd9ab2af9ec7a277ce7d9715c6cd9a))
+
 <a name="4.0.109"></a>
 ## [4.0.109](https://www.github.com/JaCraig/Mirage/releases/tag/v4.0.109) (2024-06-19)
 

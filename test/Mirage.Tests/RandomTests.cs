@@ -65,7 +65,16 @@ namespace Mirage.Tests
         {
             var Rand = new Random(1231415);
             TestListClass Result = Rand.Next<TestListClass>();
-            Assert.Equal(40, Result.Count());
+            Assert.Equal(9, Result.Count());
+            Assert.Equal("u&DPH\\-Vu=", Result[0]);
+            Assert.Equal("x0YnH>KT4W", Result[1]);
+            Assert.Equal(",;jFdF4Cz2", Result[2]);
+            Assert.Equal("Ui?Ioj7P1k", Result[3]);
+            Assert.Equal(".-+2\"}_\\UG", Result[4]);
+            Assert.Equal("!eq yY9|i!", Result[5]);
+            Assert.Equal("GhYbf/o0}\\", Result[6]);
+            Assert.Equal("'yBFH}0WDe", Result[7]);
+            Assert.Equal("dVkR0mv>M6", Result[8]);
         }
 
         [Fact]
@@ -328,11 +337,9 @@ namespace Mirage.Tests
 
     public class TestListClass : IList<string>
     {
-        private readonly List<string> Items = new();
-
         public int Count => Items.Count;
-
         public bool IsReadOnly => false;
+        private readonly List<string> Items = new();
 
         public string this[int index]
         {

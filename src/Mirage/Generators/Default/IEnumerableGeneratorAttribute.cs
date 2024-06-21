@@ -46,7 +46,7 @@ namespace Mirage.Generators.Default
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public T Next(Random rand) => (T)rand.Next(typeof(List<>).MakeGenericType(TypeGenerated.GetGenericArguments()[0]))!;
+        public T Next(Random rand) => (T?)rand.Next(typeof(List<>).MakeGenericType(TypeGenerated));
 
         /// <summary>
         /// Generates a random value of the specified type
@@ -63,11 +63,7 @@ namespace Mirage.Generators.Default
         /// <param name="rand">Random number generator that it can use</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>A randomly generated object</returns>
-        public object? NextObj(Random rand, List<object> previouslySeen)
-        {
-            _ = TypeGenerated.GetGenericArguments();
-            return rand.Next(typeof(List<>).MakeGenericType(TypeGenerated.GetGenericArguments()[0]));
-        }
+        public object? NextObj(Random rand, List<object> previouslySeen) => rand.Next(typeof(List<>).MakeGenericType(TypeGenerated));
     }
 
     /// <summary>

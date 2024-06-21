@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class IEnumerableGenerator&lt;T&gt; | Mirage API Reference </title>
+      <title>Class ClassListGenerator&lt;T, TListType&gt; | Mirage API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class IEnumerableGenerator&lt;T&gt; | Mirage API Reference ">
+      <meta name="title" content="Class ClassListGenerator&lt;T, TListType&gt; | Mirage API Reference ">
       
-      <meta name="description" content="IEnumerable generator">
+      <meta name="description" content="Randomly generates a class that implements IList">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_IEnumerableGenerator_1.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.IEnumerableGenerator%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_Default_ClassListGenerator_2.md&amp;value=---%0Auid%3A%20Mirage.Generators.Default.ClassListGenerator%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Mirage.Generators.Default.IEnumerableGenerator`1">
+        <article data-uid="Mirage.Generators.Default.ClassListGenerator`2">
 
 
 
-  <h1 id="Mirage_Generators_Default_IEnumerableGenerator_1" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1" class="text-break">
-Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Mirage_Generators_Default_ClassListGenerator_2" data-uid="Mirage.Generators.Default.ClassListGenerator`2" class="text-break">
+Class ClassListGenerator&lt;T, TListType&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
   <dl><dt>Assembly</dt><dd>Mirage.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>IEnumerable generator</p>
+  <div class="markdown summary"><p>Randomly generates a class that implements IList</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IEnumerableGenerator&lt;T&gt; : IGenerator&lt;T&gt;, IGenerator</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClassListGenerator&lt;T, TListType&gt; : IGenerator&lt;T&gt;, IGenerator</code></pre>
   </div>
 
 
@@ -110,7 +110,10 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd><p>IEnumerable type</p>
+    <dd><p>Class type to generate</p>
+</dd>
+    <dt><code>TListType</code></dt>
+    <dd><p>Type of the list.</p>
 </dd>
   </dl>
 
@@ -118,7 +121,7 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">IEnumerableGenerator&lt;T&gt;</span></div>
+      <div><span class="xref">ClassListGenerator&lt;T, TListType&gt;</span></div>
     </dd>
   </dl>
 
@@ -166,11 +169,11 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
 </h2>
 
 
-  <a id="Mirage_Generators_Default_IEnumerableGenerator_1_Default_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.Default*"></a>
+  <a id="Mirage_Generators_Default_ClassListGenerator_2_Default_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.Default*"></a>
 
-  <h3 id="Mirage_Generators_Default_IEnumerableGenerator_1_Default" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.Default">
+  <h3 id="Mirage_Generators_Default_ClassListGenerator_2_Default" data-uid="Mirage.Generators.Default.ClassListGenerator`2.Default">
   Default
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a> is a default one.</p>
@@ -199,11 +202,11 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
 
 
 
-  <a id="Mirage_Generators_Default_IEnumerableGenerator_1_TypeGenerated_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated*"></a>
+  <a id="Mirage_Generators_Default_ClassListGenerator_2_TypeGenerated_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.TypeGenerated*"></a>
 
-  <h3 id="Mirage_Generators_Default_IEnumerableGenerator_1_TypeGenerated" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.TypeGenerated">
+  <h3 id="Mirage_Generators_Default_ClassListGenerator_2_TypeGenerated" data-uid="Mirage.Generators.Default.ClassListGenerator`2.TypeGenerated">
   TypeGenerated
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the type generated.</p>
@@ -236,14 +239,14 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
 </h2>
 
 
-  <a id="Mirage_Generators_Default_IEnumerableGenerator_1_Next_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.Next*"></a>
+  <a id="Mirage_Generators_Default_ClassListGenerator_2_Next_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.Next*"></a>
 
-  <h3 id="Mirage_Generators_Default_IEnumerableGenerator_1_Next_Mirage_Random_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random)">
+  <h3 id="Mirage_Generators_Default_ClassListGenerator_2_Next_Mirage_Random_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.Next(Mirage.Random)">
   Next(Random)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates a random value of the specified type</p>
+  <div class="markdown level1 summary"><p>Generates a random version of the class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -254,14 +257,14 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rand</code> <a class="xref" href="Mirage.Random.html">Random</a></dt>
-    <dd><p>Random number generator that it can use</p>
+    <dd><p>Random generator to use</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>A randomly generated object of the specified type</p>
+    <dd><p>The randomly generated class</p>
 </dd>
   </dl>
 
@@ -275,14 +278,14 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
 
 
 
-  <a id="Mirage_Generators_Default_IEnumerableGenerator_1_Next_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.Next*"></a>
+  <a id="Mirage_Generators_Default_ClassListGenerator_2_Next_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.Next*"></a>
 
-  <h3 id="Mirage_Generators_Default_IEnumerableGenerator_1_Next_Mirage_Random__0__0_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.Next(Mirage.Random,`0,`0)">
+  <h3 id="Mirage_Generators_Default_ClassListGenerator_2_Next_Mirage_Random__0__0_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.Next(Mirage.Random,`0,`0)">
   Next(Random, T, T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates a random value of the specified type</p>
+  <div class="markdown level1 summary"><p>Generates a random version of the class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -293,20 +296,20 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rand</code> <a class="xref" href="Mirage.Random.html">Random</a></dt>
-    <dd><p>Random number generator that it can use</p>
+    <dd><p>Random generator to use</p>
 </dd>
     <dt><code>min</code> <span class="xref">T</span></dt>
-    <dd><p>Minimum value (inclusive)</p>
+    <dd><p>Min value (not used)</p>
 </dd>
     <dt><code>max</code> <span class="xref">T</span></dt>
-    <dd><p>Maximum value (inclusive)</p>
+    <dd><p>Max value (not used)</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>A randomly generated object of the specified type</p>
+    <dd><p>The randomly generated class</p>
 </dd>
   </dl>
 
@@ -320,14 +323,14 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
 
 
 
-  <a id="Mirage_Generators_Default_IEnumerableGenerator_1_NextObj_" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.NextObj*"></a>
+  <a id="Mirage_Generators_Default_ClassListGenerator_2_NextObj_" data-uid="Mirage.Generators.Default.ClassListGenerator`2.NextObj*"></a>
 
-  <h3 id="Mirage_Generators_Default_IEnumerableGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__" data-uid="Mirage.Generators.Default.IEnumerableGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})">
+  <h3 id="Mirage_Generators_Default_ClassListGenerator_2_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__" data-uid="Mirage.Generators.Default.ClassListGenerator`2.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})">
   NextObj(Random, List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates a random value and returns it as an object</p>
+  <div class="markdown level1 summary"><p>Gets a random version of the class</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -338,7 +341,7 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rand</code> <a class="xref" href="Mirage.Random.html">Random</a></dt>
-    <dd><p>Random number generator that it can use</p>
+    <dd><p>Random generator used</p>
 </dd>
     <dt><code>previouslySeen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
     <dd><p>The previously seen.</p>
@@ -348,7 +351,7 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>A randomly generated object</p>
+    <dd><p>The randonly generated class</p>
 </dd>
   </dl>
 
@@ -362,15 +365,11 @@ Class IEnumerableGenerator&lt;T&gt;  <a class="header-action link-secondary" tit
 
 
 
-  <h2 id="seealso">See Also</h2>
-  <div class="seealso">
-      <div><a class="xref" href="Mirage.Interfaces.IGenerator-1.html">IGenerator</a>&lt;T&gt;</div>
-  </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/IEnumerableGeneratorAttribute.cs/#L30" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassListGenerator.cs/#L34" class="edit-link">Edit this page</a>
         </div>
 
 

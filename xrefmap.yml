@@ -1604,6 +1604,181 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.ByteArrayGeneratorAttribute.TypeGenerated
   nameWithType: ByteArrayGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute
+  name: ClassListGeneratorAttribute
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html
+  commentId: T:Mirage.Generators.Default.ClassListGeneratorAttribute
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute
+  nameWithType: ClassListGeneratorAttribute
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.#ctor
+  name: ClassListGeneratorAttribute()
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute__ctor
+  commentId: M:Mirage.Generators.Default.ClassListGeneratorAttribute.#ctor
+  name.vb: New()
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassListGeneratorAttribute()
+  fullName.vb: Mirage.Generators.Default.ClassListGeneratorAttribute.New()
+  nameWithType: ClassListGeneratorAttribute.ClassListGeneratorAttribute()
+  nameWithType.vb: ClassListGeneratorAttribute.New()
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.#ctor(System.Type)
+  name: ClassListGeneratorAttribute(Type)
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute__ctor_System_Type_
+  commentId: M:Mirage.Generators.Default.ClassListGeneratorAttribute.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassListGeneratorAttribute(System.Type)
+  fullName.vb: Mirage.Generators.Default.ClassListGeneratorAttribute.New(System.Type)
+  nameWithType: ClassListGeneratorAttribute.ClassListGeneratorAttribute(Type)
+  nameWithType.vb: ClassListGeneratorAttribute.New(Type)
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.#ctor*
+  name: ClassListGeneratorAttribute
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute__ctor_
+  commentId: Overload:Mirage.Generators.Default.ClassListGeneratorAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassListGeneratorAttribute
+  fullName.vb: Mirage.Generators.Default.ClassListGeneratorAttribute.New
+  nameWithType: ClassListGeneratorAttribute.ClassListGeneratorAttribute
+  nameWithType.vb: ClassListGeneratorAttribute.New
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassType
+  name: ClassType
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_ClassType
+  commentId: P:Mirage.Generators.Default.ClassListGeneratorAttribute.ClassType
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassType
+  nameWithType: ClassListGeneratorAttribute.ClassType
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassType*
+  name: ClassType
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_ClassType_
+  commentId: Overload:Mirage.Generators.Default.ClassListGeneratorAttribute.ClassType
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.ClassType
+  nameWithType: ClassListGeneratorAttribute.ClassType
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.Default
+  name: Default
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_Default
+  commentId: P:Mirage.Generators.Default.ClassListGeneratorAttribute.Default
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.Default
+  nameWithType: ClassListGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.Default*
+  name: Default
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_Default_
+  commentId: Overload:Mirage.Generators.Default.ClassListGeneratorAttribute.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.Default
+  nameWithType: ClassListGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: ClassListGeneratorAttribute.NextObj(Random, List<object>)
+  nameWithType.vb: ClassListGeneratorAttribute.NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_NextObj_
+  commentId: Overload:Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.NextObj
+  nameWithType: ClassListGeneratorAttribute.NextObj
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_TypeGenerated
+  commentId: P:Mirage.Generators.Default.ClassListGeneratorAttribute.TypeGenerated
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.TypeGenerated
+  nameWithType: ClassListGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.ClassListGeneratorAttribute.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html#Mirage_Generators_Default_ClassListGeneratorAttribute_TypeGenerated_
+  commentId: Overload:Mirage.Generators.Default.ClassListGeneratorAttribute.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGeneratorAttribute.TypeGenerated
+  nameWithType: ClassListGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.ClassListGenerator`2
+  name: ClassListGenerator<T, TListType>
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html
+  commentId: T:Mirage.Generators.Default.ClassListGenerator`2
+  name.vb: ClassListGenerator(Of T, TListType)
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType)
+  nameWithType: ClassListGenerator<T, TListType>
+  nameWithType.vb: ClassListGenerator(Of T, TListType)
+- uid: Mirage.Generators.Default.ClassListGenerator`2.Default
+  name: Default
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_Default
+  commentId: P:Mirage.Generators.Default.ClassListGenerator`2.Default
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.Default
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).Default
+  nameWithType: ClassListGenerator<T, TListType>.Default
+  nameWithType.vb: ClassListGenerator(Of T, TListType).Default
+- uid: Mirage.Generators.Default.ClassListGenerator`2.Default*
+  name: Default
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_Default_
+  commentId: Overload:Mirage.Generators.Default.ClassListGenerator`2.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.Default
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).Default
+  nameWithType: ClassListGenerator<T, TListType>.Default
+  nameWithType.vb: ClassListGenerator(Of T, TListType).Default
+- uid: Mirage.Generators.Default.ClassListGenerator`2.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.ClassListGenerator`2.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.Next(Mirage.Random)
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).Next(Mirage.Random)
+  nameWithType: ClassListGenerator<T, TListType>.Next(Random)
+  nameWithType.vb: ClassListGenerator(Of T, TListType).Next(Random)
+- uid: Mirage.Generators.Default.ClassListGenerator`2.Next(Mirage.Random,`0,`0)
+  name: Next(Random, T, T)
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_Next_Mirage_Random__0__0_
+  commentId: M:Mirage.Generators.Default.ClassListGenerator`2.Next(Mirage.Random,`0,`0)
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.Next(Mirage.Random, T, T)
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).Next(Mirage.Random, T, T)
+  nameWithType: ClassListGenerator<T, TListType>.Next(Random, T, T)
+  nameWithType.vb: ClassListGenerator(Of T, TListType).Next(Random, T, T)
+- uid: Mirage.Generators.Default.ClassListGenerator`2.Next*
+  name: Next
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_Next_
+  commentId: Overload:Mirage.Generators.Default.ClassListGenerator`2.Next
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.Next
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).Next
+  nameWithType: ClassListGenerator<T, TListType>.Next
+  nameWithType.vb: ClassListGenerator(Of T, TListType).Next
+- uid: Mirage.Generators.Default.ClassListGenerator`2.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.Default.ClassListGenerator`2.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: ClassListGenerator<T, TListType>.NextObj(Random, List<object>)
+  nameWithType.vb: ClassListGenerator(Of T, TListType).NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.Default.ClassListGenerator`2.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_NextObj_
+  commentId: Overload:Mirage.Generators.Default.ClassListGenerator`2.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.NextObj
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).NextObj
+  nameWithType: ClassListGenerator<T, TListType>.NextObj
+  nameWithType.vb: ClassListGenerator(Of T, TListType).NextObj
+- uid: Mirage.Generators.Default.ClassListGenerator`2.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_TypeGenerated
+  commentId: P:Mirage.Generators.Default.ClassListGenerator`2.TypeGenerated
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.TypeGenerated
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).TypeGenerated
+  nameWithType: ClassListGenerator<T, TListType>.TypeGenerated
+  nameWithType.vb: ClassListGenerator(Of T, TListType).TypeGenerated
+- uid: Mirage.Generators.Default.ClassListGenerator`2.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassListGenerator-2.html#Mirage_Generators_Default_ClassListGenerator_2_TypeGenerated_
+  commentId: Overload:Mirage.Generators.Default.ClassListGenerator`2.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassListGenerator<T, TListType>.TypeGenerated
+  fullName.vb: Mirage.Generators.Default.ClassListGenerator(Of T, TListType).TypeGenerated
+  nameWithType: ClassListGenerator<T, TListType>.TypeGenerated
+  nameWithType.vb: ClassListGenerator(Of T, TListType).TypeGenerated
 - uid: Mirage.Generators.Default.DictionaryGeneratorAttribute
   name: DictionaryGeneratorAttribute
   href: api/Mirage.Generators.Default.DictionaryGeneratorAttribute.html

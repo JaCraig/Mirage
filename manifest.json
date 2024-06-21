@@ -262,6 +262,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ClassListGenerator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ClassListGenerator-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ClassListGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ClassListGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Mirage.Generators.Default.DictionaryGeneratorAttribute.yml",
       "output": {
         ".html": {

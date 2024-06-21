@@ -82,20 +82,95 @@ namespace Mirage.Manager
                 return new EnumGeneratorAttribute(classType);
             if (TypeGeneratedInfo.IsArray)
                 return new ArrayGeneratorAttribute(classType.GetElementType(), 1, 100);
-            if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IDictionary)))
-                return new DictionaryGeneratorAttribute(classType.GetGenericArguments()[0], classType.GetGenericArguments()[1], 1, 100);
-            if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IList)))
-                return new ListGeneratorAttribute(classType.GetGenericArguments()[0], 1, 100);
-            if (TypeGeneratedInfo.GetInterfaces().Any(x => x == typeof(IEnumerable)))
+            _ = TypeGeneratedInfo.GetInterfaces();
+
+            if (IsDictionary(TypeGeneratedInfo, out Type? Arg1, out Type? Arg2))
+                return new DictionaryGeneratorAttribute(Arg1, Arg2, 1, 100);
+            if (IsList(TypeGeneratedInfo, out Type? ListArg))
+                return new ListGeneratorAttribute(ListArg, 1, 100);
+            if (IsIEnumerable(TypeGeneratedInfo, out Type? IEnumerableArg))
+                return new IEnumerableGeneratorAttribute(IEnumerableArg, 1, 100);
+
+            if (TypeGeneratedInfo.IsClass && TypeGeneratedInfo.GetInterfaces().Any(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IList<>)))
+                return (IGenerator?)new ClassListGeneratorAttribute(classType);
+
+            if (TypeGeneratedInfo.IsClass || (TypeGeneratedInfo.IsValueType && !TypeGeneratedInfo.IsPrimitive))
+                return (IGenerator?)new ClassGeneratorAttribute(classType);
+
+            return null;
+        }
+
+        /// <summary>
+        /// Determines if the class is a dictionary
+        /// </summary>
+        /// <param name="classType">Type of the class.</param>
+        /// <param name="argument1">The argument1.</param>
+        /// <param name="argument2">The argument2.</param>
+        /// <returns>True if it is a dictionary, false otherwise</returns>
+        private static bool IsDictionary(Type classType, out Type? argument1, out Type? argument2)
+        {
+            argument1 = null;
+            argument2 = null;
+            if (classType == typeof(IDictionary))
             {
-                return new IEnumerableGeneratorAttribute(classType, 1, 100);
+                argument1 = typeof(string);
+                argument2 = typeof(string);
+                return true;
             }
-            else
+            if (!classType.IsGenericType)
+                return false;
+
+            Type[] GenericArguments = classType.GetGenericArguments();
+            if (GenericArguments.Length < 2)
+                return false;
+
+            argument1 = GenericArguments[0];
+            argument2 = GenericArguments[1];
+            return classType.IsAssignableTo(typeof(IDictionary<,>).MakeGenericType(GenericArguments[0], GenericArguments[1]));
+        }
+
+        /// <summary>
+        /// Determines if the class is an IEnumerable
+        /// </summary>
+        /// <param name="classType">Type of the class.</param>
+        /// <param name="arg">The argument.</param>
+        /// <returns>True if it is an IEnumerable, false otherwise</returns>
+        private static bool IsIEnumerable(Type classType, out Type? arg)
+        {
+            arg = null;
+            if (classType == typeof(IEnumerable))
             {
-                return TypeGeneratedInfo.IsClass || (TypeGeneratedInfo.IsValueType && !TypeGeneratedInfo.IsPrimitive)
-                    ? new ClassGeneratorAttribute(classType)
-                    : (IGenerator?)null;
+                arg = typeof(string);
+                return true;
             }
+            if (!classType.IsGenericType)
+                return false;
+
+            Type[] GenericArguments = classType.GetGenericArguments();
+            arg = GenericArguments[0];
+            return classType.IsAssignableTo(typeof(IEnumerable<>).MakeGenericType(GenericArguments[0]));
+        }
+
+        /// <summary>
+        /// Determines if the class is a list
+        /// </summary>
+        /// <param name="classType">Type of the class.</param>
+        /// <param name="arg">The argument.</param>
+        /// <returns>True if it is a list, false otherwise</returns>
+        private static bool IsList(Type classType, out Type? arg)
+        {
+            arg = null;
+            if (classType == typeof(IList))
+            {
+                arg = typeof(string);
+                return true;
+            }
+            if (!classType.IsGenericType)
+                return false;
+
+            Type[] GenericArguments = classType.GetGenericArguments();
+            arg = GenericArguments[0];
+            return classType.IsAssignableTo(typeof(IList<>).MakeGenericType(GenericArguments[0]));
         }
     }
 }

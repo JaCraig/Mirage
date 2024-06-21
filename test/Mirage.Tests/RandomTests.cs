@@ -2,6 +2,7 @@
 using Mirage.Generators.String;
 using Mirage.Tests.BaseClasses;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -57,6 +58,23 @@ namespace Mirage.Tests
             Assert.Equal("]w@&BJUzH`W$;oz'Rw7Qaf+l53!$Kg-QX5vr1*JKfPkn_`rSHJrQYZktkRn/IQO^S&I%v'sGLih0x;,S>LZ!sZv{G!&]9;\"5!-:X", Item.TestString);
             Assert.Equal(Math.Round(0.9043f, 4), Math.Round(Item.C, 4));
             Assert.InRange(Item.D, 1, 100);
+        }
+
+        [Fact]
+        public void IEnumerableTests()
+        {
+            var Rand = new Random(1231415);
+            TestListClass Result = Rand.Next<TestListClass>();
+            Assert.Equal(9, Result.Count());
+            Assert.Equal("u&DPH\\-Vu=", Result[0]);
+            Assert.Equal("x0YnH>KT4W", Result[1]);
+            Assert.Equal(",;jFdF4Cz2", Result[2]);
+            Assert.Equal("Ui?Ioj7P1k", Result[3]);
+            Assert.Equal(".-+2\"}_\\UG", Result[4]);
+            Assert.Equal("!eq yY9|i!", Result[5]);
+            Assert.Equal("GhYbf/o0}\\", Result[6]);
+            Assert.Equal("'yBFH}0WDe", Result[7]);
+            Assert.Equal("dVkR0mv>M6", Result[8]);
         }
 
         [Fact]
@@ -315,5 +333,38 @@ namespace Mirage.Tests
     {
         [ClassGenerator(typeof(SelfReferenceClass1))]
         public SelfReferenceClass1 Other { get; set; }
+    }
+
+    public class TestListClass : IList<string>
+    {
+        public int Count => Items.Count;
+        public bool IsReadOnly => false;
+        private readonly List<string> Items = new();
+
+        public string this[int index]
+        {
+            get => Items[index];
+            set => Items[index] = value;
+        }
+
+        public void Add(string item) => Items.Add(item);
+
+        public void Clear() => Items.Clear();
+
+        public bool Contains(string item) => Items.Contains(item);
+
+        public void CopyTo(string[] array, int arrayIndex) => Items.CopyTo(array, arrayIndex);
+
+        public IEnumerator<string> GetEnumerator() => Items.GetEnumerator();
+
+        IEnumerator IEnumerable.GetEnumerator() => Items.GetEnumerator();
+
+        public int IndexOf(string item) => Items.IndexOf(item);
+
+        public void Insert(int index, string item) => Items.Insert(index, item);
+
+        public bool Remove(string item) => Items.Remove(item);
+
+        public void RemoveAt(int index) => Items.RemoveAt(index);
     }
 }

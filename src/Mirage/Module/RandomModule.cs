@@ -44,6 +44,7 @@ namespace Mirage.Module
             _ = (bootstrapper?.AddAllTransient<IGenerator>()
                 ?.AddTransient(typeof(EnumGenerator<>))
                 .AddTransient(typeof(ClassGenerator<>))
+                .AddTransient(typeof(ClassListGenerator<,>))
                 .AddTransient(typeof(IEnumerableGenerator<>))
                 .AddSingleton<Manager.Builder>()
                 .AddTransient<Random>());

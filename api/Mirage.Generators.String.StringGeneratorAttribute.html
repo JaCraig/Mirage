@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ClassGeneratorAttribute | Mirage API Reference </title>
+      <title>Class StringGeneratorAttribute | Mirage API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ClassGeneratorAttribute | Mirage API Reference ">
+      <meta name="title" content="Class StringGeneratorAttribute | Mirage API Reference ">
       
-      <meta name="description" content="Class generator attribute">
+      <meta name="description" content="Randomly generates strings">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_ClassGeneratorAttribute.md&amp;value=---%0Auid%3A%20Mirage.Generators.ClassGeneratorAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Mirage/new/master/apiSpec/new?filename=Mirage_Generators_String_StringGeneratorAttribute.md&amp;value=---%0Auid%3A%20Mirage.Generators.String.StringGeneratorAttribute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Mirage.Generators.ClassGeneratorAttribute">
+        <article data-uid="Mirage.Generators.String.StringGeneratorAttribute">
 
 
 
-  <h1 id="Mirage_Generators_ClassGeneratorAttribute" data-uid="Mirage.Generators.ClassGeneratorAttribute" class="text-break">
-Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Mirage_Generators_String_StringGeneratorAttribute" data-uid="Mirage.Generators.String.StringGeneratorAttribute" class="text-break">
+Class StringGeneratorAttribute  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Mirage.html">Mirage</a>.<a class="xref" href="Mirage.Generators.html">Generators</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Mirage.html">Mirage</a>.<a class="xref" href="Mirage.Generators.html">Generators</a>.<a class="xref" href="Mirage.Generators.String.html">String</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Mirage.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Class generator attribute</p>
+  <div class="markdown summary"><p>Randomly generates strings</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ClassGeneratorAttribute : GeneratorAttributeBase, IGenerator</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class StringGeneratorAttribute : StringGeneratorBase, IGenerator&lt;string&gt;, IGenerator</code></pre>
   </div>
 
 
@@ -114,13 +114,15 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
       <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
-      <div><span class="xref">ClassGeneratorAttribute</span></div>
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
+      <div><span class="xref">StringGeneratorAttribute</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
+      <div><a class="xref" href="Mirage.Interfaces.IGenerator-1.html">IGenerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</div>
       <div><a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a></div>
     </dd>
   </dl>
@@ -129,6 +131,15 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_TypeGenerated">StringGeneratorBase.TypeGenerated</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_Next_Mirage_Random_System_String_System_String_">StringGeneratorBase.Next(Random, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html#Mirage_Generators_BaseClasses_StringGeneratorBase_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__">StringGeneratorBase.NextObj(Random, List&lt;object&gt;)</a>
+    </div>
     <div>
       <a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html#Mirage_Generators_BaseClasses_GeneratorAttributeBase_Max">GeneratorAttributeBase.Max</a>
     </div>
@@ -269,19 +280,19 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
 </h2>
 
 
-  <a id="Mirage_Generators_ClassGeneratorAttribute__ctor_" data-uid="Mirage.Generators.ClassGeneratorAttribute.#ctor*"></a>
+  <a id="Mirage_Generators_String_StringGeneratorAttribute__ctor_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.#ctor*"></a>
 
-  <h3 id="Mirage_Generators_ClassGeneratorAttribute__ctor" data-uid="Mirage.Generators.ClassGeneratorAttribute.#ctor">
-  ClassGeneratorAttribute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute__ctor" data-uid="Mirage.Generators.String.StringGeneratorAttribute.#ctor">
+  StringGeneratorAttribute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mirage.Generators.ClassGeneratorAttribute.html">ClassGeneratorAttribute</a> class.</p>
+  <div class="markdown level1 summary"><p>Constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClassGeneratorAttribute()</code></pre>
+    <pre><code class="lang-csharp hljs">public StringGeneratorAttribute()</code></pre>
   </div>
 
 
@@ -296,25 +307,31 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
 
 
 
-  <a id="Mirage_Generators_ClassGeneratorAttribute__ctor_" data-uid="Mirage.Generators.ClassGeneratorAttribute.#ctor*"></a>
+  <a id="Mirage_Generators_String_StringGeneratorAttribute__ctor_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.#ctor*"></a>
 
-  <h3 id="Mirage_Generators_ClassGeneratorAttribute__ctor_System_Type_" data-uid="Mirage.Generators.ClassGeneratorAttribute.#ctor(System.Type)">
-  ClassGeneratorAttribute(Type)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute__ctor_System_Int32_System_String_System_Int32_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.#ctor(System.Int32,System.String,System.Int32)">
+  StringGeneratorAttribute(int, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mirage.Generators.ClassGeneratorAttribute.html">ClassGeneratorAttribute</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mirage.Generators.String.StringGeneratorAttribute.html">StringGeneratorAttribute</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ClassGeneratorAttribute(Type classType)</code></pre>
+    <pre><code class="lang-csharp hljs">public StringGeneratorAttribute(int length, string allowedCharacters = &quot;.&quot;, int numberOfNonAlphaNumericsAllowed = 2147483647)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>classType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd><p>Type of the class.</p>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length.</p>
+</dd>
+    <dt><code>allowedCharacters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The allowed characters.</p>
+</dd>
+    <dt><code>numberOfNonAlphaNumericsAllowed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of non alpha numerics allowed.</p>
 </dd>
   </dl>
 
@@ -333,19 +350,19 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
 </h2>
 
 
-  <a id="Mirage_Generators_ClassGeneratorAttribute_ClassType_" data-uid="Mirage.Generators.ClassGeneratorAttribute.ClassType*"></a>
+  <a id="Mirage_Generators_String_StringGeneratorAttribute_AllowedCharacters_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters*"></a>
 
-  <h3 id="Mirage_Generators_ClassGeneratorAttribute_ClassType" data-uid="Mirage.Generators.ClassGeneratorAttribute.ClassType">
-  ClassType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute_AllowedCharacters" data-uid="Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters">
+  AllowedCharacters
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the type of the class.</p>
+  <div class="markdown level1 summary"><p>Gets the allowed characters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Type? ClassType { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string AllowedCharacters { get; }</code></pre>
   </div>
 
 
@@ -354,8 +371,8 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd><p>The type of the class.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The allowed characters.</p>
 </dd>
   </dl>
 
@@ -366,15 +383,14 @@ Class ClassGeneratorAttribute  <a class="header-action link-secondary" title="Vi
 
 
 
-  <a id="Mirage_Generators_ClassGeneratorAttribute_Default_" data-uid="Mirage.Generators.ClassGeneratorAttribute.Default*"></a>
+  <a id="Mirage_Generators_String_StringGeneratorAttribute_Default_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.Default*"></a>
 
-  <h3 id="Mirage_Generators_ClassGeneratorAttribute_Default" data-uid="Mirage.Generators.ClassGeneratorAttribute.Default">
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute_Default" data-uid="Mirage.Generators.String.StringGeneratorAttribute.Default">
   Default
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a> is a
-default one.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this <a class="xref" href="Mirage.Interfaces.IGenerator.html">IGenerator</a> is a default one.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -400,19 +416,19 @@ default one.</p>
 
 
 
-  <a id="Mirage_Generators_ClassGeneratorAttribute_TypeGenerated_" data-uid="Mirage.Generators.ClassGeneratorAttribute.TypeGenerated*"></a>
+  <a id="Mirage_Generators_String_StringGeneratorAttribute_Length_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.Length*"></a>
 
-  <h3 id="Mirage_Generators_ClassGeneratorAttribute_TypeGenerated" data-uid="Mirage.Generators.ClassGeneratorAttribute.TypeGenerated">
-  TypeGenerated
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute_Length" data-uid="Mirage.Generators.String.StringGeneratorAttribute.Length">
+  Length
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the type generated.</p>
+  <div class="markdown level1 summary"><p>Gets the length.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Type TypeGenerated { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
   </div>
 
 
@@ -421,8 +437,41 @@ default one.</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd><p>The type generated.</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Mirage_Generators_String_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed*"></a>
+
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed" data-uid="Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed">
+  NumberOfNonAlphaNumericsAllowed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of non alpha numerics allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumberOfNonAlphaNumericsAllowed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of non alpha numerics allowed.</p>
 </dd>
   </dl>
 
@@ -437,35 +486,32 @@ default one.</p>
 </h2>
 
 
-  <a id="Mirage_Generators_ClassGeneratorAttribute_NextObj_" data-uid="Mirage.Generators.ClassGeneratorAttribute.NextObj*"></a>
+  <a id="Mirage_Generators_String_StringGeneratorAttribute_Next_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.Next*"></a>
 
-  <h3 id="Mirage_Generators_ClassGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__" data-uid="Mirage.Generators.ClassGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})">
-  NextObj(Random, List&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Mirage_Generators_String_StringGeneratorAttribute_Next_Mirage_Random_" data-uid="Mirage.Generators.String.StringGeneratorAttribute.Next(Mirage.Random)">
+  Next(Random)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Generates next object</p>
+  <div class="markdown level1 summary"><p>Generates a random value of the specified type</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override object? NextObj(Random rand, List&lt;object&gt; previouslySeen)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string Next(Random rand)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>rand</code> <a class="xref" href="Mirage.Random.html">Random</a></dt>
-    <dd><p>The rand.</p>
-</dd>
-    <dt><code>previouslySeen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>The previously seen.</p>
+    <dd><p>Random number generator that it can use</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>The next object</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A randomly generated object of the specified type</p>
 </dd>
   </dl>
 
@@ -481,13 +527,13 @@ default one.</p>
 
   <h2 id="seealso">See Also</h2>
   <div class="seealso">
-      <div><a class="xref" href="Mirage.Generators.BaseClasses.GeneratorAttributeBase.html">GeneratorAttributeBase</a></div>
+      <div><a class="xref" href="Mirage.Generators.BaseClasses.StringGeneratorBase.html">StringGeneratorBase</a></div>
   </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/Default/ClassGenerator.cs/#L107" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Mirage/blob/master/src/Mirage/Generators/String/String.cs/#L29" class="edit-link">Edit this page</a>
         </div>
 
 

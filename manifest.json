@@ -92,26 +92,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.ClassGenerator-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.ClassGenerator-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.ClassGeneratorAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Mirage.Generators.ClassGeneratorAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Mirage.Generators.ContactInfo.AddressAttribute.yml",
       "output": {
         ".html": {
@@ -256,6 +236,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ClassGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ClassGenerator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Mirage.Generators.Default.ClassGeneratorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Mirage.Generators.Default.ClassGeneratorAttribute.html"
         }
       },
       "version": ""
@@ -822,20 +822,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.String.yml",
+      "source_relative_path": "api/Mirage.Generators.String.StringGeneratorAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mirage.Generators.String.html"
+          "relative_path": "api/Mirage.Generators.String.StringGeneratorAttribute.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Mirage.Generators.StringGeneratorAttribute.yml",
+      "source_relative_path": "api/Mirage.Generators.String.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Mirage.Generators.StringGeneratorAttribute.html"
+          "relative_path": "api/Mirage.Generators.String.html"
         }
       },
       "version": ""

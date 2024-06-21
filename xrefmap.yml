@@ -501,181 +501,6 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.CharGeneratorAttribute.TypeGenerated
   nameWithType: CharGeneratorAttribute.TypeGenerated
-- uid: Mirage.Generators.ClassGeneratorAttribute
-  name: ClassGeneratorAttribute
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html
-  commentId: T:Mirage.Generators.ClassGeneratorAttribute
-  fullName: Mirage.Generators.ClassGeneratorAttribute
-  nameWithType: ClassGeneratorAttribute
-- uid: Mirage.Generators.ClassGeneratorAttribute.#ctor
-  name: ClassGeneratorAttribute()
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute__ctor
-  commentId: M:Mirage.Generators.ClassGeneratorAttribute.#ctor
-  name.vb: New()
-  fullName: Mirage.Generators.ClassGeneratorAttribute.ClassGeneratorAttribute()
-  fullName.vb: Mirage.Generators.ClassGeneratorAttribute.New()
-  nameWithType: ClassGeneratorAttribute.ClassGeneratorAttribute()
-  nameWithType.vb: ClassGeneratorAttribute.New()
-- uid: Mirage.Generators.ClassGeneratorAttribute.#ctor(System.Type)
-  name: ClassGeneratorAttribute(Type)
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute__ctor_System_Type_
-  commentId: M:Mirage.Generators.ClassGeneratorAttribute.#ctor(System.Type)
-  name.vb: New(Type)
-  fullName: Mirage.Generators.ClassGeneratorAttribute.ClassGeneratorAttribute(System.Type)
-  fullName.vb: Mirage.Generators.ClassGeneratorAttribute.New(System.Type)
-  nameWithType: ClassGeneratorAttribute.ClassGeneratorAttribute(Type)
-  nameWithType.vb: ClassGeneratorAttribute.New(Type)
-- uid: Mirage.Generators.ClassGeneratorAttribute.#ctor*
-  name: ClassGeneratorAttribute
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute__ctor_
-  commentId: Overload:Mirage.Generators.ClassGeneratorAttribute.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Mirage.Generators.ClassGeneratorAttribute.ClassGeneratorAttribute
-  fullName.vb: Mirage.Generators.ClassGeneratorAttribute.New
-  nameWithType: ClassGeneratorAttribute.ClassGeneratorAttribute
-  nameWithType.vb: ClassGeneratorAttribute.New
-- uid: Mirage.Generators.ClassGeneratorAttribute.ClassType
-  name: ClassType
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_ClassType
-  commentId: P:Mirage.Generators.ClassGeneratorAttribute.ClassType
-  fullName: Mirage.Generators.ClassGeneratorAttribute.ClassType
-  nameWithType: ClassGeneratorAttribute.ClassType
-- uid: Mirage.Generators.ClassGeneratorAttribute.ClassType*
-  name: ClassType
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_ClassType_
-  commentId: Overload:Mirage.Generators.ClassGeneratorAttribute.ClassType
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGeneratorAttribute.ClassType
-  nameWithType: ClassGeneratorAttribute.ClassType
-- uid: Mirage.Generators.ClassGeneratorAttribute.Default
-  name: Default
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_Default
-  commentId: P:Mirage.Generators.ClassGeneratorAttribute.Default
-  fullName: Mirage.Generators.ClassGeneratorAttribute.Default
-  nameWithType: ClassGeneratorAttribute.Default
-- uid: Mirage.Generators.ClassGeneratorAttribute.Default*
-  name: Default
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_Default_
-  commentId: Overload:Mirage.Generators.ClassGeneratorAttribute.Default
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGeneratorAttribute.Default
-  nameWithType: ClassGeneratorAttribute.Default
-- uid: Mirage.Generators.ClassGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name: NextObj(Random, List<object>)
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
-  commentId: M:Mirage.Generators.ClassGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name.vb: NextObj(Random, List(Of Object))
-  fullName: Mirage.Generators.ClassGeneratorAttribute.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
-  fullName.vb: Mirage.Generators.ClassGeneratorAttribute.NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
-  nameWithType: ClassGeneratorAttribute.NextObj(Random, List<object>)
-  nameWithType.vb: ClassGeneratorAttribute.NextObj(Random, List(Of Object))
-- uid: Mirage.Generators.ClassGeneratorAttribute.NextObj*
-  name: NextObj
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_NextObj_
-  commentId: Overload:Mirage.Generators.ClassGeneratorAttribute.NextObj
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGeneratorAttribute.NextObj
-  nameWithType: ClassGeneratorAttribute.NextObj
-- uid: Mirage.Generators.ClassGeneratorAttribute.TypeGenerated
-  name: TypeGenerated
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_TypeGenerated
-  commentId: P:Mirage.Generators.ClassGeneratorAttribute.TypeGenerated
-  fullName: Mirage.Generators.ClassGeneratorAttribute.TypeGenerated
-  nameWithType: ClassGeneratorAttribute.TypeGenerated
-- uid: Mirage.Generators.ClassGeneratorAttribute.TypeGenerated*
-  name: TypeGenerated
-  href: api/Mirage.Generators.ClassGeneratorAttribute.html#Mirage_Generators_ClassGeneratorAttribute_TypeGenerated_
-  commentId: Overload:Mirage.Generators.ClassGeneratorAttribute.TypeGenerated
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGeneratorAttribute.TypeGenerated
-  nameWithType: ClassGeneratorAttribute.TypeGenerated
-- uid: Mirage.Generators.ClassGenerator`1
-  name: ClassGenerator<T>
-  href: api/Mirage.Generators.ClassGenerator-1.html
-  commentId: T:Mirage.Generators.ClassGenerator`1
-  name.vb: ClassGenerator(Of T)
-  fullName: Mirage.Generators.ClassGenerator<T>
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T)
-  nameWithType: ClassGenerator<T>
-  nameWithType.vb: ClassGenerator(Of T)
-- uid: Mirage.Generators.ClassGenerator`1.Default
-  name: Default
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Default
-  commentId: P:Mirage.Generators.ClassGenerator`1.Default
-  fullName: Mirage.Generators.ClassGenerator<T>.Default
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Default
-  nameWithType: ClassGenerator<T>.Default
-  nameWithType.vb: ClassGenerator(Of T).Default
-- uid: Mirage.Generators.ClassGenerator`1.Default*
-  name: Default
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Default_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.Default
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.Default
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Default
-  nameWithType: ClassGenerator<T>.Default
-  nameWithType.vb: ClassGenerator(Of T).Default
-- uid: Mirage.Generators.ClassGenerator`1.Next(Mirage.Random)
-  name: Next(Random)
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.ClassGenerator`1.Next(Mirage.Random)
-  fullName: Mirage.Generators.ClassGenerator<T>.Next(Mirage.Random)
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next(Mirage.Random)
-  nameWithType: ClassGenerator<T>.Next(Random)
-  nameWithType.vb: ClassGenerator(Of T).Next(Random)
-- uid: Mirage.Generators.ClassGenerator`1.Next(Mirage.Random,`0,`0)
-  name: Next(Random, T, T)
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_Mirage_Random__0__0_
-  commentId: M:Mirage.Generators.ClassGenerator`1.Next(Mirage.Random,`0,`0)
-  fullName: Mirage.Generators.ClassGenerator<T>.Next(Mirage.Random, T, T)
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next(Mirage.Random, T, T)
-  nameWithType: ClassGenerator<T>.Next(Random, T, T)
-  nameWithType.vb: ClassGenerator(Of T).Next(Random, T, T)
-- uid: Mirage.Generators.ClassGenerator`1.Next*
-  name: Next
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_Next_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.Next
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.Next
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).Next
-  nameWithType: ClassGenerator<T>.Next
-  nameWithType.vb: ClassGenerator(Of T).Next
-- uid: Mirage.Generators.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name: NextObj(Random, List<object>)
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
-  commentId: M:Mirage.Generators.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
-  name.vb: NextObj(Random, List(Of Object))
-  fullName: Mirage.Generators.ClassGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
-  nameWithType: ClassGenerator<T>.NextObj(Random, List<object>)
-  nameWithType.vb: ClassGenerator(Of T).NextObj(Random, List(Of Object))
-- uid: Mirage.Generators.ClassGenerator`1.NextObj*
-  name: NextObj
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_NextObj_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.NextObj
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.NextObj
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).NextObj
-  nameWithType: ClassGenerator<T>.NextObj
-  nameWithType.vb: ClassGenerator(Of T).NextObj
-- uid: Mirage.Generators.ClassGenerator`1.TypeGenerated
-  name: TypeGenerated
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_TypeGenerated
-  commentId: P:Mirage.Generators.ClassGenerator`1.TypeGenerated
-  fullName: Mirage.Generators.ClassGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).TypeGenerated
-  nameWithType: ClassGenerator<T>.TypeGenerated
-  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
-- uid: Mirage.Generators.ClassGenerator`1.TypeGenerated*
-  name: TypeGenerated
-  href: api/Mirage.Generators.ClassGenerator-1.html#Mirage_Generators_ClassGenerator_1_TypeGenerated_
-  commentId: Overload:Mirage.Generators.ClassGenerator`1.TypeGenerated
-  isSpec: "True"
-  fullName: Mirage.Generators.ClassGenerator<T>.TypeGenerated
-  fullName.vb: Mirage.Generators.ClassGenerator(Of T).TypeGenerated
-  nameWithType: ClassGenerator<T>.TypeGenerated
-  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.ContactInfo
   name: Mirage.Generators.ContactInfo
   href: api/Mirage.Generators.ContactInfo.html
@@ -1604,6 +1429,181 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.Default.ByteArrayGeneratorAttribute.TypeGenerated
   nameWithType: ByteArrayGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute
+  name: ClassGeneratorAttribute
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html
+  commentId: T:Mirage.Generators.Default.ClassGeneratorAttribute
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute
+  nameWithType: ClassGeneratorAttribute
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.#ctor
+  name: ClassGeneratorAttribute()
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute__ctor
+  commentId: M:Mirage.Generators.Default.ClassGeneratorAttribute.#ctor
+  name.vb: New()
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.ClassGeneratorAttribute()
+  fullName.vb: Mirage.Generators.Default.ClassGeneratorAttribute.New()
+  nameWithType: ClassGeneratorAttribute.ClassGeneratorAttribute()
+  nameWithType.vb: ClassGeneratorAttribute.New()
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.#ctor(System.Type)
+  name: ClassGeneratorAttribute(Type)
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute__ctor_System_Type_
+  commentId: M:Mirage.Generators.Default.ClassGeneratorAttribute.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.ClassGeneratorAttribute(System.Type)
+  fullName.vb: Mirage.Generators.Default.ClassGeneratorAttribute.New(System.Type)
+  nameWithType: ClassGeneratorAttribute.ClassGeneratorAttribute(Type)
+  nameWithType.vb: ClassGeneratorAttribute.New(Type)
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.#ctor*
+  name: ClassGeneratorAttribute
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute__ctor_
+  commentId: Overload:Mirage.Generators.Default.ClassGeneratorAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.ClassGeneratorAttribute
+  fullName.vb: Mirage.Generators.Default.ClassGeneratorAttribute.New
+  nameWithType: ClassGeneratorAttribute.ClassGeneratorAttribute
+  nameWithType.vb: ClassGeneratorAttribute.New
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.ClassType
+  name: ClassType
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_ClassType
+  commentId: P:Mirage.Generators.Default.ClassGeneratorAttribute.ClassType
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.ClassType
+  nameWithType: ClassGeneratorAttribute.ClassType
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.ClassType*
+  name: ClassType
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_ClassType_
+  commentId: Overload:Mirage.Generators.Default.ClassGeneratorAttribute.ClassType
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.ClassType
+  nameWithType: ClassGeneratorAttribute.ClassType
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.Default
+  name: Default
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_Default
+  commentId: P:Mirage.Generators.Default.ClassGeneratorAttribute.Default
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.Default
+  nameWithType: ClassGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.Default*
+  name: Default
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_Default_
+  commentId: Overload:Mirage.Generators.Default.ClassGeneratorAttribute.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.Default
+  nameWithType: ClassGeneratorAttribute.Default
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.Default.ClassGeneratorAttribute.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.Default.ClassGeneratorAttribute.NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: ClassGeneratorAttribute.NextObj(Random, List<object>)
+  nameWithType.vb: ClassGeneratorAttribute.NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_NextObj_
+  commentId: Overload:Mirage.Generators.Default.ClassGeneratorAttribute.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.NextObj
+  nameWithType: ClassGeneratorAttribute.NextObj
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_TypeGenerated
+  commentId: P:Mirage.Generators.Default.ClassGeneratorAttribute.TypeGenerated
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.TypeGenerated
+  nameWithType: ClassGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.ClassGeneratorAttribute.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassGeneratorAttribute.html#Mirage_Generators_Default_ClassGeneratorAttribute_TypeGenerated_
+  commentId: Overload:Mirage.Generators.Default.ClassGeneratorAttribute.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGeneratorAttribute.TypeGenerated
+  nameWithType: ClassGeneratorAttribute.TypeGenerated
+- uid: Mirage.Generators.Default.ClassGenerator`1
+  name: ClassGenerator<T>
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html
+  commentId: T:Mirage.Generators.Default.ClassGenerator`1
+  name.vb: ClassGenerator(Of T)
+  fullName: Mirage.Generators.Default.ClassGenerator<T>
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T)
+  nameWithType: ClassGenerator<T>
+  nameWithType.vb: ClassGenerator(Of T)
+- uid: Mirage.Generators.Default.ClassGenerator`1.Default
+  name: Default
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_Default
+  commentId: P:Mirage.Generators.Default.ClassGenerator`1.Default
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.Default
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).Default
+  nameWithType: ClassGenerator<T>.Default
+  nameWithType.vb: ClassGenerator(Of T).Default
+- uid: Mirage.Generators.Default.ClassGenerator`1.Default*
+  name: Default
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_Default_
+  commentId: Overload:Mirage.Generators.Default.ClassGenerator`1.Default
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.Default
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).Default
+  nameWithType: ClassGenerator<T>.Default
+  nameWithType.vb: ClassGenerator(Of T).Default
+- uid: Mirage.Generators.Default.ClassGenerator`1.Next(Mirage.Random)
+  name: Next(Random)
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.Default.ClassGenerator`1.Next(Mirage.Random)
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.Next(Mirage.Random)
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).Next(Mirage.Random)
+  nameWithType: ClassGenerator<T>.Next(Random)
+  nameWithType.vb: ClassGenerator(Of T).Next(Random)
+- uid: Mirage.Generators.Default.ClassGenerator`1.Next(Mirage.Random,`0,`0)
+  name: Next(Random, T, T)
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_Next_Mirage_Random__0__0_
+  commentId: M:Mirage.Generators.Default.ClassGenerator`1.Next(Mirage.Random,`0,`0)
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.Next(Mirage.Random, T, T)
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).Next(Mirage.Random, T, T)
+  nameWithType: ClassGenerator<T>.Next(Random, T, T)
+  nameWithType.vb: ClassGenerator(Of T).Next(Random, T, T)
+- uid: Mirage.Generators.Default.ClassGenerator`1.Next*
+  name: Next
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_Next_
+  commentId: Overload:Mirage.Generators.Default.ClassGenerator`1.Next
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.Next
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).Next
+  nameWithType: ClassGenerator<T>.Next
+  nameWithType.vb: ClassGenerator(Of T).Next
+- uid: Mirage.Generators.Default.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name: NextObj(Random, List<object>)
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_NextObj_Mirage_Random_System_Collections_Generic_List_System_Object__
+  commentId: M:Mirage.Generators.Default.ClassGenerator`1.NextObj(Mirage.Random,System.Collections.Generic.List{System.Object})
+  name.vb: NextObj(Random, List(Of Object))
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.NextObj(Mirage.Random, System.Collections.Generic.List<object>)
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).NextObj(Mirage.Random, System.Collections.Generic.List(Of Object))
+  nameWithType: ClassGenerator<T>.NextObj(Random, List<object>)
+  nameWithType.vb: ClassGenerator(Of T).NextObj(Random, List(Of Object))
+- uid: Mirage.Generators.Default.ClassGenerator`1.NextObj*
+  name: NextObj
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_NextObj_
+  commentId: Overload:Mirage.Generators.Default.ClassGenerator`1.NextObj
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.NextObj
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).NextObj
+  nameWithType: ClassGenerator<T>.NextObj
+  nameWithType.vb: ClassGenerator(Of T).NextObj
+- uid: Mirage.Generators.Default.ClassGenerator`1.TypeGenerated
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_TypeGenerated
+  commentId: P:Mirage.Generators.Default.ClassGenerator`1.TypeGenerated
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).TypeGenerated
+  nameWithType: ClassGenerator<T>.TypeGenerated
+  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
+- uid: Mirage.Generators.Default.ClassGenerator`1.TypeGenerated*
+  name: TypeGenerated
+  href: api/Mirage.Generators.Default.ClassGenerator-1.html#Mirage_Generators_Default_ClassGenerator_1_TypeGenerated_
+  commentId: Overload:Mirage.Generators.Default.ClassGenerator`1.TypeGenerated
+  isSpec: "True"
+  fullName: Mirage.Generators.Default.ClassGenerator<T>.TypeGenerated
+  fullName.vb: Mirage.Generators.Default.ClassGenerator(Of T).TypeGenerated
+  nameWithType: ClassGenerator<T>.TypeGenerated
+  nameWithType.vb: ClassGenerator(Of T).TypeGenerated
 - uid: Mirage.Generators.Default.ClassListGeneratorAttribute
   name: ClassListGeneratorAttribute
   href: api/Mirage.Generators.Default.ClassListGeneratorAttribute.html
@@ -5896,104 +5896,104 @@ references:
   isSpec: "True"
   fullName: Mirage.Generators.String.ProblemStringsAttribute.Next
   nameWithType: ProblemStringsAttribute.Next
-- uid: Mirage.Generators.StringGeneratorAttribute
+- uid: Mirage.Generators.String.StringGeneratorAttribute
   name: StringGeneratorAttribute
-  href: api/Mirage.Generators.StringGeneratorAttribute.html
-  commentId: T:Mirage.Generators.StringGeneratorAttribute
-  fullName: Mirage.Generators.StringGeneratorAttribute
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html
+  commentId: T:Mirage.Generators.String.StringGeneratorAttribute
+  fullName: Mirage.Generators.String.StringGeneratorAttribute
   nameWithType: StringGeneratorAttribute
-- uid: Mirage.Generators.StringGeneratorAttribute.#ctor
+- uid: Mirage.Generators.String.StringGeneratorAttribute.#ctor
   name: StringGeneratorAttribute()
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute__ctor
-  commentId: M:Mirage.Generators.StringGeneratorAttribute.#ctor
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute__ctor
+  commentId: M:Mirage.Generators.String.StringGeneratorAttribute.#ctor
   name.vb: New()
-  fullName: Mirage.Generators.StringGeneratorAttribute.StringGeneratorAttribute()
-  fullName.vb: Mirage.Generators.StringGeneratorAttribute.New()
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.StringGeneratorAttribute()
+  fullName.vb: Mirage.Generators.String.StringGeneratorAttribute.New()
   nameWithType: StringGeneratorAttribute.StringGeneratorAttribute()
   nameWithType.vb: StringGeneratorAttribute.New()
-- uid: Mirage.Generators.StringGeneratorAttribute.#ctor(System.Int32,System.String,System.Int32)
+- uid: Mirage.Generators.String.StringGeneratorAttribute.#ctor(System.Int32,System.String,System.Int32)
   name: StringGeneratorAttribute(int, string, int)
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute__ctor_System_Int32_System_String_System_Int32_
-  commentId: M:Mirage.Generators.StringGeneratorAttribute.#ctor(System.Int32,System.String,System.Int32)
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute__ctor_System_Int32_System_String_System_Int32_
+  commentId: M:Mirage.Generators.String.StringGeneratorAttribute.#ctor(System.Int32,System.String,System.Int32)
   name.vb: New(Integer, String, Integer)
-  fullName: Mirage.Generators.StringGeneratorAttribute.StringGeneratorAttribute(int, string, int)
-  fullName.vb: Mirage.Generators.StringGeneratorAttribute.New(Integer, String, Integer)
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.StringGeneratorAttribute(int, string, int)
+  fullName.vb: Mirage.Generators.String.StringGeneratorAttribute.New(Integer, String, Integer)
   nameWithType: StringGeneratorAttribute.StringGeneratorAttribute(int, string, int)
   nameWithType.vb: StringGeneratorAttribute.New(Integer, String, Integer)
-- uid: Mirage.Generators.StringGeneratorAttribute.#ctor*
+- uid: Mirage.Generators.String.StringGeneratorAttribute.#ctor*
   name: StringGeneratorAttribute
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute__ctor_
-  commentId: Overload:Mirage.Generators.StringGeneratorAttribute.#ctor
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute__ctor_
+  commentId: Overload:Mirage.Generators.String.StringGeneratorAttribute.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Mirage.Generators.StringGeneratorAttribute.StringGeneratorAttribute
-  fullName.vb: Mirage.Generators.StringGeneratorAttribute.New
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.StringGeneratorAttribute
+  fullName.vb: Mirage.Generators.String.StringGeneratorAttribute.New
   nameWithType: StringGeneratorAttribute.StringGeneratorAttribute
   nameWithType.vb: StringGeneratorAttribute.New
-- uid: Mirage.Generators.StringGeneratorAttribute.AllowedCharacters
+- uid: Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters
   name: AllowedCharacters
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_AllowedCharacters
-  commentId: P:Mirage.Generators.StringGeneratorAttribute.AllowedCharacters
-  fullName: Mirage.Generators.StringGeneratorAttribute.AllowedCharacters
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_AllowedCharacters
+  commentId: P:Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters
   nameWithType: StringGeneratorAttribute.AllowedCharacters
-- uid: Mirage.Generators.StringGeneratorAttribute.AllowedCharacters*
+- uid: Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters*
   name: AllowedCharacters
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_AllowedCharacters_
-  commentId: Overload:Mirage.Generators.StringGeneratorAttribute.AllowedCharacters
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_AllowedCharacters_
+  commentId: Overload:Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters
   isSpec: "True"
-  fullName: Mirage.Generators.StringGeneratorAttribute.AllowedCharacters
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.AllowedCharacters
   nameWithType: StringGeneratorAttribute.AllowedCharacters
-- uid: Mirage.Generators.StringGeneratorAttribute.Default
+- uid: Mirage.Generators.String.StringGeneratorAttribute.Default
   name: Default
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_Default
-  commentId: P:Mirage.Generators.StringGeneratorAttribute.Default
-  fullName: Mirage.Generators.StringGeneratorAttribute.Default
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_Default
+  commentId: P:Mirage.Generators.String.StringGeneratorAttribute.Default
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.Default
   nameWithType: StringGeneratorAttribute.Default
-- uid: Mirage.Generators.StringGeneratorAttribute.Default*
+- uid: Mirage.Generators.String.StringGeneratorAttribute.Default*
   name: Default
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_Default_
-  commentId: Overload:Mirage.Generators.StringGeneratorAttribute.Default
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_Default_
+  commentId: Overload:Mirage.Generators.String.StringGeneratorAttribute.Default
   isSpec: "True"
-  fullName: Mirage.Generators.StringGeneratorAttribute.Default
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.Default
   nameWithType: StringGeneratorAttribute.Default
-- uid: Mirage.Generators.StringGeneratorAttribute.Length
+- uid: Mirage.Generators.String.StringGeneratorAttribute.Length
   name: Length
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_Length
-  commentId: P:Mirage.Generators.StringGeneratorAttribute.Length
-  fullName: Mirage.Generators.StringGeneratorAttribute.Length
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_Length
+  commentId: P:Mirage.Generators.String.StringGeneratorAttribute.Length
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.Length
   nameWithType: StringGeneratorAttribute.Length
-- uid: Mirage.Generators.StringGeneratorAttribute.Length*
+- uid: Mirage.Generators.String.StringGeneratorAttribute.Length*
   name: Length
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_Length_
-  commentId: Overload:Mirage.Generators.StringGeneratorAttribute.Length
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_Length_
+  commentId: Overload:Mirage.Generators.String.StringGeneratorAttribute.Length
   isSpec: "True"
-  fullName: Mirage.Generators.StringGeneratorAttribute.Length
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.Length
   nameWithType: StringGeneratorAttribute.Length
-- uid: Mirage.Generators.StringGeneratorAttribute.Next(Mirage.Random)
+- uid: Mirage.Generators.String.StringGeneratorAttribute.Next(Mirage.Random)
   name: Next(Random)
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_Next_Mirage_Random_
-  commentId: M:Mirage.Generators.StringGeneratorAttribute.Next(Mirage.Random)
-  fullName: Mirage.Generators.StringGeneratorAttribute.Next(Mirage.Random)
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_Next_Mirage_Random_
+  commentId: M:Mirage.Generators.String.StringGeneratorAttribute.Next(Mirage.Random)
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.Next(Mirage.Random)
   nameWithType: StringGeneratorAttribute.Next(Random)
-- uid: Mirage.Generators.StringGeneratorAttribute.Next*
+- uid: Mirage.Generators.String.StringGeneratorAttribute.Next*
   name: Next
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_Next_
-  commentId: Overload:Mirage.Generators.StringGeneratorAttribute.Next
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_Next_
+  commentId: Overload:Mirage.Generators.String.StringGeneratorAttribute.Next
   isSpec: "True"
-  fullName: Mirage.Generators.StringGeneratorAttribute.Next
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.Next
   nameWithType: StringGeneratorAttribute.Next
-- uid: Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
+- uid: Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
   name: NumberOfNonAlphaNumericsAllowed
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed
-  commentId: P:Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
-  fullName: Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed
+  commentId: P:Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
   nameWithType: StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
-- uid: Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed*
+- uid: Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed*
   name: NumberOfNonAlphaNumericsAllowed
-  href: api/Mirage.Generators.StringGeneratorAttribute.html#Mirage_Generators_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed_
-  commentId: Overload:Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
+  href: api/Mirage.Generators.String.StringGeneratorAttribute.html#Mirage_Generators_String_StringGeneratorAttribute_NumberOfNonAlphaNumericsAllowed_
+  commentId: Overload:Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
   isSpec: "True"
-  fullName: Mirage.Generators.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
+  fullName: Mirage.Generators.String.StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
   nameWithType: StringGeneratorAttribute.NumberOfNonAlphaNumericsAllowed
 - uid: Mirage.Generators.TimeSpanGenerator
   name: TimeSpanGenerator

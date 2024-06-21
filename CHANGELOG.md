@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.1"></a>
+## [4.1.1](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.1) (2024-06-21)
+
+### Bug Fixes
+
+* Fixing a couple of edge cases for generators ([9c7fdfc](https://www.github.com/JaCraig/Mirage/commit/9c7fdfc9a29d1704c24e18840a818226e526667e))
+
 <a name="4.1.0"></a>
 ## [4.1.0](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.0) (2024-06-21)
 

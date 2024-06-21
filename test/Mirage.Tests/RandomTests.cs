@@ -1,4 +1,5 @@
 ﻿using Mirage.Generators;
+using Mirage.Generators.Default;
 using Mirage.Generators.String;
 using Mirage.Tests.BaseClasses;
 using System;
@@ -337,9 +338,9 @@ namespace Mirage.Tests
 
     public class TestListClass : IList<string>
     {
+        private readonly List<string> Items = new();
         public int Count => Items.Count;
         public bool IsReadOnly => false;
-        private readonly List<string> Items = new();
 
         public string this[int index]
         {

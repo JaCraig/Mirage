@@ -20,7 +20,7 @@ using System;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.String
 {
     /// <summary>
     /// Randomly generates strings
@@ -79,10 +79,7 @@ namespace Mirage.Generators
         /// </summary>
         /// <param name="rand">Random number generator that it can use</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public override string Next(Random rand)
-        {
-            return NextString(rand, Length, AllowedCharacters, NumberOfNonAlphaNumericsAllowed);
-        }
+        public override string Next(Random rand) => NextString(rand, Length, AllowedCharacters, NumberOfNonAlphaNumericsAllowed);
 
         /// <summary>
         /// Returns a randomly generated string of a specified length, containing only a set of
@@ -100,15 +97,15 @@ namespace Mirage.Generators
         /// </returns>
         private string NextString(Random rand, int length, string allowedCharacters = ".", int numberOfNonAlphaNumericsAllowed = int.MaxValue)
         {
-            if (length < 1)
+            if (length < 1 || rand is null)
                 return "";
             var TempBuilder = new StringBuilder();
             var Comparer = new Regex(allowedCharacters);
             var AlphaNumbericComparer = new Regex("[0-9a-zA-Z]");
-            int Counter = 0;
+            var Counter = 0;
             while (TempBuilder.Length < length)
             {
-                var TempValue = new string(Convert.ToChar(Convert.ToInt32(Math.Floor((94 * rand.NextDouble()) + 32))), 1);
+                var TempValue = new string(Convert.ToChar(Convert.ToInt32(Math.Floor(94 * rand.NextDouble() + 32))), 1);
                 if (Comparer.IsMatch(TempValue))
                 {
                     if (!AlphaNumbericComparer.IsMatch(TempValue) && numberOfNonAlphaNumericsAllowed > Counter)

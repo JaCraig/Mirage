@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 using Mirage.Generators.BaseClasses;
+using Mirage.Generators.Default;
 using Mirage.Interfaces;
 using Mirage.Manager;
 using System;

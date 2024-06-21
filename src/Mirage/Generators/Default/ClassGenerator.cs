@@ -24,7 +24,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 
-namespace Mirage.Generators
+namespace Mirage.Generators.Default
 {
     /// <summary>
     /// Randomly generates a class
@@ -68,9 +68,14 @@ namespace Mirage.Generators
         /// <returns>The randonly generated class</returns>
         public object? NextObj(Random rand, List<object> previouslySeen)
         {
-            var PreviousItem = previouslySeen.Find(x => x.GetType() == typeof(T));
+            if (rand is null)
+                return default;
+            previouslySeen ??= new List<object>();
+            var PreviousItem = previouslySeen.Find(x => x?.GetType() == typeof(T));
             if (PreviousItem != null)
                 return PreviousItem;
+            if (!IsStruct(typeof(T)) && !typeof(T).HasDefaultConstructor())
+                return default;
             T? ReturnItem = Activator.CreateInstance<T>();
             if (ReturnItem is null)
                 return default;
@@ -98,6 +103,13 @@ namespace Mirage.Generators
             }
             return ReturnItem;
         }
+
+        /// <summary>
+        /// Determines if the type is a struct
+        /// </summary>
+        /// <param name="type">Type to check</param>
+        /// <returns>True if it is a struct, false otherwise</returns>
+        private static bool IsStruct(Type? type) => type?.IsValueType == true && !type.IsEnum;
     }
 
     /// <summary>

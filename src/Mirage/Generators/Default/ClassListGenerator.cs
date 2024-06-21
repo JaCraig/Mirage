@@ -50,7 +50,7 @@ namespace Mirage.Generators.Default
         /// </summary>
         /// <param name="rand">Random generator to use</param>
         /// <returns>The randomly generated class</returns>
-        public T Next(Random rand) => (T)NextObj(rand, new List<object>())!;
+        public T Next(Random rand) => (T?)NextObj(rand, new List<object>());
 
         /// <summary>
         /// Generates a random version of the class
@@ -75,6 +75,8 @@ namespace Mirage.Generators.Default
             var PreviousItem = previouslySeen.Find(x => x?.GetType() == typeof(T));
             if (PreviousItem != null)
                 return PreviousItem;
+            if (!typeof(T).HasDefaultConstructor())
+                return default;
             T? ReturnItem = Activator.CreateInstance<T>();
             if (ReturnItem is null)
                 return default;

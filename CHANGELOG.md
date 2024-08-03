@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.6"></a>
+## [4.1.6](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.6) (2024-08-03)
+
+### Bug Fixes
+
+* bump BigBook in /src/Mirage in the dependencies group ([98115d9](https://www.github.com/JaCraig/Mirage/commit/98115d9592ef5d706d0f02d77cd1b44fe3093bbd))
+
+### Other
+
+* Merge pull request #270 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-25d55e3327 ([f160bc8](https://www.github.com/JaCraig/Mirage/commit/f160bc8993758f17928b15e92300b136af9a4efa))
+* Merge pull request #271 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-b06778b9b3 ([4eeb4ad](https://www.github.com/JaCraig/Mirage/commit/4eeb4ad43ea0ef65688c40a98fe008f740df9b5b))
+* Merge pull request #272 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-9cc3c17e86 ([d09dd99](https://www.github.com/JaCraig/Mirage/commit/d09dd99f5657ac04206418b31e081668a92d4526))
+* Merge pull request #273 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-b3ff0eb1b1 ([fb49089](https://www.github.com/JaCraig/Mirage/commit/fb49089afd73e9c8f516f41bdda389a27da70d78))
+* Merge pull request #274 from JaCraig/dependabot/nuget/src/Mirage/dependencies-2afefb85ff ([a04ba4d](https://www.github.com/JaCraig/Mirage/commit/a04ba4dfa514aaa635a536a88406109605f5dea8))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([b8932b0](https://www.github.com/JaCraig/Mirage/commit/b8932b0ebc20df38bbb0458432078b92d3d43925))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([ce10116](https://www.github.com/JaCraig/Mirage/commit/ce101167719ca73cfd611cfb5a9faa0cbbb63848))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([14146ac](https://www.github.com/JaCraig/Mirage/commit/14146ac3fb7a5f979cbe81fe24306263428195cd))
+* bump the dependencies group in /test/Mirage.Tests with 2 updates ([37144d4](https://www.github.com/JaCraig/Mirage/commit/37144d496db181808c601db2bce25c2b3807edc4))
+
 <a name="4.1.5"></a>
 ## [4.1.5](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.5) (2024-07-24)
 

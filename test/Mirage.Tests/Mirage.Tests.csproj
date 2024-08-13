@@ -31,7 +31,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Mecha.xUnit" Version="2.1.94" />
+    <PackageReference Include="Mecha.xUnit" Version="2.1.95" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
     <PackageReference Include="Valkyrie" Version="4.0.78" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">

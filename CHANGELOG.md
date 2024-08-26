@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.11"></a>
+## [4.1.11](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.11) (2024-08-26)
+
+### Bug Fixes
+
+* bump BigBook in /src/Mirage in the dependencies group ([6a547e9](https://www.github.com/JaCraig/Mirage/commit/6a547e90ca7f69f50b312f3bc206f48f0a332d53))
+
+### Other
+
+* Merge pull request #287 from JaCraig/dependabot/nuget/src/Mirage/dependencies-fdcc422130 ([37876cb](https://www.github.com/JaCraig/Mirage/commit/37876cbe1df31a34f70f2096728f575b89107376))
+
 <a name="4.1.10"></a>
 ## [4.1.10](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.10) (2024-08-24)
 

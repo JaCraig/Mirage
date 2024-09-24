@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.1.13"></a>
+## [4.1.13](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.13) (2024-09-24)
+
+### Bug Fixes
+
+* Update Valkyrie and xunit packages ([cc6ced4](https://www.github.com/JaCraig/Mirage/commit/cc6ced449cde49820755fdc500b8bd980623d20b))
+
+### Other
+
+* Merge pull request #290 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-d145a1dea9 ([4ad4df7](https://www.github.com/JaCraig/Mirage/commit/4ad4df7efd0b4c0e0b055992fc3499950fd7188d))
+* Merge pull request #291 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-48ac8098b3 ([27a601d](https://www.github.com/JaCraig/Mirage/commit/27a601d1d934e1de0c7dfa2c6ec123109b953734))
+* Merge pull request #292 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-78c52a00e0 ([7fcb865](https://www.github.com/JaCraig/Mirage/commit/7fcb8656d16feae6eac6f1db4eaa6f58196eb141))
+* Merge pull request #293 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-69124f657d ([dac6b03](https://www.github.com/JaCraig/Mirage/commit/dac6b03a64fd10b74f8ecbe9d4b22d6c03a0c57f))
+* Merge pull request #294 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-fea68d101d ([15965ea](https://www.github.com/JaCraig/Mirage/commit/15965ea0250e2828b57560cdaf6835936dc0eda2))
+* Merge pull request #295 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-0a3d0dcfc4 ([7a08022](https://www.github.com/JaCraig/Mirage/commit/7a080227b6bb928b70a4393721cd33a5ded5bc82))
+* Merge pull request #296 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-15f3a94963 ([ad34790](https://www.github.com/JaCraig/Mirage/commit/ad34790adbc48fd4a65fc1df76d77b2c9dee0a73))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([522ea25](https://www.github.com/JaCraig/Mirage/commit/522ea25c22a8ddd33df7ebb2110fe4444d416549))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([55760bd](https://www.github.com/JaCraig/Mirage/commit/55760bd2e4546332860e88358ca1731228800b98))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([ccee504](https://www.github.com/JaCraig/Mirage/commit/ccee504072367527173570cbd217e9986627bb49))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([eced0d1](https://www.github.com/JaCraig/Mirage/commit/eced0d168430bcc9234f1f8917c6853174064bb7))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([b972d8f](https://www.github.com/JaCraig/Mirage/commit/b972d8f4fd7305c79c9b1fb343e25ea539ff2c24))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([4192a30](https://www.github.com/JaCraig/Mirage/commit/4192a30fc861bd4fdbc2cf8e554fc59402393e83))
+* bump Microsoft.NET.Test.Sdk ([945d851](https://www.github.com/JaCraig/Mirage/commit/945d851aba6bd0f0336465cbd619b0d4c916e94e))
+
 <a name="4.1.12"></a>
 ## [4.1.12](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.12) (2024-08-29)
 

@@ -37,7 +37,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="xunit" Version="2.9.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
     <PackageReference Include="Mecha.xUnit" Version="2.1.112" />
   </ItemGroup>
 

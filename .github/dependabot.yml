@@ -27,6 +27,17 @@ updates:
         patterns: 
           - "*"
 
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/ExampleApp/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    groups:
+      dependencies:
+        patterns: 
+          - "*"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

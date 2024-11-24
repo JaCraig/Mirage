@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.0"></a>
+## [5.0.0](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.0) (2024-11-24)
+
+### Features
+
+* Migration of library to .Net 8/9, workflow updates, and library updates ([2b9687b](https://www.github.com/JaCraig/Mirage/commit/2b9687b288de383e2a71acc292fa8be67b61eb62))
+
+### Breaking Changes
+
+* Migration of library to .Net 8/9, workflow updates, and library updates ([2b9687b](https://www.github.com/JaCraig/Mirage/commit/2b9687b288de383e2a71acc292fa8be67b61eb62))
+
+### Other
+
+* Merge pull request #297 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-e8514b389a ([e16248d](https://www.github.com/JaCraig/Mirage/commit/e16248d116b8e8fa750bcab4a623cd41c71d0c3a))
+* Merge pull request #298 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-fa09ffb26b ([85a0e4c](https://www.github.com/JaCraig/Mirage/commit/85a0e4cab87521414f798d9ae4cad73fcb7e4952))
+* Merge pull request #299 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-429049ca98 ([db47890](https://www.github.com/JaCraig/Mirage/commit/db47890b77bd2509261d34ec6ddc0bfd8429ebd4))
+* Merge pull request #300 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-88334da37a ([67f3747](https://www.github.com/JaCraig/Mirage/commit/67f3747c3790df253d06bdf478ecf0278d322c44))
+* Merge pull request #301 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-8963758c59 ([9ea81b1](https://www.github.com/JaCraig/Mirage/commit/9ea81b1c62babbdf236cacc6c8707234dec234f5))
+* Merge pull request #302 from JaCraig/dependabot/github_actions/dependencies-5d0541337a ([8e80c6a](https://www.github.com/JaCraig/Mirage/commit/8e80c6a277ded3dfb2fc62a6e582a55fd1c2ae36))
+* Merge pull request #303 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-d7b90b540f ([5ad7a37](https://www.github.com/JaCraig/Mirage/commit/5ad7a371eeb2b98364173b562b38ba245e580686))
+* Merge pull request #304 from JaCraig/dependabot/github_actions/dependencies-ffdf47fbe7 ([cd533e9](https://www.github.com/JaCraig/Mirage/commit/cd533e92cd9f2b0b7795ec8e4449361c3ec327ab))
+* Merge pull request #305 from JaCraig/dependabot/github_actions/dependencies-941c69736f ([004e872](https://www.github.com/JaCraig/Mirage/commit/004e872b6c60706462c5e630ce5a551c7b17b7a1))
+* Merge pull request #306 from JaCraig/dependabot/github_actions/dependencies-534fe38b4c ([89c89ad](https://www.github.com/JaCraig/Mirage/commit/89c89ad256579cb606df71d42ad013c44f84519e))
+* Merge pull request #307 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-c08396e13e ([d980294](https://www.github.com/JaCraig/Mirage/commit/d98029479c7c840f1232c39035666abce9228d97))
+* Merge pull request #308 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-49cf741bbe ([d8d2e41](https://www.github.com/JaCraig/Mirage/commit/d8d2e41fc0e10c8056134f68e2f584c90ae362bc))
+* Merge pull request #309 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-b5cc6d1a97 ([70f17b9](https://www.github.com/JaCraig/Mirage/commit/70f17b9c6ef52b2a12032e1251d26513cee5f4bb))
+* Merge pull request #310 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-1c844ea9e8 ([a42d33a](https://www.github.com/JaCraig/Mirage/commit/a42d33adb042cf3fe06c7227db24a3a1bb7da074))
+* Merge pull request #311 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-23db35b6a2 ([6cbe085](https://www.github.com/JaCraig/Mirage/commit/6cbe0852f723d2d1797641947d81f892b4275cf1))
+* Merge pull request #312 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-956fc5c724 ([5cbbb58](https://www.github.com/JaCraig/Mirage/commit/5cbbb5896e18b15fe16946158a67cde67695c5d5))
+* Merge pull request #313 from JaCraig/dependabot/nuget/test/Mirage.Tests/dependencies-617062173c ([aa69d32](https://www.github.com/JaCraig/Mirage/commit/aa69d324161f93792bccbe07cf4af336d6667937))
+* bump coverallsapp/github-action in the dependencies group ([9e14514](https://www.github.com/JaCraig/Mirage/commit/9e1451411a67953f27620eef7e7c51ed88f6817f))
+* bump coverallsapp/github-action in the dependencies group ([d1d1ef0](https://www.github.com/JaCraig/Mirage/commit/d1d1ef09416b2c1cf145fb0777c286bda1a967b7))
+* bump coverallsapp/github-action in the dependencies group ([343cbb1](https://www.github.com/JaCraig/Mirage/commit/343cbb1087a1496cec3933f466cd015fe1a76b26))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([d14f092](https://www.github.com/JaCraig/Mirage/commit/d14f092f1b31168d01c2de40065c1a50ecc7204a))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([f6520c0](https://www.github.com/JaCraig/Mirage/commit/f6520c007f2b3c554a9b50f635f77e23e16bac94))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([c888152](https://www.github.com/JaCraig/Mirage/commit/c8881529063dc0949aea73b01a7b001d347ad848))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([2ac234a](https://www.github.com/JaCraig/Mirage/commit/2ac234ac8e4d82b006ee5bc3e156a589481b2d04))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([b22ddad](https://www.github.com/JaCraig/Mirage/commit/b22ddad380e98d49e294ff48ef0fee052d2d412f))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([f21922d](https://www.github.com/JaCraig/Mirage/commit/f21922deefe22eafc1b8a9a76209fb738087fac7))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([d74485f](https://www.github.com/JaCraig/Mirage/commit/d74485f2c8943e728ed5b417a4578bb8ee46218c))
+* bump Mecha.xUnit in /test/Mirage.Tests in the dependencies group ([cac74f4](https://www.github.com/JaCraig/Mirage/commit/cac74f4f84fbb31597ce8049ab6702834de3c095))
+* bump Microsoft.NET.Test.Sdk ([cd0594d](https://www.github.com/JaCraig/Mirage/commit/cd0594d251eb28e1a03c7247136273efdd8c6675))
+* bump the dependencies group in /test/Mirage.Tests with 2 updates ([80c0200](https://www.github.com/JaCraig/Mirage/commit/80c020062145b19ac5f795d4c790850ff0c7d54b))
+* bump the dependencies group in /test/Mirage.Tests with 2 updates ([2aff3ef](https://www.github.com/JaCraig/Mirage/commit/2aff3ef1b33175a6152a22d47d524e24fb3f0680))
+* bump the dependencies group in /test/Mirage.Tests with 2 updates ([40beb8c](https://www.github.com/JaCraig/Mirage/commit/40beb8c7fbd4a39f258f234414daae140482ca75))
+* bump the dependencies group in /test/Mirage.Tests with 2 updates ([1b8ef9c](https://www.github.com/JaCraig/Mirage/commit/1b8ef9cbadddc1f79d63409adb6e37b2bf7ebe82))
+* bump the dependencies group with 2 updates ([af144fd](https://www.github.com/JaCraig/Mirage/commit/af144fd385985bf80d3dce75600108ca81cf6c04))
+* Refactor versionize command in dotnet-publish workflow ([3627616](https://www.github.com/JaCraig/Mirage/commit/3627616619800588b420ffac8ec5c3a89eb842dc))
+* Update xunit package to version 2.9.2 ([01c42e1](https://www.github.com/JaCraig/Mirage/commit/01c42e140dfa8f5e5ca2f10b2cc0fbe71c9dcabf))
+
 <a name="4.1.13"></a>
 ## [4.1.13](https://www.github.com/JaCraig/Mirage/releases/tag/v4.1.13) (2024-09-24)
 

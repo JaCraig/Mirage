@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0F8C5170-86BB-4204-BF34-9B0E07BCB673}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage", "src\Mirage\Mirage.csproj", "{3D36A609-739F-4261-BDCB-4E0B01144EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage", "Mirage\Mirage.csproj", "{3D36A609-739F-4261-BDCB-4E0B01144EEE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage.Tests", "test\Mirage.Tests\Mirage.Tests.csproj", "{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mirage.Tests", "Mirage.Tests\Mirage.Tests.csproj", "{F9F4ACD3-BA94-4F84-B420-E4CFF8AB99EA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleApp", "ExampleApp\ExampleApp.csproj", "{A11956D0-1BDE-4FF3-B723-8B60394C8781}"
 EndProject

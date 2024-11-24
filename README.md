@@ -6,13 +6,16 @@ Mirage is an open source library for .Net designed to create random data for POC
 
 ## Setting Up the Library
 
-Mirage relies on [Canister](https://github.com/JaCraig/Canister) in order to hook itself up. In order for this to work, you must do the following at startup:
+Mirage hooks itself up and is usable via your apps service collection. In order for this to work, you must do the following at startup:
 
     var MyServices = new ServiceCollection();
     ...
-    MyServices.AddCanisterModules();  // Should be last call in order to find any services that you might have added manually.
-                                      // Any services added after this may not be found by the system.
+    MyServices.RegisterMirage();
 					
+Or if you are using Canister:
+
+    MyServices.AddCanisterModules();
+
 When this is done, Mirage is ready to use.
 
 ## Basic Usage
@@ -103,7 +106,7 @@ Install-Package Mirage
 
 In order to build the library you will require the following:
 
-1. Visual Studio 2017
+1. Visual Studio 2022
 
 Other than that, just clone the project and you should be able to load the solution and build without too much effort.
 

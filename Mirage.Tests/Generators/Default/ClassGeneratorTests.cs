@@ -2,6 +2,7 @@ using Mirage.Generators;
 using Mirage.Generators.Default;
 using Mirage.Generators.String;
 using Mirage.Tests.BaseClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Xunit;
@@ -80,7 +81,9 @@ namespace Mirage.Tests.Generators.Default
                 Assert.All(ValidationAttributes, _ =>
                 {
                     var ValidationContext = new ValidationContext(Result) { MemberName = property.Name };
-                    Assert.True(Validator.TryValidateProperty(property.GetValue(Result), ValidationContext, null));
+                    var ActualValue = property.GetValue(Result);
+                    Console.WriteLine(ActualValue);
+                    Assert.True(Validator.TryValidateProperty(ActualValue, ValidationContext, null));
                 });
             });
         }

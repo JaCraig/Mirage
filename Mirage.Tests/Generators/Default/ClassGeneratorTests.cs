@@ -68,7 +68,7 @@ namespace Mirage.Tests.Generators.Default
         public void GeneratedClassHasValidProperties()
         {
             // Arrange
-            var Rand = new Random();
+            var Rand = new Random(10);
 
             // Act
             TestClass Result = _Generator.Next(Rand);
@@ -95,7 +95,7 @@ namespace Mirage.Tests.Generators.Default
         public int Age { get; set; }
 
         [Required]
-        [StringGenerator]
+        [StringGenerator(10)]
         public string Name { get; set; }
     }
 }

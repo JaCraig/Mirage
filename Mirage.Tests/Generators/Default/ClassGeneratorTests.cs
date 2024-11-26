@@ -82,7 +82,6 @@ namespace Mirage.Tests.Generators.Default
                 {
                     var ValidationContext = new ValidationContext(Result) { MemberName = property.Name };
                     var ActualValue = property.GetValue(Result);
-                    Console.WriteLine(ActualValue);
                     Assert.True(Validator.TryValidateProperty(ActualValue, ValidationContext, null));
                 });
             });

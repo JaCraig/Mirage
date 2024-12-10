@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.1) (2024-12-10)
+
+### Bug Fixes
+
+* bump BigBook in /Mirage in the dependencies group ([64c044d](https://www.github.com/JaCraig/Mirage/commit/64c044d31fa346a53207711a9493eb1c9a420ac1))
+
+### Other
+
+* Merge pull request #314 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-6c34fbe01a ([6116ae6](https://www.github.com/JaCraig/Mirage/commit/6116ae6b3bd62ae10220c019c62a3e838006b64e))
+* Merge pull request #315 from JaCraig/dependabot/nuget/ExampleApp/dependencies-faba8347c0 ([fc1684a](https://www.github.com/JaCraig/Mirage/commit/fc1684a0e6f82f344df14c9f8c68b98ff2207b8a))
+* Merge pull request #316 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-faba8347c0 ([ae14b81](https://www.github.com/JaCraig/Mirage/commit/ae14b81e0620df4b6f710d8f0c701cfb1e365c9e))
+* Merge pull request #317 from JaCraig/dependabot/nuget/Mirage/dependencies-b580c13aa2 ([f4d593e](https://www.github.com/JaCraig/Mirage/commit/f4d593e8450c3f5e0e6115c25076576185aa89bd))
+* Add Dependabot config for NuGet packages ([4d71f7b](https://www.github.com/JaCraig/Mirage/commit/4d71f7b2a18061697d90cf45e41cf535965b80a4))
+* Another attempt at tests ([532c77a](https://www.github.com/JaCraig/Mirage/commit/532c77a5f6245b1c8fbd57314f91517088f409cc))
+* bump Mecha.xUnit in /Mirage.Tests in the dependencies group ([da9a160](https://www.github.com/JaCraig/Mirage/commit/da9a1609a9862c4815601f10a31187126c2723a2))
+* bump the dependencies group in /ExampleApp with 2 updates ([0b4e308](https://www.github.com/JaCraig/Mirage/commit/0b4e3087fabc134c39cb73467e9aaebc5fa1d4c9))
+* bump the dependencies group in /Mirage.Tests with 2 updates ([e89a9d5](https://www.github.com/JaCraig/Mirage/commit/e89a9d5c1c28e9d6ad6dba84d0dd574fb09cd219))
+* Switching back ([e73d4a2](https://www.github.com/JaCraig/Mirage/commit/e73d4a255aaa76aedb3cc7bc25c6c88825afbe6c))
+* Trying to figure out GitHub issue ([3c7db8d](https://www.github.com/JaCraig/Mirage/commit/3c7db8d89946fe7a46601db17f75453422be648b))
+
 <a name="5.0.0"></a>
 ## [5.0.0](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.0) (2024-11-24)
 

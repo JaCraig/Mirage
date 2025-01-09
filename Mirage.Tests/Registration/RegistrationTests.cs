@@ -1,7 +1,5 @@
-using Canister.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Mirage.Tests.BaseClasses;
-using NSubstitute;
 using System;
 using Xunit;
 
@@ -9,16 +7,16 @@ namespace Mirage.Tests.Registration
 {
     public class MirageRegistrationTests : TestBaseClass
     {
-        protected override Type ObjectType => typeof(MirageRegistration);
+        protected override Type ObjectType => null;
 
         [Fact]
         public void CanCallRegisterMirage()
         {
             // Arrange
-            ICanisterConfiguration Bootstrapper = Substitute.For<ICanisterConfiguration>();
+            var Services = new ServiceCollection();
 
             // Act
-            ICanisterConfiguration Results = Bootstrapper.RegisterMirage();
+            IServiceCollection Results = Services.RegisterMirage();
 
             // Assert
             Assert.NotNull(Results);

@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.2"></a>
+## [5.0.2](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.2) (2025-01-09)
+
+### Bug Fixes
+
+* **tests:** simplify MirageRegistrationTests setup ([51ded98](https://www.github.com/JaCraig/Mirage/commit/51ded987ea6ccd401dc52dcfbfc462af41f17492))
+
+### Other
+
+* Merge pull request #319 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-ae4dc51d69 ([e47850c](https://www.github.com/JaCraig/Mirage/commit/e47850c7a1ea68b4fae34815132030b30be0bf27))
+* Merge pull request #320 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-637ad84d5b ([42f3341](https://www.github.com/JaCraig/Mirage/commit/42f33418a1552d7968ecef964b5c8b7e3b890633))
+* Merge pull request #321 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-37a7915f86 ([ba7324a](https://www.github.com/JaCraig/Mirage/commit/ba7324a05248f80c67b797e2a4e9e512596c44da))
+* Merge pull request #322 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-dac939b906 ([e4e1d04](https://www.github.com/JaCraig/Mirage/commit/e4e1d04f5fe010cc4689ff7dc7a8227b1da889dc))
+* bump Mecha.xUnit in /Mirage.Tests in the dependencies group ([ea501f3](https://www.github.com/JaCraig/Mirage/commit/ea501f384faddd6244c90084f285c674961160a6))
+* bump the dependencies group in /Mirage.Tests with 2 updates ([5659845](https://www.github.com/JaCraig/Mirage/commit/5659845f9778a3bae83c4b74a7b6a688bd7a21ac))
+* bump xunit in /Mirage.Tests in the dependencies group ([cf91159](https://www.github.com/JaCraig/Mirage/commit/cf9115998674cf642a800f281afa86ff77abfea5))
+* bump xunit.runner.visualstudio ([9a71dca](https://www.github.com/JaCraig/Mirage/commit/9a71dca5df33d1cdcfd5855aee4c11a2a68d2208))
+* **base-classes:** simplify methods and update docs ([5e9476e](https://www.github.com/JaCraig/Mirage/commit/5e9476e9c2566f7e7f8176342996cff6641cca0a))
+* **deps:** update package versions in Mirage.Tests ([55f2fbd](https://www.github.com/JaCraig/Mirage/commit/55f2fbd5abbe78f1f386942243bcc8c1993638fc))
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.1) (2024-12-10)
 

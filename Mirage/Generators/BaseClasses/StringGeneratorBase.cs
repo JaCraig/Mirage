@@ -39,10 +39,7 @@ namespace Mirage.Generators.BaseClasses
         /// <param name="min">Minimum value (inclusive)</param>
         /// <param name="max">Maximum value (inclusive)</param>
         /// <returns>A randomly generated object of the specified type</returns>
-        public string Next(Random rand, string min, string max)
-        {
-            return Next(rand);
-        }
+        public string Next(Random rand, string min, string max) => Next(rand);
 
         /// <summary>
         /// Generates next object
@@ -50,9 +47,6 @@ namespace Mirage.Generators.BaseClasses
         /// <param name="rand">The rand.</param>
         /// <param name="previouslySeen">The previously seen.</param>
         /// <returns>The next object</returns>
-        public override object? NextObj(Random rand, List<object> previouslySeen)
-        {
-            return Next(rand);
-        }
+        public override object? NextObj(Random rand, List<object> previouslySeen) => Next(rand);
     }
 }

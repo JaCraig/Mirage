@@ -80,7 +80,7 @@ namespace Mirage.Generators.Default
             var Count = rand.Next((int)Min, (int)Max);
             var Results = rand.Next(ClassType, Count).ToArray();
             var ReturnObject = Array.CreateInstance(ClassType, Count);
-            for (int x = 0; x < Count; ++x)
+            for (var x = 0; x < Count; ++x)
             {
                 ReturnObject.SetValue(Results[x], x);
             }

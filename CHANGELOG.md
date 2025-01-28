@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.3"></a>
+## [5.0.3](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.3) (2025-01-28)
+
+### Bug Fixes
+
+* bump versionize in /Mirage in the dependencies group ([bd19381](https://www.github.com/JaCraig/Mirage/commit/bd19381ffdaaa36b675724330bd191dcbc1f8239))
+
+### Other
+
+* Merge pull request #323 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-ed63622fe2 ([4f81899](https://www.github.com/JaCraig/Mirage/commit/4f8189949a5d19509b378f1d8d20a2e0d5bf0c32))
+* Merge pull request #324 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-a3eea154c6 ([0d5916e](https://www.github.com/JaCraig/Mirage/commit/0d5916e5968087a16715c82e388258cbe40be9c9))
+* Merge pull request #325 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-7fe5cb5319 ([3fb6d9a](https://www.github.com/JaCraig/Mirage/commit/3fb6d9ab06035c4eb2e9d2dc327a1d8a71c08fb5))
+* Merge pull request #326 from JaCraig/dependabot/nuget/ExampleApp/dependencies-0d060393c4 ([2e9c0df](https://www.github.com/JaCraig/Mirage/commit/2e9c0dfb991431cac6d88909bfb577e3909348a1))
+* Merge pull request #327 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-cdc5eca79b ([51c0c8f](https://www.github.com/JaCraig/Mirage/commit/51c0c8f1aa3e236c162a1269f8ab4cae1e1de84f))
+* Merge pull request #328 from JaCraig/dependabot/nuget/Mirage/dependencies-836e21bf11 ([361f1e7](https://www.github.com/JaCraig/Mirage/commit/361f1e7300464fdcb6145b756981643aec554cf8))
+* bump BigBook in /ExampleApp in the dependencies group ([1dfc7cc](https://www.github.com/JaCraig/Mirage/commit/1dfc7cc5c73b4087a82073fdec60fadfaad4fb2d))
+* bump Mecha.xUnit in /Mirage.Tests in the dependencies group ([e98504f](https://www.github.com/JaCraig/Mirage/commit/e98504f077f4d0c014f8b072274b0c627f8e7345))
+* bump Mecha.xUnit in /Mirage.Tests in the dependencies group ([1d60e71](https://www.github.com/JaCraig/Mirage/commit/1d60e713500b288aec0e686e794ca1d0debb909c))
+* bump the dependencies group in /Mirage.Tests with 2 updates ([d7769d2](https://www.github.com/JaCraig/Mirage/commit/d7769d2520e8b1525ef27779142e7bff7f477015))
+* bump the dependencies group in /Mirage.Tests with 3 updates ([c45d76d](https://www.github.com/JaCraig/Mirage/commit/c45d76d61c32ab9d4b4f18bbfb6bc6985c1d4661))
+
 <a name="5.0.2"></a>
 ## [5.0.2](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.2) (2025-01-09)
 

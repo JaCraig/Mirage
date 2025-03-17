@@ -18,7 +18,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.MirageRegistration.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.MirageRegistration",
+      "Summary": "<p sourcefile=\"api/Microsoft.Extensions.DependencyInjection.MirageRegistration.yml\" sourcestartlinenumber=\"1\">Registration extension methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/Mirage.Generators.BaseClasses.GeneratorAttributeBase.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.BaseClasses.GeneratorAttributeBase",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.BaseClasses.GeneratorAttributeBase.yml\" sourcestartlinenumber=\"1\">Attribute base class for generators</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/Mirage.Generators.BaseClasses.StringGeneratorBase.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.BaseClasses.StringGeneratorBase",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.BaseClasses.StringGeneratorBase.yml\" sourcestartlinenumber=\"1\">Abstract class for string generators</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/Mirage.Generators.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/Mirage.Generators.BoolGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.BoolGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.BoolGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Boolean generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +102,11 @@
           "relative_path": "api/Mirage.Generators.ByteGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ByteGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ByteGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Byte generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -88,7 +116,11 @@
           "relative_path": "api/Mirage.Generators.CharGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.CharGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.CharGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Char generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +130,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.AddressAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.AddressAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.AddressAttribute.yml\" sourcestartlinenumber=\"1\">Address Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -108,7 +144,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.CityAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.CityAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.CityAttribute.yml\" sourcestartlinenumber=\"1\">City Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -118,7 +158,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.CountryAbbreviation3CharAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.CountryAbbreviation3CharAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.CountryAbbreviation3CharAttribute.yml\" sourcestartlinenumber=\"1\">Country abbreviation generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -128,7 +172,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.CountryAbbreviationAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.CountryAbbreviationAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.CountryAbbreviationAttribute.yml\" sourcestartlinenumber=\"1\">Country abbreviation generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -138,7 +186,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.CountryAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.CountryAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.CountryAttribute.yml\" sourcestartlinenumber=\"1\">Country generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +200,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.DomainNameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.DomainNameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.DomainNameAttribute.yml\" sourcestartlinenumber=\"1\">Domain Name Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -158,7 +214,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.EmailAddressAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.EmailAddressAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.EmailAddressAttribute.yml\" sourcestartlinenumber=\"1\">Email Address Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +228,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.ProfileImageAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.ProfileImageAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.ProfileImageAttribute.yml\" sourcestartlinenumber=\"1\">Generates profile images.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -178,7 +242,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.TimeZoneAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo.TimeZoneAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ContactInfo.TimeZoneAttribute.yml\" sourcestartlinenumber=\"1\">TimeZone generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -188,7 +256,11 @@
           "relative_path": "api/Mirage.Generators.ContactInfo.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ContactInfo",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -198,7 +270,11 @@
           "relative_path": "api/Mirage.Generators.DateTimeGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.DateTimeGenerator",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.DateTimeGenerator.yml\" sourcestartlinenumber=\"1\">DateTime generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -208,7 +284,11 @@
           "relative_path": "api/Mirage.Generators.DateTimeGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.DateTimeGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.DateTimeGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">DateTime generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +298,11 @@
           "relative_path": "api/Mirage.Generators.DecimalGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.DecimalGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.DecimalGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Decimal generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -228,7 +312,11 @@
           "relative_path": "api/Mirage.Generators.Default.ArrayGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ArrayGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ArrayGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Generic array generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -238,7 +326,11 @@
           "relative_path": "api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ByteArrayGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ByteArrayGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Byte array generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -248,7 +340,11 @@
           "relative_path": "api/Mirage.Generators.Default.ClassGenerator-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ClassGenerator<T>",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ClassGenerator-1.yml\" sourcestartlinenumber=\"1\">Randomly generates a class</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -258,7 +354,11 @@
           "relative_path": "api/Mirage.Generators.Default.ClassGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ClassGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ClassGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Class generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -268,7 +368,11 @@
           "relative_path": "api/Mirage.Generators.Default.ClassListGenerator-2.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ClassListGenerator<T, TListType>",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ClassListGenerator-2.yml\" sourcestartlinenumber=\"1\">Randomly generates a class that implements IList</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -278,7 +382,11 @@
           "relative_path": "api/Mirage.Generators.Default.ClassListGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ClassListGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ClassListGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Randomly generates a class that implements IList</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -288,7 +396,11 @@
           "relative_path": "api/Mirage.Generators.Default.DictionaryGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.DictionaryGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.DictionaryGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Dictionary generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -298,7 +410,11 @@
           "relative_path": "api/Mirage.Generators.Default.GuidGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.GuidGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.GuidGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Guid generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -308,7 +424,11 @@
           "relative_path": "api/Mirage.Generators.Default.IEnumerableGenerator-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.IEnumerableGenerator<T>",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.IEnumerableGenerator-1.yml\" sourcestartlinenumber=\"1\">IEnumerable generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -318,7 +438,11 @@
           "relative_path": "api/Mirage.Generators.Default.IEnumerableGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.IEnumerableGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.IEnumerableGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">IEnumerable generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -328,7 +452,11 @@
           "relative_path": "api/Mirage.Generators.Default.ListGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.ListGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.ListGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">List generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -338,7 +466,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableCharGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Nullable char generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -348,7 +480,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableDateTimeGenerator",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableDateTimeGenerator.yml\" sourcestartlinenumber=\"1\">DateTime generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -358,7 +494,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDateTimeGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableDateTimeGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableDateTimeGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">NullableDateTime generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -368,7 +508,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableDecimalGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">NullableDecimal generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -378,7 +522,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableDoubleGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Double generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -388,7 +536,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableFloatGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Float generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -398,7 +550,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableGuidGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Guid generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -408,7 +564,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableIntGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Int generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -418,7 +578,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableLongGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">long generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -428,7 +592,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableSByteGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">long generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -438,7 +606,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableShortGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">long generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -448,7 +620,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableTimeSpanGenerator.yml\" sourcestartlinenumber=\"1\">TimeSpan generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -458,7 +634,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableTimeSpanGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableTimeSpanGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableTimeSpanGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">NullableTimeSpan generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -468,7 +648,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableUIntGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">UInt generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -478,7 +662,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableULongGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">ULong generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -488,7 +676,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Default.Nullable.NullableUShortGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">UShort generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -498,7 +690,11 @@
           "relative_path": "api/Mirage.Generators.Default.Nullable.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default.Nullable",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -508,7 +704,11 @@
           "relative_path": "api/Mirage.Generators.Default.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Default",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -518,7 +718,11 @@
           "relative_path": "api/Mirage.Generators.DoubleGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.DoubleGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.DoubleGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Double generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -528,7 +732,11 @@
           "relative_path": "api/Mirage.Generators.EnumGenerator-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.EnumGenerator<T>",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.EnumGenerator-1.yml\" sourcestartlinenumber=\"1\">Randomly generates Enum</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -538,7 +746,11 @@
           "relative_path": "api/Mirage.Generators.EnumGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.EnumGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.EnumGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Class generator attribute</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -548,7 +760,11 @@
           "relative_path": "api/Mirage.Generators.FemaleNamePrefixAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.FemaleNamePrefixAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.FemaleNamePrefixAttribute.yml\" sourcestartlinenumber=\"1\">FemaleNamePrefix Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -558,7 +774,11 @@
           "relative_path": "api/Mirage.Generators.FloatGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.FloatGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.FloatGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Float generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -568,7 +788,11 @@
           "relative_path": "api/Mirage.Generators.IntGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.IntGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.IntGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Int generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -578,7 +802,11 @@
           "relative_path": "api/Mirage.Generators.LastNameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.LastNameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.LastNameAttribute.yml\" sourcestartlinenumber=\"1\">LastName Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -588,7 +816,11 @@
           "relative_path": "api/Mirage.Generators.LongGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.LongGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.LongGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Long generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -598,7 +830,11 @@
           "relative_path": "api/Mirage.Generators.LoremIpsumAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.LoremIpsumAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.LoremIpsumAttribute.yml\" sourcestartlinenumber=\"1\">Lorem Ipsum Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -608,7 +844,11 @@
           "relative_path": "api/Mirage.Generators.MaleNamePrefixAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.MaleNamePrefixAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.MaleNamePrefixAttribute.yml\" sourcestartlinenumber=\"1\">MaleNamePrefix Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -618,7 +858,11 @@
           "relative_path": "api/Mirage.Generators.NameSuffixAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.NameSuffixAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.NameSuffixAttribute.yml\" sourcestartlinenumber=\"1\">NamePrefix Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -628,7 +872,11 @@
           "relative_path": "api/Mirage.Generators.Names.CompanyAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.CompanyAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.CompanyAttribute.yml\" sourcestartlinenumber=\"1\">Company Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -638,7 +886,11 @@
           "relative_path": "api/Mirage.Generators.Names.FemaleFirstNameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.FemaleFirstNameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.FemaleFirstNameAttribute.yml\" sourcestartlinenumber=\"1\">FemaleFirstName Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -648,7 +900,11 @@
           "relative_path": "api/Mirage.Generators.Names.FemaleNameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.FemaleNameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.FemaleNameAttribute.yml\" sourcestartlinenumber=\"1\">FemaleName Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -658,7 +914,11 @@
           "relative_path": "api/Mirage.Generators.Names.MaleFirstNameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.MaleFirstNameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.MaleFirstNameAttribute.yml\" sourcestartlinenumber=\"1\">MaleFirstName Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -668,7 +928,11 @@
           "relative_path": "api/Mirage.Generators.Names.MaleNameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.MaleNameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.MaleNameAttribute.yml\" sourcestartlinenumber=\"1\">MaleName Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -678,7 +942,11 @@
           "relative_path": "api/Mirage.Generators.Names.NameAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.NameAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.NameAttribute.yml\" sourcestartlinenumber=\"1\">Name Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -688,7 +956,11 @@
           "relative_path": "api/Mirage.Generators.Names.TitleAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names.TitleAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Names.TitleAttribute.yml\" sourcestartlinenumber=\"1\">Title generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -698,7 +970,11 @@
           "relative_path": "api/Mirage.Generators.Names.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Names",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -708,7 +984,11 @@
           "relative_path": "api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Nullable.NullableBoolGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Nullable.NullableBoolGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Nullable Boolean generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -718,7 +998,11 @@
           "relative_path": "api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Nullable.NullableByteGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.Nullable.NullableByteGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Nullable Byte generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -728,7 +1012,11 @@
           "relative_path": "api/Mirage.Generators.Nullable.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.Nullable",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -738,7 +1026,11 @@
           "relative_path": "api/Mirage.Generators.PatternAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.PatternAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.PatternAttribute.yml\" sourcestartlinenumber=\"1\">Randomly generates strings based on a pattern</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -748,7 +1040,11 @@
           "relative_path": "api/Mirage.Generators.PhoneNumberAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.PhoneNumberAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.PhoneNumberAttribute.yml\" sourcestartlinenumber=\"1\">PhoneNumber Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -758,7 +1054,11 @@
           "relative_path": "api/Mirage.Generators.RegexStringAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.RegexStringAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.RegexStringAttribute.yml\" sourcestartlinenumber=\"1\">Randomly generates strings based on a Regex</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -768,7 +1068,11 @@
           "relative_path": "api/Mirage.Generators.SByteGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.SByteGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.SByteGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">SByte generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -778,7 +1082,11 @@
           "relative_path": "api/Mirage.Generators.ShortGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ShortGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ShortGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Short generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -788,7 +1096,11 @@
           "relative_path": "api/Mirage.Generators.StateAbbreviationAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.StateAbbreviationAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.StateAbbreviationAttribute.yml\" sourcestartlinenumber=\"1\">StateAbbreviation Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -798,7 +1110,11 @@
           "relative_path": "api/Mirage.Generators.StateAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.StateAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.StateAttribute.yml\" sourcestartlinenumber=\"1\">State Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -808,7 +1124,11 @@
           "relative_path": "api/Mirage.Generators.StreetAddressAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.StreetAddressAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.StreetAddressAttribute.yml\" sourcestartlinenumber=\"1\">StreetAddress Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -818,7 +1138,11 @@
           "relative_path": "api/Mirage.Generators.String.ProblemStringsAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.String.ProblemStringsAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.String.ProblemStringsAttribute.yml\" sourcestartlinenumber=\"1\">Problem string attribute.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -828,7 +1152,11 @@
           "relative_path": "api/Mirage.Generators.String.StringGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.String.StringGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.String.StringGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">Randomly generates strings</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -838,7 +1166,11 @@
           "relative_path": "api/Mirage.Generators.String.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.String",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -848,7 +1180,11 @@
           "relative_path": "api/Mirage.Generators.TimeSpanGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.TimeSpanGenerator",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.TimeSpanGenerator.yml\" sourcestartlinenumber=\"1\">TimeSpan generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -858,7 +1194,11 @@
           "relative_path": "api/Mirage.Generators.TimeSpanGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.TimeSpanGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.TimeSpanGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">TimeSpan generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -868,7 +1208,11 @@
           "relative_path": "api/Mirage.Generators.UIntGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.UIntGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.UIntGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">UInt generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -878,7 +1222,11 @@
           "relative_path": "api/Mirage.Generators.ULongGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ULongGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ULongGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">ULong generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -888,7 +1236,11 @@
           "relative_path": "api/Mirage.Generators.UShortGeneratorAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.UShortGeneratorAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.UShortGeneratorAttribute.yml\" sourcestartlinenumber=\"1\">UShort generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -898,7 +1250,11 @@
           "relative_path": "api/Mirage.Generators.ZipCodeAttribute.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators.ZipCodeAttribute",
+      "Summary": "<p sourcefile=\"api/Mirage.Generators.ZipCodeAttribute.yml\" sourcestartlinenumber=\"1\">ZipCode Generator</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -908,7 +1264,11 @@
           "relative_path": "api/Mirage.Generators.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Generators",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -918,7 +1278,11 @@
           "relative_path": "api/Mirage.Interfaces.IGenerator-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Interfaces.IGenerator<T>",
+      "Summary": "<p sourcefile=\"api/Mirage.Interfaces.IGenerator-1.yml\" sourcestartlinenumber=\"1\">Generator interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -928,7 +1292,11 @@
           "relative_path": "api/Mirage.Interfaces.IGenerator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Interfaces.IGenerator",
+      "Summary": "<p sourcefile=\"api/Mirage.Interfaces.IGenerator.yml\" sourcestartlinenumber=\"1\">Generator interface</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -938,7 +1306,11 @@
           "relative_path": "api/Mirage.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -948,7 +1320,11 @@
           "relative_path": "api/Mirage.Manager.Builder.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Manager.Builder",
+      "Summary": "<p sourcefile=\"api/Mirage.Manager.Builder.yml\" sourcestartlinenumber=\"1\">Builder for getting the generators</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -958,7 +1334,11 @@
           "relative_path": "api/Mirage.Manager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Manager",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -968,7 +1348,11 @@
           "relative_path": "api/Mirage.Module.RandomModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Module.RandomModule",
+      "Summary": "<p sourcefile=\"api/Mirage.Module.RandomModule.yml\" sourcestartlinenumber=\"1\">Random module for Canister</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -978,7 +1362,11 @@
           "relative_path": "api/Mirage.Module.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Module",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -988,7 +1376,11 @@
           "relative_path": "api/Mirage.Random.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage.Random",
+      "Summary": "<p sourcefile=\"api/Mirage.Random.yml\" sourcestartlinenumber=\"1\">Utility class for handling random information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -998,7 +1390,11 @@
           "relative_path": "api/Mirage.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Mirage",
+      "Summary": null
     },
     {
       "type": "Conceptual",
@@ -1014,11 +1410,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -1037,11 +1433,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
         ".json": {
           "relative_path": "articles/toc.json"
+        },
+        ".html": {
+          "relative_path": "articles/toc.html"
         }
       },
       "version": ""
@@ -1070,11 +1466,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""

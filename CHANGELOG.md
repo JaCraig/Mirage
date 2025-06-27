@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.4"></a>
+## [5.0.4](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.4) (2025-06-27)
+
+### Bug Fixes
+
+* **dependencies:** update package references and improve dependabot config ([5afcffd](https://www.github.com/JaCraig/Mirage/commit/5afcffdf18b07dbeda784081a8830ed78248321d))
+
+### Other
+
+* Merge pull request #329 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-d90f1eecb3 ([92a2d27](https://www.github.com/JaCraig/Mirage/commit/92a2d2799fef59d5919268bbe2c171f580fb67b9))
+* Merge pull request #330 from JaCraig/dependabot/nuget/ExampleApp/dependencies-8512ba2625 ([11ff5c7](https://www.github.com/JaCraig/Mirage/commit/11ff5c70aac28b829ffd7bf329028220d5fa1b67))
+* Merge pull request #331 from JaCraig/dependabot/nuget/ExampleApp/dependencies-8af9c4c348 ([026d472](https://www.github.com/JaCraig/Mirage/commit/026d472e053d2575f5b1af681aecd5b90b6ca804))
+* Merge pull request #332 from JaCraig/dependabot/nuget/ExampleApp/dependencies-913beb9319 ([4e6b4e7](https://www.github.com/JaCraig/Mirage/commit/4e6b4e791938ae25001fbb9c55c76740b1b01c8c))
+* bump BigBook in /ExampleApp in the dependencies group ([dda73d3](https://www.github.com/JaCraig/Mirage/commit/dda73d3886e5460222d57fce7fed4ae43e8fc0b7))
+* bump Mecha.xUnit in /Mirage.Tests in the dependencies group ([eee0cb4](https://www.github.com/JaCraig/Mirage/commit/eee0cb49261357e19572ed34eaa2a8007dbc9e7f))
+* bump System.ValueTuple in /ExampleApp in the dependencies group ([23b259c](https://www.github.com/JaCraig/Mirage/commit/23b259c63ad42387c27fcf04e9bd2fa636bbd386))
+* bump System.ValueTuple in /ExampleApp in the dependencies group ([d59d8da](https://www.github.com/JaCraig/Mirage/commit/d59d8dae8c327b1eb427b468ff15fc80f11ba0a6))
+
 <a name="5.0.3"></a>
 ## [5.0.3](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.3) (2025-01-28)
 

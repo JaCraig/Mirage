@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.5"></a>
+## [5.0.5](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.5) (2025-08-05)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([4d0d2c6](https://www.github.com/JaCraig/Mirage/commit/4d0d2c665b26c72fd2c610c7dff2a0bc77f3c665))
+
+### Other
+
+* Merge pull request #333 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-f5ef2f2cd0 ([750146a](https://www.github.com/JaCraig/Mirage/commit/750146a32f37c6014975f6004e4c2cc66d9ebf06))
+* Merge pull request #334 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-90b7911087 ([f6b1aa0](https://www.github.com/JaCraig/Mirage/commit/f6b1aa00a8b8e978c36a3118a449d94cc3387772))
+* Merge pull request #335 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-0b34180b1d ([514b5cd](https://www.github.com/JaCraig/Mirage/commit/514b5cd792dd61cd0f3b903c4d20c73544a89e7c))
+* Merge pull request #336 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-ab5505c691 ([b1b67d5](https://www.github.com/JaCraig/Mirage/commit/b1b67d52f2c208b501d051919978b21f781e7601))
+* Merge pull request #337 from JaCraig/dependabot/nuget/Mirage/dependencies-d8817f5c87 ([5a9a9e4](https://www.github.com/JaCraig/Mirage/commit/5a9a9e449fc271bc67364fefdcba194737f64f5b))
+* Bump the dependencies group with 1 update ([d273287](https://www.github.com/JaCraig/Mirage/commit/d273287ed9cfe5e1140aeaa6e615b402814f7d82))
+* Bump the dependencies group with 1 update ([b3be842](https://www.github.com/JaCraig/Mirage/commit/b3be842f2aa5d992d02ebdebaa08b936c0c8ca7a))
+* Bump the dependencies group with 1 update ([d47209c](https://www.github.com/JaCraig/Mirage/commit/d47209cdda5f8132fe971c7c805c38c7d3fdb5b2))
+* Bump the dependencies group with 3 updates ([8fec7e0](https://www.github.com/JaCraig/Mirage/commit/8fec7e00cbcf8ee98b3a20395199c792b571b3d8))
+
 <a name="5.0.4"></a>
 ## [5.0.4](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.4) (2025-06-27)
 

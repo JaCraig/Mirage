@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.6"></a>
+## [5.0.6](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.6) (2025-08-19)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([6beb58f](https://www.github.com/JaCraig/Mirage/commit/6beb58fe5d812dee0dd4356d0c01e0f4da47f6f7))
+
+### Other
+
+* Merge pull request #338 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-7d3d320c89 ([b765351](https://www.github.com/JaCraig/Mirage/commit/b7653519d0173088f4de6c9e0040fcbfd280440b))
+* Merge pull request #339 from JaCraig/dependabot/nuget/Mirage/dependencies-a5fe8833ec ([4f34926](https://www.github.com/JaCraig/Mirage/commit/4f3492648a4cd03124ccc97e965c6dde3105faba))
+* Merge pull request #340 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-24be123a2c ([1c63669](https://www.github.com/JaCraig/Mirage/commit/1c6366906c1511e55b89991767c155e40142e591))
+* Merge pull request #341 from JaCraig/dependabot/nuget/Mirage/dependencies-a5fe8833ec ([859cd61](https://www.github.com/JaCraig/Mirage/commit/859cd6190bb5b51a4c3dd496b3ade9effa1b8494))
+* Bump the dependencies group with 1 update ([ca28d0c](https://www.github.com/JaCraig/Mirage/commit/ca28d0c590f1ba63baf2d6e5ae798968a29665d0))
+* Bump the dependencies group with 1 update ([781c069](https://www.github.com/JaCraig/Mirage/commit/781c069ed73eb4f053fb193337e902490330dbf8))
+* Bump the dependencies group with 2 updates ([66916bf](https://www.github.com/JaCraig/Mirage/commit/66916bfae96689d4cd3820d1c91417617b26fc57))
+
 <a name="5.0.5"></a>
 ## [5.0.5](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.5) (2025-08-05)
 

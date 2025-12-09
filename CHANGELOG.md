@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.8"></a>
+## [5.0.8](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.8) (2025-12-09)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([34a699c](https://www.github.com/JaCraig/Mirage/commit/34a699ca9a5609b5a27b84aa5731df99816bcf46))
+
+### Other
+
+* Merge pull request #368 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-3d97db513b ([20bd0ab](https://www.github.com/JaCraig/Mirage/commit/20bd0abd3cc405d4a371439c799925246b322e50))
+* Merge pull request #369 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-f4b6243359 ([27bd248](https://www.github.com/JaCraig/Mirage/commit/27bd248f91ba86264ba6c7d90dfc6df8d3ad9ac8))
+* Merge pull request #370 from JaCraig/dependabot/nuget/Mirage/dependencies-b30b2030f9 ([2447726](https://www.github.com/JaCraig/Mirage/commit/24477262db33f616d0e0d4ccab8a352a8a5d4bbc))
+* Add language specification for CodeQL workflow ([6e52045](https://www.github.com/JaCraig/Mirage/commit/6e520453ad8f2dba87e875c1722989fd4048bcaf))
+* Bump the dependencies group with 1 update ([67e62c4](https://www.github.com/JaCraig/Mirage/commit/67e62c4d9ff9c9123ecd32947584e585b507c685))
+* Bump the dependencies group with 3 updates ([abc1927](https://www.github.com/JaCraig/Mirage/commit/abc1927d101137da4e5b3ab9af79cfd34182c3ce))
+
 <a name="5.0.7"></a>
 ## [5.0.7](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.7) (2025-11-14)
 

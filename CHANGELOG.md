@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.0.12"></a>
+## [5.0.12](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.12) (2026-02-10)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([eb91304](https://www.github.com/JaCraig/Mirage/commit/eb91304da42c35e880bf71de2ed2b1713e7cf17c))
+
+### Other
+
+* Merge pull request #381 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-0d5913eadf ([20b4627](https://www.github.com/JaCraig/Mirage/commit/20b462765de92461214c934f79d42c99f38cbc0f))
+* Merge pull request #382 from JaCraig/dependabot/nuget/dot-config/dependencies-28042fb4d8 ([9d10505](https://www.github.com/JaCraig/Mirage/commit/9d105053b64442355b5146ef2ec341dd0fdb548e))
+* Merge pull request #383 from JaCraig/dependabot/nuget/dot-config/dependencies-bdcfd2607a ([4134224](https://www.github.com/JaCraig/Mirage/commit/413422451cb7f3e66757947cbb956bdfaf10bafd))
+* Merge pull request #384 from JaCraig/dependabot/nuget/Mirage/dependencies-8de58285cc ([599b3e7](https://www.github.com/JaCraig/Mirage/commit/599b3e743f97fa16b416d693a2e845f87126d94a))
+* Merge pull request #385 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-0ab92a1bf0 ([6a35d77](https://www.github.com/JaCraig/Mirage/commit/6a35d770f73390e7e68fd9fea77f5bc43b189564))
+* Merge pull request #386 from JaCraig/dependabot/nuget/Mirage/dependencies-a5bc480f90 ([91767c3](https://www.github.com/JaCraig/Mirage/commit/91767c34c5d680d764c145efe4255ba936cc26da))
+* Bump the dependencies group with 1 update ([d682ac4](https://www.github.com/JaCraig/Mirage/commit/d682ac4c7846352ee1b9b92bb4f6e9bf1f9a74ce))
+* Bump the dependencies group with 1 update ([ed0a252](https://www.github.com/JaCraig/Mirage/commit/ed0a252d5adf7d5ab6e6258ed0d4a08b27da8bd7))
+* Bump the dependencies group with 2 updates ([1118520](https://www.github.com/JaCraig/Mirage/commit/11185206506a397137f1cffba945e0c68f288cb9))
+* Bump the dependencies group with 2 updates ([b1011bb](https://www.github.com/JaCraig/Mirage/commit/b1011bbb519bac72d2ec8286f422d174474532d4))
+* Bump the dependencies group with 4 updates ([bedc6f1](https://www.github.com/JaCraig/Mirage/commit/bedc6f127e32b2026fd228e8d89e4a8af395fda1))
+
 <a name="5.0.11"></a>
 ## [5.0.11](https://www.github.com/JaCraig/Mirage/releases/tag/v5.0.11) (2026-01-20)
 

@@ -4,7 +4,7 @@
     <Description>Tests for Mirage</Description>
     <AssemblyTitle>Mirage.Tests</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net10.0</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>Mirage.Tests</AssemblyName>
     <PackageId>Mirage.Tests</PackageId>

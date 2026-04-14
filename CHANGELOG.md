@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.4"></a>
+## [5.1.4](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.4) (2026-04-14)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([85132bb](https://www.github.com/JaCraig/Mirage/commit/85132bb3455f0640009487eb29d33ae09d54d3fd))
+
+### Other
+
+* Merge pull request #411 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-0eea6a20f3 ([07f48cb](https://www.github.com/JaCraig/Mirage/commit/07f48cb9ddeab3a05483e6f743bb4017e8cd033c))
+* Merge pull request #412 from JaCraig/dependabot/nuget/Mirage/dependencies-aeefbeedc6 ([12e3be0](https://www.github.com/JaCraig/Mirage/commit/12e3be0415681ac3acd31d7b16de6d4f12c4a9d0))
+* Bump the dependencies group with 3 updates ([23710f9](https://www.github.com/JaCraig/Mirage/commit/23710f99f1f8f828be117bcc8f54fc8be8ca7530))
+
 <a name="5.1.3"></a>
 ## [5.1.3](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.3) (2026-04-06)
 

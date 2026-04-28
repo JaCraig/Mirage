@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.11"></a>
+## [5.1.11](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.11) (2026-04-28)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([a7c1dc6](https://www.github.com/JaCraig/Mirage/commit/a7c1dc6d8590f5dfe0c01a5bd5481f629c3b2c1a))
+
+### Other
+
+* Merge pull request #420 from JaCraig/dependabot/nuget/Mirage/dependencies-836dd5b49a ([6cf768d](https://www.github.com/JaCraig/Mirage/commit/6cf768d398db5e6f3d9b3b4069604b667295ba85))
+* Merge pull request #421 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-fe8c3bc788 ([32cce40](https://www.github.com/JaCraig/Mirage/commit/32cce40090ecbd41a7d7fffbd9987e98f00e8e82))
+* Merge pull request #422 from JaCraig/dependabot/nuget/Mirage/dependencies-31f2f4caad ([2c6d544](https://www.github.com/JaCraig/Mirage/commit/2c6d5442fb8e029de0a183d7139c03ac6bf07681))
+* Refactor commit-lint.csx for improved validation ([0747ac2](https://www.github.com/JaCraig/Mirage/commit/0747ac27be895100e3ef4748a6f0747683520791))
+* Bump the dependencies group with 1 update ([b7ad52a](https://www.github.com/JaCraig/Mirage/commit/b7ad52ad82e4a1ca5b20892594ca359bd024ad4a))
+* Bump the dependencies group with 3 updates ([5585b9e](https://www.github.com/JaCraig/Mirage/commit/5585b9e0d7b7794bf94a5f7abc1edba5ae1f5149))
+
 <a name="5.1.10"></a>
 ## [5.1.10](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.10) (2026-04-23)
 

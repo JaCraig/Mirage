@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.15"></a>
+## [5.1.15](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.15) (2026-05-20)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([b112e4c](https://www.github.com/JaCraig/Mirage/commit/b112e4ca2d0db13cdf2a29e26de598c3192ae386))
+
+### Other
+
+* Merge pull request #428 from JaCraig/dependabot/nuget/Mirage/dependencies-0c46c6b334 ([960f071](https://www.github.com/JaCraig/Mirage/commit/960f071f9434d7381854f16142b42303882e5902))
+* Merge pull request #429 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-0efeab6e9e ([2e08940](https://www.github.com/JaCraig/Mirage/commit/2e08940b6a3e6261d3e87bccbf70c92e1439db28))
+* Merge pull request #430 from JaCraig/dependabot/nuget/Mirage/dependencies-d8c77d0ffb ([1e7098d](https://www.github.com/JaCraig/Mirage/commit/1e7098d47a1117e89a3927360303cf2d65081da3))
+* Bump the dependencies group with 1 update ([58a32c3](https://www.github.com/JaCraig/Mirage/commit/58a32c3b0ef97f9a3628d0dc65691afbfc27f513))
+* Bump the dependencies group with 3 updates ([d4ae343](https://www.github.com/JaCraig/Mirage/commit/d4ae343d15cb95b7cecd1263a8f418d1e6f6546e))
+* **copilot:** update commit message guidelines and examples ([d2b916f](https://www.github.com/JaCraig/Mirage/commit/d2b916f131df58044fd0d818c5673af55ccdc5d9))
+
 <a name="5.1.14"></a>
 ## [5.1.14](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.14) (2026-05-14)
 

@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.16"></a>
+## [5.1.16](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.16) (2026-05-28)
+
+### Bug Fixes
+
+* **workflows:** remove PERSONAL_ACCESS_TOKEN from workflows ([fe12ed0](https://www.github.com/JaCraig/Mirage/commit/fe12ed0c6a4cadaa711cad7017ac342e06aaa6ca))
+
+### Other
+
+* Merge pull request #431 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-a1e413ef75 ([c0338de](https://www.github.com/JaCraig/Mirage/commit/c0338de92f14d2a500eb7b97e08fc664dfd414bf))
+* Bump the dependencies group with 4 updates ([c7207b2](https://www.github.com/JaCraig/Mirage/commit/c7207b26c65c47024c358fd3819d4dd9ab6042d3))
+
 <a name="5.1.15"></a>
 ## [5.1.15](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.15) (2026-05-20)
 

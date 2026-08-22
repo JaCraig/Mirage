@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="5.1.17"></a>
+## [5.1.17](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.17) (2026-08-22)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([034f212](https://www.github.com/JaCraig/Mirage/commit/034f212a10296e1c7a7e30d48c7ad97d329dc954))
+* Bump the dependencies group with 1 update ([26f1c5b](https://www.github.com/JaCraig/Mirage/commit/26f1c5bfb9b1c9c2b49ba1b2f7eb9bed30b4c622))
+* Bump the dependencies group with 1 update ([313e4e8](https://www.github.com/JaCraig/Mirage/commit/313e4e854b1e204978c785e5878458756d759927))
+* Bump the dependencies group with 1 update ([a7802ca](https://www.github.com/JaCraig/Mirage/commit/a7802ca581ef6eb8f2e9cedc0059287c685688ad))
+* Bump the dependencies group with 2 updates ([032fa87](https://www.github.com/JaCraig/Mirage/commit/032fa87bf1ffd96af2fe2e3545f4da3ef9adc7fd))
+* Bump the dependencies group with 2 updates ([dfdfece](https://www.github.com/JaCraig/Mirage/commit/dfdfece89bc5916f3f7b01741c1c09a4f44fa5e9))
+
+### Other
+
+* Merge pull request #432 from JaCraig/dependabot/nuget/Mirage/dependencies-e1bae83de4 ([92f501d](https://www.github.com/JaCraig/Mirage/commit/92f501db21907bfccbefa716db5d6b4ee0291821))
+* Merge pull request #433 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-bf9adcc4e0 ([263d0c6](https://www.github.com/JaCraig/Mirage/commit/263d0c672cadb8bc7d85863a82e9b714e7f947f9))
+* Merge pull request #434 from JaCraig/dependabot/nuget/Mirage/dependencies-991ee26f7c ([4154cd3](https://www.github.com/JaCraig/Mirage/commit/4154cd39273c13da2812672803521ce4dc0c0a06))
+* Merge pull request #435 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-407341980e ([bc28280](https://www.github.com/JaCraig/Mirage/commit/bc2828030329b235b4c3048e9f2f2296902cfac1))
+* Merge pull request #436 from JaCraig/dependabot/nuget/Mirage/dependencies-5c1cd76f7e ([f1f11de](https://www.github.com/JaCraig/Mirage/commit/f1f11deaa219eb1fd1f3a4ee1803d219b002f9c5))
+* Merge pull request #437 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-7071a909e4 ([70fbffb](https://www.github.com/JaCraig/Mirage/commit/70fbffb40dcea7fab437b634467ce5d6517ba917))
+* Merge pull request #438 from JaCraig/dependabot/nuget/dot-config/dependencies-d580172a4f ([19a3edb](https://www.github.com/JaCraig/Mirage/commit/19a3edbcc15d7d6d719ac8d3be00cebb6f39843f))
+* Merge pull request #439 from JaCraig/dependabot/nuget/Mirage/dependencies-637020aa5a ([eb10f0c](https://www.github.com/JaCraig/Mirage/commit/eb10f0c4c7b99f9b38e376944aba3317e7299d3c))
+* Merge pull request #440 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-679c1f95be ([3d5a7ec](https://www.github.com/JaCraig/Mirage/commit/3d5a7eca836c9300d733dfacba4b5a550e6a962e))
+* Merge pull request #441 from JaCraig/dependabot/nuget/Mirage/dependencies-40d4d2aff0 ([fae3579](https://www.github.com/JaCraig/Mirage/commit/fae35793966ed046c9f692116554a0e760930396))
+* Merge pull request #442 from JaCraig/dependabot/nuget/Mirage.Tests/dependencies-862dbac85e ([9a8dcbe](https://www.github.com/JaCraig/Mirage/commit/9a8dcbeb1ba350d84e6e6d6b8bc2b120fa8049c6))
+* Bump the dependencies group with 1 update ([ff2f6ae](https://www.github.com/JaCraig/Mirage/commit/ff2f6aedd5b660c4248fba87e8f2b0ada217085b))
+* Bump the dependencies group with 1 update ([cde37f6](https://www.github.com/JaCraig/Mirage/commit/cde37f6ca1813deea3ca88d5da8896dea3b4d58f))
+* Bump the dependencies group with 2 updates ([d5e78aa](https://www.github.com/JaCraig/Mirage/commit/d5e78aa02b23c17e87c852457593775426807fb4))
+* Bump the dependencies group with 3 updates ([d63b15a](https://www.github.com/JaCraig/Mirage/commit/d63b15a1a333c34ffa1d44ae7261fdfe3fa80948))
+* Bump the dependencies group with 3 updates ([b859e16](https://www.github.com/JaCraig/Mirage/commit/b859e164bd0c98ed0e7c78d492e771584a0a2d32))
+
 <a name="5.1.16"></a>
 ## [5.1.16](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.16) (2026-05-28)
 

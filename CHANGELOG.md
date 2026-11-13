@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="6.0.0"></a>
+## [6.0.0](https://www.github.com/JaCraig/Mirage/releases/tag/v6.0.0) (2026-11-13)
+
+### Features
+
+* **frameworks:** target .NET 10 and 11 ([72bdcbe](https://www.github.com/JaCraig/Mirage/commit/72bdcbe03e9922fcc058826c3fd4af87bdefe569))
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([6ceb678](https://www.github.com/JaCraig/Mirage/commit/6ceb678542ad7c11a7e439a8292217422e495dfe))
+
+### Breaking Changes
+
+* **frameworks:** target .NET 10 and 11 ([72bdcbe](https://www.github.com/JaCraig/Mirage/commit/72bdcbe03e9922fcc058826c3fd4af87bdefe569))
+
+### Other
+
+* Merge pull request #452 from JaCraig/dependabot/nuget/Mirage/dependencies-2186410a91 ([d7c9c0a](https://www.github.com/JaCraig/Mirage/commit/d7c9c0a951dca3e01498a0d9627d28225e956a9e))
+
 <a name="5.1.18"></a>
 ## [5.1.18](https://www.github.com/JaCraig/Mirage/releases/tag/v5.1.18) (2026-11-08)
 
